@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#B70D4D",
+    "navigationBarTitleText": "点名吧！老师。",
+    "navigationBarTextStyle":"white"
+  }
+}
