@@ -1,4 +1,4 @@
-{
+﻿{
   "pages":[
     "pages/index/index",
     "pages/logs/logs"
@@ -6,7 +6,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "生活小妙招",
+    "navigationBarTitleText": "2222",
     "navigationBarTextStyle":"black"
   }
 }
