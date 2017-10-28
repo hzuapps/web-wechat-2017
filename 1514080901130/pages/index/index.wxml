@@ -7,9 +7,6 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view bindtap="changeColor" class="{{textClass}}">
-    <text>这是一个微信小程序演示版本。</text>
-  </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
