@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#323232",
+    "navigationBarTitleText": "邻客通",
+    "navigationBarTextStyle":"white"
+  }
+}
