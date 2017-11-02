@@ -7,7 +7,16 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <button class="weui-btn create-room" type="default">创建签到房间</button>
+
+  <button class="weui-btn check-in" type="primary">我要签到</button>
+
+  <view class="weui-footer footer">
+  <view class="weui-footer__links">
+      <navigator url="" class="weui-footer__link">Allenmind</navigator>
   </view>
+  <view class="weui-footer__text">Copyright © Allenmind</view>
+  </view>
+
 </view>

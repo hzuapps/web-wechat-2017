@@ -18,5 +18,16 @@
 
 .usermotto {
   margin-top: 200px;
-  color: #B70D4D;
+}
+
+.create-room {
+  margin-top: 40px;
+}
+
+.check-in {
+  margin-top:20px;
+}
+
+.footer {
+  margin-top: 100px;
 }
