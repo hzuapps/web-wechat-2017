@@ -10,4 +10,12 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <view class="page">
+    <view class="page__hd">
+       <view class="page__title">Button</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <button class="weui-btn" class="myBtn" type="primary">开始计时</button>
+    </view>
+</view>
 </view>
