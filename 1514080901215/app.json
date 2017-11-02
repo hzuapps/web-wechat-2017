@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/putout/putout",
+    "pages/people/people"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "惠大互帮",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar":{
+    "color":"#ddd",
+    "selectedColor":"#63cbbf",
+    "borderStyle":"black",
+    "position":"bottom",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text": "主页",
+      "iconPath": "images/host.png",
+      "selectedIconPath": "images/host-t.png"
+    },{
+      "pagePath": "pages/putout/putout",
+      "text": "发布",
+      "iconPath":"images/putout.png",
+      "selectedIconPath":"images/putout-t.png"
+    },{
+      "pagePath": "pages/people/people",
+      "text": "个人",
+      "iconPath": "images/people.png",
+      "selectedIconPath": "images/people-t.png"
+    }]
+    
+  }
+}
