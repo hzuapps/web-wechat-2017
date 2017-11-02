@@ -7,7 +7,16 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
+  <view class="img">
+    <image src="/img/16299.jpg"></image>
+  </view>
+  <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class="weui-footer footer">
+    <view class="weui-footer__links">
+      <navigator url="" class="weui-footer__link">联系作者</navigator>
+      <navigator url="" class="weui-footer__link">合作交流</navigator>
+    </view>
   </view>
 </view>
