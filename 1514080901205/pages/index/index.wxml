@@ -1,13 +1,31 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="page">
+
+    <view class="page__bd page__bd_spacing">
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_new">最新报</view></view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_huayu">华语</view></view>
+            <view class="weui-flex__item"><view class="placeholder_oumei">欧美</view></view>
+            <view class="weui-flex__item"><view class="placeholder_rihan">日韩</view></view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_piaofang">票房排行榜</view></view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_neidi">内地</view></view>
+            <view class="weui-flex__item"><view class="placeholder_beimei">北美</view></view>
+            <view class="weui-flex__item"><view class="placeholder_hanguo">韩国</view></view>
+            <view class="weui-flex__item"><view class="placeholder_riben">日本</view></view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_yingping">影评</view></view>
+            <view class="weui-flex__item"><view class="placeholder_douban">豆瓣top250</view></view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder_meitu">组图</view></view>
+            <view class="weui-flex__item"><view class="placeholder_shipin">视频</view></view>
+            <view class="weui-flex__item"><view class="placeholder_shequ">社区</view></view>
+        </view>
+    </view>
 </view>
