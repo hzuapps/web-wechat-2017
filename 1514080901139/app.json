@@ -5,7 +5,7 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "lightblue",
     "navigationBarTitleText": "TODO",
     "navigationBarTextStyle":"black"
   }
