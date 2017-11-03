@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="body">
+<view>
   <view class="mid">
     <view> 
     选择一个任务
@@ -39,7 +39,10 @@
     </view>
   </view>
 
-  <button class="weui-btn myBtn"  type="primary" size="mini">开始计时</button>
+  <view class="btnContainer">
+    <button class="weui-btn"  type="primary" size="mini">开始计时</button>
+  </view>
+  
 
   
 </view>

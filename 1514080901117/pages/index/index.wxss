@@ -1,7 +1,8 @@
 /**index.wxss**/
 @import '../../style/weui.wxss';
 
-.body {
+.btnContainer {
+  margin-top: 10px;
   text-align: center;
 }
 
