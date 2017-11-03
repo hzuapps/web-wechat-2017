@@ -7,8 +7,8 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="img">
-    <image src="/img/16299.jpg"></image>
+  <view class="imgcontainer">
+    <image src="/img/16299.jpg" class='img'></image>
   </view>
   <!-- <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
