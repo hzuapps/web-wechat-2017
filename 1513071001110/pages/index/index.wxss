@@ -16,6 +16,11 @@
   color: #aaa;
 }
 
-.usermotto {
-  margin-top: 200px;
+.button-sp-area{
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 60%;
+}
+.mini-btn{
+    margin-right: 5px;
 }
