@@ -17,5 +17,19 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 80px;
+}
+
+.page{
+  margin:40px;
+  padding:5px;
+}
+.page1{
+  margin:5px;
+}
+
+.page2{
+  margin:20px;
+  color:bisque;
+  background-color:black;
 }
