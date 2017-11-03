@@ -1,4 +1,27 @@
 /**index.wxss**/
+
+.section__title{
+  background-color: green;
+  font-size: 24px;
+  margin: 15px;
+  padding: 2px;
+}
+
+.picker{
+  font-size: 20px;
+  margin: 15px;
+  padding: 2px;
+}
+
+.button_style{
+    color:red;
+    margin: 50px;
+}
+
+.userinfo_style{
+  color:red;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -18,4 +41,26 @@
 
 .usermotto {
   margin-top: 200px;
+}
+
+.kind-list__item:first-child {
+  margin-top: 0;
+}
+
+.kind-list__img {
+  width: 40px;
+  height: 40px;
+}
+
+.kind-list__item-hd_show {
+  opacity: 0.4;
+}
+
+.kind-list__item-bd {
+  height: 0;
+  overflow: hidden;
+}
+
+.kind-list__item-bd_show {
+  height: auto;
 }

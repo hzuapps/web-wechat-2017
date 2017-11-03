@@ -7,7 +7,59 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    list: [
+      {
+        id: 'form',
+        name: '表单',
+        open: true,
+        pages: ['button', 'list']
+      },
+      {
+        id: 'widget',
+        name: '基础组件',
+        open: false,
+        pages: ['article', 'badge', 'flex']
+      }
+    ],
+    show:"true",
+    date: '2016-09-01',
+    time: '12:01',
+  },
+  bindDateChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  bindTimeChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      time: e.detail.value
+    })
+  },
+  tapShow:function(){
+    this.setData({
+      show:true
+    })
+  },
+  tapHidden:function(){
+    this.setData({
+      show:false
+    })
+  },
+  kindToggle: function (e) {
+    var id = e.currentTarget.id, list = this.data.list;
+    for (var i = 0, len = list.length; i < len; ++i) {
+      if (list[i].id == id) {
+        list[i].open = !list[i].open
+      } else {
+        list[i].open = false
+      }
+    }
+    this.setData({
+      list: list
+    });
   },
   //事件处理函数
   bindViewTap: function() {
