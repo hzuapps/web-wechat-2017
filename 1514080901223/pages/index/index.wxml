@@ -9,5 +9,23 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+  
+ </view>
   </view>
+  <view class="page">
+    <view class="page__hd">
+        <view class="page__title">事项管理</view>
+        <view class="page__desc">请选择以下按钮</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <button class="weui-btn" type="primary">进入主页面 </button>
+        <button class="weui-btn" type="default">使用说明 </button>
+        
+        <view class="button-sp-area">
+            <button class="weui-btn" type="primary" plain="true">关于</button>
+
+            <button class="weui-btn mini-btn" type="primary" size="mini">退出</button>
+        
+        </view>
+    </view>
 </view>
