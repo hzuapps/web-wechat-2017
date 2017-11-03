@@ -1,12 +1,40 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/feedback/feedback"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#006400",
     "navigationBarTitleText": "通知小助手",
     "navigationBarTextStyle":"white"
-  }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"image/note.png",
+        "selectedIconPath":"image/note_on.png",
+        "text": "发通知"
+      },
+      {
+        "pagePath": "pages/feedback/feedback",
+        "iconPath": "image/feedback.png",
+        "selectedIconPath": "image/feedback_on.png",
+        "text": "反馈"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user_on.png",
+        "text": "主页"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
