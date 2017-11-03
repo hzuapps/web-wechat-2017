@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/button/button",
+    "pages/list/list",
+    "pages/article/article",
+    "pages/badge/badge",
+    "pages/picker/picker"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "生活小妙招",
+    "navigationBarTextStyle":"black"
+  }
+}
