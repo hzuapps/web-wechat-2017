@@ -1,21 +1,46 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+<view>
+  <view class="mid">
+    <view> 
+    选择一个任务
+    </view>
+    <view class="font-size">
+    在接下来的25分钟，专心做这件事
+    </view> 
   </view>
   <view class="page">
-    <view class="page__hd">
-       <view class="page__title">Button</view>
+    <view class="page__bd">
+        <view class="weui-grids" style="margin-top: 30rpx">
+            <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/工作.png" />
+                    <view class="weui-grid__label">工作</view>
+            </navigator>
+            <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/学习.png" />
+                    <view class="weui-grid__label">学习</view>
+            </navigator>
+            <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/思考.png" />
+                    <view class="weui-grid__label">思考</view>
+            </navigator>
+            <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/写作.png" />
+                    <view class="weui-grid__label">写作</view>
+            </navigator>
+            <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/运动.png" />
+                    <view class="weui-grid__label">运动</view>
+            </navigator>
+            <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/阅读.png" />
+                    <view class="weui-grid__label">阅读</view>
+            </navigator>
+        </view>
     </view>
+  </view>
+  <view class="page">
     <view class="page__bd page__bd_spacing">
-        <button class="weui-btn" class="myBtn" type="primary">开始计时</button>
+        <button class="weui-btn mybtn" type="primary" size="mini">开始计时</button>
     </view>
-</view>
+  </view>
 </view>
