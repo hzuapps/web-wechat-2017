@@ -6,7 +6,8 @@
     "pages/list/list",
     "pages/article/article",
     "pages/badge/badge",
-    "pages/picker/picker"
+    "pages/picker/picker",
+    "pages/flex/flex"
   ],
   "window":{
     "backgroundTextStyle":"light",
