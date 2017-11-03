@@ -1,14 +1,11 @@
 /**index.wxss**/
 @import '../../style/weui.wxss';
 
-.myBtn{
-  display: inline-block;
-  margin: auto;
-  width: 100%;
-  
-}
-.mid{
+.body {
   text-align: center;
+}
+
+.mid{
   margin-top: 50px;
 }
 .font-size{
