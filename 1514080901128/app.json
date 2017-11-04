@@ -5,8 +5,40 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "red",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "四斋蒸鹅心",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#4876FF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/news.png",
+        "selectedIconPath": "pages/images/news_1.png",
+        "text": "新闻"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/cartoon.png",
+        "selectedIconPath": "pages/images/cartoon_1.png",
+        "text": "漫画"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/bili.png",
+        "selectedIconPath": "pages/images/bili_1.png",
+        "text": "动画"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/me.png",
+        "selectedIconPath": "pages/images/me_1.png",
+        "text": "四斋"
+      }
+    ]
   }
 }
