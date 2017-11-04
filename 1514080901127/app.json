@@ -1,12 +1,46 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/form/form",
+    "pages/funds/funds",
+    "pages/mine/mine"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#66ffff",
+    "navigationBarTitleText": "记账本",
     "navigationBarTextStyle":"black"
+  },
+
+"tabBar": {
+  "color": "#000",
+  "selectedColor": "#11cd6e",
+  "borderStyle": "white",
+  "list": [
+    {
+      "selectedIconPath": "/demo/image/编辑.png",
+      "iconPath": "/demo/image/编辑.png",
+      "pagePath": "pages/index/index",
+      "text": "记账"
+    },
+    {
+      "selectedIconPath": "/demo/image/报表(1).png",
+      "iconPath": "/demo/image/报表(1).png",
+      "pagePath": "pages/form/form",
+      "text": "报表"
+    },
+    {
+      "selectedIconPath": "/demo/image/购买.png",
+      "iconPath": "/demo/image/购买.png",
+      "pagePath": "pages/funds/funds",
+      "text": "资金"
+      },
+      {
+        "selectedIconPath": "/demo/image/用户.png",
+        "iconPath": "/demo/image/用户.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
   }
 }
