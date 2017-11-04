@@ -3,6 +3,7 @@
 const app = getApp()
 //navbar
 var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
+var base64 = require("../images/base64");//list的图标
 Page({
   data: {
     motto: 'Hello World',
@@ -53,6 +54,9 @@ Page({
           sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
         });
       }
+    });
+    this.setData({
+      icon: base64.icon20
     });
   },
   getUserInfo: function(e) {
