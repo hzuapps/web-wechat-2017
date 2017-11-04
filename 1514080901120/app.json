@@ -1,12 +1,33 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/user/user"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "爱简书",
     "navigationBarTextStyle":"black"
-  }
+  },
+ "tabBar": {
+  "selectedColor": "#000000",
+  "backgroundColor": "#FFFFFF",
+  "borderStyle": "black",
+  "position": "bottom",
+  "list": [
+    {
+      "pagePath": "pages/user/user",
+      "text": "书架",
+      "iconPath": "/images/首页.png",
+      "selectedIconPath": "/images/首页_fill.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "我的",
+      "iconPath": "/images/个人.png",
+      "selectedIconPath": "/images/个人_fill.png"
+    }
+  ]
+}
 }
