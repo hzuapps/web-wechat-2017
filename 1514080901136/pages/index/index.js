@@ -2,9 +2,9 @@
 //获取应用实例
 const app = getApp()
 
-Page({
+/**Page({
   data: {
-    motto:'hello world',
+    motto: '简记',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -51,4 +51,5 @@ Page({
       hasUserInfo: true
     })
   }
-})
+})**/
+
