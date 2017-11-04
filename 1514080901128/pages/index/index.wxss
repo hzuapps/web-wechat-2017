@@ -1,5 +1,4 @@
 /**index.wxss**/
-
 /*SearchBar*/
 .searchbar-result{
     margin-top: 0;

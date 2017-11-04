@@ -34,7 +34,7 @@
         "text": "动画"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/logs/logs",
         "iconPath": "pages/images/me.png",
         "selectedIconPath": "pages/images/me_1.png",
         "text": "四斋"
