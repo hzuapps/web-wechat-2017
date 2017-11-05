@@ -1,5 +1,4 @@
 /**index.wxss**/
-@import '../../weui.wxss';
 
 .btnContainer {
   margin-top: 10px;
