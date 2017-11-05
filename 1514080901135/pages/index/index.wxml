@@ -1,30 +1,25 @@
-<view class="page">
-    <view class="page__hd">
-    </view>
-    <view class="page__bd">
-        <view class="weui-cells__title">组件示例</view>
-        <view class="weui-cells weui-cells_after-title">
-            <navigator url="/pages/comp/view?" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__hd">
-                    <image src="../example/images/a.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-                </view>
-                <view class="weui-cell__bd">view示例</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">打开</view>
-            </navigator>
-            <navigator wx:if="{{showScroll}}" url="/pages/demo/scrollView" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-                </view>
-                <view class="weui-cell__bd">scroll-view示例</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
-            </navigator>
-            <navigator url="/pages/form/form" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-                </view>
-                <view class="weui-cell__bd">form示例</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
-            </navigator>
-        </view>
-    </view>
+<view class="row">
+
+<view class="row0">
+<image src="../images/dog2.png" style="height:80px;width:80px;" id="dogimage" />
+</view>
+<view class="row1">
+<image src="../images/1.png" style="height:40px;width:40px;" id="image" />
+<view id="sign_in"> sign in</view>
+</view>
+
+<view class="row2">
+<view id="accounttext">account</view>
+<input  id="account"/>
+</view>
+
+<view class="row3">
+<view  id="passwordtext">password</view>
+<input  id="passwd"/>
+</view>
+
+<view class="row4">
+<button id="confirmbutton"> Go</button>
+</view>
+
 </view>
