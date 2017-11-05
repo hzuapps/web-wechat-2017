@@ -4,51 +4,49 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    todoList: [{text: '打扫卫生', status: false}, {text: '打扫卫生', status: false}, {text: '打扫卫生', status: false}, {text: '打扫卫生', status: false}], // 待办数组 status表示是否完成 ，未完成为false，完成为true
+    footerInputHidden: true, // 是否隐藏底部input
+    inputValue: '' // TODO input输入之后会修改input的value属性，暂时先每次将它初始化为空，待修改
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  // 添加待办按钮点击
+  onAddButtonTap: function (e) {
+    console.log(e)
+
+    this.setData({
+      footerInputHidden: false
     })
+
+    console.log(this.data.footerInputHidden)
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
+
+  // 完成输入
+  onFooterInputConfirm: function (e) {
+    let todoList = this.data.todoList
+    let text = e.detail.value
+    let param = {text: text, status: false} 
+
+    if (param.text) {  // 如果有输入
+      todoList.push(param)
+
       this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
+        todoList: todoList,
+        footerInputHidden: true,
+        inputValue: ''
       })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
+      
     }
   },
-  getUserInfo: function(e) {
+
+  // 完成圆圈点击
+  onCircleTap: function (e){
     console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+    let index = e.currentTarget.dataset.index
+
+    let param = {}
+    let string = 'todoList[' + index + '].status'
+    param[string] = !this.data.todoList[index].status
+
+    this.setData(param)
   }
 })
