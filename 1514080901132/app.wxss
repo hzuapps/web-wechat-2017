@@ -1,7 +1,4 @@
 /**app.wxss**/
-@import 'style/weui.wxss';
-
-/* . 表示 类 class  */
 .container {
   height: 100%;
   display: flex;
