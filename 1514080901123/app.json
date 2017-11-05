@@ -1,12 +1,48 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/example/button/button",
+    "pages/recond/scrollView",
+    "pages/recond/WR",
+    "pages/gongshi/gongshi",
+    "pages/gongshi/333/333",
+    "pages/gongshi/333/F2L",
+    "pages/gongshi/333/OLL",
+    "pages/gongshi/333/PLL",
+    "pages/jiaocheng/jiaocheng"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#aaa",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00FF00",
     "navigationBarTitleText": "魔方资讯",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#0ffff0",
+    "selectedColor": "#ef8502",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "position": "button",
+    "list": [
+      {
+        "pagePath": "pages/recond/WR",
+        "text": "纪录",
+        "iconPath": "pages/example/images/WR/2a.png",
+        "selectedIconPath": "pages/example/images/WR/2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "功能",
+        "iconPath": "pages/example/images/WR/3b.png",
+        "selectedIconPath": "pages/example/images/WR/3a.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "pages/example/images/WR/8.png",
+        "selectedIconPath": "pages/example/images/WR/7.png"
+      }
+    ]
   }
 }
