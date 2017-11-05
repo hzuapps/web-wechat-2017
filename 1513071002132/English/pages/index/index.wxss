@@ -4,6 +4,9 @@
   flex-direction: column;
   align-items: center;
 }
+.container{
+  background-color: #EED5A4;
+}
 
 .userinfo-avatar {
   width: 128rpx;
@@ -17,5 +20,18 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 100px;
+}
+
+.footer{
+  margin-top: 80px;
+}
+
+.imgcontainer{
+  margin-top: 20px;
+}
+
+.img{
+  width: 600rpx;
+  height: 600rpx;
 }
