@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '老师，今天很多人没到，点名吧！',
+    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -50,5 +50,29 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  openToast: function () {
+    wx.showToast({
+      title: '已完成',
+      icon: '创建成功',
+      duration: 3000
+    });
+  },
+  openLoading: function () {
+    wx.showToast({
+      title: '签到中',
+      icon: 'loading',
+      duration: 3000
+    });
+  },
+  open: function () {
+    wx.showActionSheet({
+      itemList: ['A', 'B', 'C'],
+      success: function (res) {
+        if (!res.cancel) {
+          console.log(res.tapIndex)
+        }
+      }
+    });
+  }  
 })

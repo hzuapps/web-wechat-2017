@@ -5,7 +5,7 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#B70D4D",
+    "navigationBarBackgroundColor": "red",
     "navigationBarTitleText": "点名吧！老师。",
     "navigationBarTextStyle":"white"
   }
