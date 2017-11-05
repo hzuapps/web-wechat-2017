@@ -7,7 +7,10 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+
+  <button class="weui-btn" type="primary">账目列表</button>
+  <button class="weui-btn" type="default">添加新账</button>
+ 
+  <!-- <text class="user-motto">{{motto}}</text> -->
+ 
 </view>
