@@ -11,3 +11,8 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<view class="page">
+    <view class="page__bd page__bd_spacing">
+        <button class="weui-btn" type="primary">修改示例</button>
+    </view>
+</view>
