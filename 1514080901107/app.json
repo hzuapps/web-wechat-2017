@@ -1,29 +1,39 @@
-﻿{
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+{
+  "pages": [
+    "example/index",
+    "example/button/button",
+    "example/list/list"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#1ff",
-    "navigationBarTitleText": "我的新闻专车",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "我的小程序",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
   },
-  "tabBar":{
-    "color":"black",
-    "selectedColor":"green",
-    "backgroundColor":"white",
-    "borderStyle":"black",
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "green",
+    "backgroundColor": "white",
+    "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "example/index",
         "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "pagePath": "example/list/list",
+        "text": "我"
       }
-    ],
-    "position":"bottom"
-  }
+    ]
+  },
+  "position": "bottom",
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
+
+
