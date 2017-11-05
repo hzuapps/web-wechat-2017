@@ -1,14 +1,23 @@
 //index.js
 //获取应用实例
 const app = getApp()
+<<<<<<< HEAD
 
+
+=======
+>>>>>>> b5f7417... #2 #14 第2次实验（附图7张）
 Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    showTopTips: false,
   },
+
+
+
+ 
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
