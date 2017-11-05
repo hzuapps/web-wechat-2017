@@ -1,12 +1,19 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "example/index",
+    "example/navbar/navbar"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "大型考试签到打卡",
-    "navigationBarTextStyle":"black"
-  }
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "考试打卡机",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
