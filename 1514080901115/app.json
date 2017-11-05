@@ -1,12 +1,46 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs /logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "实验一",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "社交名片",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+        "color": "#a9b7b7",
+        "selectedColor": "#1296db",
+        "borderStyle": "black",
+        "list": [
+      {
+              "selectedIconPath": "image/mingpian_xz.png",
+              "iconPath": "image/mingpian.png",
+              "pagePath": "pages/index/index",
+              "text": "我的名片"  
+
+      },
+      {
+              "selectedIconPath": "image/mingpianjia_xz.png",
+              "iconPath": "image/mingpianjia.png",
+              "pagePath": "pages/logs/logs",
+              "text": "名片夹"  
+
+      },
+      {
+        "selectedIconPath": "image/sousuo_xz.png",
+        "iconPath": "image/sousuo.png",
+        "pagePath": "pages/index/index",
+        "text": "找名片"
+      },
+      {
+        "selectedIconPath": "image/zhuye_xz.png",
+        "iconPath": "image/zhuye.png",
+        "pagePath": "pages/logs/logs",
+        "text": "个人主页"
+      }
+    ]  
+
   }
 }
