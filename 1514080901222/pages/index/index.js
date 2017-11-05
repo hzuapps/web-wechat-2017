@@ -4,10 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    grids: [0, 1, 2, 3, 4, 5, 6, 7, 8]
   },
   //事件处理函数
   bindViewTap: function() {
