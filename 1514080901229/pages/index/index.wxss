@@ -13,9 +13,24 @@
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: black;
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 140px;
 }
+/*背景*/
+page{
+    background-image:url("https://github.com/879579620/MyResource/blob/master/sulijin/background.jpg?raw=true");
+    background-repeat:no-repeat;
+
+    background-size: cover;
+    opacity: 1;
+   }
+.weui-footer{
+    margin-bottom: 50px;
+}
+.weui-footer_fixed-bottom{
+    margin-bottom: 0;
+}
+

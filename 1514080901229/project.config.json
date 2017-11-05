@@ -7,9 +7,9 @@
 		"minified": true
 	},
 	"compileType": "weapp",
-	"libVersion": "1.5.4",
+	"libVersion": "1.6.0",
 	"appid": "touristappid",
-	"projectname": "diary",
+	"projectname": "%E6%97%A5%E8%AE%B0%E6%94%B9",
 	"condition": {
 		"weapp": {
 			"current": -1,

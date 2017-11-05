@@ -8,5 +8,27 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "点滴日记",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#dddddd",
+    "selectedColor":"#3cc51f",
+    "borderStyle":"black",
+    "backgroundColor":"#ffffff",
+    "list":[{
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/日历.png",
+        "selectedIconPath": "pages/images/日历_填充.png",
+        "text": "日历"
+      },{
+      "pagePath":"pages/index/index",
+      "iconPath":"pages/images/表单.png",
+      "selectedIconPath":"pages/images/表单g.png",
+      "text":"日记"
+    },{
+      "pagePath": "pages/index/index",
+      "iconPath": "pages/images/用户.png",
+      "selectedIconPath": "pages/images/用户_填充.png",
+      "text": "我"
+    }]
   }
 }
