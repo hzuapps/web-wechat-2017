@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "运动打卡",
+    "navigationBarTextStyle":"#fff"
+  }
+}
+
