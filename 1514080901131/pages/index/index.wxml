@@ -11,3 +11,8 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+
+<view class="button-sp-area">
+            <button class="weui-btn" type="primary" plain="true">创建</button>
+            <button class="weui-btn" type="primary" plain="true">我的</button>
+</view>
