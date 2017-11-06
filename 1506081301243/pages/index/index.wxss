@@ -19,3 +19,9 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.submit{
+  width:ture;
+  color:red;
+
+}
