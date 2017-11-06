@@ -11,3 +11,27 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<view class="page">
+    <view class="page__hd">
+        
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <button class="weui-btn" type="primary">开始你的课堂笔记</button>
+        
+
+        <button class="weui-btn" type="default">查看你的课堂笔记</button>
+       
+
+        
+
+            <button class="weui-btn mini-btn" type="primary" size="mini">   开始  </button>
+           <button class="weui-btn mini-btn" type="primary" size="mini">         </button> 
+            <button class="weui-btn mini-btn" type="primary" size="mini">         </button>
+           <button class="weui-btn mini-btn" type="primary" size="mini"> 设置   </button>
+            
+           
+            <button class="weui-btn mini-btn" type="primary" size="mini">         </button>
+            <button class="weui-btn mini-btn" type="warn" size="mini">  返回  </button>
+        </view>
+  
+</view>
