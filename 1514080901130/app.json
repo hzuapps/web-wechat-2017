@@ -5,7 +5,7 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor":"gray",
     "navigationBarTitleText": "篮球资讯",
     "navigationBarTextStyle":"black"
   }
