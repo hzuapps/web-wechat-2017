@@ -11,3 +11,11 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+
+<view class="index">
+  <view class="index-hd">
+    <image class="index-logo" src="../../image/logo.png"></image>
+    <view class="index-desc">您还没有完善名片信息。</view>
+  </view>
+  
+</view>

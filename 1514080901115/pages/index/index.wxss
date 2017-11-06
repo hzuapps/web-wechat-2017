@@ -6,9 +6,9 @@
 }
 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+  width: 158rpx;
+  height: 158rpx;
+  margin: -150rpx 100rpx 10rpx 100rpx;
   border-radius: 50%;
 }
 
@@ -18,4 +18,33 @@
 
 .usermotto {
   margin-top: 200px;
+}
+
+.index-logo {
+  width: 86rpx;
+  height: 86rpx;
+  margin: -450rpx 100rpx 400rpx 100rpx;
+}
+
+.index-hd {
+  padding: -50rpx;
+  text-align: center;
+}
+/*
+.index-bd {
+  padding: 0 30rpx 40rpx;
+}
+.index-ft {
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+.index-logo {
+  width: 86rpx;
+  height: 86rpx;
+}*/
+.index-desc {
+  margin-top: -300rpx;
+  margin-bottom:10rpx;
+  color: #888888;
+  font-size: 35rpx;
 }
