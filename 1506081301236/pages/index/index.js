@@ -7,7 +7,10 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    src:'images2.png',
+    grids: [0, 1, 2, 3, 4, 5],
+    mode: 'scaleToFill'
   },
   //事件处理函数
   bindViewTap: function() {
@@ -52,3 +55,4 @@ Page({
     })
   }
 })
+
