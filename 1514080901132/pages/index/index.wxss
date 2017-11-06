@@ -13,19 +13,9 @@
 }
 
 .userinfo-nickname {
-  color: blue;
+  color: #aaa;
 }
 
 .usermotto {
-  margin-top: 20px;
-  color: #009A89;
-  text-decoration: underline;
-  font-weight: bold;
-}
-.description {
-  color: red;
-  font-size: 18px;
-}
-.blue {
-  color: blue;
+  margin-top: 200px;
 }

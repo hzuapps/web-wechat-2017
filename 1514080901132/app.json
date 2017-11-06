@@ -2,30 +2,42 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/comp/view",
-    "pages/comp/scroll",
-    "pages/comp/form",
-    "pages/demo/scrollView",
-    "pages/form/form"
+    "pages/text/text"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000000",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "智能餐饮",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#000000",
-    "selectedColor": "#009444",
+    "color": "#A1A1A1",
+    "selectedColor": "#556B2F",
+    "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "iconPath": "images/菜单1.png",
+        "selectedIconPath": "images/菜单2.png",
+        "text": "主页"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "我"
+        "iconPath": "images/购物车.png",
+        "selectedIconPath": "images/购物车满.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/text/text",
+        "iconPath": "images/我的.png",
+        "selectedIconPath": "images/人物.png",
+        "text": "我的"
       }
     ]
-  }
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }

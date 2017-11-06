@@ -1,4 +1,4 @@
-// pages/comp/form.js
+// pages/text/text.js
 Page({
 
   /**
