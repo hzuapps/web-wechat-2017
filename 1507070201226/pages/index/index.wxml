@@ -1,13 +1,16 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="title">
+    当时间精确到分秒，当死亡越来越近，不知道你会不会对过去的碌碌无为而感到后悔
 </view>
+
+<image class="image_frame" src="{{imageUrl}}" mode="aspectFill"> 
+</image>
+
+<view class="section">
+  <picker mode="date" value="{{date}}" start="1940-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      <button>点击选择出生日期</button>: {{date}}
+    </view>
+  </picker>
+</view>
+<text>按照中国人均寿命计算</text>
+<button type='primary'>点击查看你还有多少时间</button>
