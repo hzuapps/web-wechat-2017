@@ -17,5 +17,16 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 0px;
+}
+
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 0;
 }
