@@ -11,3 +11,14 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title"></view>
+        <view class="page__desc"></view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-btn-area">
+            <button type="default" bindtap="open">开启奇妙学习之旅</button>
+        </view>
+    </view>
+</view>
