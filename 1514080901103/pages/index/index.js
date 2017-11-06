@@ -4,6 +4,9 @@ const app = getApp()
 
 Page({
   data: {
+    content1: 'Come On!',
+    content2: 'Release Angry!',
+    src: 'photo.jpg',
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,

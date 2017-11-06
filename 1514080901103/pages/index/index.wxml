@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--index.wxml
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -10,4 +10,15 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+</view>-->
+<view>
+<image style ="round;" mode="{{scaleToFill}}" src="{{src}}"></image>
+</view>
+<view class="container">
+<view class="content">
+<p>{{content1}}</p>
+</view>
+<view class="content">
+<p>{{content2}}</p>
+</view>
 </view>
