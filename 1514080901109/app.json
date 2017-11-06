@@ -5,8 +5,27 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#599",
+    "navigationBarTitleText": "Fnote便签",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "borderStyle": "#fff",
+    "position":"bottom",
+    "list":[{
+      "selectedIconPath":"images/home.png",
+      "iconPath":"images/home2.png",
+      "pagePath":"pages/index/index"
+    },
+    {
+      "selectedIconPath": "images/file2.png",
+      "iconPath": "images/file.png",
+      "pagePath": "pages/index/index"
+    },
+    {
+      "selectedIconPath": "images/wo2.png",
+      "iconPath": "images/wo.png",
+      "pagePath": "pages/index/index"
+    }]
   }
 }
