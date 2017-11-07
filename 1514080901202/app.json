@@ -8,5 +8,25 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "阅读器",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "img/shujia.png",
+        "iconPath": "img/shujia.png",
+        "pagePath": "pages/index/index",
+        "text": "书架"
+      },
+      {
+        "selectedIconPath": "img/shucheng.png",
+        "iconPath": "img/shucheng.png",
+        "pagePath": "pages/book",
+        "text": "书城"
+      }
+     
+    ]
   }
 }
