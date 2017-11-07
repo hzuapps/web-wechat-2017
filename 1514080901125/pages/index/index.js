@@ -1,4 +1,5 @@
 //index.js
+// .js是事件交互文件，用于处理界面的点击事件等功能
 //获取应用实例
 const app = getApp()
 
