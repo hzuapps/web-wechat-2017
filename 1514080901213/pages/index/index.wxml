@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
+  <!--
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -7,10 +8,26 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view bindtap="changeColor" class="{{textClass}}">
-    <text>约会小助攻</text>    
-  </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  -->
+
+
+
+
+  
+  <view class="image">
+    <image class="image1" src="/image/ye.jpg" style="width: 350px; height: 200px"></image>
+  </view>
+  
+  <view class="anniu">
+    <button class="chuangjian" type="primary" bindtap="jump_one" style="margin-top: 15px">分享你的约会</button>
+    <button class="chuangjian" type="primary" bindtap="jump_two" style="margin-top: 15px">寻找约会方案</button>
+  </view>
+
+
+  
+
+  
 </view>

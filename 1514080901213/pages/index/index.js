@@ -4,33 +4,16 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello 助攻',
+    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    textColor: 'red',
-    textClass: 'description',
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
-    console.dir('bindViewTap')
     wx.navigateTo({
       url: '../logs/logs'
     })
-  },
-  changeColor: function(){
-    //console.log('changeColor)
-    var me = this;
-    if (me.data.textClass == 'description'){
-      this.setData({
-        textClass: 'blue'
-      })
-    }else{
-      this.setData({
-        textClass: 'description'
-      })
-    }
-    //this.data.textColor = 'blue'
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -67,5 +50,20 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  
+  jump_one:function(){
+    wx.navigateTo({
+      url: '../one/one',
+    })
+  },
+  jump_two: function () {
+    wx.navigateTo({
+      url: '../two/two',
+    })
   }
+
+
+  
 })
+

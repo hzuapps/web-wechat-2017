@@ -13,19 +13,22 @@
 }
 
 .userinfo-nickname {
-  color: blue;
+  color: #aaa;
 }
 
 .usermotto {
   margin-top: 200px;
-  color: #009A89;
-  text-decoration: underline;
-  font-weight: bold;
 }
-.description{
-  color: red;
-  font-size: 18px;
+
+.chuangjian {
+  /**
+  margin: 5 auto;
+  **/
+  padding-top: 0px;
+  width: 100%;
+  margin-right: 100px;
 }
-.blue{
-  color: blue;
+
+.anniu{
+   padding-top: 50px;
 }

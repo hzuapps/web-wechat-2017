@@ -1,0 +1,44 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Grid</view>
+        <view class="page__desc">九宫格</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:key="*this">
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+                    <view class="weui-grid__label">Grid</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>
+
+<!--
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Grid</view>
+        <view class="page__desc">九宫格</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{[1,2,3]}}">
+            <!--index为从0开始，item为数组里的元素--
+              <view> {{index}}: </view>
+              <view> {{item}} </view>
+            </block>
+
+
+            <block wx:for="{{grids}}" wx:key="*this">
+                <!--url是文件中的页面来链接，其实就是位置--
+                <navigator url="../logs/logs" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="/example/images/icon_tabbar.png" />
+                    <view class="weui-grid__label">Grid</view>
+                    <view> {{item}} </view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>
+-->
