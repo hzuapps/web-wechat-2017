@@ -1,54 +1,104 @@
 //index.js
 //获取应用实例
-const app = getApp()
+var app = getApp()
+var types = ['default','primary','warn']
+var pageObject = {
+  data:{
+    defaultSize:'default',
+    primarySize:'default',
+    warnSize:'default',
+    disabled:false,
+    plain:false,
+    loading:false
+  },
+  setDisabled:function(e){
+    this.setData({
+      disabled:!this.data.disabled
+    })
+  },
+  setPlain: function (e) {
+    this.setData({
+      plain: !this.data.plain
+    })
+  },
+  setLoading: function (e) {
+    this.setData({
+      loading: !this.data.loading
+    })
+  }
+}
+for (var i = 0; i < types.length; ++i) {
+  (function (type) {
+    pageObject[type] = function (e) {
+      var key = type + 'Size'
+      var changedData = {}
+      changedData[key] =
+        this.data[key] === 'default' ? 'mini' : 'default'
+      this.setData(changedData)
+    }
+  })(types[i])
+}
 
 Page({
   data: {
-    motto: '实验1：搭建小程序开发环境',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    imgUrls: [
+      {
+        link: '/pages/index/index',
+        url: '/images/1.png'
+      }, {
+        link: '/pages/logs/logs',
+        url: '/images/2.png'
+      }, {
+        link: '/pages/navigation/navigation',
+        url: '/images/3.png'
+      }
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000,
+    userInfo: {}
   },
   onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+    console.log('onLoad test');
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+  showInput: function () {
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  }
-})
+      inputShowed: true
+    });
+  },
+  hideInput: function () {
+    this.setData({
+      inputVal: "",
+      inputShowed: false
+    });
+  },
+  clearInput: function () {
+    this.setData({
+      inputVal: ""
+    });
+  },
+  inputTyping: function (e) {
+    this.setData({
+      inputVal: e.detail.value
+    });
+  },
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
+
+  },
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom() {
+
+  },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage() {
+
+  },
+})  

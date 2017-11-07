@@ -1,12 +1,42 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/navigation/navigation",
+    "pages/mine/mine",
+    "pages/notes/notes"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#47a86c",
     "navigationBarTitleText": "学习笔记",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle":"light"
+  },
+  "tabBar": {
+    "selectedColor":"#47a86c",
+    "borderStyle":"white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"images/首页.png",
+        "selectedIconPath":"images/首页1.png"
+      },
+      {
+        "pagePath": "pages/navigation/navigation",
+        "text": "导航",
+        "iconPath": "images/导航.png",
+        "selectedIconPath": "images/导航1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "iconPath": "images/我.png",
+        "selectedIconPath": "images/我1.png"
+      }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+    }
 }
