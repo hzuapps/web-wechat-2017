@@ -5,8 +5,9 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "实验一",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "Music",
     "navigationBarTextStyle":"black"
   }
+ 
 }
