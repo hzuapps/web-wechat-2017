@@ -5,8 +5,8 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "三阶Cube公式",
+    "navigationBarBackgroundColor": "#abcd",
+    "navigationBarTitleText": "三阶cube公式",
     "navigationBarTextStyle":"black"
   }
 }
