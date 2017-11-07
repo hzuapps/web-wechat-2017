@@ -1,13 +1,80 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</view>
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">wzlgamesR</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <button class="weui-btn" type="primary">幼龄向</button>
+         <button class="weui-btn" type="primary">全年龄</button>
+        <view class="button-sp-area">
+        </view>
+    </view>
+</view>
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">最新文章</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">...</view>
+            <view class="weui-article__section">
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+             。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+             。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+             。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+             。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+             。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+             。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+             。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+             。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+             。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+                    </view>
+                    <view class="weui-article__p">
+                        <image class="weui-article__img" src="../images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                        <image class="weui-article__img" src="../images/pic_article.png" mode="aspectFit" style="height: 180px" />
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
 </view>
