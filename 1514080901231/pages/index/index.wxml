@@ -1,13 +1,27 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<view class="weui-cells__title">身高(M)</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd" style="width: 105px">
+                    <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+                        <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+                    </picker>
+                </view>
+                <view class="weui-cell__bd weui-cell__bd_in-select-before">
+                    <input class="weui-input" placeholder="请输入身高" />
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells__title">体重(KG)</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd" style="width: 105px">
+                    <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+                        <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+                    </picker>
+                </view>
+                <view class="weui-cell__bd weui-cell__bd_in-select-before">
+                    <input class="weui-input" placeholder="请输入体重" />
+                </view>
+            </view>
+        </view>
+<button class="weui-btn" type="primary">GO</button>
