@@ -1,0 +1,6 @@
+scroll-view {
+  width: 90%;
+  margin: 5px;
+  padding: 5px;
+  border-top: 1px solid #ccc;
+  text-align: center}
