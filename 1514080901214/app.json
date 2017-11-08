@@ -8,5 +8,34 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "爆笑一下",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/视频.png",
+        "iconPath": "images/视频.png",
+        "pagePath": "pages/index/index",
+        "text": "视频"
+      },
+      {
+        "selectedIconPath": "images/图片.png",
+        "iconPath": "images/图片.png",
+        "pagePath": "pages/logs/logs",
+        "text": "图片"
+      },
+      {
+        "selectedIconPath": "images/搞笑段子.png",
+        "iconPath": "images/搞笑段子.png",
+        "pagePath": "pages/test/test",
+        "text": "段子"
+      }
+    ]
   }
+
 }
+
+
+
