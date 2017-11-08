@@ -1,12 +1,36 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/yy/yy",
+    "HIS/his/his",
+    "MY/my/my"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "作业通知",
-    "navigationBarTextStyle":"black"
-  }
+    "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "作业通知",
+  "navigationBarTextStyle": "black"
+  },
+"tabBar": {
+  "color": "#dddddd",
+  "selectedColor": "#1992F5",
+  "borderStyle": "black",
+  "backgroundColor": "#ffffff",
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    },
+    {
+      "pagePath": "HIS/his/his",
+      "text": "历史"
+    },
+    {
+      "pagePath": "MY/my/my",
+      "text": "我的"
+    }
+  ]
+}
+
 }
