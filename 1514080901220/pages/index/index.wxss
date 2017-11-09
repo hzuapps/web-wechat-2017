@@ -19,3 +19,21 @@
 .usermotto {
   margin-top: 200px;
 }
+/*背景*/
+page{
+     background-image:url("http://897922157.editorservice.open.weixin.qq.com/files/pages/images/timg.jpg");
+     background-repeat:no-repeat;
+ 
+     background-size: 450px 500px;
+     opacity: 1;
+    }
+.weui-footer{
+     margin-bottom: 50px;
+ }
+ .weui-footer_fixed-bottom{
+     margin-bottom: 0;
+ }
+
+.usermotto {
+  margin-top: 200px;
+}
