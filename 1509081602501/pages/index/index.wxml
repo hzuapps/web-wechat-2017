@@ -1,13 +1,15 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view style=' background-color: #CCCC99;height: 600px;' class="page">
+<view>   
+<view class="section__ctn">
+        <image class='cxy' style="width: 300px; height: 200px; background-color: #eeeeee;margin-left:1cm;" mode="{{item.mode}}" src="http://i2.hunantv.com/p1/20120724/111339920.jpg"></image>
+      </view>
+</view>
+ <!-- audio.wxml -->
+<audio style='margin-left:1cm;' poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+<view style="flex-direction:row;">
+<button class='button-play'   bindtap="audioPlay">播放</button>
+<button class='button-stop'   bindtap="audioPause">暂停</button>
+<button class='button-back'   bindtap="audioStart">回到开头</button> 
+</view>
 </view>
