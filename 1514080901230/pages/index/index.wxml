@@ -1,13 +1,25 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+{<view class="movieRanking">
+ 
+  <text class="h2">内地票房榜</text>
+ <view class="table">
+  <view class="tr bg-w">
+    <view class="th">影片名</view>
+    <view class="th">票房（美元）</view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+  <block wx:for="{{[1,2,3,4]}}" wx:key="{{name}}">
+    <view class="tr" wx:if="{{index % 2 == 0}}">
+      <view class="td">
+         {{paihang[0].neidi[index].name}}
+
+     </view>
+      <view class="td">{{paihang[0].neidi[index].money}}</view>
+    </view>
+    <view class="tr bg-g" wx:else>
+      <view class="td">
+        {{paihang[0].neidi[index].name}}
+     
+      </view>
+      <view class="td">{{paihang[0].neidi[index].money}}</view>
+    </view>
+  </block>
+</view>}
