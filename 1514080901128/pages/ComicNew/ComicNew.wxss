@@ -1,4 +1,5 @@
 /*SearchBar*/
+
 .searchbar-result{
     margin-top: 0;
     font-size: 5px;

@@ -1,5 +1,4 @@
 /**index.wxss**/
-
 /*navbar*/
 .page__bd{
     height: 100%;

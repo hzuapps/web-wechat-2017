@@ -1,8 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/ComicNew/ComicNew"
+	  "pages/ComicNew/ComicNew",
+    "pages/logs/logs"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
