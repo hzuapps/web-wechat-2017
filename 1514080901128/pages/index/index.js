@@ -10,9 +10,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    //searchbar
-    inputShowed: false,
-    inputVal: "",
+    
     //navbar
     tabs: ["推荐", "动画情报", "漫画情报"],
     activeIndex: 1,
@@ -21,11 +19,7 @@ Page({
 
     inputShowed: false,
     inputVal: "",
-    //navbar
-    tabs: ["推荐", "动画情报", "漫画情报"],
-    activeIndex: 1,
-    sliderOffset: 0,
-    sliderLeft: 0,
+    
     //swiper
     imgUrls: [
       '../images/01.jpg',
@@ -68,28 +62,7 @@ Page({
     })
   },
 
-  //searchbar
-  showInput: function () {
-    this.setData({
-      inputShowed: true
-    });
-  },
-  hideInput: function () {
-    this.setData({
-      inputVal: "",
-      inputShowed: false
-    });
-  },
-  clearInput: function () {
-    this.setData({
-      inputVal: ""
-    });
-  },
-  inputTyping: function (e) {
-    this.setData({
-      inputVal: e.detail.value
-    });
-  },
+  
   //navbar
   tabClick: function (e) {
     this.setData({

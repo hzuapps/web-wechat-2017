@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/ComicNew/ComicNew"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -22,7 +23,7 @@
         "text": "新闻"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/ComicNew/ComicNew",
         "iconPath": "pages/images/cartoon.png",
         "selectedIconPath": "pages/images/cartoon_1.png",
         "text": "漫画"
