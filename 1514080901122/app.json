@@ -1,12 +1,30 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/student-list/student-list",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "red",
+    "navigationBarBackgroundColor": "#F1441F",
     "navigationBarTitleText": "点名吧！老师。",
     "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/student-list/student-list",
+        "text": "已到学生"
+      },      
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }
+    ]
   }
 }
