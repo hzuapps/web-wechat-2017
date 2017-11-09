@@ -1,12 +1,37 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/find/find",
+    "pages/create/create",
+    "pages/mine/mine"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "助画使者",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "grey",
+    "selectedColor": "black",
+    "list": [
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath":"pages/find.jpg",
+        "selectedIconPath":"pages/find.jpg"
+      },
+      {
+        "pagePath": "pages/create/create",
+        "text": "创作",
+        "iconPath": "pages/create.png",
+        "selectedIconPath": "pages/create.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/mine.png",
+        "selectedIconPath": "pages/mine.png"
+      }
+    ]
   }
 }

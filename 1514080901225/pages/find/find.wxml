@@ -1,0 +1,10 @@
+<!--find.wxml-->
+<view class="container">
+  <view class="section">
+  <input type="text" placeholder="搜索"/>
+  </view>
+  <view style="display: flex;">
+  <button>每日精选</button>
+  <button>投你所好</button>
+  </view>
+</view>
