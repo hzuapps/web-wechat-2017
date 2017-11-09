@@ -9,4 +9,25 @@
     "navigationBarTitleText": "实验分组",
     "navigationBarTextStyle":"black"
   }
+  ,"tabBar":{
+    "color": "#a9b7b7"
+    ,"selectedColor":"eb4f38"
+    ,"borderStyle": "white"
+    ,"backgroundColor": "#ffffff"
+    ,"list":[
+    {
+      "pagePath":"pages/index/index"
+      ,"text":"index"
+      
+    }
+    ,{
+      "pagePath":"pages/index/index"
+      ,"text":"images"
+    }
+    ,{
+      "pagePath":"pages/index/index"
+      ,"text":"video"
+    }
+    ]
+  }
 }
