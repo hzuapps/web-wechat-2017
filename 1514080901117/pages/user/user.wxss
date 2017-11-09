@@ -1,0 +1,5 @@
+.show{
+  background-color: white;
+  border-bottom: 1px solid #DDDDDD;
+  padding:20px;
+}
