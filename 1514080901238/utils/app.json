@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/todo/todo",
+    "pages/done/done"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1992F5",
+    "navigationBarTitleText": "任务清单",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#1992F5",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/tasks.png",
+        "selectedIconPath": "image/tasksHL.png",
+        "text": "任务清单"
+      },
+      {
+        "pagePath": "pages/todo/todo",
+        "iconPath": "image/tasksUndone.png",
+        "selectedIconPath": "image/tasksUndoneHL.png",
+        "text": "未完成的"
+      },
+      {
+        "pagePath": "pages/done/done",
+        "iconPath": "image/tasksDone.png",
+        "selectedIconPath": "image/tasksDoneHL.png",
+        "text": "已完成的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFiel": 10000
+  },
+  "debug": false
+}
