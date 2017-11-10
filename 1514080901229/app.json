@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/diarylist/diarylist",
     "pages/logs/logs"
   ],
   "window":{
@@ -20,7 +21,7 @@
         "selectedIconPath": "pages/images/日历_填充.png",
         "text": "日历"
       },{
-      "pagePath":"pages/index/index",
+      "pagePath":"pages/diarylist/diarylist",
       "iconPath":"pages/images/表单.png",
       "selectedIconPath":"pages/images/表单g.png",
       "text":"日记"
