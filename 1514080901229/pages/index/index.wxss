@@ -21,7 +21,7 @@
 }
 /*背景*/
 page{
-    background-image:url("https://github.com/FFFfire666/myPicture/blob/master/bg01.jpg?raw=true");
+    background-image:url("https://github.com/879579620/MyResource/blob/master/sulijin/background.jpg?raw=true");
     background-repeat:no-repeat;
 
     background-size: cover;
