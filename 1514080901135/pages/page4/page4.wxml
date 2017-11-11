@@ -1,0 +1,16 @@
+
+
+<scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
+<!--  display: inline-block-->
+<image src="../images/1.jpg"/>
+<image src="../images/2.jpg"/>
+<image src="../images/3.jpg"/>
+<image src="../images/4.jpg"/>
+</scroll-view>
+
+<scroll-view class="image2" scroll-y="true" style="height: 200px">
+<!--  display: inline-block-->
+<view wx:for="{{array}}">
+<image src="{{item.message}}"/>
+</view>
+</scroll-view>
