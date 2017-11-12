@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  height: auto;
 }
 
 .search-bar {
@@ -13,7 +13,7 @@
   height: 70rpx;
   line-height: 70rpx;
   width: 140rpx;
-  position: fixed;
+  position: absolute;
   top: 20rpx;
   left: 585rpx;
   font-size: 30rpx;
@@ -28,12 +28,11 @@
   margin-top: 20rpx;
   /*text-indent: 70rpx;*/
   margin-bottom: 15rpx;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 25rpx;
   padding-left: 70rpx;
 }
-
 
 .weui-icon-search_in-box{
   position: absolute;
@@ -41,3 +40,4 @@
   left: 40rpx;
   z-index: 1;
 }
+
