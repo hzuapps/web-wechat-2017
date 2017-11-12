@@ -1,10 +1,11 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+var order = ['red', 'yellow', 'blue', 'green', 'red']
 Page({
   data: {
-    grids: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    toView: 'red',
+    scrollTop: 100
   },
   //事件处理函数
   bindViewTap: function() {
@@ -48,80 +49,29 @@ Page({
       hasUserInfo: true
     })
   },
-  onLoad: function (options) {
-    var that = this
-    // 设置窗口大小
-    wx.getSystemInfo({
-      success: (res) => {
-        that.setData({
-          windowHeight: res.windowHeight - 5,
-          windowWidth: res.windowWidth
+  //滚动条设置
+  upper: function (e) {
+    console.log(e)
+  },
+  lower: function (e) {
+    console.log(e)
+  },
+  scroll: function (e) {
+    console.log(e)
+  },
+  tap: function (e) {
+    for (var i = 0; i < order.length; ++i) {
+      if (order[i] === this.data.toView) {
+        this.setData({
+          toView: order[i + 1]
         })
-        //console.dir(that.data.windowHeight)
+        break
       }
+    }
+  },
+  tapMove: function (e) {
+    this.setData({
+      scrollTop: this.data.scrollTop + 100
     })
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
-
-  onUpper: function () { },
-  onLower: function () {
-    var that = this
-    that.setData({
-      isLower: true
-    });
-    // load more data
-    console.log("onLower")
-  },
-  onScroll: function () {
-    console.log("onScroll")
   }
-
 })
