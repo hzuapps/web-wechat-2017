@@ -1,0 +1,18 @@
+/* pages/show/show.wxss */
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+.right{
+  margin-left: 110px;
+}
+
+.car{
+  position: absolute;
+}
