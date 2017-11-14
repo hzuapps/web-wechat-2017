@@ -1,29 +1,74 @@
 /**index.wxss**/
-page {
-  line-height: 1.6;
+.page {
+  position: fixed;
+  top: 44px;
+  width: 100%;
+  line-height: 2;
   font-family: -apple-system-font, "Helvetica Neue", sans-serif;
 }
+.menu{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #fff;
+  border-bottom:#eee solid 1px;
+  z-index: 100000
+}
 
-.userinfo {
+.top-nav{
+    white-space: nowrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.top-btn{
+    display: inline-block;
+    padding: 22rpx;
+}
+
+.top-hoverd-btn{
+    color: #42bd56;
+    border-bottom: #42bd56 solid 1px;
+}
+
+
+.index-nav {
+  height: 65px;
+  /*background: red;*/
   display: flex;
+  flex-direction: row;
+  /*align-items: center;*/
+  background-color: #fff;
+  color: #646464;
+  text-align: center;
+  /*设置下边框颜色*/
+  border-bottom: 1px solid #888;
+}
+
+.index-nav view {
+  flex: 1;
   flex-direction: column;
-  align-items: center;
+  border-right: 1px solid #f2f2f2;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.index-nav image {
+  width: 38px;
+  height: 38px;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.index-nav text {
+  font-size: 16px;
+}
+.widgets-img{
+	width: 40rpx;
+	height: 40rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.widgets-title{
+	color: #888888;
+    font-size: 1px;
 }
+
 
 .weui-panel {
   background-color: #FFFFFF;
@@ -144,3 +189,4 @@ page {
           flex: 1;
   min-width: 0;
 }
+
