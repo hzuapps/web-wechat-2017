@@ -1,2 +1,7 @@
-<!--pages/text/text.wxml-->
-<text>个人中心</text>
+<view>
+  <scroll-view scroll-y bindscrolltolower="more" style="height: 100vh">
+    <view class="student-tag" wx:for="{{students}}" wx:for-item="studentId">
+      {{studentId.sNum}} - {{studentId.name}} - {{studentId.price}}
+    </view>
+  </scroll-view>
+</view>
