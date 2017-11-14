@@ -1,64 +1,14 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="userinfo_style" type="primary"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-     
-  </view>  
-</view>
-<button bindtap='tapShow' class="button_style" type="primary" size="mini" >显示数据</button>
-<button bindtap='tapHidden' class="button_style" type="primary" size="mini" >隐藏数据</button>
 
-<!-- <view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>  -->
+<view class="text">这是一个可滚动界面设计</view>
+<scroll-view scroll-x="true" scroll-y="{{scrollViewBol}}" class="scrollView" scroll-with-animation="false" scroll-top="{{scrolltop}}" wx:if="{{startscroll}}">
+  <view class = "view" wx:for="{{image}}" ><image  src="../images/picture{{item}}.jpg"/></view>
+</scroll-view>
 
 
-<view class="page">
-    <view class="page__bd_spacing">
-        <view class="kind-list">
-            <block  wx:if="{{show}}" wx:for="{{list}}" wx:key="id">
-                <view class="kind-list__item">
-                    <view id="{{item.id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" bindtap="kindToggle">
-                        <view class="weui-flex__item">{{item.name}}</view>
-                        <image class="kind-list__img" src="/images/icon_nav_{{item.id}}.png"></image>
-                    </view>
-                    <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
-                        <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
-                            <block wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
-                                <navigator url="/pages/{{page}}/{{page}}" class="weui-cell weui-cell_access">
-                                    <view class="weui-cell__bd">{{page}}</view>
-                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-                                </navigator>
-                            </block>
-                        </view>
-                    </view>
-                </view>
-            </block>
-        </view>
-    </view>
-    
-</view>
+<button bindtap='starttap' class="startbutton" size="mini">点击进入滚动界面</button>
 
-<view class="section">
-  <view class="section__title">时间选择器</view>
-  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-    <view class="picker">
-      当前选择: {{time}}
-    </view>
-  </picker>
-</view>
+<button bindtap='startbuttontap' class="startbutton" size="mini">点击开始进行界面滚动</button>
 
-<view class="section">
-  <view class="section__title">日期选择器</view>
-  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-    <view class="picker">
-      当前选择: {{date}}
-    </view>
-  </picker>
-</view>
+<button bindtap='closetap' class="closebutton" size="mini">点击关闭滚动界面</button>
+
+<button bindtap='closebuttontap' class="closebutton" size="mini">点击禁止进行界面滚动</button>
