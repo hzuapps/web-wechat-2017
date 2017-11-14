@@ -1,13 +1,7 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/button/button",
-    "pages/list/list",
-    "pages/article/article",
-    "pages/badge/badge",
-    "pages/picker/picker",
-    "pages/flex/flex"
+    "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",

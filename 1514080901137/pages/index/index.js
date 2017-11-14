@@ -4,62 +4,30 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    list: [
-      {
-        id: 'form',
-        name: '表单',
-        open: true,
-        pages: ['button', 'list']
-      },
-      {
-        id: 'widget',
-        name: '基础组件',
-        open: false,
-        pages: ['article', 'badge', 'flex']
-      }
-    ],
-    show:"true",
-    date: '2016-09-01',
-    time: '12:01',
+    image:["1","2","3","4","5","6","7","8"],
+    scrolltop:300,
+    scrollViewBol:false,
+    startscroll:false
   },
-  bindDateChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
+  starttap:function(){
     this.setData({
-      date: e.detail.value
+      startscroll: true
     })
   },
-  bindTimeChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
+  closetap: function () {
     this.setData({
-      time: e.detail.value
+      startscroll: false
     })
   },
-  tapShow:function(){
-    this.setData({
-      show:true
-    })
+  startbuttontap:function(){
+      this.setData({
+        scrollViewBol:true
+      })
   },
-  tapHidden:function(){
+  closebuttontap: function () {
     this.setData({
-      show:false
+      scrollViewBol: false
     })
-  },
-  kindToggle: function (e) {
-    var id = e.currentTarget.id, list = this.data.list;
-    for (var i = 0, len = list.length; i < len; ++i) {
-      if (list[i].id == id) {
-        list[i].open = !list[i].open
-      } else {
-        list[i].open = false
-      }
-    }
-    this.setData({
-      list: list
-    });
   },
   //事件处理函数
   bindViewTap: function() {
