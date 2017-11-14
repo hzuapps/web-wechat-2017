@@ -1,18 +1,10 @@
-<view class="weui-cells__title">输入通知：</view>
-        <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell">
-                <view class="weui-cell__bd">
-                    <textarea class="weui-textarea" placeholder="请输入通知" style="height: 22.3em" />
-                    <view class="weui-textarea-counter">0/200</view>
-
-                  
-                </view>
-            </view>
-        </view>
-          
-  
-     <view class="weui-btn-area">
-           <button type="default" bindtap="jumpToMyPage"> 确认上传 </button>
-        </view>
-        
-    
+<view>
+    <swiper autoplay="{{autoplay}}" style="height:150px;" 
+ indicator-dots="{{indicatordots}}" duration="{{duration}}" interval="{{interval}}" circular="{{circular}}">
+        <block wx:for="{{urls}}" wx:key="*this">
+            <swiper-item>
+<image src="{{item}}" class="swiper-item"/>  
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

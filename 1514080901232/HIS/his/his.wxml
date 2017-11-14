@@ -1,6 +1,18 @@
-<view class="page">
-    <view class="page__hd">
-        <view class="page__title">Tabbar</view>
-        <view class="page__desc">底部导航，建议采用小程序原生的tabbar，通过设置app.json来实现。详情请看小程序文档。</view>
-    </view>
-</view>
+<view class="weui-cells__title">输入通知：</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入通知" style="height: 22.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+
+                  
+                </view>
+            </view>
+        </view>
+          
+  
+     <view class="weui-btn-area">
+           <button type="default" bindtap="jumpToMyPage"> 确认上传 </button>
+        </view>
+        
+    
