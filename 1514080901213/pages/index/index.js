@@ -51,8 +51,12 @@ Page({
       hasUserInfo: true
     })
   },
-  
-  jump_one:function(){
+  jump_scroll: function () {
+    wx.navigateTo({
+      url: '../scroll/scroll',
+    })
+  },
+  jump_one: function () {
     wx.navigateTo({
       url: '../one/one',
     })
@@ -61,6 +65,17 @@ Page({
     wx.navigateTo({
       url: '../two/two',
     })
+  },
+  jump_three: function () {
+    wx.navigateTo({
+      url: '../three/three',
+    })
+  },
+  /**
+ * 用户点击右上角分享
+ */
+  onShareAppMessage: function () {
+
   }
 
 
