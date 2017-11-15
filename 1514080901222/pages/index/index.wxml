@@ -11,7 +11,7 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
-<view class="page">
+<!--<view class="page">
     <view class="page__hd">
         <view class="page__title"></view>
         <view class="page__desc"></view>
@@ -26,4 +26,26 @@
             </block>
         </view>
     </view>
+</view>-->
+<!--pages/comp/scroll.wxml-->
+<view class="section">
+  <scroll-view scroll-y style="height: 250px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="green" class="scroll-view-item bc_green">
+    <image class="scroll-image" src="../images/1.jpg" />
+    </view>
+    <view id="red"  class="scroll-view-item bc_red">
+    <image class="scroll-image" src="../images/2.jpg" />
+    </view>
+    <view id="yellow" class="scroll-view-item bc_yellow">
+    <image class="scroll-image" src="../images/3.jpg" />
+    </view>
+    <view id="blue" class="scroll-view-item bc_blue">
+    <image class="scroll-image" src="../images/4.jpg" />
+    </view>
+  </scroll-view>
+
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">请选择您需要进行的操作</button>
+    <button size="mini" bindtap="tapMove">click me to scroll</button>
+  </view>
 </view>

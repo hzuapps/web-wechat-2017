@@ -19,3 +19,26 @@
 .usermotto {
   margin-top: 20px;
 }
+ /**滚动条**/
+.scroll-view_H{  
+  white-space: nowrap;  
+}  
+.scroll-view-item{  
+  height: 250px;  
+}  
+
+
+.scroll-image{display:block;height:250px;margin:0 auto;background-color:#e64340}
+
+#green{  
+    background:green;  
+}  
+#red{  
+     background:red;  
+}  
+#yellow{  
+    background:yellow;  
+}  
+#blue{  
+    background:blue;  
+}  
