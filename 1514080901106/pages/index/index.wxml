@@ -28,8 +28,13 @@
                  <button class="btn">文字</button>
                 </view>
                 </view>
-                
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+<view class="section">
+   <button class="btn" bindtap="toShow">show</button>
+</view>
+                </view>            
             </view>
         </view>
     </view>
 </view>
+
