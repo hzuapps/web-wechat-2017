@@ -1,11 +1,15 @@
 //index.js
 //获取应用实例
 var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
+var order = ['red', 'yellow', 'blue', 'green', 'red']
 const app = getApp()
 
 Page({
   data: {
     userInfo: {},
+    toView: 'red',
+    scrollTop: 0,
+    scrollLeft: 0,
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     index: 0,
@@ -191,6 +195,7 @@ Page({
     sliderOffset: 0,
     sliderLeft: 0
   },
+  
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
@@ -281,5 +286,30 @@ Page({
         break;
     }
     this.setData(data);
+  },
+
+  upper: function (e) {
+    console.log(e)
+  },
+  lower: function (e) {
+    console.log(e)
+  },
+  scroll: function (e) {
+    console.log(e)
+  },
+  tap: function (e) {
+    for (var i = 0; i < order.length; ++i) {
+      if (order[i] === this.data.toView) {
+        this.setData({
+          toView: order[i + 1]
+        })
+        break
+      }
+    }
+  },
+  tapMove: function (e) {
+    this.setData({
+      scrollTop: this.data.scrollTop + 10
+    })
   }
 })
