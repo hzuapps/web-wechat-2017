@@ -1,9 +1,8 @@
-<!--pages/search/search.wxml-->
+<!--pages/top250/top250.wxml-->
+<!--index.wxml-->
 <view class='page_header'>
-  <input class='page_header_text' placeholder='输入关键词' auto-focus           
-  bindchange='search'></input>
-</view>
-<scroll-view class='page_body' scroll-y='true'>
+  <view class='page_header_text'>{{title}}</view>
+  <scroll-view class='page_body' scroll-y='true'>
     <navigator url='../movies/movies?id={{item.id}}' wx:for="{{movies}}">
       <view class='items'>
         <image class='img' src='{{item.images.small}}'></image>
@@ -18,3 +17,4 @@
       </view>
     </navigator>
   </scroll-view>
+</view>

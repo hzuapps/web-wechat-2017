@@ -1,0 +1,41 @@
+/* pages/movies/movies.wxss */
+.meta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50rpx 40rpx;
+  height: 1000rpx;
+}
+
+.poster{
+  height: 80%;
+  width: 80%;
+  margin: 20rpx;
+}
+
+.movie_name{
+  font-style: 40rpx;
+  color: #444;  
+}
+
+.info{
+  font-size: 20rpx;
+  color:#888;
+  margin-top: 20rpx;
+  width:80%;
+}
+
+.summary{
+  width:80%;
+  margin: 30rpx auto;
+}
+
+.label{
+  display: block;
+}
+
+.content{
+  color:#666;
+  font-size: 25rpx;
+  padding: 10rpx;
+}
