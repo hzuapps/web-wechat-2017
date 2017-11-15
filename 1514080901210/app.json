@@ -1,68 +1,30 @@
 {
   "pages": [
-    "example/index",
-
-    "example/button/button",
-    "example/list/list",
-    "example/input/input",
-    "example/slider/slider",
-    "example/uploader/uploader",
-
-    "example/article/article",
-    "example/badge/badge",
-    "example/flex/flex",
-    "example/footer/footer",
-    "example/gallery/gallery",
-    "example/grid/grid",
-    "example/icons/icons",
-    "example/loadmore/loadmore",
-    "example/panel/panel",
-    "example/preview/preview",
-    "example/progress/progress",
-
-    "example/actionsheet/actionsheet",
-    "example/dialog/dialog",
-    "example/msg/msg",
-    "example/msg/msg_success",
-    "example/msg/msg_fail",
-    "example/picker/picker",
-    "example/toast/toast",
-
-    "example/navbar/navbar",
-    "example/tabbar/tabbar",
-
-    "example/searchbar/searchbar"
+    "pages/index/index",
+    "pages/demo/scrollView"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "米家有意",
-    "navigationBarBackgroundColor": "#f8f8f8",
-    "backgroundColor": "#f8f8f8"
-  },
-  "networkTimeout": {
-    "request": 10000,
-    "connectSocket": 10000,
-    "uploadFile": 10000,
-    "downloadFile": 10000
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "scroll-view",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#009444",
     "list": [
       {
-        "pagePath": "example/index",
+        "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath":"image/主页.png",
-        "selectedIconPath":"image/主页.png"
+        "iconPath":"pages/demo/a.png",
+        "selectedIconPath": "pages/demo/b.png"
       },
       {
-        "pagePath": "example/index",
-        "text": "推荐",
-        "iconPath": "image/推荐.png",
-        "selectedIconPath": "image/推荐.png"
+        "pagePath": "pages/index/index",
+        "text": "我",
+        "iconPath": "pages/demo/a.png",
+        "selectedIconPath": "pages/demo/b.png"
       }
-    ],
-    "selectedColor":" #FF9966",
-    "backgroundColor":"#FF99668",
-    "color":"black"
-  },
-  "debug": true
+    ]
+  }
 }
