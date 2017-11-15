@@ -1,1 +1,8 @@
 /* pages/text/text.wxss */
+
+.student-tag {
+  height: 20px;
+  background-color: #eee;
+  border-bottom: 2px solid #bbb;
+  padding: 15px;
+}

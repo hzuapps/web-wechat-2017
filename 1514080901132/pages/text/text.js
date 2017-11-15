@@ -1,66 +1,36 @@
-// pages/text/text.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+    students: [
+      {
+        sNum: "1",
+        name: '鲜虾粥',
+        price:'38'
+      },
+      {
+        sNum: "2",
+        name: '鱼片粥',
+        price: '28'
+      },
+      {
+        sNum: "3",
+        name: '兴国米粉鱼',
+        price: '12'
+      },
+      {
+        sNum: "4",
+        name: '深海龙利鱼',
+        price: '16'
+      },
+      {
+        sNum: "5",
+        name: '垮多春鱼',
+        price: '18'
+      },
+      {
+        sNum: "6",
+        name: '酸梅汤',
+        price: '16'
+      }
+    ]
   }
 })
