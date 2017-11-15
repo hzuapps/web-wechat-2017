@@ -10,6 +10,11 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  xunfang: function () {
+    wx.navigateTo({
+      url: '../xunfang/xunfang'
+    })
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

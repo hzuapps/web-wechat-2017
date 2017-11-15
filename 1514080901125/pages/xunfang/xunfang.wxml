@@ -1,0 +1,9 @@
+<!--pages/xunfang/xunfang.wxml-->
+
+<view>
+   <scroll-view scroll-y="true "bindscrolltolower="more" style="height: 100px">
+     <view class="weui-btn:first-child" wx:for="{{fangjian}}" wx:for-item="fangjianming">
+       {{fangjianming.one}} 
+    </view>
+   </scroll-view>
+ </view>
