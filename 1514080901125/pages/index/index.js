@@ -1,4 +1,5 @@
 //index.js
+// .js是事件交互文件，用于处理界面的点击事件等功能
 //获取应用实例
 const app = getApp()
 
@@ -8,6 +9,11 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  xunfang: function () {
+    wx.navigateTo({
+      url: '../xunfang/xunfang'
+    })
   },
   //事件处理函数
   bindViewTap: function() {

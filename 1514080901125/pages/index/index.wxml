@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<!-- .wxml文件是界面文件 -->
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -6,6 +7,15 @@
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
+  </view>
+  <view class="page__bd page__bd_spacing">
+        <button class=".weui-cells" type="primary">注册用户</button>
+  </view>
+   <view class="page__bd page__bd_spacing">
+        <button class=".weui-cells" type="primary">创建房间</button>
+  </view>
+   <view class="page__bd page__bd_spacing">
+        <button class=".weui-cells" type="primary" bindtap='xunfang'>寻找房间</button>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>

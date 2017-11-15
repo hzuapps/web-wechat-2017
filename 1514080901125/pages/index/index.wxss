@@ -1,4 +1,5 @@
 /**index.wxss**/
+/* wxss为界面美化文件，让界面显示的更加美观 */
 .userinfo {
   display: flex;
   flex-direction: column;
