@@ -1,66 +1,36 @@
 /**index.wxss**/
+.scrollView{
+    height:400px;
+    background-color:#fff;
+    border: 10px solid #ccc;
+    width: 350px;
+}
 
-.section__title{
+.view{
+  border: 1px solid red;
+  background-color: #fff;
+  width:320px;
+  /*图片居中显示*/
+  margin: 0 auto;
+}
+
+.text{
+  line-height: 20px;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  color:cadetblue
+}
+
+.startbutton{
+ 
   background-color: green;
-  font-size: 24px;
-  margin: 15px;
-  padding: 2px;
+  margin: 10px;
+  font-size: 18px;
 }
 
-.picker{
-  font-size: 20px;
-  margin: 15px;
-  padding: 2px;
-}
-
-.button_style{
-    color:red;
-    margin: 50px;
-}
-
-.userinfo_style{
-  color:red;
-}
-
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
-
-.kind-list__item:first-child {
-  margin-top: 0;
-}
-
-.kind-list__img {
-  width: 40px;
-  height: 40px;
-}
-
-.kind-list__item-hd_show {
-  opacity: 0.4;
-}
-
-.kind-list__item-bd {
-  height: 0;
-  overflow: hidden;
-}
-
-.kind-list__item-bd_show {
-  height: auto;
+.closebutton{
+  background-color: red;
+  margin: 10px;
+  font-size: 18px;
 }
