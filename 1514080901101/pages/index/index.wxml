@@ -1,12 +1,23 @@
 <!--pages/demo/scrollView.wxml-->
+<view class="menu">
+    <scroll-view scroll-x="true" class="top-nav">
+        <view bindtap="toHot" class="top-btn {{hot}}">热门</view>
+        <view bindtap="toeat" class="top-btn {{eat}}">吃喝</view>
+        <view bindtap="tostay" class="top-btn {{stay}}">住宿</view>
+        <view bindtap="toentertainment" class="top-btn {{entertainment}}">娱乐</view>
+        <view bindtap="toActive" class="top-btn {{active}}">休闲</view>
+        <view bindtap="totravel" class="top-btn {{travel}}">旅游</view>
+        <view bindtap="tobusiness" class="top-btn {{business}}">商业</view>
+        <view bindtap="toOther" class="top-btn {{other}}">其他</view>
+    </scroll-view>
+</view>
+
+
 <scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltolower="onEnd" bindscroll="onScroll">
-    <view class="page__hd">
-        <view class="page__title"></view>
-        <view class="page__desc"></view>
-    </view>
+
     <view class="page__bd">
         <view class="weui-panel weui-panel_access">
-            <view class="weui-panel__hd"></view>
+            
             <view class="weui-panel__bd">
                 <navigator url="" wx:for="{{sessions}}" wx:key="name" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
