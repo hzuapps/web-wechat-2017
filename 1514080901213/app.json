@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/one/one",
-    "pages/two/two"
+    "pages/two/two",
+    "pages/three/three",
+    "pages/scroll/scroll"
   ],
   "window":{
     "backgroundTextStyle":"light",
