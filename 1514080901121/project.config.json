@@ -4,22 +4,23 @@
 		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
-		"minified": true
+		"minified": true,
+		"newFeature": true
 	},
-	"compileType": "weapp",
-	"libVersion": "1.6.0",
-	"appid": "touristappid",
-	"projectname": "%E5%AE%9E%E9%AA%8C1",
+	"compileType": "miniprogram",
+	"libVersion": "1.6.4",
+	"appid": "wx18cc0fa69836c11b",
+	"projectname": "sy2",
 	"condition": {
-		"weapp": {
-			"current": -1,
-			"list": []
-		},
 		"search": {
 			"current": -1,
 			"list": []
 		},
 		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
 			"current": -1,
 			"list": []
 		}

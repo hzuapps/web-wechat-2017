@@ -10,13 +10,13 @@
 </view>-->
 
 <view class="section">
+
   <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
     <button type="default">日期选择器</button>
         <view class="picker">
       当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
     </view>
   </picker>
-</view>
 
 <view class="page">
     <view class="page__bd">
@@ -36,4 +36,18 @@
             </view>
         </view>
     </view>
+
+ <view class="section__title">vertical scroll</view>
+  <scroll-view scroll-y="true" style="height: 300px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+   <view id="green" class="scroll-view-item bc_green" style="background:green;width: 60%; height: 100px"></view>
+    <view id="red"  class="scroll-view-item bc_red" style="background:red;width: 60%; height: 100px"></view>
+    <view id="yellow" class="scroll-view-item bc_yellow" style="background:yellow;width: 60%; height: 100px"></view>
+    <view id="blue" class="scroll-view-item bc_blue" style="background:blue;width: 60%; height: 100px"></view>
+  </scroll-view>
+
+  <view class="btn-aera">
+    <button size="mini" bindtap="tap">click me to scroll into view </button>
+    <button size="mini" bindtap="tapMove">click me to scroll</button>
+  </view>
+</view>
 </view>
