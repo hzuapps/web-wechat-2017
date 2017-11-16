@@ -29,4 +29,11 @@
     
   </view>
 
+<view class="weui-footer">
+<view class="weui-footer__links">
+    <navigator url="" class="weui-footer__link">小黄象</navigator>
+</view>
+<view class="weui-footer__text">Copyright © 精品专栏组</view>
+</view>
+
 </view>
