@@ -1,0 +1,11 @@
+/* 创建签到房间页面的css  */
+.weui-label {
+  margin-right: 20px;
+}
+
+.btn-area {
+  width: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
