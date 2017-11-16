@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/clock/clock"
   ],
   "window":{
     "backgroundTextStyle":"light",

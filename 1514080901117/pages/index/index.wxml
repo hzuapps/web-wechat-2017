@@ -40,7 +40,9 @@
   </view>
 
   <view class="btnContainer">
-    <button class="weui-btn"  type="primary" size="mini">开始计时</button>
+    <navigator url="../clock/clock">
+      <button class="weui-btn"  type="primary" size="mini">开始计时</button>
+    </navigator>
   </view>
   
 
