@@ -1,7 +1,7 @@
 var tempNum = 0;
 Page({
   data: {
-    meallist: [
+    list: [
       {
         Num: "1",
         name: '默罕默德'
