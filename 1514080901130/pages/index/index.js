@@ -7,7 +7,53 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    list:[
+      {
+        id:'1',
+        name:"这是一个数组"
+      },
+      {
+        id: '2',
+        name: "这是一个数组"
+      },
+      {
+        id: '3',
+        name: "这是一个数组"
+      },
+      {
+        id: '4',
+        name: "这是一个数组"
+      },
+      {
+        id: '5',
+        name: "这是一个数组"
+      },
+      {
+        id: '6',
+        name: "这是一个数组"
+      },
+      {
+        id: '7',
+        name: "这是一个数组"
+      },
+      {
+        id: '8',
+        name: "这是一个数组"
+      },
+      {
+        id: '9',
+        name: "这是一个数组"
+      },
+      {
+        id: '10',
+        name: "这是一个数组"
+      },
+      {
+        id: '11',
+        name: "这是一个数组"
+      }
+    ]
   },
   //事件处理函数
   bindViewTap: function() {
