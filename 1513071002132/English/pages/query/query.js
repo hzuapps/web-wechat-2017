@@ -5,24 +5,54 @@ Page({
    * 页面的初始数据
    */
   data: {
-    mean:{}
+    mean:{},
+    inputVal:"",
+    result:''
+  },
+  showInput: function () {
+    this.setData({
+      inputShowed: true
+    });
+  },
+  hideInput: function () {
+    this.setData({
+      inputVal: "",
+      inputShowed: false
+    });
+  },
+  clearInput: function () {
+    this.setData({
+      inputVal: ""
+    });
+  },
+  inputTyping: function (e) {
+    this.setData({
+      inputVal: e.detail.value
+    });
+  },
+  search:function(e){
+    var  that = this;
+    wx.request({
+      url: 'https://api.shanbay.com/bdc/search/?word=' + this.data.inputVal, //接口地址
+      header: {
+        'content-type': 'application/x-www-form-urlencoded' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data.data);
+        that.setData({
+          mean: res.data.data,
+          result:"true"
+        });
+      }
+    })
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'https://api.shanbay.com/bdc/search/?word=hello', //接口地址
-      
-      header: {
-        'content-type': 'application/x-www-form-urlencoded' // 默认值
-      },
-      success: function (res) {
-        console.log(res.data.data);
-        this.mean= res.data.data;
-      }
-    })
+    
   },
 
   /**
