@@ -4,43 +4,15 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello HZU',
+    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    textColor: 'red',
-    textClass: 'description',
-    showScroll: true,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
-    console.dir('bindViewTap')
     wx.navigateTo({
       url: '../logs/logs'
-    })
-  },
-  changeColor: function() {
-    //console.log('changeColor')
-    var me = this;
-    if (me.data.textClass == 'description') {
-      this.setData({
-        textClass: 'blue'
-      })
-    } else {
-      this.setData({
-        textClass: 'description'
-      })
-    }
-    //this.data.textColor = 'blue'
-  },
-  naviToView: function() {
-    wx.navigateTo({
-      url: "../comp/view"
-    })
-  },
-  naviToScrollView: function () {
-    wx.navigateTo({
-      url: "../comp/scroll"
     })
   },
   onLoad: function () {
