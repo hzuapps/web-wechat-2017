@@ -1,0 +1,12 @@
+<!--pages/comp/scroll.wxml-->
+<scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltoupper="onUpper" bindscrolltolower="onLower" bindscroll="onScroll">
+    <view class="page__bd">
+       <view>
+          <scroll-view scroll-y bindscrolltolower="onScroll" style='height:100vh'>
+            <view class='book-tag' wx:for="{{books}}" wx:for-item="bookId">
+              {{bookId.bName}} - {{bookId.writer}}
+            </view>
+          </scroll-view>
+       </view>
+    </view>
+</scroll-view>

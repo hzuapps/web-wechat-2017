@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/find/find"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -27,6 +28,12 @@
       "text": "我的",
       "iconPath": "/images/个人.png",
       "selectedIconPath": "/images/个人_fill.png"
+    },
+    {
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath": "/images/发现.png",
+      "selectedIconPath": "/images/发现_fill.png"
     }
   ]
 }
