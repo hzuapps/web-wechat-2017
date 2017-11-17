@@ -7,7 +7,7 @@
         <label class="weui-label">起始学号</label>
       </view>
       <view class="weui-cell__bd">
-        <input class="weui-input" type='number' placeholder='起始学号'></input>
+        <input class="weui-input" name="startNum" type='number' placeholder='起始学号'></input>
       </view>
     </view>
 
@@ -16,7 +16,7 @@
         <label class="weui-label">终止学号</label>
       </view>
       <view class="weui-cell__bd">
-        <input class="weui-input" type='number' placeholder='终止学号'></input>
+        <input class="weui-input" name="endNum" type='number' placeholder='终止学号'></input>
       </view>
     </view>
 
@@ -26,13 +26,21 @@
         <label class="weui-label">签到时间</label>
       </view>
       <view class="weui-cell__bd">
-        <input class="weui-input" type='number' placeholder='请填入签到的时间'></input>
+          <picker name="limitTime" bindchange="bindTimeChange" value="{{timeIndex}}" range="{{times}}">
+              <view class="weui-select">{{times[timeIndex]}}</view>
+          </picker>
       </view>
-    </view>
+    </view>    
 
     <view class="btn-area">
       <button class="weui-btn" type="primary" formType="submit">创建</button>
       <button class="weui-btn" type="default" formType="reset">重置</button>
     </view>
   </form>
+
+  <!-- 下面这些内容将来会显示在now-room页面 -->
+  <view>测试表单提交：</view>
+  <view>{{startNum}}</view>
+  <view>{{endNum}}</view>
+  <view>{{limitTime}}</view>
 </view>

@@ -4,6 +4,7 @@
     "pages/student-list/student-list",
     "pages/logs/logs",
     "pages/create-room/create-room",
+    "pages/create-room/now-room",
     "pages/check-in/check-in"
   ],
   "window": {
