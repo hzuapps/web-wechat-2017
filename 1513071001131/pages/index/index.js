@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-   
+  
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -13,6 +13,11 @@ Page({
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  jumpTokaishi: function () {
+    wx.navigateTo({
+      url: '../kaishi/kaishi'
     })
   },
   onLoad: function () {
