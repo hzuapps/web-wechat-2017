@@ -1,12 +1,38 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/new-account/new-account",
+    "pages/list/list"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fee",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#abc",
     "navigationBarTitleText": "记账+",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#321",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "255",
+    "list": [
+      {
+        "selectedIconPath": "images/1.png",
+        "iconPath": "images/1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/2.png",
+        "iconPath": "images/2.png",
+        "pagePath": "pages/new-account/new-account",
+        "text": "新增"
+      },
+      {
+        "selectedIconPath": "images/3.png",
+        "iconPath": "images/3.png",
+        "pagePath": "pages/list/list",
+        "text": "清单"
+      }
+    ]
   }
 }
