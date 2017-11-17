@@ -1,0 +1,34 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">HELLO</view>
+        <view class="page__desc">welcome to one sheep</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-btn-area">
+            <button type="default" bindtap="open">HELLO</button>
+        </view>
+    </view>
+     <view class="page__hd">
+        <view class="page__title">Button</view>
+        <view class="page__desc">按钮，WeUI采用小程序原生的按钮为主体，加入一些间距的样式。</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <button class="weui-btn" type="primary">我的文件 </button>
+       
+
+        <button class="weui-btn" type="default">我的收藏 </button>
+        
+
+        <button class="weui-btn" type="warn">设置 </button>
+        
+
+        <view class="button-sp-area">
+            <button class="weui-btn" type="primary" plain="true">进入</button>
+
+
+            
+            
+            <button class="weui-btn mini-btn" type="warn" size="mini">退出</button>
+        </view>
+    </view>
+</view>
