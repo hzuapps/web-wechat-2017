@@ -1,12 +1,39 @@
 {
   "pages":[
+    "pages/article/article",
     "pages/index/index",
     "pages/logs/logs"
   ],
+  
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "惠州学院校友圈",
     "navigationBarTextStyle":"black"
-  }
+  },
+"tabBar": {
+  "selectedColor": "#dddddd",
+  "color": "#3cc51f",
+  "backgroundColor": "#ffffff",
+  "list": [
+    {
+      "text": "登录",
+      "pagePath": "pages/index/index",
+      "iconPath": "/pages/images/icon_footer.png",
+      "selectedIconPath": "/pages/images/icon_footer.png"
+    },
+    {
+      "text": "主页",
+      "pagePath": "pages/article/article",
+      "iconPath": "/pages/images/icon_footer.png",
+      "selectedIconPath": "/pages/images/icon_footer.png"
+    },
+    {
+      "text": "日志",
+      "pagePath": "pages/logs/logs",
+      "iconPath": "/pages/images/icon_footer.png",
+      "selectedIconPath": "/pages/images/icon_footer.png"
+    }
+  ]
+}
 }
