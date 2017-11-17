@@ -27,6 +27,14 @@ Page({
     {
       thems: "学习",
       comment: "待定"
+    },
+    {
+      thems: "学习",
+      comment: "待定"
+    },
+    {
+      thems: "学习",
+      comment: "待定"
     }]
   },
   more: function (e) {

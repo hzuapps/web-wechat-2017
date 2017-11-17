@@ -45,6 +45,11 @@
     </navigator>
   </view>
   
+  <view class="btnContainer">
+    <navigator url="../form/form">
+      <button class="weui-btn"  type="primary" size="mini">表单</button>
+    </navigator>
+  </view>
 
   
 </view>

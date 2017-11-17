@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/user/user",
-    "pages/clock/clock"
+    "pages/clock/clock",
+    "pages/form/form"
   ],
   "window":{
     "backgroundTextStyle":"light",
