@@ -1,0 +1,24 @@
+<!--pages/gongshi/333/PLL.wxml-->
+<scroll-view class="page" scroll-y="true" style=""  >
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">PLL</view>
+            <view class="weui-panel__bd">
+                <view  wx:for="{{PLL}}" wx:key="name" class="weui-media-box weui-media-box_appmsg" >
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{item.image}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{item.name}}</view>
+                        <view class="weui-media-box__desc">{{item.gongshi}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-loadmore weui-loadmore_line" >
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">已经到底了</view>
+        </view>
+    </view>
+</scroll-view>
+
+
