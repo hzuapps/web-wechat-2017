@@ -1,12 +1,39 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
+    "pages/logs/index",
+    "pages/gongshi/F2L",
+    "pages/gongshi/OLL",
+    "pages/gongshi/PLL",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#abcd",
     "navigationBarTitleText": "三阶cube公式",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#00ff00",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/cube-1a.png",
+        "text": "公式"
+      },
+      {
+        "pagePath": "pages/logs/index",
+        "iconPath": "pages/images/cube-2a.png",
+        "text": "功能"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "pages/images/cube-3a.png",
+        "text": "我的"
+      }
+    ]
   }
 }
