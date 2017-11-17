@@ -1,11 +1,43 @@
+const app = getApp()
+
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
-  },
+    list: [
+      {
+        colour1: "白色",
+        colour2: 'white'
+      },
+      {
+        colour1: "黑色",
+        colour2: 'black'
+      },
+      {
+        colour1: "红色",
+        colour2: 'red'
+      },
+      {
+        colour1: "蓝色",
+        colour2: 'blue'
+      },
+      {
+        colour1: '紫色',
+        colour2: 'purple'
+      },
+      {
+        colour1: '绿色',
+        colour2: 'green'
+      },
+      {
+        colour1: '橙色',
+        colour2: 'orange'
+      },
+      {
+        colour1: '银白色',
+        colour2: 'rgb(192,192,192)'
+      }
+    ],
+
 
   /**
    * 生命周期函数--监听页面加载
@@ -85,5 +117,5 @@ Page({
   onScroll: function () {
     console.log("onScroll")
   }
+  }
 })
-
