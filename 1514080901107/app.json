@@ -1,8 +1,10 @@
 {
   "pages": [
-    "example/index",
+    "example/index/index",
     "example/button/button",
-    "example/list/list"
+    "example/input/input",
+    "example/scroll/scroll",
+    "example/next/next"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -17,12 +19,14 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "example/index",
-        "text": "首页"
+        "pagePath": "example/index/index",
+        "text": "滚动首页"
       },
       {
-        "pagePath": "example/list/list",
-        "text": "我"
+        "pagePath":"example/scroll/scroll",
+        "text": "我",
+        "iconPath":"example/images/me.png",
+        "selectedIconPath":"example/images/me.png"
       }
     ]
   },
