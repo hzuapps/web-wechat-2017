@@ -56,7 +56,7 @@ Page({
 
   // 页面滚动到最底部
   onscrollToLower: function () {
-    console.log('hahaha')
+    // console.log('hahaha')
     let that = this
 
     if (!this.data.isEnd) {
@@ -64,7 +64,7 @@ Page({
         isLower: true
       })
 
-      console.log(this.data.isLower)
+      // console.log(this.data.isLower)
 
       let todoList = this.data.todoList
 

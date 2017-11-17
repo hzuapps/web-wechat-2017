@@ -1,6 +1,36 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<view class='page'>
+    <view class='page__hd'>
+        <view class='page__title'>Input</view>
+        <view class='page__desc'>表单输入</view>
+    </view>
+
+    <view class='page__bd'>
+      <form bindsubmit="onFormSumit">
+        <!-- 文本框  -->
+        <view class='weui-cells__title'>文本框</view>
+        <view class='weui-cells'>
+            <view class='weui-cell'>
+                <view class='weui-cell_bd'>
+                    <input name ="input" class='weui-input' type="text" placeholder='请输入文本' value="{{inputValue}}"/>
+                </view>
+            </view>
+        </view>
+
+        <!-- 文本域  -->
+        <view class='weui-cells__title'>文本域</view>
+        <view class='weui-cells weui-cells_form'>
+            <view class='weui-cell'>
+                <view class='weui-cell__bd'>
+                    <textarea name ="textarea" class='weui-textarea' placeholder='请输入文本' value="{{textareaValue}}" bindinput="textareaInput"></textarea>
+                </view>
+                <view class='weui-textarea-counter'>
+                    <text>{{textareaCounter}}</text>/200
+                </view>
+            </view>
+        </view>
+
+        <button class='weui-btn' type='primary' form-type="submit">确定</button>
+      </form>
+    </view>
 </view>
