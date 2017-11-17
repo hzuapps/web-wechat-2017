@@ -1,33 +1,48 @@
-<view class="page">
-    <view class="page__hd">
-        <view class="page__title">我的新闻专车</view>      <view class="page__desc">该小程序的大概功能框架：
-1、能对某条新闻进行收藏并添加注释2、可屏蔽已点击的新闻3、个人设置     </view>
-
-    </view>
-
-    <view class="page__bd page__bd_spacing">
-        <view class="kind-list">
-            <block wx:for="{{list}}" wx:key="id">
-                <view class="kind-list__item">
-                    <view id="{{item.id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" bindtap="kindToggle">
-                        <view class="weui-flex__item">{{item.name}}</view>
-                        <image class="kind-list__img" src="images/icon_nav_{{item.id}}.png"></image>
-                    </view>
-                    <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
-                        <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
-                            <block wx:for="{{item.pages}}" wx:for-item="page" wx:key="*this">
-                                <navigator url="{{page}}/{{page}}" class="weui-cell weui-cell_access">
-                                    <view class="weui-cell__bd">{{page}}</view>
-                                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-                                </navigator>
-                            </block>
-                        </view>
+      <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
                     </view>
                 </view>
-            </block>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
         </view>
-    </view>
-    <view class="page__ft">
-        <image src="images/icon_footer.png" style="width: 342px; height: 191px;"></image>
-    </view>
-</view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>实时搜索文本</view>
+                </view>
+            </navigator>
+            </view>
+             </view>
+<scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltoupper="onUpper" bindscrolltolower="onEnd" bindscroll="onLower">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd"></view>
+            <view class="weui-panel__bd">
+                <navigator url="" wx:for="{{array}}" wx:key="name" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../images/b.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">({{index+1}}) {{item.name}}</view>
+                        
+                    </view>
+                </navigator>
+            </view>
+        </view>
+        
+      
+        <view class="weui-loadmore" wx:if="{{isLower}}">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+   
+</scroll-view>
