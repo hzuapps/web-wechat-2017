@@ -6,6 +6,10 @@
     </view>
 
     <view class='page__bd'>
+
+    <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+
       <form bindsubmit="onFormSumit">
         <!-- 文本框  -->
         <view class='weui-cells__title'>文本框</view>

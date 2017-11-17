@@ -31,7 +31,7 @@ Page({
     let param = { text: text, status: false }
 
     if (param.text) {  // 如果有输入
-      todoList.push(param)
+      todoList.unshift(param)
 
       this.setData({
         todoList: todoList,
@@ -68,9 +68,9 @@ Page({
 
       let todoList = this.data.todoList
 
-      if (todoList.length < 20) { // 如果数组长度小于20则加载，用来模拟数据加载完毕的情况
+      if (todoList.length < 30) { // 如果数组长度小于20则加载，用来模拟数据加载完毕的情况
         todoList.push({ text: '++++', status: false }, { text: '++++', status: false }, { text: '++++', status: false }, { text: '++++', status: false })
-
+        console.log('hahaha')
         setTimeout(function () {
           that.setData({
             isLower: false,
