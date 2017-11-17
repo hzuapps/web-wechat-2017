@@ -1,27 +1,9 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-
-
-  <view class="page__bd page__bd_spacing">
-        <button class=".weui-cells" type="primary">注册用户</button>
-  </view>
-   <view class="page__bd page__bd_spacing">
-        <button class=".weui-cells" type="primary">创建房间</button>
-  </view>
-   <view class="page__bd page__bd_spacing">
-        <button class=".weui-cells" type="primary">登录房间</button>
-  </view>
- 
-
-  
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view>页面滚动</view>
+<scroll-view scroll-y="ture" style="height: 100%;" bindscrolltolower="jiazai">
+<view wx:for="{{szb}}" >
+<view class='weui-cells'>{{item.one }}</view>
+<view class='weui-cells'>{{item.two}}</view>
+<view class='weui-cells'>{{item.three}}</view>
 </view>
+</scroll-view>
