@@ -1,0 +1,5 @@
+<!--pages/test/test.wxml-->
+<scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<!--加了一个循环  -->
+ <view wx:for="{{items}}">{{item.one}}</view> 
+ </scroll-view>
