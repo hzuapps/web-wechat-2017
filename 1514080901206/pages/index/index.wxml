@@ -8,9 +8,9 @@
         <view class="button-sp-area">
             <button class="weui-btn" type="primary">汇率转换</button>
             <button class="weui-btn" type="primary"  plain="true">大写数字</button>
-            <button class="weui-btn" type="primary">计算器</button>
-            <button class="weui-btn" type="primary"  plain="true">科学计算器</button>
             <button class="weui-btn" type="primary">时间转换</button>
+            <button class="weui-btn" type="primary"  plain="true">科学计算器</button>
+            <button class="weui-btn" type="primary">计算器</button>
             <button class="weui-btn" type="primary"  plain="true">重量转换</button>
             <button class="weui-btn" type="primary">温度转换</button>
             <button class="weui-btn" type="primary"  plain="true">长度转换</button>
