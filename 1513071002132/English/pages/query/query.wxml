@@ -20,20 +20,20 @@
                     <view class="weui-search-bar__text">搜索</view>
                 </label>
             </view>
-         <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="search">搜索</view>  
+         <view class="weui-search-bar__cancel-btn" wx:if="{{inputVal.length > 0}}" bindtap="search">搜索</view>  
             <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
         </view>
 
-        <view class="weui-panel" wx:if="{{result}}">
+        <view class="weui-panel" wx:if="{{result=='1'}}">
             <view class="weui-panel__hd">搜索结果</view>
             <view class="weui-panel__bd">
                 <view class="weui-media-box weui-media-box_text">
                     <view class="weui-media-box__title weui-media-box__title_in-text">{{mean.content}}</view>
                     <view class="weui-media-box__desc">{{mean.definition}}</view>
                     <view class="weui-media-box__info">
-                        <view class="weui-media-box__info__meta">文字来源</view>
-                        <view class="weui-media-box__info__meta">时间</view>
-                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">其它信息</view>
+                        <view class="weui-media-box__info__meta pronunciation">英式 [{{mean.pronunciations.uk}}]</view>
+                        
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra pronunciation">美式 [{{mean.pronunciations.us}}]</view>
                     </view>
                 </view>
             </view>

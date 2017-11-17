@@ -78,7 +78,7 @@ Page({
   onReachBottom: function () {
   
   },
-
+  //滑到底部时触发改事件
   lower:function(){
     console.log('scroll');
     var that = this;

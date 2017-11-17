@@ -39,10 +39,16 @@ Page({
       },
       success: function (res) {
         console.log(res.data.data);
+        if(res.data.data!=""){
         that.setData({
           mean: res.data.data,
-          result:"true"
+          result:"1"
         });
+        }else{
+          that.setData({
+            result:"0"
+          })
+        }
       }
     })
 
