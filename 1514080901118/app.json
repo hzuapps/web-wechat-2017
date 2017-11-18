@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/scroll/scroll",
     "pages/logs/logs"
   ],
   "window":{
@@ -8,5 +9,19 @@
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "社区话题讨论",
     "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#009444",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/scroll/scroll",
+        "text": "话题"
+      }
+    ]
   }
 }
