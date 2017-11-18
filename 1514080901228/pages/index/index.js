@@ -101,4 +101,10 @@ Page({
   onShareAppMessage() {
 
   },
+  toNotes:function(){
+    //点击按钮，实现页面跳转到内容页
+    wx.navigateTo({
+      url: '../notes/notes',
+    })
+  }
 })  
