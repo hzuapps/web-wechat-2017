@@ -32,15 +32,19 @@
       </view>
     </view>    
 
+    <view class="warning"><text>{{warning}}</text></view>
+
     <view class="btn-area">
-      <button class="weui-btn" type="primary" formType="submit">创建</button>
+      <button class="weui-btn" type="primary"  formType="submit">创建</button> 
       <button class="weui-btn" type="default" formType="reset">重置</button>
     </view>
   </form>
 
   <!-- 下面这些内容将来会显示在now-room页面 -->
-  <view>测试表单提交：</view>
-  <view>{{startNum}}</view>
-  <view>{{endNum}}</view>
-  <view>{{limitTime}}</view>
+  <!-- <view class="data-test-area">
+    <view>测试表单提交：</view>
+    <view>{{startNum}}</view>
+    <view>{{endNum}}</view>
+    <view>{{limitTime}}</view>  
+  </view> -->
 </view>
