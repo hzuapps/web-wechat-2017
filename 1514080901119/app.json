@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
+    "pages/demo/scrollView",
     "pages/words/words"
   ],
   "window":{
@@ -23,6 +24,12 @@
         "text": "个人"
       },
       {
+        "pagePath": "pages/demo/scrollView",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png",
+        "text": "主页"
+      },
+      {
         "pagePath": "pages/logs/logs",
         "iconPath": "image/icon_API.png",
         "selectedIconPath": "image/icon_API_HL.png",
@@ -31,3 +38,4 @@
     ]
   }
 }
+
