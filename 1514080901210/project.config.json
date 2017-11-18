@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.6.4",
 	"appid": "touristappid",
-	"projectname": "scrollview",
+	"projectname": "s",
 	"condition": {
 		"search": {
 			"current": -1,
