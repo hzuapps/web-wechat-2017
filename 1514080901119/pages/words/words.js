@@ -1,4 +1,4 @@
-// pages/words/words.js
+// pages/words/scroll.js
 Page({
 
   /**

@@ -1,2 +1,2 @@
-<!--pages/words/words.wxml-->
+<!--pages/scroll/scroll.wxml-->
 <text>{{page}}.wxml</text>
