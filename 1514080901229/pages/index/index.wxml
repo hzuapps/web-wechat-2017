@@ -11,7 +11,7 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-    <button class="weui-btn " url="" type="primary">编辑日记</button>  
+    <button class="weui-btn " url="../diaryedit/diaryedit" type="primary" bindtap='toDiaryedit'>编辑日记</button>  
 </view>
 <view class="weui-footer weui-footer_fixed-bottom">
   <view class="weui-footer__links">
