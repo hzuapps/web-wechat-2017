@@ -1,4 +1,4 @@
-// pages/wordsAndsentences/words.js
+﻿// pages/wordsAndsentences/words.js
 Page({
 
   /**
@@ -15,7 +15,7 @@ Page({
     this.setData({
       words:[{
         word:'text',
-        mean:'文本'
+        mean:'文字'
       },
         {
           word: 'text',

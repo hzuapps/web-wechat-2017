@@ -8,6 +8,7 @@
         </view>
         <view class="weui-cell__ft">
           {{item.mean}}
+
         </view>
       </view>
     </view>
