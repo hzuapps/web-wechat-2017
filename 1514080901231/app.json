@@ -3,6 +3,25 @@
     "pages/index/index",
     "pages/logs/logs"
   ],
+      "tabBar": {
+        "color": "#a9b7b7",
+        "selectedColor": "#11cd6e",
+        "borderStyle": "white",
+        "list": [
+          {
+            "selectedIconPath": "images/开心.png",
+            "iconPath": "images/开心.png",
+            "pagePath": "pages/index/index",
+            "text": "首页"
+          },
+          {
+            "selectedIconPath": "images/记录.png",
+            "iconPath": "images/记录.png",
+            "pagePath": "pages/logs/logs",
+            "text": "历史记录"
+          }
+        ]
+      },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",

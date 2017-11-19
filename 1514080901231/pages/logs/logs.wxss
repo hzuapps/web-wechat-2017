@@ -1,8 +1,8 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
-}
-.log-item {
-  margin: 10rpx;
-}
+.block{
+  height: 120rpx;
+  width: 100%;
+  background:white;
+  border:0px solid rebeccapurple;
+  border-radius: 5px;
+  margin-top:2px;
+} 
