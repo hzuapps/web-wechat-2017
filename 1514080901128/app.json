@@ -2,8 +2,9 @@
   "pages":[
     "pages/index/index",
 	  "pages/ComicNew/ComicNew",
-    "pages/logs/logs"
-    
+    "pages/logs/logs",
+    "pages/myinfo/creatinfo",
+    "pages/mynowinfo/nowinfo"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -36,7 +37,7 @@
         "text": "动画"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/myinfo/creatinfo",
         "iconPath": "pages/images/me.png",
         "selectedIconPath": "pages/images/me_1.png",
         "text": "四斋"
