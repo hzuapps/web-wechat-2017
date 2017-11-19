@@ -8,7 +8,7 @@
         <button class="weui-btn" type="primary">计算器</button>
         <button class="weui-btn" type="primary" plain="true">科学计算器</button>
         <button class="weui-btn" type="primary">大写数字</button>
-           
+        <button class="weui-btn" type="primary" plain="true" bindtap='history'>历史数据</button>
         
     </view>
 </view>
