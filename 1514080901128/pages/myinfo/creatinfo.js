@@ -14,9 +14,9 @@ Page({
     console.log('提交表单');
     console.log(e.detail.value)
     wx.showLoading({
-      title: '创建成功',
-      icon: '创建成功',
-      duration: 2000
+      title: '提交成功',
+      icon: 'success',
+      duration: 5000
     });
     this.setData({
       sex:e.detail.value.sex,
@@ -33,7 +33,7 @@ Page({
     console.log("form发生了reset事件")
   },
   bindDateChange: function (e) {
-    console.log('picker account 发生选择改变，携带值为', e.detail.value);
+    console.log(e.detail.value);
     this.setData({
       date: e.detail.value
     })
