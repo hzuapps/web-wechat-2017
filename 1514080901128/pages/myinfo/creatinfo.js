@@ -8,7 +8,6 @@ Page({
     ],
     date:'2016-11-11',
     suggest:'',
-
   },
   formSubmit:function(e){
     console.log('提交表单');
