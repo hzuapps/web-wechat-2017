@@ -1,14 +1,17 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/student-list/student-list",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/create-room/create-room",
+    "pages/check-in/check-in",
+    "pages/now-room/now-room"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F1441F",
     "navigationBarTitleText": "点名吧！老师。",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "position": "top",
@@ -19,8 +22,8 @@
       },
       {
         "pagePath": "pages/student-list/student-list",
-        "text": "已到学生"
-      },      
+        "text": "未到学生"
+      },
       {
         "pagePath": "pages/logs/logs",
         "text": "日志"

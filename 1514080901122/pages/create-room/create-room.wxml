@@ -1,0 +1,50 @@
+<!-- 这里是创建签到房间的页面  -->
+<view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <!-- 签到学号 -->
+    <view class="weui-cell check-in-number-start">
+      <view class="weui-cell__hd">
+        <label class="weui-label">起始学号</label>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="startNum" type='number' placeholder='起始学号'></input>
+      </view>
+    </view>
+
+    <view class="weui-cell check-in-number-end">
+      <view class="weui-cell__hd">
+        <label class="weui-label">终止学号</label>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="endNum" type='number' placeholder='终止学号'></input>
+      </view>
+    </view>
+
+    <!-- 签到时间 -->
+    <view class="weui-cell check-in-time">
+      <view class="weui-cell__hd">
+        <label class="weui-label">签到时间</label>
+      </view>
+      <view class="weui-cell__bd">
+          <picker name="limitTime" bindchange="bindTimeChange" value="{{timeIndex}}" range="{{times}}">
+              <view class="weui-select">{{times[timeIndex]}}</view>
+          </picker>
+      </view>
+    </view>    
+
+    <view class="warning"><text>{{warning}}</text></view>
+
+    <view class="btn-area">
+      <button class="weui-btn" type="primary"  formType="submit">创建</button> 
+      <button class="weui-btn" type="default" formType="reset">重置</button>
+    </view>
+  </form>
+
+  <!-- 下面这些内容将来会显示在now-room页面 -->
+  <!-- <view class="data-test-area">
+    <view>测试表单提交：</view>
+    <view>{{startNum}}</view>
+    <view>{{endNum}}</view>
+    <view>{{limitTime}}</view>  
+  </view> -->
+</view>
