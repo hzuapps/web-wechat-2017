@@ -2,14 +2,45 @@
 //获取应用实例
 const app = getApp()
 
+var order = ['red', 'yellow', 'blue', 'green', 'red']
+
+
 Page({
   data: {
+    toView: ['red','red'],
+    scrollTop: 100,
     grids: [0, 1, 2, 3, 4, 5, 6, 7, 8],
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  upper: function (e) {
+    console.log(e)
+  },
+  lower: function (e) {
+    console.log(e)
+  },
+  scroll: function (e) {
+    console.log(e)
+  },
+  tap: function (e) {
+    for (var i = 0; i < order.length; ++i) {
+      if (order[i] === this.data.toView) {
+        this.setData({
+          toView: order[i + 1]
+        })
+        break
+      }
+    }
+  },
+  tapMove: function (e) {
+    this.setData({
+      scrollTop: this.data.scrollTop + 10
+    })
+  }
+,
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
