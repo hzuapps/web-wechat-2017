@@ -1,10 +1,9 @@
 <view class="page">
     <view class="page__hd">
-        <view class="page__title">Input</view>
-        <view class="page__desc">表单输入</view>
+        <view class="page__title">自定义任务</view>
     </view>
     <form bindsubmit="formsubmit">
-        <view class="weui-cells__title">文本框</view>
+        <view class="weui-cells__title">新任务</view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_input">
                 <view class="weui-cell__bd">
@@ -13,7 +12,7 @@
             </view>
         </view>
 
-      <view class="weui-cells__title">文本域</view>
+      <view class="weui-cells__title">详细描述</view>
       <view class="weui-cells weui-cells_after-title">
           <view class="weui-cell">
               <view class="weui-cell__bd">
@@ -24,7 +23,7 @@
       </view>
 
       <view class="weui-btn-area">
-            <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+            <button class="weui-btn" type="primary" form-type='submit'>添加新任务</button>
       </view>
     </form>
 </view>

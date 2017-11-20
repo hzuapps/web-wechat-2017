@@ -38,6 +38,12 @@
         </view>
     </view>
   </view>
+  
+  <view class="btnContainer">
+    <navigator url="../form/form">
+      <button class="weui-btn"  type="primary" size="mini">自定义任务</button>
+    </navigator>
+  </view>
 
   <view class="btnContainer">
     <navigator url="../clock/clock">
@@ -45,11 +51,6 @@
     </navigator>
   </view>
   
-  <view class="btnContainer">
-    <navigator url="../form/form">
-      <button class="weui-btn"  type="primary" size="mini">表单</button>
-    </navigator>
-  </view>
 
   
 </view>
