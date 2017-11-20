@@ -1,16 +1,17 @@
-//index.js
-//获取应用实例
-//const app = getApp()
-//var base64 = require("../images/base64");
-
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    session: [],
-    inputShowed: false,
-    inputVal: ""
+    session: []
   },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
   onLoad: function (options) {
-    
+    var that = this
     // 设置窗口大小
     wx.getSystemInfo({
       success: (res) => {
@@ -21,26 +22,93 @@ Page({
         //console.dir(that.data.windowHeight)
       }
     })
+    that.setData({
+      sessions: [{
+        name: "1学院",
+      }, {
+        name: "2学院",
+      }, {
+        name: "3学院",
+      }, {
+        name: "4学院",
+      }, {
+        name: "5学院",
+      }, {
+        name: "6学院",
+      }, {
+        name: "7学院",
+      },{
+        name: "8学院"
+      }
+      ],
+    })
   },
-  showInput: function () {
-    this.setData({
-      inputShowed: true
-    });
+  
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
   },
-  hideInput: function () {
-    this.setData({
-      inputVal: "",
-      inputShowed: false
-    });
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
   },
-  clearInput: function () {
-    this.setData({
-      inputVal: ""
-    });
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
   },
-  inputTyping: function (e) {
-    this.setData({
-      inputVal: e.detail.value
-    });
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  },
+
+  onEnd: function (e) {
+    console.dir(e)
+    var that = this;
+    that.setData({
+      isLower: true,
+      sessions: that.data.sessions.concat([{
+        name: "加载学院1",
+      }, {
+        name: "加载学院2",
+      }])
+    })
+
+  },
+
+  onScroll: function () {
+    console.dir("onScroll");
   }
 })
