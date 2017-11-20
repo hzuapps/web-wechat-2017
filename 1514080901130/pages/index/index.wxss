@@ -19,11 +19,3 @@
 .usermotto {
   margin-top: 200px;
 }
-
-.array{
-  box-sizing: border-box;
-  width:200px;
-  padding:10px 40px;
-  margin:1px 60px;
-  background-color:chartreuse
-}

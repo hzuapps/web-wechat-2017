@@ -4,56 +4,11 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    text: '',
+    tip:'',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    list:[
-      {
-        id:'1',
-        name:"这是一个数组"
-      },
-      {
-        id: '2',
-        name: "这是一个数组"
-      },
-      {
-        id: '3',
-        name: "这是一个数组"
-      },
-      {
-        id: '4',
-        name: "这是一个数组"
-      },
-      {
-        id: '5',
-        name: "这是一个数组"
-      },
-      {
-        id: '6',
-        name: "这是一个数组"
-      },
-      {
-        id: '7',
-        name: "这是一个数组"
-      },
-      {
-        id: '8',
-        name: "这是一个数组"
-      },
-      {
-        id: '9',
-        name: "这是一个数组"
-      },
-      {
-        id: '10',
-        name: "这是一个数组"
-      },
-      {
-        id: '11',
-        name: "这是一个数组"
-      }
-    ]
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
@@ -96,5 +51,58 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+
+  onSubmit: function (event) {
+
+   
+
+    console.dir(event)
+    var that = this
+    var text = event.detail.value.text
+    if (!text) {
+      console.dir(text)
+      that.setData({
+        hasError: true,
+        errorText: '文字不能为空！'
+      })
+    } else {
+      that.setData({
+        hasError: false,
+
+        text:'表单内容：'+  event.detail.value.text
+      })
+      wx.setStorage({
+        key: "input",
+        data: event.detail.value,
+        success: function (res) {
+          wx.showToast({
+            title: '成功',
+            icon: 'success',
+            duration: 2000
+          })
+
+        }
+      })
+    }
+  },
+  onTextChange: function (e) {
+    var that = this;
+    console.dir(e)
+    var text = e.detail.value
+    console.dir(text);
+    if (!text) {
+      that.setData({
+        hasError: true,
+        errorText: '文字不能为空！'
+      })
+    } else {
+      that.setData({
+        hasError: false
+      })
+    }
+  },
+
+
+
 })
