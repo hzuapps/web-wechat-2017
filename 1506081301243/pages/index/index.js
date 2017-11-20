@@ -7,8 +7,41 @@ Page({
     motto: '相册小程序',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    sessions: [{
+      name: "项目1",
+      icon: "1.jpg",
+      msg: "在线相册"
+    }, {
+      name: "项目2",
+      icon: "2.jpg",
+      msg: "你的相册"
+    }, {
+      name: "项目3",
+      icon: "3.jpg",
+      msg: "相册"
+    }, {
+      name: "项目4",
+      icon: "2.jpg",
+      msg: "相册"
+    }, {
+      name: "项目5",
+      icon: "1.jpg",
+      msg: "相册"
+    }, {
+      name: "项目6",
+      icon: "3.jpg",
+      msg: "相册"
+    }, {
+      name: "项目7",
+      icon: "2.jpg",
+      msg: "相册。"
+    }, {
+      name: "项目8",
+      icon: "1.jpg",
+      msg: "相册？"
+    }]
+   
   },
   //事件处理函数
   bindViewTap: function() {
