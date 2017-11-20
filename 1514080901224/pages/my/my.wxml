@@ -1,0 +1,10 @@
+<view>
+<text>我的相册!</text>
+</view>
+<navigator url="" wx:for="{{sessions}}" wx:key="name" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+<image src="../images/1.jpg"></image>
+<image src="../images/2.jpg"></image>
+<image src="../images/3.jpg"></image>
+<image src="../images/4.jpg"></image>
+<image src="../images/5.jpg"></image>
+</navigator>
