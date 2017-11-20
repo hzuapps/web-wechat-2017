@@ -1,0 +1,29 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">自定义任务</view>
+    </view>
+    <form bindsubmit="formsubmit">
+        <view class="weui-cells__title">新任务</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name='text' value='{{text}}' placeholder="请输入文本" />
+                </view>
+            </view>
+        </view>
+
+      <view class="weui-cells__title">详细描述</view>
+      <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell">
+              <view class="weui-cell__bd">
+                  <textarea class="weui-textarea" name='area' bindinput='countlength' value='{{area}}' placeholder="请输入文本" style="height: 3.3em" />
+                  <view class="weui-textarea-counter">{{count}}/140</view>
+              </view>
+          </view>
+      </view>
+
+      <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>添加新任务</button>
+      </view>
+    </form>
+</view>
