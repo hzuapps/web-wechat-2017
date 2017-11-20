@@ -1,0 +1,8 @@
+/* pages/wordsAndsentences/words.wxss */
+.wcontainer{
+  height: 1000rpx;
+}
+.right{
+  margin-left: 450rpx;
+  /* border: solid 1px black; */
+}
