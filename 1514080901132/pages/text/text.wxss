@@ -6,3 +6,12 @@
   border-bottom: 2px solid #bbb;
   padding: 15px;
 }
+.sum{
+  background: rgba(100, 100, 0, 0.8);
+  right:0;
+  position: absolute;
+  bottom: 0;
+}
+.sum:hover{
+  background: red;
+}

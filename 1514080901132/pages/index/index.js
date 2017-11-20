@@ -7,7 +7,50 @@ Page({
     motto: '菜单',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+      showView: true,
+      students: [
+        {
+          sNum: "1",
+          name: '鲜虾粥',
+          price: '38'
+        },
+        {
+          sNum: "2",
+          name: '鱼片粥',
+          price: '28'
+        },
+        {
+          sNum: "3",
+          name: '兴国米粉鱼',
+          price: '12'
+        },
+        {
+          sNum: "4",
+          name: '深海龙利鱼',
+          price: '16'
+        },
+        {
+          sNum: "5",
+          name: '垮多春鱼',
+          price: '18'
+        },
+        {
+          sNum: "6",
+          name: '酸梅汤',
+          price: '16'
+        }
+      ]
+  },
+  onLoad: function (options) {
+    // 生命周期函数--监听页面加载
+    showView: (options.showView == "true" ? true : false)
+  }
+  , onChangeShowState: function () {
+    var that = this;
+    that.setData({
+      showView: (!that.data.showView)
+    })
   },
   //事件处理函数
   bindViewTap: function() {

@@ -1,13 +1,26 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
+  <view class="userinfo hide{{showView?'show':''}}">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
+  <!--<view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+-->
+  
+ <view class="hide{{showView?'':'show'}} eat">
+ <scroll-view scroll-y bindscrolltolower="more">
+    <view class="student-tag" wx:for="{{students}}" wx:for-item="studentId">
+      {{studentId.sNum}} - {{studentId.name}} - {{studentId.price}}    <text class='add' bindtap='addfood'>+</text>
+    </view>
+  </scroll-view>
+ </view>
+  <view >
+  <button  class="hide{{showView?'show':''}} btn1" bindtap="onChangeShowState">{{showView?'菜单':'退出'}}</button>
+  <button class="hide{{showView?'':'show'}} btn2" bindtap="onChangeShowState">{{showView?'菜单':'退出'}}</button>
+ </view>
 </view>
