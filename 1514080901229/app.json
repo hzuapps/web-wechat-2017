@@ -1,7 +1,10 @@
 {
   "pages":[
+    
     "pages/index/index",
     "pages/diarylist/diarylist",
+     "pages/diaryedit/diaryedit",
+     "pages/diaryshow/diaryshow",
     "pages/logs/logs"
   ],
   "window":{

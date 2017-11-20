@@ -50,5 +50,10 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  toDiaryedit: function () {
+    wx.navigateTo({
+      url: '../diaryedit/diaryedit'
+    })
   }
 })
