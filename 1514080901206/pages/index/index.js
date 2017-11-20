@@ -50,5 +50,13 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  history:function(){
+    wx.navigateTo({
+      url: '../logs/logs',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   }
 })
