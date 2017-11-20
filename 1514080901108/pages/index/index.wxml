@@ -7,7 +7,11 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+  <button class="weui-form-preview__label" type="default" size="mini">查看棋谱</button>
+   <button class="weui-form-preview__label" type="warn" size="mini">收藏的棋谱</button>
   <view class="usermotto">
+
+  
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
