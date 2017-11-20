@@ -1,6 +1,4 @@
-page{
-    background-color: #FFFFFF;
-}
+@import'weui.wxss';
 .button-sp-area{
     margin: 0 auto;
     padding-top: 15px;
