@@ -2,6 +2,11 @@
   <scroll-view scroll-y bindscrolltolower="more" style="height: 100vh">
     <view class="student-tag" wx:for="{{students}}" wx:for-item="studentId">
       {{studentId.sNum}} - {{studentId.name}} - {{studentId.price}}
+  
     </view>
+    <view>
+  <button class='sum'>结算</button>
+  </view>
   </scroll-view>
+  
 </view>

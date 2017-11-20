@@ -1,6 +1,16 @@
 <!--logs.wxml-->
+<!--
 <view class="container log-list">
   <block wx:for="{{logs}}" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log}}</text>
   </block>
+</view>
+-->
+<view>
+  <text class='user'>账户信息</text>
+  <text class='money'>钱包</text>
+  <text class='decount'>优惠券</text>
+  <text class='fork'>已完成订单</text>
+  
+  <text class='set'>设置</text>
 </view>
