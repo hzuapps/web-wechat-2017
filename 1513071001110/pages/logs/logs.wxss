@@ -6,3 +6,9 @@
 .log-item {
   margin: 10rpx;
 }
+.ssj {
+   height: 50px;
+   background-color: #eee;
+   border-bottom: 1px solid #bbb;
+   padding: 20px;
+ } 

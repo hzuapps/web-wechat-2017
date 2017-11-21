@@ -8,5 +8,22 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "随身记",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#dddddd",
+    "selectedColor":"#3cc51f",
+    "borderStyle":"white",
+    "backgroundColor":"#ffffff",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "iconPath":"image/shouye1.png",
+      "selectedIconPath":"image/shouye.png",
+      "text":"首页"
+    },{
+       "pagePath": "pages/logs/logs",
+       "iconPath": "image/rizhi1.png",
+       "selectedIconPath": "image/rizhi.png",
+       "text": "日志"
+    }]
   }
 }
