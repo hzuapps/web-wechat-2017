@@ -1,10 +1,34 @@
 <!--find.wxml-->
 <view class="container">
+
+  <scroll-view scroll-x="true" style="width: 100%;border:1px solid black">
+    <view style="display: flex;">
+      <view class="ad" wx:for="{{ad}}">{{item}}</view>
+    </view>
+  </scroll-view>
+  
   <view class="section">
-  <input type="text" placeholder="搜索"/>
+    <input type="text" placeholder="搜索"/>
   </view>
-  <view style="display: flex;">
-  <button>每日精选</button>
-  <button>投你所好</button>
+  
+  <view style="display: flex;flex-flow:wrap">
+    <button>每日精选</button>
+    <button>投你所好</button>
   </view>
+  
+  <view style="display: flex;flex-flow:row wrap;">
+    <view  class="picture">图片</view>
+    <view  class="picture">图片</view> 
+    <view  class="picture">图片</view>
+    <view  class="picture">图片</view>
+    <view  class="picture">图片</view>
+    <view  class="picture">图片</view>   
+    <view  class="picture">图片</view>
+    <view  class="picture">图片</view>
+    <view  class="picture">图片</view>
+    <view  class="picture">图片</view>
+  </view>
+  
+  <view style='padding:50px;margin:0px;'>@秦俊杰Stephen</view>
+
 </view>
