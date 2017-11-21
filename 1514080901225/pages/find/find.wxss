@@ -3,3 +3,25 @@ button
 {
   margin: 20px;
 }
+
+
+
+.picture
+{
+  padding: 60px;
+  background-color: greenyellow;
+  border:black solid;
+}
+
+
+
+.ad
+{
+  padding: 50px;
+}
+
+
+input
+{
+  padding:10px;
+}
