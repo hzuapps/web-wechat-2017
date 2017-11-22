@@ -1,2 +1,0 @@
-<!--pages/words/words.wxml-->
-<text>{{page}}.wxml</text>

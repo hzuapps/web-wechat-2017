@@ -1,7 +1,0 @@
-<view>
-  <scroll-view scroll-y bindscrolltolower="more" style="height: 100vh">
-    <view class="diary-tag" wx:for="{{days}}" wx:for-item="dayId">
-      {{dayId.w}} - {{dayId.s}} 
-    </view>
-  </scroll-view>
-</view>

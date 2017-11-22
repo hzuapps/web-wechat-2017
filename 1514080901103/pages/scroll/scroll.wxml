@@ -1,7 +1,0 @@
-<view>
-  <scroll-view scroll-y bindscrolltolower="more" style="height: 100vh">
-    <view class="list" wx:for="{{list}}" wx:for-item="list">
-      {{list.Num}} - {{list.name}}
-    </view>
-  </scroll-view>
-</view>
