@@ -1,14 +1,6 @@
-<view class="page">
-    <view class="page__bd">
-        
-        <view class="weui-cells weui-cells_after-title">
-            <navigator wx:if="{{showScroll}}" url="/pages/demo/scrollView" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-                </view>
-                <view class="weui-cell__bd">示例</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">以下只是做了些模仿</view>
-            </navigator>
-        </view>
-    </view>
+<!--index.wxml-->
+<view  style="margin-top: 50%; text-align:center;">
+  <navigator url="Component/FormM/FormM">
+    <button type="primary"> Form表单 </button>
+  </navigator>
 </view>
