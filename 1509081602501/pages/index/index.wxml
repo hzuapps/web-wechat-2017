@@ -1,15 +1,18 @@
-<!--index.wxml-->
-<view style=' background-color: #CCCC99;height: 600px;' class="page">
-<view>   
-<view class="section__ctn">
-        <image class='cxy' style="width: 300px; height: 200px; background-color: #eeeeee;margin-left:1cm;" mode="{{item.mode}}" src="http://i2.hunantv.com/p1/20120724/111339920.jpg"></image>
+
+<view class="page">
+<input placeholder="输入你想要的内容" auto-focus/>
+<scroll-view class="scroll" scroll-y style="height: 520px " bindscrolltolower="loadMore" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="page__hd"> </view>
+  <view class="page__bd">
+    <view class="section section_gap" wx:for="{{array}}" wx:for-item="item">
+      <view class="section__ctn">       
+        <view class="section__title"><text style=" position:absolute;left:60px;">{{item.text}}</text>
+        <image class="img" style="width: 50px; height: 50px; background-color: #FFFFFF;margin-left:0px; " src="{{item.icon}}"></image>
+        <text style=" position:absolute;right:30px;font-size:80%;color:#CCCCCC;">{{item.time}}</text>
+        <text style="left:100px;font-size:80%;color:#CCCCCC;">{{item.msg}}</text>
+        </view>
       </view>
-</view>
- <!-- audio.wxml -->
-<audio style='margin-left:1cm;' poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
-<view style="flex-direction:row;">
-<button class='button-play'   bindtap="audioPlay">播放</button>
-<button class='button-stop'   bindtap="audioPause">暂停</button>
-<button class='button-back'   bindtap="audioStart">回到开头</button> 
-</view>
+    </view>
+  </view>
+</scroll-view>
 </view>

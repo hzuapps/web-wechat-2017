@@ -1,21 +1,43 @@
-/**index.wxss**/
-.button-play {
-  background-color: #CCCCFF;
-  border-radius: 8rpx;    
-  margin: 20rpx; 
-}
-.button-stop{
-  background-color: #CCCCFF;
-    border-radius: 8rpx;    
-  margin: 20rpx; 
-}
-.button-back{
-    background-color: #CCCCFF;
-      border-radius: 8rpx;    
-  margin: 20rpx; 
-}
-.cxy{
-    border-radius: 20rpx;    
-    margin: 20rpx; 
-  
-}
+ /**index.wxss**/
+ .container{
+   background-color: #ffffff;
+   height: 800px;
+
+ }
+
+ .item {
+  width: 90%;
+  height: 300rpx;
+  margin: 20rpx auto;
+  background: #CCCCCC;
+  overflow: hidden;
+ }
+ .img{
+   margin: 2px;
+ }
+ .scroll{
+   height: 50px;
+   background-color: #FFFFFF;
+   border-bottom: 1px solid #bbb;
+   padding: 20px;
+ }
+
+
+.loading{  
+  padding: 10rpx;  
+  text-align: center;  
+}  
+.loading:before{  
+  display: inline-block;  
+  margin-right: 5rpx;  
+  vertical-align: middle;  
+  content: '';  
+  width: 40rpx;  
+  height: 40rpx;  
+  background: #CCCCCC;  
+  background-size: contain;  
+  animation: rotate 1s linear infinite;  
+}  
+.loading.complete:before{  
+  display: none;  
+} 
