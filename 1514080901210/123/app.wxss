@@ -1,0 +1,54 @@
+/**app.wxss**/
+page {
+  background-color: #fbf9fe;
+  height: 100%;
+}
+/**这里可以设计所有界面中都包含的控件的公共样式，但是要记住类名要写一致，
+否则无法调用，比如下面的类名就是每个页面的标题样式**/
+.viewTitle{
+    margin-top: 20px;
+    height: 40px;
+    text-align: center;
+}
+.bc_green{
+    background-color: #09BB07;
+}
+.bc_red{
+    background-color: #F76260;
+}
+.bc_blue{
+    background-color: #10AEFF;
+}
+.bc_yellow{
+    background-color: #FFBE00;
+}
+.bc_gray{
+    background-color: #C9C9C9;
+}
+.viewName{
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 50px;
+  font-size: 25px;
+  background-color: white;
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.section{
+    margin-bottom: 80rpx;
+}
+.section_gap{
+    padding: 0 30rpx;
+}
+.section__title{
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.section_gap .section__title{
+    padding-left: 0;
+    padding-right: 0;
+}
