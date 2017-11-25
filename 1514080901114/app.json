@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/feedback/feedback"
+    "pages/feedback/feedback",
+    "pages/addnewform/addnewform"
   ],
   "window":{
     "backgroundTextStyle":"light",

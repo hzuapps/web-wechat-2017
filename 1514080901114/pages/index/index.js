@@ -1,4 +1,3 @@
-/*模板内容
 //index.js
 //获取应用实例
 const app = getApp()
@@ -9,7 +8,10 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    icon:'image/addNotes.png'
+
+    tips: "欢迎使用反馈助手，点击下面的+按钮即可创建新通知" ,
+    addnote:"＋",
+    adder:"../image/addNotes.png"
   },
   //事件处理函数
   bindViewTap: function() {
@@ -52,22 +54,12 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
-})
-*/
-
-//以下为图片内容
-
-Page({
-  data: {
-    array: [ {
-      mode: 'aspectFill',
-      text: ''
-    }],
-    src: '../../image/github.jpg'
   },
-  imageError: function (e) {
-    console.log('image3发生error事件，携带值为', e.detail.errMsg)
+
+
+  //新内容
+  addnote: function(e) {
+
   }
- 
+
 })

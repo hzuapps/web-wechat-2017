@@ -1,33 +1,11 @@
-<!--index.wxml-->
-<!-- 默认
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+<view class="section">
+<view class="btn-area">
+  <view class="body-view">
+    <text>{{tips}}</text>
+      <navigator url="../addnewform/addnewform" style="margin-top:150px;margin-left:135px;margin-bottom:40px;padding:0 20px;background:#006400;color:white;width:18px;height:30px">+
+     </navigator>
   </view>
 </view>
--->
-<view class="page">
-  <view class="page__hd">
-    <text class="page__title">喵喵~~有新任务啦</text>
-    <text class="page__desc"></text>
-  </view>
-  <view class="page__bd">
-    <view class="section section_gap" wx:for="{{array}}" wx:for-item="item">
-      <view class="section__title">{{item.text}}</view>
-      <view class="section__ctn">
-        <image  style="width: 320px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
-        <image src="../../image/addNotes.png"  style="margin-right:143px;margin-left:143px;vertical-align: middle;width:30px; height: 30px;"></image>
-      </view>
-    </view>
-    
-  </view>
 
 <view class="weui-footer">
 <view class="weui-footer__links">
