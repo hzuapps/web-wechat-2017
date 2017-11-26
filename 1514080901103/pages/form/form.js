@@ -5,11 +5,11 @@ Page({
     cgvalue: "",
     rgvalue: "",
     usernamevalue: "",
-    passwordvalue: "",
+    addressvalue: "",
     cgvalue2: "",
     rgvalue2: "",
     usernamevalue2: "",
-    passwordvalue2: ""
+    addressvalue2: ""
   },
 
   mytap: function () {
@@ -17,7 +17,7 @@ Page({
       cgvalue2: this.data.cgvalue,
       rgvalue2: this.data.rgvalue,
       usernamevalue2: this.data.usernamevalue,
-      passwordvalue2: this.data.passwordvalue
+      addressvalue2: this.data.addressvalue
     }) 
   }  ,
 
@@ -40,9 +40,9 @@ Page({
    })
  },
 
- passwordinput: function (e) {
+ addressinput: function (e) {
    this.setData({
-     passwordvalue: e.detail.value 
+     addressvalue: e.detail.value 
    }) 
  }
 
