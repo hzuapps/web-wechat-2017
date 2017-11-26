@@ -1,0 +1,9 @@
+/* pages/page5/page5.wxss */
+.page__title
+{  
+    text-align: center
+}
+
+.page{
+    background-color: #FFFFFF;
+}
