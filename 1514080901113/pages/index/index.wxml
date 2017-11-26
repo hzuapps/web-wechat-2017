@@ -10,12 +10,11 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
 
-<!-- 加了一个按钮 -->
+
+
+
+
   <button class="weui-btn" type="primary" plain="true">MY ACCOUNT</button>
-            
-
-
-
 
   </view>
 </view>
