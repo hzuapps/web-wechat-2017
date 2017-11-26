@@ -1,0 +1,27 @@
+
+<form bindsubmit="reg">
+ 
+  <view>名字：<input type="text" name="username" bindinput="usernameinput" /></view>
+ 
+  <view>地址：<input type="text" name="password" bindinput="passwordinput"/></view>
+ 
+  <view>兴趣：<checkbox-group name="checkboxgroup" bindchange="cg">
+    <label><checkbox value="吃" />吃</label>
+    <label><checkbox value="喝"  />喝</label>
+    <label><checkbox value="玩"  />玩</label>
+    <label><checkbox value="乐"  />乐</label>
+  </checkbox-group></view>
+ 
+  <view>喜欢吃的类型：<radio-group name="radiogroup" bindchange="rg">
+    <label><radio value="肉" />肉</label>
+    <label><radio value="菜" />菜</label>
+    <label><radio value="汤" />汤</label>
+  </radio-group></view>
+ 
+  <view><button type="primary" form-type="submit" bindtap='mytap'>提交</button></view>
+ <view>表单内容如下所示：</view>
+  <view>{{   usernamevalue2 }}</view>
+ <view>{{   passwordvalue2 }}</view>
+ <view>{{   cgvalue2 }}</view>
+ <view>{{   rgvalue2 }}</view>
+</form>
