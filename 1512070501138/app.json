@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/logs/logs",
     "example/index",
+    "pages/demo/demo",
 
     "example/button/button",
     "example/list/list",
@@ -49,7 +50,7 @@
       {
         "selectedIconPath": "images/地标.png",
         "iconPath": "images/地标.png",
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/demo/demo",
         "text": "地标"
       },
       {
