@@ -1,25 +1,18 @@
-
+<view class="page">
+  <scroll-view scroll-y="true" class="lists">
+    <block wx:for="{{lists}}">
+      <view class="list-i" bindtap="edit" data-id="{{item.id}}">       
+      <view class="content">{{item.content}}</view>
+        <view class="time">{{item.time}}</view> 
+        <icon type="cancel" size="20" catchtap="remove" data-id="{{item.id}}" />       
+     
+  </view>
+      
+   
+ </block>
+  </scroll-view>
  
-          
-             
-             
-                   姓名 <input class="weui-input" placeholder="请输入姓名"/>
-              
-           
-                
-                
-            
-                
-                      
-      
-            
-            
-               
-              
-               
-         
-                  
-       
+  </view>
 
-       
-      
+  
+  

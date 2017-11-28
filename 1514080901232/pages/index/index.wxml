@@ -8,3 +8,22 @@
         </block>
     </swiper>
 </view>
+
+<text  class="page__desc">最新通知： </text> 
+
+<view class="menu-item">
+  <navigator class="menu-item-main" >
+   
+     <view class="ordtel">
+     <view class="container">
+     
+        <text class="flex-item bc_white" >{{lists}}</text>
+        
+       
+     </view>  
+     </view>            
+  </navigator>
+</view>
+
+
+
