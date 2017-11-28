@@ -1,0 +1,4 @@
+<view>
+  <input name="mobai" placeholder="" bindblur="mobaigongju" />
+  {{shuju}}
+</view>

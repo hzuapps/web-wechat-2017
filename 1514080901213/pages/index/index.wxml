@@ -26,6 +26,7 @@
     <button class="chuangjian" type="primary" bindtap="jump_two" style="margin-top: 15px">寻找约会方案</button>
     <button class="chuangjian" type="primary" bindtap="jump_three" style="margin-top: 15px">测试内容</button>
     <button class="chuangjian" type="primary" bindtap="jump_scroll" style="margin-top: 15px">实验内容</button>
+    <button class="chuangjian" type="primary" bindtap="jump_form" style="margin-top: 15px">form</button>
   </view>
 
 

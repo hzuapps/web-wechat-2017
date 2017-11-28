@@ -5,7 +5,8 @@
     "pages/one/one",
     "pages/two/two",
     "pages/three/three",
-    "pages/scroll/scroll"
+    "pages/scroll/scroll",
+    "pages/form/form"
   ],
   "window":{
     "backgroundTextStyle":"light",
