@@ -15,3 +15,31 @@
 .sum:hover{
   background: red;
 }
+.input{
+  padding-left: 10px;
+  height: 44px;
+}
+.inputView{
+  /*边界：大小1px, 为固体，为绿色*/
+  border: 1px solid green;
+  /*边界角的弧度*/
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+.myshow{
+  font-size: 25px;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+.show1{
+  margin-top: 30%;
+}
+.views{
+  height:auto;
+}
+.add{
+  margin-top: 20px;
+}

@@ -20,17 +20,26 @@ Page({
         sNum: "4",
         name: '深海龙利鱼',
         price: '16'
-      },
-      {
-        sNum: "5",
-        name: '垮多春鱼',
-        price: '18'
-      },
-      {
-        sNum: "6",
-        name: '酸梅汤',
-        price: '16'
       }
+    
     ]
-  }
+  },
+  listenFormSubmit: function (e) {
+    console.log('listenFormSubmit=', e.detail.value)
+  },
+  //点击重置
+  //listenFormReser: function (e) {
+  // console.log('listenFormReser=', e.detail.value)
+  //},
+  listenFormSubmit: function (e) {
+   
+ //   var index = len;
+   // var sn = "students["+index+"].sNum";
+    this.setData({
+    sNum:"6-",
+    name: e.detail.value.username,
+    price:"-18"
+    })
+
+  },
 })
