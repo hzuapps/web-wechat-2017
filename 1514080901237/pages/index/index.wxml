@@ -1,75 +1,30 @@
-<view class="page">
+<!--pages/demo/scrollView.wxml-->
+<scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltolower="onEnd" bindscroll="onScroll">
     <view class="page__hd">
-        <view class="page__title">List</view>
-        <view class="page__desc">列表</view>
+        <view class="page__title"></view>
+        <view class="page__desc"></view>
     </view>
     <view class="page__bd">
-        <view class="weui-cells__title">带说明的列表项</view>
-        <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell">
-                <view class="weui-cell__bd">标题文字</view>
-                <view class="weui-cell__ft">说明文字</view>
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd"></view>
+            <view class="weui-panel__bd">
+                <navigator url="" wx:for="{{sessions}}" wx:key="name" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../example/images/a.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">({{index+1}}) {{item.name}}</view>
+                        <view class="weui-media-box__desc">{{item.msg}}</view>
+                    </view>
+                </navigator>
             </view>
         </view>
-
-        <view class="weui-cells__title">带图标、说明的列表项</view>
-        <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell">
-                <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-                </view>
-                <view class="weui-cell__bd">标题文字</view>
-                <view class="weui-cell__ft">说明文字</view>
-            </view>
-            <view class="weui-cell">
-                <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-                </view>
-                <view class="weui-cell__bd">标题文字</view>
-                <view class="weui-cell__ft">说明文字</view>
-            </view>
+        <view class="weui-loadmore" wx:if="{{isLower}}">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
         </view>
-
-        <view class="weui-cells__title">带跳转的列表项</view>
-        <view class="weui-cells weui-cells_after-title">
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">cell standard</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-            </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">cell standard</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-            </navigator>
-        </view>
-
-        <view class="weui-cells__title">带说明、跳转的列表项</view>
-        <view class="weui-cells weui-cells_after-title">
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">cell standard</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
-            </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">cell standard</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
-            </navigator>
-        </view>
-
-        <view class="weui-cells__title">带图标、说明、跳转的列表项</view>
-        <view class="weui-cells weui-cells_after-title">
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-                </view>
-                <view class="weui-cell__bd">cell standard</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
-            </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-                </view>
-                <view class="weui-cell__bd">cell standard</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
-            </navigator>
+        <view class="weui-loadmore weui-loadmore_line" wx:if="{{isEnd}}">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
         </view>
     </view>
-</view>
+</scroll-view>
