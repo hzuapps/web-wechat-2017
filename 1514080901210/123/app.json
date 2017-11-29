@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+
+    "pages/index/Component/FormM/FormM"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "表单form",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "white"
+  }
+}

@@ -1,0 +1,33 @@
+/* pages/index/Component/FormM/FormM.wxss */
+wx-button {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+wx-label {
+  display: block;
+  margin-top: 10rpx;
+}
+.picker-text {
+  margin-left: 20rpx;
+  position: relative;
+}
+.lineView{
+  margin-top: 1px;
+  margin-left: 80px;
+  margin-right: 80px; 
+  height: 2px;
+  background-color: darkred;
+}
+.picker{
+  padding: 26rpx;
+  background-color: #FFFFFF;
+}
+.inputView{
+    /*边界：大小1px, 为固体，为绿色*/
+    border:  1px solid green;
+    /*边界角的弧度*/
+    border-radius: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
