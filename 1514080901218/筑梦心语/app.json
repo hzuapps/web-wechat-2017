@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/from/from"
   ],
   "window":{
    "backgroundTextStyle":"light",
@@ -30,7 +31,7 @@
       {
         "selectedIconPath": "images/user.png",
         "iconPath": "images/user.png",
-        "pagePath": "comp/view",
+        "pagePath": "pages/from/from",
         "text": "3"
       },
       {
