@@ -1,0 +1,6 @@
+/* pages/class/class.wxss */
+.page__title{
+  font-size: 30px;
+  text-align: center;
+  color:blueviolet;
+}

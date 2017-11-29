@@ -1,0 +1,10 @@
+/* pages/comp/scroll.wxss */
+.page__title{
+  font-size: 50px;
+  text-align: center;
+  color:blueviolet;
+}
+.page__desc{
+  font-size: 35px;
+  color:red;
+}
