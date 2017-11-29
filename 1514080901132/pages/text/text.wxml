@@ -1,7 +1,23 @@
-<view>
+<view class='views'>
   <scroll-view scroll-y bindscrolltolower="more" style="height: 100vh">
     <view class="student-tag" wx:for="{{students}}" wx:for-item="studentId">
       {{studentId.sNum}} - {{studentId.name}} - {{studentId.price}}
+  
     </view>
+    <view class="student-tag">
+     {{sNum}}  {{name}}  {{price}}
+    </view>
+    <view>
+<form bindsubmit="listenFormSubmit" bindreser="listenFormReser" class='forms'>
+  <!--用户名与密码-->
+  <View class="inputView">
+    <input class="input" name="username" type="number" placeholder="请输入食物" placeholder-style="color: gray"> </input>
+  </View>
+  
+  <button formType="submit" type="primary" style="margin-top:10px;" class='add'>添加</button>
+</form>
+  <button class='sum'>结算</button>
+  </view>
   </scroll-view>
+  
 </view>
