@@ -1,0 +1,15 @@
+<view class="ui-list">
+  <view  class="list"  >
+    <block wx:for-items="{{list}}">
+      <navigator id="{{item.value}}" url="../detail/detail?id={{item.value}}" class="item">
+        <view class="widget-cell">
+          <view class="cell-bd nowrap">
+            <text class="name">{{item.value}}</text>
+          </view>
+          <view class="cell-arrow"></view>
+        </view>
+        <view class="line {{index == 0 ? 'line-first' : ''}}"></view>
+      </navigator>
+    </block>
+  </view>
+</view>

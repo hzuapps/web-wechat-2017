@@ -1,0 +1,49 @@
+
+.ui-list .item{
+    position: relative;
+    padding-top: 26rpx;
+    padding-bottom: 26rpx;
+    padding-left: 40rpx;
+    padding-right: 30rpx;
+}
+.ui-list .item .nowrap{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.ui-list .item .name{
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+.ui-list .item .line{
+    content: " ";
+    position: absolute;
+    left: 40rpx;
+    top: 0;
+    right: 0;
+    height: 2rpx;
+    background-color: #F0F0F0;
+}
+.ui-list .item .line-first{
+    left: 0;
+    right: 0;
+}
+.ui-list .item .line-last{
+    left: 0;
+    right: 0;
+    top:initial;
+    bottom: 0;
+}
+
+.gototop{
+	position: fixed;
+	bottom: 20rpx;
+	right: 20rpx;
+	transition: all 0.3s;
+	opacity: 0;
+	transform: translateY(200rpx) rotate(180deg);
+}
+.gototop.active{
+	opacity: 0.7;
+	transform: translateY(0) rotate(180deg);
+}
