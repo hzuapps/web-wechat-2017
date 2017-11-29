@@ -1,0 +1,22 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+
+.input{
+  padding-left: 10px;
+  height: 44px;
+}
+.inputView{
+  /*边界：大小1px, 为固体，为绿色*/
+  border: 0.5px solid green;
+  /*边界角的弧度*/
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 15px;
+}
