@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/user/user",
-    "pages/find/find"
+    "pages/find/find",
+    "pages/form/form"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -34,6 +35,12 @@
       "text": "发现",
       "iconPath": "/images/发现.png",
       "selectedIconPath": "/images/发现_fill.png"
+    },
+    {
+      "pagePath": "pages/form/form",
+      "text": "表单",
+      "iconPath": "/images/表单.png",
+      "selectedIconPath": "/images/表单_fill.png"
     }
   ]
 }
