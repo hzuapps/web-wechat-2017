@@ -23,7 +23,7 @@ Page({
   listenFormReser: function (e) {
     console.log('listenFormReser=', e.detail.value)
   },
- 
+
   //当选中某一个的时候回调该函数。e.detail.value：获取选中某个radio的value
   radioChange: function (e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value)

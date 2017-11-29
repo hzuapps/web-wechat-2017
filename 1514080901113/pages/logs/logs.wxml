@@ -21,6 +21,5 @@
     </radio-group>
   </View>
   <button formType="submit" type="primary" style="margin-top:10px;">保存</button>
-  <button formType="reset" type="warn" style="margin-top:10px;">重置</button>
-  
+  <button formType="reset" type="warn" style="margin-top:10px;">重置</button>  
 </form>
