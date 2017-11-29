@@ -71,6 +71,11 @@ Page({
       url: '../three/three',
     })
   },
+  jump_form: function () {
+    wx.navigateTo({
+      url: '../form/form',
+    })
+  },
   /**
  * 用户点击右上角分享
  */

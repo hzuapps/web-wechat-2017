@@ -1,0 +1,41 @@
+<!--pages/form/form.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <view class="page__title">Input</view>
+        <view class="page__desc">表单输入</view>
+    </view>
+    <view class="page__bd">
+      <form bindsubmit='onSubmit'>
+        <!--wx:if="{{hasError}}"表示如果hasEE-->
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError1}}">{{errorText1}}</view>
+
+        <view class="weui-cells__title">文本框</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="text" 
+                    value='{{text}}' placeholder="请输入文本" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError2}}">{{errorText2}}</view>
+        <view class="weui-cells__title">文本域</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <!--maxlength:表示文本域最大输入个数-->
+                    <textarea class="weui-textarea" name="area" placeholder="请输入文本" style="height: 8.3em" value='{{area}}' maxlength='200' bindinput='onChange'/>
+                    <view class="weui-textarea-counter">{{count}}/200</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+        </view>
+      </form>
+    </view>
+</view>
