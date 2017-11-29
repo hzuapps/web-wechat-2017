@@ -1,16 +1,23 @@
 //index.js
 //获取应用实例
 const app = getApp()
-var order = ['red', 'yellow', 'blue', 'green', 'red']
+
 Page({
   data: {
-    toView: 'red',
-    scrollTop: 100
+    motto: '上传文件',
+    userInfo: {},
+    hasUserInfo: false,
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  bindformTap: function () {
+    wx.navigateTo({
+      url: '../form/form'
     })
   },
   onLoad: function () {
@@ -47,31 +54,6 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
-    })
-  },
-  //滚动条设置
-  upper: function (e) {
-    console.log(e)
-  },
-  lower: function (e) {
-    console.log(e)
-  },
-  scroll: function (e) {
-    console.log(e)
-  },
-  tap: function (e) {
-    for (var i = 0; i < order.length; ++i) {
-      if (order[i] === this.data.toView) {
-        this.setData({
-          toView: order[i + 1]
-        })
-        break
-      }
-    }
-  },
-  tapMove: function (e) {
-    this.setData({
-      scrollTop: this.data.scrollTop + 100
     })
   }
 })
