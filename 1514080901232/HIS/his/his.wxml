@@ -1,18 +1,15 @@
-<view class="weui-cells__title">输入通知：</view>
+ <view class="weui-cells__title">输入通知：</view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
                 <view class="weui-cell__bd">
-                    <textarea class="weui-textarea" placeholder="请输入通知" style="height: 22.3em" />
-                    <view class="weui-textarea-counter">0/200</view>
-
+                    <textarea class="weui-textarea" bindinput="change" maxlength='200' value="{{content}}"  placeholder="请输入通知" style="height: 22.3em" />
+                    <view class="weui-textarea-counter">200字</view>
+<view class="weui-btn-area">
+           <button type="default" bindtap="sure"> 确认上传 </button>
+          
+        </view>
                   
                 </view>
             </view>
         </view>
           
-  
-     <view class="weui-btn-area">
-           <button type="default" bindtap="jumpToMyPage"> 确认上传 </button>
-        </view>
-        
-    
