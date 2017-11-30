@@ -1,4 +1,19 @@
 <view class="page">
+    <toast hidden="{{tipsHidden}}" icon="warn" duration="3000" bindchange="toHideTips">
+        请输入任务
+    </toast>
+
+    <view class="create">
+        <view class="section">
+            <input bindinput="bindTask" placeholder="想做点什么呢？" value="{{task}}" />
+        </view>
+        <view class="section">
+            <view class="btn-area">
+                <button bindtap="toCreate" type="default" size="mini">创建一个任务</button>
+            </view>
+        </view>
+    </view>
+<view class="page">
     <view class="page__hd">
   </view>
     <view class="page__bd page__bd_spacing">
@@ -24,9 +39,10 @@
             <view><view class="placeholder">去办公室值班</view></view>
             <view class="weui-flex__item"><view class="placeholder">帮老师送文件</view></view>
             <view><view class="placeholder">拔牙</view></view>
+        </view>
     </view>
 </view>
-    <view class="head">共 7项任务</view>
+    <view class="head">共 {{taskList.length}} 项任务</view>
 <!--pages/comp/scroll.wxml-->
   <scroll-view class="page" scroll-y="true" style="height:400px;" bindscrolltoupper="onUpper" bindscrolltolower="onLower" bindscroll="onScroll">
     <view class="page__bd">
@@ -50,6 +66,8 @@
             <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
         </view>
     </view>
-  </scroll-view>
-   
+  </scroll-view> 
 </view>
+ <view class="btn-area">
+    <navigator url="/pages/form/form" hover-class="navigator-hover">点击跳转到"任务清单"页面</navigator>
+  </view>

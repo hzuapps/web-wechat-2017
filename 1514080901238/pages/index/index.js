@@ -24,24 +24,24 @@ const pageData = {
         });
     },
 
-    // toCreate: function () {
-    //     let taskList = this.data.taskList;
-    //     if (this.data.task.trim().length < 1) {
-    //         this.toShowTips();
-    //     } else {
-    //         taskList.unshift({
-    //             id: Date.now(),
-    //             text: this.data.task,
-    //             done: false
-    //         });
-    //         this.setData({
-    //             task: '',
-    //             taskList: taskList
-    //         });
-    //         wx.setStorageSync('taskList', taskList);
-    //     }
+    toCreate: function () {
+        let taskList = this.data.taskList;
+        if (this.data.task.trim().length < 1) {
+            this.toShowTips();
+        } else {
+            taskList.unshift({
+                id: Date.now(),
+                text: this.data.task,
+                done: false
+            });
+            this.setData({
+                task: '',
+                taskList: taskList
+            });
+            wx.setStorageSync('taskList', taskList);
+        }
 
-    // },
+    },
 
     toggleDone: function (e) {
         let id = e.currentTarget.id;
