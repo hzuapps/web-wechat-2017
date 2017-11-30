@@ -1,36 +1,12 @@
 /**index.wxss**/
-.scrollView{
-    height:400px;
-    background-color:#fff;
-    border: 10px solid #ccc;
-    width: 350px;
+.navigator-hover{
+  color:blue;
 }
 
-.view{
-  border: 1px solid red;
-  background-color: #fff;
-  width:320px;
-  /*图片居中显示*/
-  margin: 0 auto;
-}
-
-.text{
-  line-height: 20px;
-  text-align: center;
-  margin: 5px;
+.navigator{
+  border:1px solid pink;
+  font-size: 28px;
+  margin: 10px;
   padding: 5px;
-  color:cadetblue
-}
-
-.startbutton{
- 
-  background-color: green;
-  margin: 10px;
-  font-size: 18px;
-}
-
-.closebutton{
-  background-color: red;
-  margin: 10px;
-  font-size: 18px;
+  font-weight:bold;
 }

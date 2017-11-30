@@ -4,31 +4,9 @@ const app = getApp()
 
 Page({
   data: {
-    image:["1","2","3","4","5","6","7","8"],
-    scrolltop:300,
-    scrollViewBol:false,
-    startscroll:false
+
   },
-  starttap:function(){
-    this.setData({
-      startscroll: true
-    })
-  },
-  closetap: function () {
-    this.setData({
-      startscroll: false
-    })
-  },
-  startbuttontap:function(){
-      this.setData({
-        scrollViewBol:true
-      })
-  },
-  closebuttontap: function () {
-    this.setData({
-      scrollViewBol: false
-    })
-  },
+  
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
