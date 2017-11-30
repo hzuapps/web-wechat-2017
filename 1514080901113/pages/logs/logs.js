@@ -3,7 +3,15 @@ const util = require('../../utils/util.js')
 
 Page({
   data: {
-    logs: []
+    logs: [],
+//add
+    cgvalue: "",
+    usernamevalue: "",
+    passwordvalue: "",
+    cgvalue2: "",
+    usernamevalue2: "",
+    passwordvalue2: ""
+
   },
   onLoad: function () {
     this.setData({
@@ -27,7 +35,38 @@ Page({
   //当选中某一个的时候回调该函数。e.detail.value：获取选中某个radio的value
   radioChange: function (e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value)
+  },
+
+//add
+ mytap: function () {
+    var that = this;
+    this.setData({
+      cgvalue2: that.data.cgvalue,
+      usernamevalue2: that.data.usernamevalue,
+      passwordvalue2: that.data.passwordvalue
+    })
+  },
+
+  cg: function (e) {
+    this.setData({
+      cgvalue: e.detail.value
+    })
+
+  },
+
+
+  usernameinput: function (e) {
+    this.setData({
+      usernamevalue: e.detail.value
+    })
+  },
+
+  passwordinput: function (e) {
+    this.setData({
+      passwordvalue: e.detail.value
+    })
   }
+
 
 })
 

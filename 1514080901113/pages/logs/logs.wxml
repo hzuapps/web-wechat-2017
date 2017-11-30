@@ -1,25 +1,29 @@
 <form bindsubmit="listenFormSubmit" bindreser="listenFormReser" >
   <!--新增的账目类型-->
   <view class="inputView">
-    <input class="input" name="username" type="number" placeholder="请输入账目的备注" placeholder-style="color: gray"> </input>
+    <input  bindinput='usernameinput' class="input" name="username" type="number" placeholder="请输入账目的备注" placeholder-style="color: gray"> </input>
   </view>
   <view class="inputView">
-    <input class="input" name="password" password="true" placeholder="请输入具体账目" placeholder-style="color: gray"/>
+    <input class="input" bindinput='passwordinput' name="password" password="true" placeholder="请输入密码" placeholder-style="color: gray"/>
   </view>
   <!--保存为-->
   <View style="display:flex;justify-content: center;margin-top:10px;">
-    <radio-group name="radio-group" bindchange="radioChange">
+    <radio-group  name="radio-group" bindchange="cg">
       <label>
-        <radio value="manager" checked="true"/>支出
+        <radio value="支出" checked="true"/>支出
       </label>
       <label>
-        <radio value="tearch" checked="true"/>收入
+        <radio value="收入" checked="true"/>收入
       </label>
       <label>
-      <radio value="student" checked="true"/>其他
+      <radio value="其他" checked="true"/>其他
       </label>
     </radio-group>
   </View>
-  <button formType="submit" type="primary" style="margin-top:10px;">保存</button>
+    <button formType="submit" type="primary" bindtap='mytap' style="margin-top:10px;">提交</button>
   <button formType="reset" type="warn" style="margin-top:10px;">重置</button>  
+ <view> 表内容如下：</view>
+ <view>账目的备注：{{usernamevalue2}}</view>
+  <view>具体账目:{{ passwordvalue2}}</view>
+   <view>类型:{{cgvalue2}}</view>
 </form>

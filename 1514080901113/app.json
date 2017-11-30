@@ -2,9 +2,8 @@
   "pages": [
     
     "pages/index/index",
-    "pages/form/form",
     "pages/logs/logs",
-    "pages/test/test"
+    "pages/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,7 +31,7 @@
       {
         "selectedIconPath": "images/3.png",
         "iconPath": "images/3.png",
-        "pagePath": "pages/test/test",
+        "pagePath": "pages/list/list",
         "text": "清单"
       }
     ]

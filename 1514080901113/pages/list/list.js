@@ -1,68 +1,20 @@
-// pages/test/test.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
-    items: [{ one: "scroll-view", }, { one: "2017.7.25" }, { one: "2017.8.2" }, { one: "2017.8.16" }, { one: "2017.9.1" }, { one: "2017.9.2" }, { one: "2017.9.15" }, { one: "2017.10.1" }, { one: "2017.10.2" }, { one: "2017.10.25" }, { one: "2017.10.26" }]
-
+    // text:"这是一个页面"  
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-  
+    // 页面初始化 options为页面跳转所带来的参数  
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
-  
+    // 页面渲染完成  
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
-  
+    // 页面显示  
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
   onHide: function () {
-  
+    // 页面隐藏  
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
   onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+    // 页面关闭  
   }
-})
+})  
