@@ -1,10 +1,9 @@
 {
   "pages": [
     "example/index/index",
-    "example/button/button",
-    "example/input/input",
-    "example/scroll/scroll",
-    "example/next/next"
+    "example/form/form",
+   
+    "example/scroll/scroll"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -27,6 +26,12 @@
         "text": "我",
         "iconPath":"example/images/me.png",
         "selectedIconPath":"example/images/me.png"
+      },
+      {
+        "pagePath": "example/form/form",
+        "text": "表单",
+        "iconPath": "example/images/me.png",
+        "selectedIconPath": "example/images/me.png"
       }
     ]
   },
