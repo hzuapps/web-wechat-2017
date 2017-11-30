@@ -2,6 +2,6 @@
     <view class="page__hd">
  <!--       <view class="page__desc">投票助手，只需简单几步即可以创建投票。无论是文字投票，还是图片投票，您都能轻松实现，并且您还能把投票分享给周围的每一个人,让大家实时参与,互动评论。</view>    -->
     <view class="page__icon" style='align=center' > <image src="../images/3.png" /></view>
-    <navigator url="demo/scrollView" hover-class="navigator-hover"><view class="page__btn" ><button type="primary" style="background:#1296db">创建投票</button></view></navigator>
+    <navigator url="form/form" hover-class="navigator-hover"><view class="page__btn" ><button type="primary" style="background:#1296db">创建投票</button></view></navigator>
     </view>
 </view>
