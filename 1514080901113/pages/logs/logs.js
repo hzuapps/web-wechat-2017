@@ -6,11 +6,11 @@ Page({
     logs: [],
 //add
     cgvalue: "",
-    usernamevalue: "",
-    passwordvalue: "",
+    remarksvalue: "",
+    amountvalue: "",
     cgvalue2: "",
-    usernamevalue2: "",
-    passwordvalue2: ""
+    remarksvalue2: "",
+    amountvalue2: ""
 
   },
   onLoad: function () {
@@ -42,8 +42,8 @@ Page({
     var that = this;
     this.setData({
       cgvalue2: that.data.cgvalue,
-      usernamevalue2: that.data.usernamevalue,
-      passwordvalue2: that.data.passwordvalue
+      remarksvalue2: that.data.remarksvalue,
+      amountvalue2: that.data.amountvalue
     })
   },
 
@@ -55,15 +55,15 @@ Page({
   },
 
 
-  usernameinput: function (e) {
+  remarksinput: function (e) {
     this.setData({
-      usernamevalue: e.detail.value
+      remarksvalue: e.detail.value
     })
   },
 
-  passwordinput: function (e) {
+  amountinput: function (e) {
     this.setData({
-      passwordvalue: e.detail.value
+      amountvalue: e.detail.value
     })
   }
 

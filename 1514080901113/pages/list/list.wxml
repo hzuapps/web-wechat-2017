@@ -22,3 +22,11 @@
 <scroll-view class="scroll_view_horizotal" scroll-x="">  
     <view>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</view>      
 </scroll-view> 
+
+
+<block wx:for-items="{{result.issueList}}">
+  <Text style="color:green;">第{{index+1}}个列表</Text>
+  <block wx:for-items="{{item.itemList}}">
+     <image style="width:100%;height:200px;" src="{{item.data.cover.feed}}"></image>
+  </block>
+</block>
