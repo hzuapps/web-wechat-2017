@@ -63,7 +63,17 @@
     "pages/tongji/collect/personnum",
     "pages/tongji/collect/yearnum",
     "pages/rubikbrand/brand",
-    "pages/rubikbrand/rubik/qiyi"
+    "pages/rubikbrand/rubik/qiyi",
+    "pages/rubikbrand/rubik/moyu",
+    "pages/rubikbrand/rubik/GAN",
+    "pages/rubikbrand/rubik/zhisheng",
+    "pages/zixun/pingce/1",
+    "pages/zixun/pingce/2",
+    "pages/zixun/pingce/3",
+    "pages/zixun/pingce/4",
+    "pages/me/me",
+    "pages/me/yijian/yijian",
+    "pages/me/yijian/success"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -91,7 +101,7 @@
         "selectedIconPath": "pages/example/images/WR/3a.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/me/me",
         "text": "我的",
         "iconPath": "pages/example/images/WR/8.png",
         "selectedIconPath": "pages/example/images/WR/7.png"
