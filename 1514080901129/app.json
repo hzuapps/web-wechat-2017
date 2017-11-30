@@ -21,17 +21,20 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "pages/images/cube-1a.png",
+        "iconPath": "pages/images/gongshi.png",
+        "selectedIconPath": "pages/images/gongshi.png",
         "text": "公式"
       },
       {
         "pagePath": "pages/logs/index",
-        "iconPath": "pages/images/cube-2a.png",
+        "iconPath": "pages/images/gongneng.png",
+        "selectedIconPath": "pages/images/gongneng.png",
         "text": "功能"
       },
       {
         "pagePath": "pages/logs/logs",
-        "iconPath": "pages/images/cube-3a.png",
+        "iconPath": "pages/images/wode.png",
+        "selectedIconPath": "pages/images/wode.png",
         "text": "我的"
       }
     ]
