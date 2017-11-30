@@ -1,133 +1,96 @@
-// pages/demo/scrollView.js
+
+var listobj = require('../../utils/list.js')
+var color = ['', 'gn', 'rd', 'bu', 'og']
+var all = {};
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    session: []
+    type: ['普通', '绿色', '红色', '蓝色', '橙色'],
+    type_name: '普通',
+    id: null,
+    index: 0,
+    thelist: {}
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    var that = this
-    // 设置窗口大小
-    wx.getSystemInfo({
-      success: (res) => {
-        that.setData({
-          windowHeight: res.windowHeight - 5,
-          windowWidth: res.windowWidth
-        })
-        //console.dir(that.data.windowHeight)
-      }
-    })
-    that.setData({
-      sessions: [{
-        name: "Tom",
-        icon: "a.png",
-        msg: "您好。"
-      }, {
-        name: "John",
-        icon: "b.png",
-        msg: "在吗？"
-      }, {
-        name: "Tom",
-        icon: "a.png",
-        msg: "您好。"
-      }, {
-        name: "John",
-        icon: "b.png",
-        msg: "在吗？"
-      }, {
-        name: "Tom",
-        icon: "a.png",
-        msg: "您好。"
-      }, {
-        name: "John",
-        icon: "b.png",
-        msg: "在吗？"
-      }, {
-        name: "Tom",
-        icon: "a.png",
-        msg: "您好。"
-      }, {
-        name: "John",
-        icon: "b.png",
-        msg: "在吗？"
-      }]
+  bindPickerChange: function (e) {
+    this.setData({
+      index: e.detail.value,
+      type_name: this.data.type[e.detail.value]
     })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  del: function () {
+    all.list = listobj.delDataById(all.list, this.data.id);
+    try {
+      wx.setStorageSync('list', all);
+      wx.showToast({
+        title: '删除成功'
+      })
+      setTimeout(function () {
+        wx.navigateBack();
+      }, 1000);
+    } catch (e) {
+      wx.showToast({
+        title: '删除失败：异常',
+        icon: 'loading'
+      })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  formSubmit: function (e) {
+    var value = e.detail.value;
+    if (value.title == '' || value.title == null) {
+      wx.showToast({
+        title: '标题不能为空',
+        icon: 'loading'
+      })
+      return;
+    }
+    value.type = color[value.type];
+    value.id = this.data.id;
+    all.list = listobj.delDataById(all.list, this.data.id);
+    all.list.unshift(value);
+    all.time = parseInt((new Date()).valueOf() / 1000);
+    console.log(all);
+    try {
+      wx.setStorageSync('list', all);
+      wx.showToast({
+        title: '保存成功'
+      })
+      setTimeout(function () {
+        wx.navigateBack();
+      }, 1000);
+    } catch (e) {
+      wx.showToast({
+        title: '保存失败：异常',
+        icon: 'loading'
+      })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
-
-  onEnd: function (e) {
-    console.dir(e)
-    var that = this;
-    that.setData({
-      //isLower: true,
-      sessions: that.data.sessions.concat([{
-        name: "Tom 1111",
-        icon: "a.png",
-        msg: "您好。"
-      }, {
-        name: "John 2222",
-        icon: "b.png",
-        msg: "在吗？"
-      }])
-    })
-
-  },
-
-  onScroll: function () {
-    console.dir("onScroll");
+  onLoad: function (option) {
+    all = wx.getStorageSync('list') || [];
+    if (all.list == []) {
+      wx.showToast({
+        title: '不存在的清单',
+        icon: 'loading'
+      })
+      wx.navigateBack();
+    }
+    var arr = all.list.filter(function (elem) {
+      return (elem.id == option.id);
+    });
+    if (arr == []) {
+      wx.showToast({
+        title: '不存在的清单',
+        icon: 'loading'
+      })
+      wx.navigateBack();
+    }
+    var temp = color.indexOf(arr[0].type);
+    temp = temp < 0 ? 0 : temp;
+    console.log(arr[0]);
+    this.setData({
+      id: option.id,
+      index: temp,
+      type_name: this.data.type[temp],
+      thelist: arr[0]
+    });
   }
 })
+
