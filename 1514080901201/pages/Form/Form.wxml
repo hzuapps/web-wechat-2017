@@ -1,0 +1,53 @@
+<!--pages/form/form.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+
+    <view class="page__bd">
+      <form bindsubmit='onSubmit'>
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+
+        <view class="weui-cells__title">涂鸦标题</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="text" 
+                    value='{{text}}' placeholder="请输入标题" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">详细描述</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="area" placeholder="请输入描述" style="height: 3.3em" value='{{area}}' bindinput='onChange'/>
+                    <view class="weui-textarea-counter">{{count}}/200</view>
+                </view>
+            </view>
+        </view>
+         <view class="section">  
+            <view class="section__title">地区选择:</view>  
+            <view class='form-group'>  
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">  
+                    <view class="picker">  
+                        <input type="hidden" disabled="true" name="addr" value="{{array[index]}}"/>  
+                    </view>  
+                </picker>  
+            </view>  
+        </view>  
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+            <button formType="reset">清空</button>  
+        </view>
+      </form>
+    </view>
+  <view class="page__bd">  
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">  
+            确认提交么？  
+        </modal>  
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">  
+            <view> 提示 </view>  
+            <view> 清空成功 </view>  
+        </modal>  
+    </view>  
+</view>  

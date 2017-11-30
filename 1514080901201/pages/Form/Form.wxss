@@ -1,0 +1,24 @@
+/* pages/index/Component/FormM/FormM.wxss */
+wx-button {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+wx-label {
+  display: block;
+  margin-top: 10rpx;
+}
+.picker-text {
+  margin-left: 20rpx;
+  position: relative;
+}
+.lineView{
+  margin-top: 1px;
+  margin-left: 80px;
+  margin-right: 80px; 
+  height: 1px;
+  background-color: darkred;
+}
+.picker{
+  padding: 26rpx;
+  background-color: #FFFFFF;
+}
