@@ -1,0 +1,36 @@
+<!--example/form/form.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__bd">
+      <form bindsubmit='onSubmit' bindreset='onReset'>
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+
+        <view class="weui-cells__title">学号</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input  class="weui-input" name="text" 
+                    value='{{text}}' placeholder="请输入你的学号" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">学习情况</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="area" placeholder="请填写你的学习情况，不超过100个字" style="height: 2.3em" value='{{area}}' bindinput='onAreaChange'/>
+                    <view class="weui-textarea-counter">{{count}}/100</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>提交</button>
+            <button class="weui-btn" type="default" form-type='reset'>重置</button>
+        </view>
+
+              <view class="page" wx:if="{{hasSubmit}}">提交内容预览：{{text}}+{{area}}</view>
+      </form>
+    </view>
+</view>
