@@ -1,11 +1,12 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/form/form",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ccc",
     "navigationBarTitleText": "生活小妙招",
     "navigationBarTextStyle":"black"
   }
