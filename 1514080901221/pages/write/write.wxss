@@ -1,0 +1,24 @@
+page{
+  background-color: #f3f3f3;
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+.write{
+  width: 100%;
+}
+.text{
+  background-color: #ffffff;
+  width:90%;
+  min-height: 300px;
+  margin: 15px 0;
+  padding: 5%;
+  overflow: hidden;
+  line-height: 20px;
+  border-top: 3px dotted	#FFE4E1;
+  border-bottom: 3px dotted	#FFE4E1;
+}
+.btn{
+  background-color: #bc8f8f;
+  color: #ffffff;
+  margin: 20px 10px;
+}
