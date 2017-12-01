@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/kaishi/kaishi"
+    "pages/kaishi/kaishi",
+    "pages/chakan/chakan"
   ],
   "window":{
     "backgroundTextStyle":"light",

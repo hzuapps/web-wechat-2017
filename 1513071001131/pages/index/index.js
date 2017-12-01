@@ -20,6 +20,11 @@ Page({
       url: '../kaishi/kaishi'
     })
   },
+  jumpTochakan: function () {
+    wx.navigateTo({
+      url: '../chakan/chakan'
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

@@ -19,7 +19,7 @@
         <button class="weui-btn" type="primary" bindtap="jumpTokaishi">开始你的课堂笔记</button>
         
 
-        <button class="weui-btn" type="default">查看你的课堂笔记</button>
+        <button class="weui-btn" type="default"bindtap="jumpTochakan">查看你的课堂笔记</button>
        
 
         
