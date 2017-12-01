@@ -1,5 +1,6 @@
 /**index.wxss**/
 .page {
+  background-color: #e8e8e8;
   position: fixed;
   top: 44px;
   width: 100%;

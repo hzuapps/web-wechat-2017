@@ -15,6 +15,16 @@ const formatNumber = n => {
 }
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  index: index
+}
+
+function index(data){
+  for (var i = 0; i < data.length; i++) {
+    var subject = data[i];
+    var name = subject.name;
+    var icon = subject.icon;
+    var msg = subject.msg;
+  }
 }
 
