@@ -2,7 +2,8 @@
   "pages": [
     "example/index",
     "example/navbar/navbar",
-    "example/demo/scrollView"
+    "example/demo/scrollView",
+    "example/form/form"
   ],
   "window": {
     "navigationBarTextStyle": "black",
