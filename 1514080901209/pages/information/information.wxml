@@ -1,0 +1,58 @@
+
+<view class="page">
+<!--
+    <view class="page__hd">
+        <view class="page__title">Input</view>
+    </view>
+    -->
+    <view class="page__bd">
+      <form bindsubmit='onSubmit'>
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+
+        <view class="weui-cells__title">名字</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="name" 
+                    value='{{name}}' placeholder="请输入文本" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">邮箱</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="email" 
+                    value='{{email}}' placeholder="请输入文本" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">地址</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="area" 
+                    value='{{area}}' placeholder="请输入文本" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">个性签名</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="signature" placeholder="请输入文本" style="height: 3.3em" value='{{signature}}' bindinput='onChange'/>
+                    <view class="weui-textarea-counter">{{count}}/100</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+        </view>
+      </form>
+    </view>
+</view>
