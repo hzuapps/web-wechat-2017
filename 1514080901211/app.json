@@ -1,19 +1,27 @@
 {
   "pages": [
-    "example/index",
-    "example/navbar/navbar"
+    "pages/index/index",
+    "pages/form/form",
+    "pages/navbar/navbar"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "考试打卡机",
-    "navigationBarBackgroundColor": "#f8f8f8",
-    "backgroundColor": "#f8f8f8"
+    "navigationBarTextStyle": "white"
   },
-  "networkTimeout": {
-    "request": 10000,
-    "connectSocket": 10000,
-    "uploadFile": 10000,
-    "downloadFile": 10000
-  },
-  "debug": true
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#009444",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/form/form",
+        "text": "每日心情分享"
+      }
+    ]
+  }
 }

@@ -1,14 +1,33 @@
+
 <view class="page">
-    <view class="page__bd">
-        
+    <view class="page__hd">
+        <view class="page__title">不签到！？谁知道你读书了啊喂？？？</view>
         <view class="weui-cells weui-cells_after-title">
-            <navigator wx:if="{{showScroll}}" url="/pages/demo/scrollView" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+         <navigator  url="/pages/demo/scrollView" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
-                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 50px;"></image>
                 </view>
-                <view class="weui-cell__bd">考试吐槽</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">点进去有惊喜</view>
+                <view class="weui-cell__bd">考试签到</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">抢个前排！</view>
+                
             </navigator>
+        <navigator  url="/pages/navbar/navbar" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 50px;"></image>
+                </view>
+                <view class="weui-cell__bd">考试倒计时</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">别说没提醒你?</view>
+                
+            </navigator>
+            <navigator  url="/pages/navbar/navbar" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 50px;"></image>
+                </view>
+                <view class="weui-cell__bd">考试TIPS</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">万一有用呢?</view>
+                
+            </navigator>
+            
         </view>
     </view>
 </view>
