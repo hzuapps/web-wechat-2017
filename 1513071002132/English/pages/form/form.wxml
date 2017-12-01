@@ -99,7 +99,7 @@
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_input">
                 <view class="weui-cell__bd">
-                    <input class="weui-input" name="nicheng" value="{{result.nicheng}}" placeholder="请输入文本" />
+                    <input class="weui-input" name="nickname" value="{{result.nickname}}" placeholder="请输入文本" />
                 </view>
             </view>
         </view>

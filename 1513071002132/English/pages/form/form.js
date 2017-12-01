@@ -26,7 +26,25 @@ Page({
     isAgree: false
   },
   onLoad: function (options) {
-    //console.log("sdkjhkdkjhg");
+    var that = this;
+    console.log("onload");
+    wx.getStorage({
+      key: 'value',
+      success: function (res) {
+        console.log(res.data);
+        that.setData({
+          result: {
+            area: res.data.area,
+            date: res.data.date,
+            nickname: res.data.nickname,
+            qq: res.data.qq,
+            switchChecked: res.data.switchChecked,
+            text: res.data.text,
+            time: res.data.time
+          }
+        });
+      }
+    })
   },
   showTopTips: function () {
     var that = this;
@@ -113,7 +131,7 @@ Page({
       result:{
         area:e.detail.value.area,
         date:e.detail.value.date,
-        nicheng:e.detail.value.nicheng,
+        nickname: e.detail.value.nickname,
         qq: e.detail.value.qq,
         switchChecked: e.detail.value.switchChecked,
         text: e.detail.value.text,
@@ -121,5 +139,9 @@ Page({
       }
     });
     that.onLoad();
+    wx.setStorage({
+      key: "value",
+      data: e.detail.value
+    })
   }
 });
