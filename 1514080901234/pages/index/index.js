@@ -1,54 +1,58 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+var content;
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    items: [
+      //默认选择英文
+      { name: 'USA', value: '英文', checked: true },
+      { name: 'CHN', value: '中文' },
+      { name: 'JPN', value: '日文' },
+      { name: 'KOR', value: '韩文' },
+    ]
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+  bindViewTap: function () {
   },
+
   onLoad: function () {
-    if (app.globalData.userInfo) {
+  },
+
+  radioChange: function (e) {
+    console.log("radio发生了改变，值为：", e.detail.value)
+  },
+
+  formSubmit: function (e) {
+    content = e.detail.value.text;
+    console.log("用户输入的待翻译文本为：", content);
+    if (!content) {
       this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
+        hasError: true,
+        errorText: "待翻译文本不能为空，请重新输入！"
       })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
     } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
+      this.setData({
+        hasError: false
+      })
+
+      //显示加载框
+      wx.showLoading({
+        title: '正在翻译',
       })
     }
+    //开启加载框2秒后隐藏，模拟网络请求
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 2000)
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+  textChange: function (e) {
+    content = e.detail.value;
+    //隐藏错误提示
+    if (content) {
+      this.setData({
+        hasError: false
+      })
+    }
   }
 })
