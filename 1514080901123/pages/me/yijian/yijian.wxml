@@ -1,0 +1,58 @@
+<!--pages/me/yijian/yijian.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <view class="page__title" style="font-family:'楷体';">给作者提意见（寄刀片）</view>
+    </view>
+    <view class="page__bd">
+      <form bindsubmit='onSubmit'>
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+                 <!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <button type="default">{{fangshi}}</button>
+            </picker>-->
+
+
+                  <view class="weui-cells__title">请选择您的联系方式</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd" style="width: 80px">
+                    <picker bindchange="bindcontactChange" value="{{contactIndex}}" name="contact" range="{{contact}}">
+                        <view class="weui-select"  >{{contact[contactIndex]}}</view>
+                    </picker>
+                </view>
+                <view class="weui-cell__bd weui-cell__bd_in-select-before">
+                    <input class="weui-input" name="text" value="{{text}}" placeholder="请输入您的{{Index}}号" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+
+
+       <!-- <view class="weui-cells__title">请输入您的{{lianxi}}</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="text" 
+                    value='{{text}}' placeholder="请输入您的联系方式" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>-->
+
+        <view class="weui-cells__title">请输入想对作者说的话</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="area" placeholder="请输入您的意见" style="height: 3.3em" value='{{area}}' bindinput='onChange'/>
+                    <view class="weui-textarea-counter">{{count}}/140</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-btn-area">
+        <navigator url=""  hover-class="weui-cell_active">
+            <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+          </navigator>
+        </view>
+      </form>
+    </view>
+</view>

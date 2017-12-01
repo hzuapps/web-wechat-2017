@@ -1,0 +1,24 @@
+<!--pages/me/yijian/success.wxml-->
+<view class="page">
+    <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+            <icon type="success" size="93"></icon>
+        </view>
+        <view class="weui-msg__text-area">
+            <view class="weui-msg__title">意见提交成功</view>
+            <view class="weui-msg__desc">作者会尽快处理</view>
+        </view>
+        <view class="weui-msg__opr-area">
+            <view class="weui-btn-area">
+                <button class="weui-btn" type="primary" bindtap="index">返回首页</button>
+            </view>
+        </view>
+        <view class="weui-msg__extra-area">
+            <view class="weui-footer">
+                <view class="weui-footer__links">
+                </view>
+                <view class="weui-footer__text">魔方资讯</view>
+            </view>
+        </view>
+    </view>
+</view>
