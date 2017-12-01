@@ -110,28 +110,21 @@
   </view>
 </view>
 
-<view class="section">  
-  <view class="section__title">事项管理</view>
-  <scroll-view class="page" scroll-y="true" style="height:400px;" bindscrolltoupper="onUpper" bindscrolltolower="onLower" bindscroll="onScroll" >
-    <view class="page__bd"  wx:for="{{taskList}}" wx:key='task'>
-        <view class="weui-panel weui-panel_access" >
-            <view class="weui-panel__bd">
-                <view class="weui-media-box weui-media-box_appmsg">
-                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <icon type="waiting" size="56"/>
-                    </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                        <view class="weui-media-box__desc">{{item.time}}</view>
-                        <view class="weui-media-box__desc">{{item.content}}</view>
-                      
-                    </view>
-                </view>
-            </view>
-        </view>
-        <view class="weui-loadmore" wx:if="{{isLower}}">     
-        </view>
-        <view class="weui-loadmore weui-loadmore_line" wx:if="{{isEnd}}">
-        </view>
-    </view>
-  </scroll-view>
+ <view class="btn-area">
+    <navigator url="/pages/form/form" hover-class="navigator-hover">点击跳转到"事项表单"页面</navigator>
   </view>
+
+<view class="updatePanel" style="top: {{updatePanelTop}}px;height:{{updatePanelTop}}px" animation="{{updatePanelAnimationData}}">
+  <!--<view class="title"><text>添加事项</text></view>-->
+  <input placeholder="请输入事项标题" value="{{todoInputValue}}" bindchange="todoInputChangeEvent" />
+  <textarea placeholder="请输入事项内容" value="{{todoTextAreaValue}}" bindblur="todoTextAreaChangeEvent"></textarea>
+  <view class="level">
+    <block wx:for="{{levelSelectData}}" wx:key="*this">
+      <view bindtap="levelClickEvent" data-level="{{item}}" class="item {{item == 1 ? 'border-normal' : ''}} {{item == 2 ? 'border-warning' : '' }} {{item == 3 ? 'border-danger' : ''}} {{item == levelSelectedValue && item == 1 ? 'bg-normal' : ''}} {{item == levelSelectedValue && item == 2 ? 'bg-warning' : ''}} {{item == levelSelectedValue && item == 3 ? 'bg-danger' : ''}}"></view>
+    </block>
+  </view>
+  <view class="footer">
+    <view class="btn" bindtap="closeUpdatePanelEvent">取消</view>
+    <view class="btn primary" bindtap="saveDataEvent">保存</view>
+  </view>
+</view>

@@ -5,10 +5,10 @@ import {promiseHandle, log, formatNumber} from '../../utils/util';
 Page({
   data: {
     showMonth: {},
-    data: {
-    },
+    data: {},
     selectDateText: '',
     pickerDateValue: '',
+
     isSelectMode: false,
     isMaskShow: false,
     isEditMode: false,
@@ -29,15 +29,6 @@ Page({
 
     // 事项列表
     itemList: [],
-
-    taskList: [{ id: 0, content: '事项1：今天是好朋友的生日', time: '2017年11月15日' },
-    { id: 1, content: '事项2：今天有重要会议要开', time: '2017年12月1日' },
-    { id: 2, content: '事项3：今天出去参加同学聚会', time: '2017年12月3日' },
-    { id: 3, content: '事项4：一年一度的家庭旅游', time: '2018年1月1日' },
-    { id: 4, content: '事项5：今天是期末考试的第一天', time: '2018年1月20日' },
-    { id: 5, content: '事项6：今天开始放寒假', time: '2018年1月25日' }
-    ],
-
     editItemList: [] //编辑勾选中的事项id
   },
 
