@@ -4,7 +4,8 @@
 	  "pages/ComicNew/ComicNew",
     "pages/logs/logs",
     "pages/myinfo/creatinfo",
-    "pages/mynowinfo/nowinfo"
+    "pages/mynowinfo/nowinfo",
+    "pages/biliview/biliview"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -31,7 +32,7 @@
         "text": "漫画"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/biliview/biliview",
         "iconPath": "pages/images/bili.png",
         "selectedIconPath": "pages/images/bili_1.png",
         "text": "动画"
