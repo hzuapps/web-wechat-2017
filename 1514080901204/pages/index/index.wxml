@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--index.wxml-->  <!--
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -11,3 +11,33 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+<view class="login">
+  <text class="user-motto">{{motto}}</text>
+</view>
+-->
+<view class="box">
+
+<image src='/images/剪刀.png' style='width: 90px; height: 90px;' ></image>
+<image  style='width: 120px; height: 60px;' ></image>
+<image src='/images/timg.jpg' style='width: 90px; height: 90px;' ></image>
+</view>
+
+<view class='chooseforuserview'>准备挑战了吗？少年！~</view>
+<!--<view class='box'>
+<image src='/images/剪刀.png' style='width: 80px; height: 80px;' ></image></view>
+<view class='box'><image src='/images/石头.png' style='width: 80px; height: 80px;' ></image></view>
+<view class='box'><image src='/images/布.png' style='width: 80px; height: 80px;' ></image>
+</view>
+</view>-->
+
+
+<view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder">
+            <image src='/images/剪刀.png' style='width: 80px; height: 80px;' ></image>       
+            </view></view>
+
+
+            <view class="weui-flex__item"><view class="placeholder"><image src='/images/石头.png' style='width: 80px; height: 80px;' ></image></view></view>
+            <view class="weui-flex__item"><view class="placeholder"><image src='/images/布.png' style='width: 80px; height: 80px;' ></image></view></view>
+        </view>
+
