@@ -18,20 +18,32 @@ Page({
   },
 
   more: function (e) {
-    console.log(e);
-    tempNum++;
-    var newGuy = { 
-      sNum: "11" + tempNum,
-      name: "神秘人" 
-    };
-    if (tempNum <= 35) {
-      this.data.students.push(newGuy);
-      this.setData({
-        students: this.data.students,
-      })
-    } else {
-      console.log("全员到齐！");
-    }
+    //console.log(e);
+    var that = this;
+    wx.request({
+      url: 'http://easy-mock.com/mock/5a20c161be1c8248fef10e93/wechat-app-test2/web-wechat-test2',
+      success: function(res) {
+      var resData = res.data.data;
+      //console.log(resData);
+        that.setData({
+          students: that.data.students.concat(resData)
+        });
+        console.log(that.data.students)
+      }
+    })
+    // tempNum++;
+    // var newGuy = { 
+    //   sNum: "11" + tempNum,
+    //   name: "神秘人" 
+    // };
+    // if (tempNum <= 35) {
+    //   //this.data.students.push(newGuy);
+    //   this.setData({
+    //     students: this.data.students,
+    //   })
+    // } else {
+    //   console.log("全员到齐！");
+    // }
   }
 
 })
