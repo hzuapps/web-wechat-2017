@@ -1,1 +1,17 @@
 /* pages/test/test.wxss */
+.title{  
+    height: 30px;  
+    text-align: center;  
+}  
+.scroll_view_vertical{  
+    height: 50%;  
+    margin-bottom: 20px;  
+    background-color: ghostwhite;  
+}  
+.scroll_view_horizotal{  
+    height: 50px;  
+    background-color: whitesmoke;  
+}  
+.item{  
+    height: 50px;  
+}  

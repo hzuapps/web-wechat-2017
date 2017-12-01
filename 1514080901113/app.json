@@ -1,19 +1,20 @@
 {
   "pages": [
+    
     "pages/index/index",
-    "pages/new-account/new-account",
+    "pages/logs/logs",
     "pages/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#abc",
+    "navigationBarBackgroundColor": "#999",
     "navigationBarTitleText": "记账+",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#321",
-    "selectedColor": "#11cd6e",
-    "borderStyle": "255",
+    "color": "#300",
+    "selectedColor": "#911",
+    "borderStyle": "white",
     "list": [
       {
         "selectedIconPath": "images/1.png",
@@ -24,7 +25,7 @@
       {
         "selectedIconPath": "images/2.png",
         "iconPath": "images/2.png",
-        "pagePath": "pages/new-account/new-account",
+        "pagePath": "pages/logs/logs",
         "text": "新增"
       },
       {
