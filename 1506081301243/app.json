@@ -1,7 +1,9 @@
 {
   "pages":[
+    "pages/form/form",
     "pages/index/index",
     "pages/logs/logs"
+
     
   ],
   "window":{

@@ -103,7 +103,7 @@
 <button type="premiry"  fromTapy="submit" class="submit">提交</button>-->
 
 <!--pages/demo/scrollView.wxml-->
-<scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltolower="onEnd" bindscroll="onScroll">
+<!--<scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltolower="onEnd" bindscroll="onScroll">
     <view class="page__hd">
         <view class="page__title"></view>
         <view class="page__desc"></view>
@@ -137,3 +137,6 @@
 <scroll-view class="scroll_view_horizotal" scroll-x>
     <view >12365467897445dkfhsd564654sklfj4154ff54zpafhfksjdfhdsf4645dqyqbwerewtwet</view>    
 </scroll-view>
+<!--pages/form/form.wxml-->
+
+
