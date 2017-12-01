@@ -2,8 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/todo/todo",
-    "pages/done/done"
-  ],
+    "pages/done/done",
+    "pages/form/form"
+   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#1992F5",
