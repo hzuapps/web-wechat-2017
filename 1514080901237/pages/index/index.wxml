@@ -1,30 +1,16 @@
-<!--pages/demo/scrollView.wxml-->
-<scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltolower="onEnd" bindscroll="onScroll">
-    <view class="page__hd">
-        <view class="page__title"></view>
-        <view class="page__desc"></view>
-    </view>
-    <view class="page__bd">
-        <view class="weui-panel weui-panel_access">
-            <view class="weui-panel__hd"></view>
-            <view class="weui-panel__bd">
-                <navigator url="" wx:for="{{sessions}}" wx:key="name" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
-                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="../example/images/a.png" />
-                    </view>
-                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                        <view class="weui-media-box__title">({{index+1}}) {{item.name}}</view>
-                        <view class="weui-media-box__desc">{{item.msg}}</view>
-                    </view>
-                </navigator>
-            </view>
+<!--logs.wxml-->
+<view class="container">
+  <view class="section">
+    <form bindsubmit="formSubmit">
+      <input class="title" placeholder="清单名称" name="title" value="{{thelist.title}}"/>
+      <!--<textarea class="title" name="content" placeholder="清单描述" value="{{thelist.content}}"></textarea >-->
+      <picker bindchange="bindPickerChange" name="type" value="{{index}}" range="{{type}}">
+        <view class="picker">
+          选择标记颜色：{{type_name}}
         </view>
-        <view class="weui-loadmore" wx:if="{{isLower}}">
-            <view class="weui-loading"></view>
-            <view class="weui-loadmore__tips">正在加载</view>
-        </view>
-        <view class="weui-loadmore weui-loadmore_line" wx:if="{{isEnd}}">
-            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
-        </view>
-    </view>
-</scroll-view>
+      </picker>
+      <button type="primary" form-type="submit" style="margin:18px 10px;"> 保存清单 </button>
+      <button type="warn" style="margin:18px 10px;" bindtap="del"> 删除清单 </button>
+    </form>
+  </view>
+</view>
