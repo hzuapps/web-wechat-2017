@@ -1,0 +1,32 @@
+<!--pages/sh/sh.wxml-->
+
+<!--pages/form/form.wxml-->
+
+    <view class="page__hd">
+        <view class="page__title">Input</view>
+        
+    </view>
+    <view class="page__bd">
+      <form bindsubmit='onSubmit'>
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+
+        <view class="weui-cells__title">输入内容</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="text" 
+                    value='{{text}}' placeholder="请输入" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+        
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>输入完毕</button>
+        </view>
+      </form>
+       <view>{{text}}</view>
+    </view>
+   

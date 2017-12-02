@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/sy/sy"
+    "pages/sy/sy",
+    "pages/sh/sh"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -20,7 +21,11 @@
         },
         {
           "pagePath": "pages/sy/sy",
-          "text": "我"
+          "text": "1"
+        },
+        {
+          "pagePath": "pages/sh/sh",
+          "text": "2"
         }
       ]
   }
