@@ -1,5 +1,4 @@
 // pages/demo/scrollView.js
-var base64 = require("../images/base64");
 Page({
 
   /**
@@ -24,31 +23,21 @@ Page({
         //console.dir(that.data.windowHeight)
       }
     })
-    this.setData({
-      icon20: base64.icon20,
-      icon60: base64.icon60
-    })
-    that.setData({
-      sessions: [{
-        name: "",
-        msg: "你孤单的时候想干嘛？喝汽水，因为当你孤单你会想起谁（汽水）。"
-      }, {
-        name: "",
-        msg: "我曾经得过精神分裂症，但现在我们已经康复了。"
-      }, {
-        name: "",
-        msg: "你孤单的时候想干嘛？喝汽水，因为当你孤单你会想起谁（汽水）。"
-      }, {
-        name: "",
-        msg: "我曾经得过精神分裂症，但现在我们已经康复了。"
-      }, {
-        name: "",
-        msg: "你孤单的时候想干嘛？喝汽水，因为当你孤单你会想起谁（汽水）。"
-      }, {
-        name: "",
-        msg: "我曾经得过精神分裂症，但现在我们已经康复了。"
-      }]
-    })
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901116/1514080901116.json',
+      //仅为示例，并非真实的接口地址
+      data: {},
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data)
+        
+        that.setData({
+          session: res.data
+    }) 
+      } 
+      }) 
   },
 
   /**
@@ -105,7 +94,7 @@ Page({
     var that = this;
     that.setData({
       //isLower: true,
-      sessions: that.data.sessions.concat([{
+      session: that.data.session.concat([{
         name: "",
         msg: "你孤单的时候想干嘛？喝汽水，因为当你孤单你会想起谁（汽水）。"
       }, {
