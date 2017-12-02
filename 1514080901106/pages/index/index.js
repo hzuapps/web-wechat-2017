@@ -30,6 +30,12 @@ Page({
     wx.navigateTo({
       url: '../show/show'
     })
+  },
+
+  toForm: function (e) {
+    wx.navigateTo({
+      url: '../form/form'
+    })
   }
 
 });
