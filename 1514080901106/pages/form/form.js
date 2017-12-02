@@ -87,7 +87,8 @@ Page({
       that.setData({
         hasError: false,
         message: test,
-        text: ''
+        text: '',
+        count: 0
       })
       wx.setStorage({
         key: "input",
