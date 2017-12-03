@@ -1,4 +1,4 @@
-/* pages/ggs/ggs.wxss */
+/* es/ggs/ggs.wxss */
 .section{  
     border:1px solid #ddd;  
     width:96%;  

@@ -31,9 +31,6 @@
 <view class="section1">  
   <textarea placeholder="" focus="{{focus}}" />  
 </view>  
-  
-  
-  
   <view class="btn-area">  
     <button formType="submit" style="background:#ff9900">提交</button>  
   </view>  
