@@ -1,0 +1,48 @@
+
+<view id="page container" >
+  <view class="flex item">
+    <view class="item-left">
+         <image src="{{book.image_big}}"></image></view>
+    <view class="item-middle">
+        <view><text class="title">{{book.bookname}}</text></view>
+        <view><text class="sub-title">{{book.author}}</text></view>
+        <!--<view><text class="actor"></text></view>-->
+    </view>
+    <view class="item-right">
+      <!--<view class="score"><text>9.7</text></view>-->
+      <!--<view class="action"><text>购票</text></view>-->
+    </view>
+  </view>
+  <view class="weui-cells__title">简介</view>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+          <view class="weui-cell__bd">
+              <textarea name="Introduction" class="weui-textarea" value="{{book.introduction}}" maxlength="-1"  />
+              
+          </view>
+      </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+          <view class="weui-label">下载地址</view>
+      </view>
+      <view class="weui-cell__bd">
+          <input value='{{book.pandownurl}}' class="weui-input" placeholder="{{book.pandownurl}}"/>
+      </view>
+  </view>    
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+          <view class="weui-label">提取密码</view>
+      </view>
+      <view class="weui-cell__bd">
+          <input value='{{book.panpasswd}}' class="weui-input" placeholder="{{book.panpasswd}}"/>
+      </view>
+  </view>
+  <view class="book_download">
+  <!--
+    <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="downloadbook"> <icon type="download" size="30" class="download-icon"/> Download this book </button>
+  -->
+  </view>   
+</view>
+
