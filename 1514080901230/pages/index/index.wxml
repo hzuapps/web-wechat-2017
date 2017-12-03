@@ -55,39 +55,22 @@
 
 
 <view class="mid-title">动态加载页面()</view>
-
-
-
 <block wx:for="{{scroll}}" wx:key="key">
-
   <navigator url="">
-
     <view class="weui-panel weui-panel_access">
-
                 <view class="weui-panel__bd">
-
                     <view class="weui-media-box weui-media-box_appmsg">
-
+              
                         <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-
                             <icon type="waiting" size="56"/>
-
                         </view>
-
                         <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-
                             <view class="weui-media-box__title">{{item.word}}</view>
-
                             <view class="weui-media-box__desc">可滚动界面。</view>
-
                         </view>
-
                     </view>
-
                 </view>
-
             </view>
-
   </navigator>
 
 </block>
