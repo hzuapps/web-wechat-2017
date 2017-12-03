@@ -1,0 +1,40 @@
+<form bindsubmit="formSubmit" bindreset="formReset">  
+ <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+ <view>选择景点类别:</view>  
+  <view class="section section_gap">  
+    <radio-group name="radiogroup">  
+      <label><radio value="radio1"/>地质地貌景观</label>  
+      <label><radio value="radio2"/>水体景观</label>  
+      <label><radio value="radio3"/>气象气候旅游</label>  
+      <label><radio value="radio4"/>生物旅游</label>  
+      <label><radio value="radio5"/>人文旅游</label>  
+    </radio-group>  
+  </view>  
+  
+  <view>选择出行季节:</view>  
+   <view class="section2 section_gap">  
+    <radio-group name="radiogroup2">  
+      <label><radio value="radio1"/>春</label>  
+      <label><radio value="radio2"/>夏</label>  
+      <label><radio value="radio3"/>秋</label>  
+      <label><radio value="radio4"/>冬</label>  
+    </radio-group>  
+  </view>  
+   
+  <text>我的头衔：</text>  
+  <view class="section">  
+    <input name="input"/>  
+  </view>  
+  
+<text class="txt">介绍一下我自己：</text>   
+<view class="section1">  
+  <textarea placeholder="" focus="{{focus}}" />  
+</view>  
+  
+  
+  
+  <view class="btn-area">  
+    <button formType="submit" style="background:#ff9900">提交</button>  
+  </view>  
+</form>
