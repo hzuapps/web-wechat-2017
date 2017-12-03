@@ -1,12 +1,12 @@
 {
   "pages":[
-    "form/form",
+    "pages/http/http",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "black",
+    "navigationBarBackgroundColor": "blackf",
     "navigationBarTitleText": "运动打卡",
     "navigationBarTextStyle":"white"
   }
