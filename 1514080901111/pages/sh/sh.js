@@ -69,6 +69,7 @@ Page({
      */
     data: {
     text: '',
+    text1: ''
  
   },
 
@@ -135,7 +136,7 @@ Page({
       } else {
         that.setData({
           hasError: false,
-           text: event.detail.value.text
+          text: text
         })
         wx.setStorage({
           key: "input",
@@ -152,6 +153,36 @@ Page({
       }
     },
 
+    onSubmit1: function (event) {
+      console.dir(event)
+      var that = this
+      var text1 = event.detail.value.text1
+      if (!text1) {
+        console.dir(text1)
+        that.setData({
+          hasError: true,
+          errorText: '文字不能为空！'
+        })
+      } else {
+        that.setData({
+          hasError: false,
+          text1: text1
+        })
+        wx.setStorage({
+          key: "input",
+          data: event.detail.value,
+          success: function (res) {
+            wx.showToast({
+              title: '成功',
+              icon: 'success',
+              duration: 2000
+            })
+
+          }
+        })
+      }
+    },    
+
     onTextChange: function(e) {
       var that = this;
       console.dir(e)
@@ -167,14 +198,6 @@ Page({
           hasError: false
         })
       }
-    },
-
-    onChange: function(e) {
-      var that = this;
-      var value = e.detail.value;
-      console.dir(value)
-      that.setData({
-        count: value.length
-      })
     }
+
 })

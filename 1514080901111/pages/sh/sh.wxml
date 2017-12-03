@@ -1,32 +1,53 @@
 <!--pages/sh/sh.wxml-->
+<view class="page__hd">
+    <view class="page__title">笑话列表</view>
+</view>
 
-<!--pages/form/form.wxml-->
+<view class="page__bd">
+  <form bindsubmit='onSubmit'>
+    <view class="weui-toptips weui-toptips_warn" 
+    wx:if="{{hasError}}">{{errorText}}</view>
 
-    <view class="page__hd">
-        <view class="page__title">Input</view>
-        
-    </view>
-    <view class="page__bd">
-      <form bindsubmit='onSubmit'>
-        <view class="weui-toptips weui-toptips_warn" 
-        wx:if="{{hasError}}">{{errorText}}</view>
-
-        <view class="weui-cells__title">输入内容</view>
-        <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell weui-cell_input">
-                <view class="weui-cell__bd">
-                    <input class="weui-input" name="text" 
-                    value='{{text}}' placeholder="请输入" bindinput='onTextChange'/>
-                </view>
+    <view class="weui-cells__title">请输入你想分享的笑话内容</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+                <input class="weui-input" name="text" 
+                value='{{text}}' placeholder="" bindinput='onTextChange'/>
             </view>
         </view>
-
-        
-
-        <view class="weui-btn-area">
-            <button class="weui-btn" type="primary" form-type='submit'>输入完毕</button>
-        </view>
-      </form>
-       <view>{{text}}</view>
     </view>
+        <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" form-type='submit'>输入完毕</button>
+    </view>
+  </form>
+    <view>{{text}}</view>
+</view>
+   
+<!-- 评论 -->
+
+<view class="page__hd">
+  <view class="page__title">评论列表</view>
+</view>
+
+<view class="page__bd">
+  <form bindsubmit='onSubmit1'>
+    <view class="weui-toptips weui-toptips_warn" 
+    wx:if="{{hasError}}">{{errorText}}</view>
+
+    <view class="weui-cells__title">请输入你想发表的评论</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd">
+                <input class="weui-input" name="text1" 
+                value='{{text1}}' placeholder="" bindinput='onTextChange'/>
+            </view>
+        </view>
+    </view>
+        <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" form-type='submit'>评论完毕</button>
+    </view>
+  </form>
+    <view>{{text1}}</view>
+</view>
    
