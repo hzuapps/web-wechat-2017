@@ -4,6 +4,7 @@
     "pages/logs/logs",
     "pages/feedback/feedback",
     "pages/addnewform/addnewform"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
