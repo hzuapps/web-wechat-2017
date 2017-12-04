@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/form/form"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -24,6 +25,11 @@
        "iconPath": "image/rizhi1.png",
        "selectedIconPath": "image/rizhi.png",
        "text": "日志"
+    },{
+      "pagePath": "pages/form/form",
+      "iconPath": "image/rizhi1.png",
+      "selectedIconPath": "image/rizhi.png",
+      "text": "表单"
     }]
   }
 }
