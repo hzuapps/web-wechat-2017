@@ -28,12 +28,27 @@ Page({
     todoTextAreaValue: '',
 
     // 事项列表
+    taskList:[],
     itemList: [],
     editItemList: [] //编辑勾选中的事项id
   },
 
   onLoad() {
     let _this = this;
+
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901223/Panxmian.json',
+      header: {
+        'content-type': 'application/json' 
+      },
+      success: function (res) {
+        console.log(res.data);
+        _this.setData({
+          moodList: res.data.Panxmian
+        });
+      }
+    })
+    
     promiseHandle(wx.getSystemInfo).then((data) => {
       _this.setData({
         updatePanelTop: data.windowHeight
