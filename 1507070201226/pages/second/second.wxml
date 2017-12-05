@@ -1,0 +1,16 @@
+<text>你的出生日期为{{DATE}}</text>
+<view class="section">
+你大约还可以吃{{h}}顿饭
+</view>
+
+<view class="section">
+你大约还可以度过 次双休
+</view>
+
+<view class="section">
+你大约还可以度过  次春节
+</view>
+
+<view class="section">
+你大约还可以看 次奥运会
+</view>

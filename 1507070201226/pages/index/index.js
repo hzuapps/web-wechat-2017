@@ -1,7 +1,6 @@
 //index.js
 //获取应用实例
-const app = getApp()
-
+var app = getApp()
 Page({
 
   /**
@@ -9,22 +8,30 @@ Page({
    */
   data: {
     imageUrl: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1509771627791&di=ae1c2a8334396d404b1e5782062fd9fe&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3D74f9b69ec3177f3e0439f44e18a651b2%2F6609c93d70cf3bc73a0ce9c4db00baa1cd112a8d.jpg', 
-    date: '2016-09-01',
-
+    date:"1997-09-09",
+    h:null
   },
-
+  toast: function () {
+    
+    wx.navigateTo({
+      url: '../second/second?DATE=' + this.data.date
+      
+ 
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+  
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+   
+   
   },
 
   /**
@@ -67,5 +74,13 @@ Page({
    */
   onShareAppMessage: function () {
     
-  }
+  },
+  bindDateChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      date: e.detail.value,
+       
+    })
+  },
+  
 })

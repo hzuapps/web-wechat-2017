@@ -1,3 +1,4 @@
+<scroll-view  scroll-y="true" style="height: 400px">
 <view class="title">
     当时间精确到分秒，当死亡越来越近，不知道你会不会对过去的碌碌无为而感到后悔
 </view>
@@ -13,4 +14,6 @@
   </picker>
 </view>
 <text>按照中国人均寿命计算</text>
-<button type='primary'>点击查看你还有多少时间</button>
+<button type='primary' bindtap="toast">点击查看你还有多少时间</button>
+
+</scroll-view>

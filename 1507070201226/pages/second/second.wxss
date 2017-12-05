@@ -1,0 +1,11 @@
+.section{
+  color:red;
+  width:200px;
+  height: 100px;
+  background-color: white;
+  border-color: green;  
+  border-style: solid;  
+  top: 20rpx;  
+  left: 30rpx;  
+}
+
