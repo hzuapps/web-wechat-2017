@@ -10,9 +10,15 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  bindViewTap: function() {
+  open: function(){
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../form/form'
+    })
+    },//点击主页按钮跳转至form页面
+    
+  bindViewTap: function(options) {
+    wx.navigateTo({
+      url: '../form/form'
     })
   },
   onLoad: function () {

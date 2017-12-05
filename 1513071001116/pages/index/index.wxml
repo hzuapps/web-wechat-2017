@@ -19,6 +19,7 @@
     <view class="page__bd">
         <view class="weui-btn-area">
             <button type="default" bindtap="open">开启奇妙学习之旅</button>
+            
         </view>
     </view>
 </view>
