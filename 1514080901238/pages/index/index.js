@@ -2,14 +2,7 @@ const pageData = {
     data: {
         taskList: [],
         task: '',
-        tipsHidden: true,
-        tasklists:[{id:0,name:'做作业',time:'2017-10-11'},
-          { id: 1, name: '下午兼职', time: '2017-10-11' },
-          { id: 2, name: '做数学作业', time: '2017-10-11' },
-          {id: 3, name: '做语文作业', time: '2017-10-11' },
-          {id: 4, name: '做英语作业', time: '2017-10-11' },
-          { id: 4, name: '4点与闺蜜逛街', time: '2017-10-11' },
-          { id: 4, name: '19点陪爸妈吃完饭', time: '2017-10-11' }]
+        tipsHidden: true
     },
 
     onShow: function () {
@@ -51,6 +44,19 @@ const pageData = {
         this.setData({
             'taskList': modify
         });
+     wx.request({
+     url: 'https://infoaas.com/data/1514080901238/taskList.json',
+                header: {
+        'content-type': 'application/json' // 默认值
+               },
+       success: function (res) {
+         console.log(res.data);
+          _this.setData({
+           taskList: res.data.taskList
+         });
+      }
+  })
+
         wx.setStorageSync('taskList', modify);
     },
 
