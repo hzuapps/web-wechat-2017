@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    todoList: [{ text: '打扫卫生', status: false }, { text: '打扫卫生', status: false }, { text: '打扫卫生', status: false }, { text: '打扫卫生', status: false }, { text: '打扫卫生', status: false }, { text: '打扫卫生', status: false }, { text: '打扫卫生', status: false }, { text: '打扫卫生', status: false }, { text: '打扫卫生', status: false }, { text: '打扫卫生', status: false }, { text: '打扫卫生', status: false }, { text: '打扫卫生', status: false }], // 待办数组 status表示是否完成 ，未完成为false，完成为true
+    todoList: [],    // 待办数组 status表示是否完成 ，未完成为false，完成为true
 
 
     footerInputHidden: true, // 是否隐藏底部input
@@ -12,6 +12,29 @@ Page({
     isLower: false, // 页面是否到达底部
     isEnd: false // 是否还有更多数据
   },
+
+  onLoad: function () {
+    this.getData()
+  },
+
+  // 自定义函数
+  getData: function () {
+    var that = this
+
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5a268a4c351e2e02eb0675f0/zt/home',
+      
+      success: function (res){
+        console.log(res.data)
+        that.setData({
+          todoList: res.data.data.todoList
+        })
+      }
+    })
+  },
+
+
+
   //事件处理函数
   // 添加待办按钮点击
   onAddButtonTap: function (e) {
