@@ -1,11 +1,10 @@
 <!--pages/test/test.wxml-->
 <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-<!--加了一个循环  -->
- <view wx:for="{{items}}">{{item.one}}</view> 
- </scroll-view>
+</scroll-view>
  <view class="title">垂直滚动</view>  
-<scroll-view class="scroll_view_vertical" scroll-y="">  
-    <view class="item">line1</view>  
+<scroll-view class="scroll_view_vertical" scroll-y="true">  
+    <view class="{{items}}">{{item}}</view> 
+     <view class="item">line1</view>  
     <view class="item">line2</view>  
     <view class="item">line3</view>  
     <view class="item">line4</view>  
@@ -19,14 +18,14 @@
     <view class="item">line12</view>  
 </scroll-view>  
 <view class="title">水平滚动</view>  
-<scroll-view class="scroll_view_horizotal" scroll-x="">  
-    <view>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</view>      
+<scroll-view class="scroll_view_horizotal" scroll-x="true">     <view>aaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaa</view>      
 </scroll-view> 
 
-
-<block wx:for-items="{{result.issueList}}">
+<block class="{{result.issueList}}">
   <Text style="color:green;">第{{index+1}}个列表</Text>
-  <block wx:for-items="{{item.itemList}}">
+    <button class="weui-btn" type="primary"  bindtap="show">MY ACCOUNT</button>
+  <view wx:for="{{eatData}}" >{{item.name}}</view> 
+  <block class="{{item.itemList}}">
      <image style="width:100%;height:200px;" src="{{item.data.cover.feed}}"></image>
   </block>
 </block>

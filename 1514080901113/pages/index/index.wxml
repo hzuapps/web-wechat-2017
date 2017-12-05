@@ -10,12 +10,8 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
 
-
-
-
-
-  <button class="weui-btn" type="primary" plain="true">MY ACCOUNT</button>
-
+  <button class="weui-btn" type="primary"  bindtap="show">MY ACCOUNT</button>
+  <view wx:for="{{eatData}}" >{{item.name}}</view> 
   </view>
 </view>
 
