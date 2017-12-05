@@ -80,36 +80,49 @@ Page({
   // 页面滚动到最底部
   onscrollToLower: function () {
     // console.log('hahaha')
-    let that = this
+    var that = this
 
-    if (!this.data.isEnd) {
-      this.setData({
-        isLower: true
-      })
+    // if (!this.data.isEnd) {
+    //   this.setData({
+    //     isLower: true
+    //   })
 
-      // console.log(this.data.isLower)
+    //   // console.log(this.data.isLower)
 
-      let todoList = this.data.todoList
+    //   let todoList = this.data.todoList
 
-      if (todoList.length < 30) { // 如果数组长度小于20则加载，用来模拟数据加载完毕的情况
-        todoList.push({ text: '++++', status: false }, { text: '++++', status: false }, { text: '++++', status: false }, { text: '++++', status: false })
-        console.log('hahaha')
-        setTimeout(function () {
-          that.setData({
-            isLower: false,
-            todoList: todoList
-          })
-        }, 1500)
+    //   if (todoList.length < 30) { // 如果数组长度小于20则加载，用来模拟数据加载完毕的情况
+    //     todoList.push({ text: '++++', status: false }, { text: '++++', status: false }, { text: '++++', status: false }, { text: '++++', status: false })
+    //     console.log('hahaha')
+    //     setTimeout(function () {
+    //       that.setData({
+    //         isLower: false,
+    //         todoList: todoList
+    //       })
+    //     }, 1500)
 
-      } else {
-        setTimeout(function () {
-          that.setData({
-            isLower: false,
-            isEnd: true
-          })
-        }, 1700)
+    //   } else {
+    //     setTimeout(function () {
+    //       that.setData({
+    //         isLower: false,
+    //         isEnd: true
+    //       })
+    //     }, 1700)
+    //   }
+    // }
+    
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5a268a4c351e2e02eb0675f0/zt/home',
+      
+      success: function (res){
+        console.log(res.data.data.todoList)
+        var todoList = that.data.todoList
+        todoList = todoList.concat(res.data.data.todoList)
+        that.setData({
+          todoList: todoList
+        })
       }
-    }
+    })
 
 
   }
