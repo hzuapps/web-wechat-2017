@@ -1,4 +1,4 @@
-// pages/match/match.js
+﻿// pages/match/match.js
 Page({
 
   /**
@@ -27,8 +27,7 @@ Page({
         that.setData({
           match:res.data.match
         });
-        that.data.match=res.data.match
-      }
+          }
      
     }) 
   },
