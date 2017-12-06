@@ -10,16 +10,6 @@ Page({
         sNum: "2",
         name: '鱼片粥',
         price: '28'
-      },
-      {
-        sNum: "3",
-        name: '兴国米粉鱼',
-        price: '12'
-      },
-      {
-        sNum: "4",
-        name: '深海龙利鱼',
-        price: '16'
       }
     
     ]
@@ -36,9 +26,11 @@ Page({
  //   var index = len;
    // var sn = "students["+index+"].sNum";
     this.setData({
-    sNum:"6-",
+   
     name: e.detail.value.username,
-    price:"-18"
+    sNum:e.detail.value.number,
+    price:e.detail.value.price
+   
     })
 
   },
