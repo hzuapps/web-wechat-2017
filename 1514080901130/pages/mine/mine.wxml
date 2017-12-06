@@ -24,6 +24,8 @@
     </view>
   
  <view class="weui-cells__title">表单内容：</view>
-<view>{{text}}</view> 
 
+ <button class="weui-btn" type="primary" bindtap="show">确定</button>
+
+ <view wx:for="{{eatData}}" >{{item.name}}</view> 
 </view>
