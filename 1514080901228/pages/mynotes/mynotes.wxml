@@ -1,0 +1,45 @@
+<!--pages/mynotes/mynotes.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">写笔记</view>
+  </view>
+  <view class="page__bd">
+    <form bindsubmit="onSubmit" bindreset="formReset">
+      <view class="section">
+        <view class="section__title">标题</view>
+        <input name="input" placeholder="我的标题" />
+      </view>
+      <view class="section section_gap">
+        <view class="section__title">共享</view>
+        <radio-group name="radio-group">
+          <label>
+            <radio value="公开文档" />公开文档</label>
+          <label>
+            <radio value="仅自己可见" />仅自己可见</label>
+        </radio-group>
+      </view>
+      <view class="section section_gap">
+        <view class="section__title">设置标签</view>
+        <checkbox-group name="checkbox">
+          <label>
+            <checkbox value="编程语言" />编程语言</label>
+          <label>
+            <checkbox value="算法" />算法</label>
+          <label>
+            <checkbox value="生活" />生活</label>
+          <label>
+            <checkbox value="其他" />其他</label>
+        </checkbox-group>
+      </view>
+      <view class="section">
+        <view class="section__title">正文</view>
+        <textarea class="weui-textarea" name="area" placeholder="在此输入笔记内容……" maxlength="-1" value='{{area}}' auto-focus bindinput='onChange'/>
+        <view class="weui-textarea-counter">{{count}}/字数</view>
+      </view>
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" form-type="submit">保存提交</button>
+        <button formType="reset">清除数据</button>
+      </view>
+    </form>
+  </view>
+</view>
