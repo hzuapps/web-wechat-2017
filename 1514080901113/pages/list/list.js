@@ -32,4 +32,17 @@ Page({
       }
     })
   },
+  
+  show: function () {
+    var that = this;
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901101/eat.json', //仅为示例，并非真实的接口地址
+      success: function (res) {
+        console.log(res.data)
+        that.setData({
+          eatData: res.data
+        });
+      }
+    })
+  }
 })
