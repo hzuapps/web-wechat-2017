@@ -43,6 +43,14 @@ Page({
       })
     }
   },
+  form:function(){
+    wx.navigateTo({
+      url: '../form/form',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
