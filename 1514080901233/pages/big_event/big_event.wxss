@@ -1,1 +1,18 @@
 /* pages/big_event/big_event.wxss */
+.title{  
+    height: 30px;  
+    text-align: center;
+    background-color: greenyellow;
+}  
+.scroll_view_vertical{  
+    height: 100%;  
+    margin-bottom: 20px;  
+    background-color: ghostwhite;  
+}  
+.scroll_view_horizotal{  
+    height: 50px;  
+    background-color: whitesmoke;  
+}  
+.item{  
+    height: 50px;  
+}  
