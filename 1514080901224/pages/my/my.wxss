@@ -1,4 +1,8 @@
-.userinfo
-{
-
-}
+.block{
+  height: 120rpx;
+  width: 100%;
+  background:white;
+  border:0px solid rebeccapurple;
+  border-radius: 5px;
+  margin-top:2px;
+} 

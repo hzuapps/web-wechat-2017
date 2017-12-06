@@ -1,10 +1,44 @@
-<view>
-<text>我的相册!</text>
+  <!--用户头像-->
+<view style="display:flex;justify-content: center;">
+ <image src="../images/3.jpg"></image>
 </view>
-<navigator url="" wx:for="{{sessions}}" wx:key="name" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
-<image src="../images/1.jpg"></image>
-<image src="../images/2.jpg"></image>
-<image src="../images/3.jpg"></image>
-<image src="../images/4.jpg"></image>
-<image src="../images/5.jpg"></image>
-</navigator>
+<form bindsubmit="listenFormSubmit" bindreser="listenFormReser" >
+  <!--用户名与密码-->
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="text" 
+                    value='{{}}' placeholder="请输入账号" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="area" placeholder="请输入密码" style="height: 3.3em" value='{{}}' bindinput='onChange' placeholder-style="color: gray"/>
+                </view>
+            </view>
+        </view>
+  <!--登录用户类型-->
+  <View style="display:flex;justify-content: center;margin-top:10px;">
+    <radio-group name="radio-group" bindchange="radioChange">
+      <label>
+        <radio value="manager" checked="true"/>管理员
+      </label>
+      <label>
+        <radio value="tearch" checked="true"/>老师
+      </label>
+      <label>
+      <radio value="student" checked="true"/>学生
+      </label>
+    </radio-group>
+    <!--忘记密码-->
+    <label>
+      <switch name="switch" type="checkbox" checked bindchange="switch1Change" style="margin-left:20px;"/>
+      <Text style="font-size: 14px;padding-left:5px;">忘记密码?</Text>
+    </label>
+  </View>
+  <!--button formType属性两个可选值submit, reset分别会触发form的submit，reser事件 -->
+  <button formType="submit" type="primary" style="margin-top:10px;" bindtap="onSubmit">提交</button>
+  <button formType="reset" type="warn" style="margin-top:10px;" bindtap="onReser">重置</button>
+</form>
