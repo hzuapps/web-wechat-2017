@@ -27,6 +27,8 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+
+  /*
   onLoad: function (options) {
     var that = this
     // 设置窗口大小
@@ -39,6 +41,9 @@ Page({
         //console.dir(that.data.windowHeight)
       }
     })
+  },
+  
+
   },
 
   /**
