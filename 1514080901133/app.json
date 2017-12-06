@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/ldy/ldy",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/form/form"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,15 +14,23 @@
   "tabBar": {
     "color": "#000000",
     "selectedColor": "#009444",
+    "position":"top",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页"
+        
       },
       {
         "pagePath": "pages/ldy/ldy",
         "text": "力荐"
-      }
+        
+      },
+          {
+            "pagePath": "pages/form/form",
+            "text": "个人资料设置"
+          }
     ]
+    
   }}
   
