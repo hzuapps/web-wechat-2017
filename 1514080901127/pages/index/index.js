@@ -162,26 +162,33 @@ onLoad: function (options) {
    
   })
 },
-  onEnd: function (e) {
-    console.dir(e)
+  onEnd: function () {
     var that = this;
-    that.setData({
-      //isLower: true,
-      sessions: that.data.sessions.concat([{
-        date: "10月10日",
-        id:10,
-        detail:[{
-          id:101,
-          condition:"-",
-          name: "午餐",
-          outcome: "10元"
-        }]
-      }])
+    //服务器取数据
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901127/1514080901127.json',
+      data: {},
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        that.setData({
+          sessions:res.data.sessions,
+        })
+        console.log(res.data.sessions)
+        /*
+        that.setData({
+          hasError: true,
+          errorText: res.data.name + ',' + res.data.teacher + ' ' + res.data.year
+        })*/
+      }
     })
+
   },
 
   onScroll: function () {
     console.dir("onScroll");
-  }
+  },
+
 
 })
