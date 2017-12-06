@@ -6,47 +6,79 @@ Page({
    * 页面的初始数据
    */
   data: {
-   
+   /*
     array: [{
-      text: '1',
-      description: "第一条通知"
+      title: '通知',
+      iconTime:'../../image/buildtime.png',
+      readerNum:'0',
+      questionNum: '1', 
+      buildtime: '2017-12-3'
     }, {
-      text: '2',
-      description: "第一条通知"
+        title: '通知',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
     }, {
-      text: '3',
-      description: "第一条通知"
+        title: '通知',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
     }, {
-      text: '4',
-      description: "第一条通知"
+        title: '通知',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
     }, {
-      text: '5',
-      description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
     }, {
-      text: '6',
-      description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
     }, {
-      text: '7',
-      description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
     }, {
-      text: '8',
-      description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
     }, {
-      text: '9',
-      description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
     }, {
-      text: '10',
-      description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
     },
     {
-      text: '11',
-      description: "第一条通知"
-    }],
+      title: '1',
+      iconTime: '../../image/buildtime.png',
+      readerNum: '0',
+      questionNum: '1',
+      buildtime: '2017-12-3'
+    }],*/
+      
       hidden: true,
       scrollTop: 0,
       scrollHeight:0
-
-
   },
 
   /**
@@ -55,12 +87,24 @@ Page({
   onLoad: function (options) {
     //   这里要注意，微信的scroll-view必须要设置高度才能监听滚动事件，所以，需要在页面的onLoad事件中给scroll-view的高度赋值
           var that = this;
+          wx.request({
+            url: 'https://infoaas.com/data/1514080901114/feedback.json',
+                  header: {
+         'content-type': 'application/json' // 默认值
+                  },
+       success: function (res) {
+            console.log(res.data);
+            that.setData({
+           array: res.data.array
+             });
+      }
+    })
+
           wx.getSystemInfo({
               success:function(res) {
                      that.setData({
                             scrollHeight:res.windowHeight
-              });
-                    
+              });               
       }
       });
          
@@ -102,7 +146,7 @@ Page({
   },
 
   /**
-   * 页面上拉触底事件的处理函数*/
+   * 页面上拉触底事件的处理函数
    
   onReachBottom: function () {
 
@@ -110,33 +154,57 @@ Page({
       hidden: false,
       console.log('加载更多')
    var   newarray=[{
-        text: '12',
-        description: "第一条通知"
+     title: '1',
+     iconTime: '../../image/buildtime.png',
+     readerNum: '0',
+     questionNum: '1',
+     buildtime: '2017-12-3'
       }, {
-        text: '13',
-        description: "第一条通知"
+       title: '1',
+       iconTime: '../../image/buildtime.png',
+       readerNum: '0',
+       questionNum: '1',
+       buildtime: '2017-12-3'
       },
       {
-        text: '14',
-        description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
       },
       {
-        text: '15',
-        description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
       }, {
-        text: '16',
-        description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
       }, {
-        text: '17',
-        description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
       },
       {
-        text: '18',
-        description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
       },
       {
-        text: '19',
-        description: "第一条通知"
+        title: '1',
+        iconTime: '../../image/buildtime.png',
+        readerNum: '0',
+        questionNum: '1',
+        buildtime: '2017-12-3'
       }];
    this.data.array = this.data.array.concat(newarray);
       
@@ -147,7 +215,7 @@ Page({
         });
        
     }
-  },
+  },*/
   
 
   /**
