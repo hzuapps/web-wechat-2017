@@ -1,18 +1,70 @@
-
-<view class="page">
-<input placeholder="输入你想要的内容" auto-focus/>
-<scroll-view class="scroll" scroll-y style="height: 520px " bindscrolltolower="loadMore" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-  <view class="page__hd"> </view>
-  <view class="page__bd">
-    <view class="section section_gap" wx:for="{{array}}" wx:for-item="item">
-      <view class="section__ctn">       
-        <view class="section__title"><text style=" position:absolute;left:60px;">{{item.text}}</text>
-        <image class="img" style="width: 50px; height: 50px; background-color: #FFFFFF;margin-left:0px; " src="{{item.icon}}"></image>
-        <text style=" position:absolute;right:30px;font-size:80%;color:#CCCCCC;">{{item.time}}</text>
-        <text style="left:100px;font-size:80%;color:#CCCCCC;">{{item.msg}}</text>
-        </view>
-      </view>
-    </view>
-  </view>
-</scroll-view>
-</view>
+<view id="adduser">  
+    <form bindsubmit="formSubmit" bindreset="formReset">  
+         <view class="section">  
+            <view class="section__title">姓名:</view>  
+            <view class='form-group'>  
+                <input type="text" class="input-text" name="username" placeholder="请输入姓名" />  
+            </view>      
+        </view>  
+        <view class="section section_gap">  
+            <view class="section__title">年龄:</view>  
+            <view class='form-group'>  
+                <slider name="age" show-value ></slider>  
+            </view>      
+        </view>  
+        <view class="section section_gap">  
+            <view class="section__title">性别:</view>  
+            <view class='form-group'>  
+                <radio-group name="gender">  
+                  <label><radio value="1"/>男</label>  
+                  <label><radio value="0"/>女</label>  
+                </radio-group>  
+            </view>      
+        </view>  
+        <view class="section">  
+            <view class="section__title">地区选择:</view>  
+            <view class='form-group'>  
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">  
+                    <view class="picker">  
+                        <input type="hidden" disabled="true" name="addr" value="{{array[index]}}"/>  
+                    </view>  
+                </picker>  
+            </view>  
+        </view>  
+        <view class="section section_gap">  
+            <view class="section__title">爱好:</view>  
+            <view class='form-group'>  
+                <checkbox-group name="hobby">  
+                    <label><checkbox value="羽毛球"/>羽毛球</label>  
+                    <label><checkbox value="游泳"/>游泳</label>  
+                </checkbox-group>  
+            </view>  
+        </view>  
+          
+        <view class="section section_gap">  
+            <view class="section__title">是否显示:</view>  
+            <view class='form-group'>  
+                 <switch name="isshow"/>  
+            </view>  
+        </view>  
+        <view class="section btn-area">  
+            <button formType="submit">提交</button>  
+            <button formType="reset">清空</button>  
+        </view>  
+    </form>  
+  
+     <!-- 黑框提示并消失 -->  
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">  
+        {{notice_str}}  
+    </toast>  
+    <!-- 确认框 及 提示框 -->  
+    <view class="page__bd">  
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">  
+            确认提交么？  
+        </modal>  
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">  
+            <view> 提示 </view>  
+            <view> 清空成功 </view>  
+        </modal>  
+    </view>  
+</view> 

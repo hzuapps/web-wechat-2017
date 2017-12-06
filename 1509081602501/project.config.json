@@ -8,9 +8,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.6.4",
+	"libVersion": "1.6.6",
 	"appid": "touristappid",
-	"projectname": "sy3",
+	"projectname": "form",
 	"condition": {
 		"search": {
 			"current": -1,
