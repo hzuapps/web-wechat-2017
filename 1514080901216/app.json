@@ -3,7 +3,8 @@
     "example/index",
     "example/navbar/navbar",
     "example/demo/scrollView",
-    "example/form/form"
+    "example/form/form",
+    "example/involved/involved"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -25,7 +26,7 @@
       "iconPath": "images/1.png",
       "selectedIconPath": "images/1-d.png"
     },{
-      "pagePath": "example/index",
+      "pagePath": "example/involved/involved",
       "text": "我的",
       "iconPath": "images/2.png",
       "selectedIconPath": "images/2-d.png"
