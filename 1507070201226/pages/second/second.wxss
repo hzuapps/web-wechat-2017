@@ -1,1 +1,8 @@
-/* pages/second/second.wxss */
+.time{
+
+
+width: 100%;
+height:30px;
+
+}
+
