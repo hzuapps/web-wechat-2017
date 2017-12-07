@@ -1,17 +1,34 @@
+function CountDown(that, count) {
+  var minutes,seconds;
+  minutes = Math.floor(count / 60);
+  seconds = Math.floor(count % 60);
+  that.setData({
+    minute: minutes,
+    second: seconds
+  })
+  setTimeout(function () {
+    count--;
+    CountDown(that, count);
+  }, 1000);
+}   
+
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+    second:0,
+    minute:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    CountDown(this,25*60)
   },
 
   /**
@@ -24,8 +41,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-    
+  onShow: function () {     
   },
 
   /**
