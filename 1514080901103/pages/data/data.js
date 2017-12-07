@@ -22,9 +22,4 @@ Page({
       }
     })
   },
-
-  listenerButton: function () {
-
-
-  }
 })
