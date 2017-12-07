@@ -1,0 +1,11 @@
+/* pages/contents/contents.wxss */
+.textclass{
+  color:cadetblue;
+  font-size:30px;
+  margin: 5px;
+}
+
+.imagesclass{
+  margin: 5px;
+  border:1px solid ;
+}
