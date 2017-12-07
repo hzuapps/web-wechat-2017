@@ -2,14 +2,14 @@
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
     <view class="page__hd">
         <view class="page__title">测试页</view>
-        <view class="page__desc">简单实现表单输入</view>
+        <view class="page__desc">表单展示</view>
     </view>
     <view class="page__bd">
       <form bindsubmit='onSubmit'>
         <view class="weui-toptips weui-toptips_warn" 
         wx:if="{{hasError}}">{{errorText}}</view>
 
-        <view class="weui-cells__title">本书简介</view>
+        <view class="weui-cells__title">本书标题</view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_input">
                 <view class="weui-cell__bd">
@@ -19,11 +19,11 @@
             </view>
         </view>
 
-        <view class="weui-cells__title">书友评价</view>
+        <view class="weui-cells__title">本书简介</view>
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell">
                 <view class="weui-cell__bd">
-                    <textarea class="weui-textarea" name="area" placeholder="请输入文本" style="height: 3.3em" value='{{area}}' bindinput='onChange' maxlength="50" />
+                    <textarea class="weui-textarea" name="area" placeholder="请输入文本" style="height: 9.3em" value='{{area}}' bindinput='onChange' maxlength='50' />
                     <view class="weui-textarea-counter">{{count}}/50</view>
                 </view>
             </view>
