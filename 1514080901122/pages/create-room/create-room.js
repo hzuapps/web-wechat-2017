@@ -1,3 +1,7 @@
+var app = getApp();
+
+//console.log(app.globalData.room);
+
 Page({
 
   /**
@@ -9,6 +13,7 @@ Page({
     startNum: 0,
     endNum: 0,
     limitTime: 0,
+    roomID: 0,
     warning: ""
   },
 
@@ -20,6 +25,7 @@ Page({
   },
 
   formSubmit: function (e) {
+    var that = this;
     console.log('form发生了submit事件，携带数据为：', e.detail.value);
     if (e.detail.value.startNum == "" || e.detail.value.endNum == "") {
       console.log("请填写完整的学号范围。");
@@ -38,15 +44,32 @@ Page({
         icon: '创建成功',
         duration: 2000
       });
+
+      // 添加新创的房间到全局数组room（服务器）
+      var newRoom = {
+        roomID: app.globalData.roomCount++,
+        startNum: e.detail.value.startNum,
+        endNum: e.detail.value.endNum,
+        limitTime: this.data.times[e.detail.value.limitTime],
+        studentList: []
+      };
+      app.globalData.room.push(newRoom);
+      console.log(app.globalData.room);
+
+      //渲染页面数据
       this.setData({
         warning: "",
+        roomID: app.globalData.roomCount,
         startNum: e.detail.value.startNum,
         endNum: e.detail.value.endNum,
         limitTime: this.data.times[e.detail.value.limitTime]
       });
+
+      //向服务器发出请求，请求添加room
+
       //跳转到now-room页面
       wx.navigateTo({
-        url: '../now-room/now-room' + '?startNum=' + e.detail.value.startNum + '&endNum=' + e.detail.value.endNum + '&limitTime=' + this.data.times[e.detail.value.limitTime]
+        url: '../now-room/now-room' + '?roomID=' + that.data.roomID + '&startNum=' + e.detail.value.startNum + '&endNum=' + e.detail.value.endNum + '&limitTime=' + this.data.times[e.detail.value.limitTime]
       });      
     }
   },
@@ -57,5 +80,5 @@ Page({
       warning: "",
       timeIndex: 0
     })    
-  },  
+  }  
 })

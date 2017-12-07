@@ -62,5 +62,22 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+
+  formSubmit: function (e) {
+    var that = this;
+    console.log('form发生了submit事件，携带数据为：', e.detail.value);
+
+    //跳转到响应房间页面   
+
+    //发请求到服务器
+  },  
+
+  formReset: function () {
+    console.log('form发生了reset事件');
+    this.setData({
+      warning: "",
+      timeIndex: 0
+    })
+  }  
 })

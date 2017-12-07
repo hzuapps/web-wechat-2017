@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    nowRoomID: 0,
     startNum: 0,
     endNum: 0,
     limitTime: 0
@@ -15,6 +16,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
+      nowRoomID: options.roomID,
       nowStartNum: options.startNum,
       nowEndNum: options.endNum,
       nowLimitTime: options.limitTime

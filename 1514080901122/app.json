@@ -23,10 +23,6 @@
       {
         "pagePath": "pages/student-list/student-list",
         "text": "未到学生"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
       }
     ]
   }
