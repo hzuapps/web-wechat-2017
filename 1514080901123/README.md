@@ -1,10 +1,10 @@
-# 魔方资讯小程序
+# 魔方宝典小程序
 
 ## 名称：
-魔方资讯
+魔方宝典（原魔方资讯与公众号重名，不能注册使用，所以临时改名）
 
 ## 二维码：
-
+![image](https://github.com/panweil/picture/blob/master/1514080901123/erweima.jpg?raw=true)
 
 
 ## 创意说明：
@@ -20,3 +20,20 @@
 
 
 ## 小程序主要界面截图
+### 主界面
+![image](https://github.com/panweil/picture/blob/master/1514080901123/%E6%8D%95%E8%8E%B7.PNG?raw=true)
+
+### 中国记录
+![image](https://github.com/panweil/picture/blob/master/1514080901123/NR.PNG?raw=true)
+
+### 公式
+![image](https://github.com/panweil/picture/blob/master/1514080901123/gongshi.PNG?raw=true)
+
+### 魔方图片预览界面
+![image](https://github.com/panweil/picture/blob/master/1514080901123/pinpai.PNG?raw=true)
+
+### 赛事
+![image](https://github.com/panweil/picture/blob/master/1514080901123/saishi.PNG?raw=true)
+
+### 计时器
+![image](https://github.com/panweil/picture/blob/master/1514080901123/jishiqi.PNG?raw=true)
