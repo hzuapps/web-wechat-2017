@@ -4,25 +4,20 @@ const app = getApp()
 
 Page({
   data: {
-    kdValues: ['顺丰速运','邮政ems','天天快递','圆通快递','申通快递','中通快递','京东快递','其他'],
+    kdValues: ['百世汇通', '德邦物流', 'EMS快递', '京东快递', '申通快递', '顺丰速运', '天天快递', '圆通速递', '韵达快运', '中国邮政快递', '中通快递','宅急送'],
     kdValueIndex:3,
-    Info: [{ time: '2017 - 01 - 01', info: "快件xxx到达xxx市A区" },
-      { time: '2017 - 01 - 02', info: "快件xxx到达xxx市B区" },
-      { time: '2017 - 01 - 03', info: "快件xxx到达xxx市C区" },
-      { time: '2017 - 01 - 03', info: "快件xxx到达xxx市C1区" },
-      { time: '2017 - 01 - 03', info: "快件xxx到达xxx市C2区" },
-      { time: '2017 - 01 - 03', info: "快件xxx到达xxx市C3区" },
-      { time: '2017 - 01 - 03', info: "快件xxx到达xxx市D区" },
-      { time: '2017 - 01 - 03', info: "快件xxx到达xxx市C3区" },
-      { time: '2017 - 01 - 03', info: "快件xxx到达xxx市D区" }
-    ], 
+    Info: [], 
     scrollTop: 0,
     scrollHeight:0,
     hidden: true,
     scv_hidden:true,
-
-
-    text: ''
+    err_hidden:true,
+    errMessage:'',
+    errReason:'',
+    text: '',
+    //nu:'887470643087868982',
+    nu:'',
+    com:'jd'
 
   },
   //事件处理函数
@@ -32,72 +27,43 @@ Page({
     })
   },
   onLoad: function (options) {
-    
-          
-                var that = this;
-              wx.getSystemInfo({
-               success:function (res) {
-                             that.setData({
-                             scrollHeight:res.windowHeight-263
+     var that = this;
+        wx.getSystemInfo({
+            success:function (res)  {
+              that.setData(
+                {scrollHeight:res.windowHeight-263}
+                          );
+                                    }
                         });
-    
-            }
-        });
          
-    },
-  onReachBottom: function () {
-    
-      
-       {
-         var that = this;
-         this.setData({
-           hidden: false,
-         });
-         setTimeout(function () { console.log(that.hidden)
-           
-           var newInfo = [
-             { time: '2017 - 01 - 03', info: "快件xxx到达xxx市C1区" },
-             { time: '2017 - 01 - 03', info: "快件xxx到达xxx市C2区" },
-             { time: '2017 - 01 - 03', info: "快件xxx到达xxx市C3区" },
-             { time: '2017 - 01 - 04', info: "快件xxx到达xxx市C1区" },
-             { time: '2017 - 01 - 05', info: "快件xxx到达xxx市C2区" },
-             { time: '2017 - 01 - 06', info: "快件xxx到达xxx市C3区" },
-             { time: '2017 - 01 - 03', info: "快件xxx派送中，派送员：xxx" },
-             { time: '2017 - 01 - 03', info: "已收件，收件人：XXX" }];
-           that.data.Info = that.data.Info.concat(newInfo);
-           
-           that.setData({ hidden: true, });
-
-           that.setData({
-
-             'Info': that.data.Info,
-
-           })
-         }, 800);
-          
-     
-
-   }
   },
+  
 
   bindkdValueChange: function (e) {
+    var that = this;
+    console.log(e);
 
     this.setData({
       kdValueIndex: e.detail.value
     })
+    console.log(that.data.kdValueIndex)
+    switch(that.data.kdValueIndex){
+      case '0': that.setData({ com: 'huitongkuaidi' });break;
+      case '1': that.setData({ com: 'debangwuliu' }); break;
+      case '2': that.setData({ com: 'ems' }); break;
+      case '3': that.setData({ com: 'jd' }); break;
+      case '4': that.setData({ com: 'shentong' }); break;
+      case '5': that.setData({ com: 'shunfeng' }); break;
+      case '6': that.setData({ com: 'tiantian' }); break;
+      case '7': that.setData({ com: 'yuantong' }); break;
+      case '8': that.setData({ com: 'yunda' }); break;
+      case '9': that.setData({ com: 'youzhengguonei' }); break;
+      case '10': that.setData({ com: 'zhongtong' }); break;
+      case '11': that.setData({ com: 'zhaijisong' }); break;
+    }
+    console.log(that.data.com);
   },
-  /*showInfo: function(){
-    /*wx.navigateTo({
-      url: '../kdInfo/kdInfo',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
-    })
-    this.setData({
-      scv_hidden:false
-    })
-},*/
-
+  
   onSubmit: function (event) {
     console.dir(event)
     var that = this
@@ -127,6 +93,19 @@ Page({
         }
       })
     }
+    this.setData({Info:''})
+    app.getExpressInfo(that.data.nu,that.data.com,function(kddata){
+      console.log(kddata)
+      if(kddata.status == 0) {
+        that.setData({err_hidden:false}),
+        that.setData({errMessage: kddata.errMsg}),
+        that.setData({errReason: kddata.reason})
+      }
+      else {
+      that.setData({ err_hidden: true }),
+      that.setData({Info:kddata.data})
+      }
+    })
   },
 
   onTextChange: function (e) {
@@ -144,6 +123,15 @@ Page({
         hasError: false
       })
     }
+  },
+  nuinput : function(event) {
+    console.log(event);
+    this.setData({
+      nu:event.detail.value
+    })
+    console.log(event.detail.value);
+    console.log(this.data.nu);
+
   },
 
   onChange: function (e) {

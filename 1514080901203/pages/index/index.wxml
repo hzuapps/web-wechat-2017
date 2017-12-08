@@ -3,7 +3,7 @@
   <view class="page__hd">
 
     
-    <form bindsubmit='onSubmit'>
+<form bindsubmit='onSubmit'>
   <view class="weui-toptips weui-toptips_warn" wx:if="{{hasError}}">{{errorText}}</view>
   <view class="weui-cells__title">选择快递公司</view>
     <view class="weui-cells weui-cells_after-title">
@@ -14,32 +14,30 @@
                 </picker>
             </view>
                 <view class="weui-cell__bd weui-cell__bd_in-select-before">
-                  <input id='numinput' class="weui-input" name="text" value='{{text}}' placeholder="请输入快递单号" bindinput='onTextChange' />
+                  <input id='numinput' class="weui-input" name="text" value='{{text}}' placeholder="请输入快递单号" bindinput='onTextChange'  bindinput='nuinput'/>
                 </view>
         </view>
     </view>
 
-
-<view class="weui-btn-area">
-  <button class="weui-btn" type="primary" form-type='submit'>查询</button>
-</view>
-      </form>
-    
-    
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" form-type='submit'>查询</button>
   </view>
+</form>
+ </view>
 </view>
 
 
 <view class ="Info_container">
-     <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" style='height:{{scrollHeight}}px' bindscrolltolower=" onReachBottom" hidden="{{scv_hidden}}">
+     <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" style='height:{{scrollHeight}}px' hidden="{{scv_hidden}}">
          <view id='infoview' wx:for="{{Info}}">
               <text>{{item.time}}\n</text> 
-              <text>{{item.info}} </text>
+              <text>{{item.context}} </text>
          </view>
-        <view class="weui-loadmore" hidden="{{hidden}}">
-     <view class="weui-loading"></view>
-     <view class="weui-loadmore__tips">正在加载</view>
-   </view>
+         <view hidden="{{err_hidden}}">
+         <text style='font-size:25px;color:#ff0f0f'>查询出错了！！！\n</text>
+         <text>{{errMessage}}\n</text>
+         <text>{{errReason}}</text>
+         </view>
      </scroll-view>
       
 </view>

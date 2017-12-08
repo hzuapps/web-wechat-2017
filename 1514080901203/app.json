@@ -6,7 +6,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "快递查询",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -17,7 +17,7 @@
       "selectedIconPath": "images/icon1s.png"
     },{
       "pagePath": "pages/logs/logs",
-      "text": "更多",
+      "text": "历史",
       "iconPath": "images/icon2.png",
       "selectedIconPath": "images/icon2s.png"
     }]
