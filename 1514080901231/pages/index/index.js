@@ -1,3 +1,4 @@
+// pages/form/form.js
 Page({
 
   /**
@@ -26,6 +27,15 @@ Page({
         })
       }
     })
+    wx.playBackgroundAudio({
+      //播放地址
+      dataUrl: 'http://sc1.111ttt.com/2016/1/09/28/202280605509.mp3',
+      //title 音乐名字
+      title: '青云志',
+      //图片地址
+      coverImgUrl: 'http://r1.ykimg.com/050E0000576B75F667BC3C136B06E4E7'
+    })
+
   },
 
   /**
@@ -76,14 +86,8 @@ Page({
   onShareAppMessage: function () {
     return {
       title: 'BMI指数计算器',
-      desc: '随时随地查看BMI指数',
-      path: '/page/user?id=123',
-      success: function (res) {
-        // 转发成功
-      },
-      fail: function (res) {
-        // 转发失败
-      }
+      desc: '来和我PK一下BMI指数吧！',
+      path: '/page/user?id=123'
     }
   },
 
@@ -115,6 +119,7 @@ Page({
       })
     }
   },
+
   onTextChange: function (e) {
     var that = this;
     console.dir(e)
@@ -134,10 +139,18 @@ Page({
 
   onChange: function (e) {
     var that = this;
-    var value = e.detail.value;
-    console.dir(value)
-    that.setData({
-      count: value.length
-    })
+    console.dir(e)
+    var area = e.detail.value
+    console.dir(area);
+    if (!area) {
+      that.setData({
+        hasError: true,
+        errorText: '文字不能为空！'
+      })
+    } else {
+      that.setData({
+        hasError: false
+      })
+    }
   }
 })
