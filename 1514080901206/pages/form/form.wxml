@@ -14,8 +14,8 @@
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_input">
                 <view class="weui-cell__bd">
-                    <input class="weui-input" name="text" 
-                    value='{{text}}' placeholder="" bindinput='onTextChange'/>
+                    <input class="weui-input" type='digit' name="CNY" 
+                    value='{{CNY_VALUE}}' placeholder="" bindinput='onCNYChange'/>
                 </view>
             </view>
         </view>
@@ -24,8 +24,8 @@
         <view class="weui-cells weui-cells_after-title">
             <view class="weui-cell weui-cell_input">
                 <view class="weui-cell__bd">
-                    <input class="weui-input" name="text" 
-                    value='{{text}}' placeholder="" bindinput='onTextChange'/>
+                    <input class="weui-input" type='digit' name="USD" 
+                    value='{{USD_VALUE}}' placeholder="" bindinput='onUSDChange'/>
                 </view>
             </view>
         </view>
@@ -35,7 +35,7 @@
             <view class="weui-cell weui-cell_input">
                 <view class="weui-cell__bd">
                     <input class="weui-input" name="text" 
-                    value='{{text}}' placeholder="" bindinput='onTextChange'/>
+                    value='{{GBP_VALUE}}' placeholder="" bindinput='onTextChange'/>
                 </view>
             </view>
         </view>
@@ -43,7 +43,8 @@
         
 
         <view class="weui-btn-area">
-            <button class="weui-btn" type="primary" form-type='submit'>转换</button>
+            <button class="weui-btn" type="primary"  bindtap='transclick'>转换</button>
+
         </view>
       </form>
     </view>

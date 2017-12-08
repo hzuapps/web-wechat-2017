@@ -1,11 +1,11 @@
 // pages/form/form.js
+var CNY
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
   },
 
   /**
@@ -62,5 +62,61 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+  onCNYChange:function(e){
+     CNY = e.detail.value
+  },
+  onUSDChange:function(){
+    
+  },
+  
+  transclick:function(){
+    var that = this;
+    wx.request({
+      url: 'http://jisuhuilv.market.alicloudapi.com/exchange/convert', 
+      data: {
+        amount: CNY,
+        from: 'CNY',
+        to:'USD',
+      },
+      header: {
+        'content-type': 'application/json', // 默认值
+        'Authorization': 'APPCODE cd4bf20e4f1b41c092925b86a31624ea'
+      },
+      success: function (res) {
+          that.setData({
+            USD_VALUE: res.data.result.camount
+          }) 
+      },
+      
+    })
+    wx.request({
+      url: 'http://jisuhuilv.market.alicloudapi.com/exchange/convert',
+      data: {
+        amount: CNY,
+        from: 'CNY',
+        to: 'GBP',
+      },
+      header: {
+        'content-type': 'application/json', // 默认值
+        'Authorization': 'APPCODE cd4bf20e4f1b41c092925b86a31624ea'
+      },
+      success: function (res) {
+        that.setData({
+          GBP_VALUE: res.data.result.camount
+        })
+      },
+
+    })
+    
+   
+    
+    
+    
+    
+    
+  },
+  
+
+
 })
