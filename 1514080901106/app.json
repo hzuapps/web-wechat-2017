@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/request/requset",
+    "pages/form/form",
     "pages/index/index",
-    "pages/show/show",
-	"pages/form/form"
+    "pages/show/show"
   ],
   "window": {
     "backgroundTextStyle": "light",
