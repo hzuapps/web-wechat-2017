@@ -53,7 +53,7 @@ Page({
   },
   toDiaryedit: function () {
     wx.navigateTo({
-      url: '../diaryedit/diaryedit'
+      url: '../edit/edit'
     })
   }
 })

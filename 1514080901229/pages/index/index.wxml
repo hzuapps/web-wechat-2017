@@ -14,8 +14,6 @@
     <button class="weui-btn " url="../diaryedit/diaryedit" type="primary" bindtap='toDiaryedit'>编辑日记</button>  
 </view>
 <view class="weui-footer weui-footer_fixed-bottom">
-  <view class="weui-footer__links">
-      <navigator url="" class="weui-footer__link">设置链接</navigator>
-  </view>
+  
   <view class="weui-footer__text">sulijin 2017.11.3</view>
 </view>
