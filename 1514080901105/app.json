@@ -1,8 +1,26 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/myword/myword",
+    "pages/form/form",
+    "pages/view/view"
   ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/myword/myword",
+        "text": "景"
+      },
+      {
+        "pagePath":"pages/form/form",
+        "text":"你的爱好"
+      }
+    ]
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
