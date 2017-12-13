@@ -1,70 +1,13 @@
-<view id="adduser">  
-    <form bindsubmit="formSubmit" bindreset="formReset">  
-         <view class="section">  
-            <view class="section__title">姓名:</view>  
-            <view class='form-group'>  
-                <input type="text" class="input-text" name="username" placeholder="请输入姓名" />  
-            </view>      
-        </view>  
-        <view class="section section_gap">  
-            <view class="section__title">年龄:</view>  
-            <view class='form-group'>  
-                <slider name="age" show-value ></slider>  
-            </view>      
-        </view>  
-        <view class="section section_gap">  
-            <view class="section__title">性别:</view>  
-            <view class='form-group'>  
-                <radio-group name="gender">  
-                  <label><radio value="1"/>男</label>  
-                  <label><radio value="0"/>女</label>  
-                </radio-group>  
-            </view>      
-        </view>  
-        <view class="section">  
-            <view class="section__title">地区选择:</view>  
-            <view class='form-group'>  
-                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">  
-                    <view class="picker">  
-                        <input type="hidden" disabled="true" name="addr" value="{{array[index]}}"/>  
-                    </view>  
-                </picker>  
-            </view>  
-        </view>  
-        <view class="section section_gap">  
-            <view class="section__title">爱好:</view>  
-            <view class='form-group'>  
-                <checkbox-group name="hobby">  
-                    <label><checkbox value="羽毛球"/>羽毛球</label>  
-                    <label><checkbox value="游泳"/>游泳</label>  
-                </checkbox-group>  
-            </view>  
-        </view>  
-          
-        <view class="section section_gap">  
-            <view class="section__title">是否显示:</view>  
-            <view class='form-group'>  
-                 <switch name="isshow"/>  
-            </view>  
-        </view>  
-        <view class="section btn-area">  
-            <button formType="submit">提交</button>  
-            <button formType="reset">清空</button>  
-        </view>  
-    </form>  
-  
-     <!-- 黑框提示并消失 -->  
-    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">  
-        {{notice_str}}  
-    </toast>  
-    <!-- 确认框 及 提示框 -->  
-    <view class="page__bd">  
-        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">  
-            确认提交么？  
-        </modal>  
-        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">  
-            <view> 提示 </view>  
-            <view> 清空成功 </view>  
-        </modal>  
-    </view>  
-</view> 
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

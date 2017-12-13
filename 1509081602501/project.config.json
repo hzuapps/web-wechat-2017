@@ -8,9 +8,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.6.6",
+	"libVersion": "1.7.0",
 	"appid": "touristappid",
-	"projectname": "form",
+	"projectname": "api",
 	"condition": {
 		"search": {
 			"current": -1,

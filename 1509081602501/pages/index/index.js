@@ -1,77 +1,54 @@
-var app = getApp();
+//index.js
+//获取应用实例
+const app = getApp()
+
 Page({
   data: {
-    // text:"这是一个页面"  
-    array: ["中国", "美国", "巴西", "日本"],
-    toast1Hidden: true,
-    modalHidden: true,
-    modalHidden2: true,
-    notice_str: '',
-    index: 0
+    motto: 'Hello World',
+    userInfo: {},
+    hasUserInfo: false,
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  toast1Change: function (e) {
-    this.setData({ toast1Hidden: true });
-  },
-  //弹出确认框  
-  modalTap: function (e) {
-    this.setData({
-      modalHidden: false
+  //事件处理函数
+  bindViewTap: function() {
+    wx.navigateTo({
+      url: '../logs/logs'
     })
   },
-  confirm_one: function (e) {
-    console.log(e);
-    this.setData({
-      modalHidden: true,
-      toast1Hidden: false,
-      notice_str: '提交成功'
-    });
+  onLoad: function () {
+    if (app.globalData.userInfo) {
+      this.setData({
+        userInfo: app.globalData.userInfo,
+        hasUserInfo: true
+      })
+    } else if (this.data.canIUse){
+      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+      // 所以此处加入 callback 以防止这种情况
+      app.userInfoReadyCallback = res => {
+        this.setData({
+          userInfo: res.userInfo,
+          hasUserInfo: true
+        })
+      }
+    } else {
+      // 在没有 open-type=getUserInfo 版本的兼容处理
+      wx.getUserInfo({
+        success: res => {
+          app.globalData.userInfo = res.userInfo
+          this.setData({
+            userInfo: res.userInfo,
+            hasUserInfo: true
+          })
+        }
+      })
+    }
   },
-  cancel_one: function (e) {
-    console.log(e);
+  getUserInfo: function(e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
     this.setData({
-      modalHidden: true,
-      toast1Hidden: false,
-      notice_str: '取消成功'
-    });
-  },
-  //弹出提示框  
-  modalTap2: function (e) {
-    this.setData({
-      modalHidden2: false
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true
     })
-  },
-  modalChange2: function (e) {
-    this.setData({
-      modalHidden2: true
-    })
-  },
-  bindPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      index: e.detail.value
-    })
-  },
-  onLoad: function (options) {
-    // 页面初始化 options为页面跳转所带来的参数  
-  },
-  onReady: function () {
-    // 页面渲染完成  
-  },
-  onShow: function () {
-    // 页面显示  
-  },
-  onHide: function () {
-    // 页面隐藏  
-  },
-  onUnload: function () {
-    // 页面关闭  
-  },
-  formSubmit: function (e) {
-    console.log('form发生了submit事件');
-    this.modalTap();
-  },
-  formReset: function () {
-    console.log('form发生了reset事件');
-    this.modalTap2();
   }
 })
