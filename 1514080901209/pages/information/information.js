@@ -5,11 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    name: 'grl',
-    area: '惠州',
-    email:'123456@qq.com',
-    signature:'请相信努力奋斗的意义',
-    count: '请相信努力奋斗的意义'.length
+    
+    name: '',
+    area: '',
+    email:'',
+    signature:'',
+    count:""
   },
 
   /**
@@ -17,11 +18,16 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    wx.getStorage({
-      key: 'input',
-      success: function (res) {
-        console.log(res.data)
+    wx.request({
 
+      url: 'https://infoaas.com/data/1514080901209/information_js.json',
+      //仅为示例，并非真实的接口地址
+      data: {
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
         that.setData({
           name: res.data.name,
           area: res.data.area,
@@ -29,21 +35,11 @@ Page({
           signature: res.data.signature,
           count: res.data.signature.length
         })
-      }
-    })
-    // 从服务器取回来 JSON
-    wx.request({
-      url: 'https://infoaas.com/data/hzc.json',
-      //仅为示例，并非真实的接口地址
-      data: {},
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success: function (res) {
         console.log(res.data)
-       
+
       }
     })
+   
   },
 
   /**
@@ -108,18 +104,6 @@ Page({
     } else {
       that.setData({
         hasError: false
-      })
-      wx.setStorage({
-        key: "input",
-        data: event.detail.value,
-        success: function (res) {
-          wx.showToast({
-            title: '成功',
-            icon: 'success',
-            duration: 2000  //提示的延迟时间，单位毫秒
-          })
-
-        }
       })
     }
   },
