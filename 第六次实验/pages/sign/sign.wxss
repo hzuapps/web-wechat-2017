@@ -1,0 +1,23 @@
+.container2{
+  margin-top:100px;
+  margin-left:130px;
+}
+#signpage{
+  margin-top:90px;
+  margin-left:110px;
+  font-size: 50px;
+}
+#passwd{
+ border:1px solid #003333;
+ width:146px;
+ border-radius: 3px;
+}
+#account{
+border:1px solid #003333;
+width:161px;
+border-radius: 3px;
+}
+#signbutton{
+  margin-top:20px;
+float:right;
+}

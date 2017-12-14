@@ -1,0 +1,9 @@
+
+<view id="signpage" >注册页面</view>
+<view class="container2">
+<view>输入你的账号：</view>
+<input  id="account" bindinput='textinput'/>
+<view>输入你的密码：</view>
+<input  id="account" type="password" bindinput='textinput2'/>
+</view>
+<button style="width:80px" id="signbutton" bindtap='signbutton'>确定</button>
