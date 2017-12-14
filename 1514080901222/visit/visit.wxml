@@ -1,0 +1,3 @@
+<view  wx:for="{{images}}"mode="aspecFill"  style="width: 100%; margin:1rem 0;">
+<image src="{{item.image}}"></image>
+</view>
