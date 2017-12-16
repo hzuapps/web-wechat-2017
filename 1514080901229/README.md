@@ -5,7 +5,7 @@
 
 ## 小程序二维码
 提交审核未通过，因为日记不属于开放类别。
-![image](https://github.com/879579620/MyResource/blob/master/diary/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%A0%81.jpg?raw=true)
+![image](https://github.com/879579620/MyResource/blob/master/diary/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%A0%81%E5%B0%8F.jpg?raw=true)
 ![image](https://github.com/879579620/MyResource/blob/master/diary/%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF.png?raw=true)
 
 ## 小程序创意说明
@@ -51,9 +51,9 @@ qingkong:function(){
       })
  ```
 ### 日记列表界面
-是滚动界面，显示所有的日记的部分信息，点击相应的日记，会转入对应的日记详细界面，显示日记详细内容,具体实现方法是
+这是滚动界面，显示所有的日记的部分信息，点击相应的日记，会转入对应的日记详细界面，显示日记详细内容,具体实现方法是
 ```
-  <navigator url="../look/look?id={{index}}"></navigator>
+  <navigator url="../look/look?id={{index}}">……内容……</navigator>
 ```
 ## 小程序主要界面截图
 ### 主页
