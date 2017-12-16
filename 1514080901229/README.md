@@ -4,7 +4,7 @@
  瑾色双城（因为原点滴日记已经被使用，临时改名）
 
 ## 小程序二维码
-提交审核未通过，因为日记不属于开放类别。
+提交审核未通过，因为日记不属于开放类别<br  />
 ![image](https://github.com/879579620/MyResource/blob/master/diary/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%A0%81%E5%B0%8F.jpg?raw=true)
 ![image](https://github.com/879579620/MyResource/blob/master/diary/%E7%89%88%E6%9C%AC%E4%BF%A1%E6%81%AF.png?raw=true)
 
