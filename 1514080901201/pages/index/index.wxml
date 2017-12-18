@@ -16,12 +16,13 @@
             <view class="weui-tab__panel">
         <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
               <view class="button-sp-area">
-                <button class="weui-btn" type="primary" plain="true" bindtap="btn_3">拍照</button>
+                 <button class="weui-btn" type="primary" plain="true" bindtap="chooseimage2">拍照</button> 
           
-               <button class="weui-btn" type="primary" plain="true" bindtap="btn_4">本地相册</button>
-           
+               <button class="weui-btn" type="primary" plain="true"  bindtap="chooseimage1">本地相册</button>
+               
             </view>
         </view>
+     
       <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
                 
         <view class="button-sp-area">
@@ -31,7 +32,8 @@
            
         </view>
       </view>
-                
+          <image src="{{tempFilePaths }}" catchTap="chooseImageTap" mode="aspectFit" style="width: 100%; height: 450rpx" />
+           <!-- <image src="{{tempFilePaths }}" mode="aspecFill" style="width: 100%; height: 450rpx"/>       图片  -->
             </view>
         </view>
     </view>
