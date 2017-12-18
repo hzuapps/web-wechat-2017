@@ -1,11 +1,12 @@
 {
   "pages":[
-    
     "pages/index/index",
+    "pages/myinfo/myinfo",
+    "pages/edit/edit",
+    "pages/show/show",
+    "pages/look/look",
     "pages/diarylist/diarylist",
-     "pages/diaryedit/diaryedit",
-     "pages/diaryshow/diaryshow",
-    "pages/logs/logs"
+    "pages/myinfo/me"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -19,17 +20,17 @@
     "borderStyle":"black",
     "backgroundColor":"#ffffff",
     "list":[{
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/show/show",
         "iconPath": "pages/images/日历.png",
         "selectedIconPath": "pages/images/日历_填充.png",
-        "text": "日历"
+        "text": "日记"
       },{
-      "pagePath":"pages/diarylist/diarylist",
+      "pagePath":"pages/index/index",
       "iconPath":"pages/images/表单.png",
       "selectedIconPath":"pages/images/表单g.png",
-      "text":"日记"
+      "text":"主页"
     },{
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/myinfo/myinfo",
       "iconPath": "pages/images/用户.png",
       "selectedIconPath": "pages/images/用户_填充.png",
       "text": "我"

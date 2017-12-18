@@ -1,0 +1,22 @@
+<view class="page">
+  <view class="weui-panel">
+    <view class="weui-panel__hd">日记</view>
+      <scroll-view scroll-y  style="height: 1000rpx">
+        <view wx:for="{{diarys}}" wx:for-item="diary">
+          <navigator url="../look/look?id={{index}}">            
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{diary.text}}</view>
+                    <view class="weui-media-box__desc">{{diary.area}}</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">{{userInfo.nickName}}</view>
+                        <view class="weui-media-box__info__meta">{{diary.riqi}}</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">日记</view>
+                    </view>
+                </view>
+            </view>
+          </navigator>         
+        </view>
+      </scroll-view>
+  </view>
+</view> 
