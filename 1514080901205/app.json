@@ -5,7 +5,12 @@
     "pages/search/search",
     "pages/user/user",
     "pages/top250/top250",
-    "pages/movies/movies"
+    "pages/movies/movies",
+    "pages/day/ri",
+    "pages/week/week",
+    "pages/weekend/weekend",
+    "pages/month/month",
+    "pages/new/new"
   ],
   "window": {
     "backgroundTextStyle": "light",

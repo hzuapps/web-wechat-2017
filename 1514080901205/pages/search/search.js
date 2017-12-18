@@ -31,9 +31,4 @@ Page({
       }
     })
   },
-
-  onLoad: function () {
-  
-  },
-
 })
