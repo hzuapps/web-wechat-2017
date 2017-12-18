@@ -1,30 +1,21 @@
 /**index.wxss**/
-#adduser{  
-    background: #CCFF99;  
-    height: 550px;
-}  
-.section__title{  
-    margin:  3%;
-    float: left;  
-    width:30%;  
-}  
-.form-group{  
-    float: right;  
-    width: 70%;  
-}  
-.section{  
-    clear: both;  
-    width:90%;  
-    margin:  auto;  
-}  
-.input-text{  
-    border: 1px solid #ddd;  
-}  
-.button{  
-    border: 1px solid #1aad19;  
-    border-radius: 2px;  
-}  
-.picker{  
-    padding: 13px;  
-    background-color: #FFFFFF;  
-}  
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
