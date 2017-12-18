@@ -15,10 +15,10 @@
 <image style ="round;" mode="{{scaleToFill}}" src="{{src}}"></image>
 </view>
 <view class="container">
-<view class="content">
-<p>{{content1}}</p>
+  <view class="content1">
+    <p>{{content}}</p>
+  </view>
 </view>
-<view class="content">
-<p>{{content2}}</p>
-</view>
-</view>
+<text>\n</text>
+<button type="primary" size="default" bindtap="mybutton">Come On!</button>
+

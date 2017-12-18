@@ -1,49 +1,43 @@
-// pages/page5/page5.js
-Page({
 
-  data: {
-    cgvalue: "",
-    rgvalue: "",
-    usernamevalue: "",
-    addressvalue: "",
-    cgvalue2: "",
-    rgvalue2: "",
-    usernamevalue2: "",
-    addressvalue2: ""
-  },
+Page(
+  {
+    data:{
+        name:"",
+        sexs:"",
+        reason:"",
+    },
+    
+    nameinput:function(e){
+      this.setData({
+        name: e.detail.value
+      })
+    },
+    radioinput:function(e){
+      this.setData({
+    sexs:e.detail.value,
+      });
+    },
+    reasoninput: function (e) {
+      this.setData({
+        reason: e.detail.value
+      })
+    },
+    mybutton: function () {
+      var that = this;
 
-  mytap: function () {
-    this.setData({
-      cgvalue2: this.data.cgvalue,
-      rgvalue2: this.data.rgvalue,
-      usernamevalue2: this.data.usernamevalue,
-      addressvalue2: this.data.addressvalue
-    }) 
-  }  ,
-
- cg:function(e){
-   this.setData({
-     cgvalue: e.detail.value 
-   }) 
-
- },
-
- rg: function (e) {
-   this.setData({
-     rgvalue: e.detail.value 
-   }) 
- },
-
- usernameinput:function(e){
-   this.setData({
-     usernamevalue: e.detail.value 
-   })
- },
-
- addressinput: function (e) {
-   this.setData({
-     addressvalue: e.detail.value 
-   }) 
- }
-
-})
+      if (this.data.sexs == "man" ) {
+        wx.redirectTo({
+          url: '../test/test?name=' + that.data.name + '&sex=' + that.data.sexs,
+        })
+      }
+      if (this.data.sexs == "woman") {
+        console.log(that.data.name)
+        wx.redirectTo({
+          url: '../work/work?name=' + that.data.name + '&sex=' + that.data.sexs,
+          
+        })
+      }
+      
+    },
+  }
+)
