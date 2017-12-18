@@ -1,0 +1,86 @@
+
+#left{
+float:left;
+ margin-left:15px;
+ margin-top:10px;
+ margin-bottom: 10px;
+}
+#right{
+ margin-left:200px;
+ height:200px;
+  width:200px;
+   margin-bottom: 10px;
+}
+#picture{
+  height:150px;
+  width:150px;
+  float:left;
+}
+
+.buttons
+{
+margin-top:10px;
+clear:both;
+ float:left; 
+}
+#logout{
+
+  line-height: 35px;
+  width:65px;
+  height:35px;
+  float:left;
+  margin-left:5px;
+}
+#setup{
+  line-height: 35px;
+  width:80px;
+  height:35px;
+
+  float:left;
+}
+#exit{
+  line-height: 35px;
+  width:80px;
+  height:35px;
+  float:left;
+}
+#introduce{
+  margin-top:5px;
+  
+}
+#nickname{
+  word-wrap:break-word;
+overflow-x: auto;
+white-space:nowrap;
+height:45px;
+}
+.info{
+  
+border-bottom:2px dotted #000;
+}
+#userinfo{
+word-wrap:break-word;
+overflow-y: scroll;
+width:200px;
+height:125px;
+}
+
+#editdemo{
+  width: 95%;
+}
+/*------------------------- 项目列表------------------------  */
+.items{
+  margin-top:20px;
+}
+.showcode{
+  margin-bottom:0px;
+  background-color: red;
+  height: 40px;
+  width:300px;
+  font-size: 30px;
+ line-height:30px;
+ margin-top:20px;
+}
+.itemS{
+  margin-top:10px;
+}

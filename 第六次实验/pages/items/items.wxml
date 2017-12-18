@@ -1,0 +1,55 @@
+<view class="info">
+
+<view id="left">
+<image id="picture" src="{{imageList}}"></image>
+<view class="buttons">
+<button id="setup" bindtap="chooseImage" >设置</button>
+<button id="exit" bindtap="exit" >退出</button>
+</view>
+
+</view>
+
+<view id="right">
+<view id="nickname">昵称:{{nickname}}</view>
+<view id="introduce">
+<view id>个人简介:</view>
+<view id="userinfo">{{userinfo}}</view>
+</view>
+</view>
+</view>
+<!-----------------------------------------------------------------items -->
+<view class="items">
+<scroll-view scroll-y="true" style="height: 400px">
+   <!--  item1 -->
+   <view  id="item1" class="itemS"   >
+
+   <image src="../images/NO1.png" style="height:50px;width:80px;display: inline-block" />
+ <view>>>>Now Demo</view>
+  <textarea  id="editdemo" disabled="{{textareadisable}}" value="{{textvalue}}" maxlength='-1x' bindlinechange="linechange" auto-focus bindinput='textinput3'> </textarea> 
+ <view>>>>|</view>
+
+  <button class="showcode" bindtap="editdemo">{{buttontext}}</button>
+
+  <view wx:if="{{ifshow}}">
+
+  <view>>>>Previous Demo </view>
+  <textarea  id="showdemo" disabled="{{textareadisable2}}" value="{{textvalue2}}"       maxlength='-1x' >       </textarea> 
+  <view>>>>|</view>
+
+ </view>
+   </view>
+
+</scroll-view>
+
+</view>
+<!--  --------------------------------------------------------------------  -->
+<view></view>
+
+<modal hidden="{{hiddenmodalput}}"  confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+    <input type='text'placeholder="请输入昵称" value="{{inputvalue}}" auto-focus bindinput='textinput'/>  
+</modal>  
+<modal hidden="{{hiddenmodalput2}}"  confirm-text="提交" cancel-text="取消" bindcancel="cancel2" bindconfirm="confirm2">  
+    <input type='text'placeholder="请输入昵称" value="{{inputvalue2}}" auto-focus bindinput='textinput2'/>  
+</modal>  
+
+

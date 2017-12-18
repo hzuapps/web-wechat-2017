@@ -1,0 +1,25 @@
+<view class="row">
+
+<view class="row0">
+<image src="../images/dog2.png" style="height:80px;width:80px;" id="dogimage" />
+</view>
+<view class="row1">
+<image src="../images/1.png" style="height:40px;width:40px;" id="image" />
+<view id="sign_in"> sign in</view>
+</view>
+
+<view class="row2">
+<view id="accounttext">account</view>
+<input  id="account" bindinput='accountinput'/>
+</view>
+
+<view class="row3">
+<view  id="passwordtext">password</view>
+<input type="password" id="passwd" bindinput='passwdinput'/>
+</view>
+<view class="row4" style="display: inline-block">
+
+<button id="confirmbutton" bindtap="confirmbutton"> 登陆</button>
+<button id="confirmbutton" bindtap="signbutton"> 注册</button>
+</view>
+</view>
