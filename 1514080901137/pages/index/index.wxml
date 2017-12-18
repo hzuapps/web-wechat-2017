@@ -1,8 +1,7 @@
 <!--index.wxml-->
-
-<view>
-    <navigator url="../form/form" hover-class="navigator-hover" class="navigator">
-      跳转到form页面
-    </navigator>
-  
+<text class='text'>几个生活小妙招：</text>
+<view  wx:for="{{methods}}">
+  <navigator class="viewclass" url="../contents/contents?id={{item.id}}" hover-class="navigator-hover">
+  {{item.id}}  {{item.title}}
+  </navigator>
 </view>

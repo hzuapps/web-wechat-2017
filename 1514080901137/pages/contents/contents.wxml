@@ -1,0 +1,5 @@
+<!--pages/contents/contents.wxml-->
+<view class="textclass">
+方法：{{way}}
+<image src="/pages/images/{{id}}.jpg" class="imagesclass"/>
+</view>

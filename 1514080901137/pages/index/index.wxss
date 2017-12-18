@@ -1,12 +1,16 @@
 /**index.wxss**/
+.viewclass{
+  border:1px solid pink;
+  margin: 3px;
+  font-size:28px;
+}
+
 .navigator-hover{
   color:blue;
 }
 
-.navigator{
-  border:1px solid pink;
-  font-size: 28px;
-  margin: 10px;
-  padding: 5px;
-  font-weight:bold;
+.text{
+  color:blue;
+  font-size: 30px;
+  margin: 5px;
 }
