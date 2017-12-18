@@ -14,7 +14,7 @@ Page({
   toast: function () {
     
     wx.navigateTo({
-      url: '../second/second'
+      url: "../second/second?DATE=" + this.data.date
     })
   },
   /**
