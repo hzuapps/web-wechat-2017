@@ -16,14 +16,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-    var nr = wx.getStorageSync('key')
-    var that = this
-    that.setData({
-      nr: {
-        text: nr.text,
-        area: nr.area
-      }
-    });
+//    var nr = wx.getStorageSync('key')
+//    var that = this
+//    that.setData({
+ //     nr: {
+ //       text: nr.text,
+  //      area: nr.area
+ //     }
+ //   });
     
   },
 
@@ -77,18 +77,30 @@ Page({
   },
   
   formSubmit: function (e) {
-    console.log(e.detail.value);
+ //   console.log(e.detail.value);
     var that=this
-    that.setData({
-     nr:{
-       text: e.detail.value.text,
-       area: e.detail.value.area
-     }
-    }),
-      wx.setStorage({
-        key: "key",
-        data: e.detail.value
-      })
+ //   that.setData({
+  //   nr:{
+  //     text: e.detail.value.text,
+  //     area: e.detail.value.area
+  //   }
+  //  }),
+  //    wx.setStorage({
+  //      key: "key",
+   //     data: e.detail.value
+   //   })
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901101/eat.json', //仅为示例，并非真实的接口地址
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        that.setData({
+           nr:res.data.nr,
+          })
+        console.log(res.data)
+      }
+    })
   },
   formReset: function () {
     console.log('form发生了reset事件')
