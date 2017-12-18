@@ -23,7 +23,7 @@
       </view>
 
       <view class="weui-btn-area">
-            <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+            <button class="weui-btn" type="primary" form-type='submit'>保存</button>
       </view>
     </form>
 </view>

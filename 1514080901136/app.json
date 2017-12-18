@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/match/match",
     "pages/form/form"
   ],
   "window": {
@@ -22,7 +22,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/match/match",
         "selectedIconPath": "images/t2.png",
          "iconPath": "images/t22.png", 
         "text": "废纸篓"

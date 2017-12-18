@@ -1,7 +1,7 @@
 Page({
   data: {
-    text: '请在此输入',
-    area: '请在此输入',
+    text: '请在此输入您的昵称',
+    area: '请在此输入您的个性签名',
     count: 'area'.length
   },
   formsubmit: function (event) {
@@ -24,7 +24,7 @@ Page({
         success: function () {
           console.log('hahahahaha')
           wx.showToast({
-            title: '成功',
+            title: '已保存',
             icon: 'success',
             duration: 2000
           })
