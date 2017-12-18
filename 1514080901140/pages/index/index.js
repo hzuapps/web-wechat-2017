@@ -4,7 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    session: []
+    sessions: []
   },
 
   /**
@@ -22,29 +22,22 @@ Page({
         //console.dir(that.data.windowHeight)
       }
     })
-    that.setData({
-      sessions: [{
-        name: "1学院",
-      }, {
-        name: "2学院",
-      }, {
-        name: "3学院",
-      }, {
-        name: "4学院",
-      }, {
-        name: "5学院",
-      }, {
-        name: "6学院",
-      }, {
-        name: "7学院",
-      },{
-        name: "8学院"
+    
+    wx.request({
+      url:'https://infoaas.com/data/1514080901140/sessions.json',
+      data:{},
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        that.setData({
+          sessions:res.data.sessions,
+        })
+        console.log(res.data)
       }
-      ],
-    })
+    }) 
   },
   
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
