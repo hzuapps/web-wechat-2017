@@ -2,14 +2,18 @@
 //获取应用实例
 const app = getApp()
 var content;
+var utilMd5 = require('../../utils/md5.js');
+var sign;
+var target_lanuage='EN';
 Page({
   data: {
+    result: {},
     items: [
       //默认选择英文
-      { name: 'USA', value: '英文', checked: true },
-      { name: 'CHN', value: '中文' },
-      { name: 'JPN', value: '日文' },
-      { name: 'KOR', value: '韩文' },
+      { name: 'EN', value: '英文', checked: true },
+      { name: 'zh-CHS', value: '中文' },
+      { name: 'ja', value: '日文' },
+      { name: 'ko', value: '韩文' },
     ]
   },
   //事件处理函数
@@ -21,11 +25,19 @@ Page({
 
   radioChange: function (e) {
     console.log("radio发生了改变，值为：", e.detail.value)
+    target_lanuage=e.detail.value
+    console.log("目标语言："+target_lanuage)
   },
 
   formSubmit: function (e) {
     content = e.detail.value.text;
+    var that = this;
     console.log("用户输入的待翻译文本为：", content);
+    //拼接sign签名文件并使用MD5加密
+    sign = utilMd5.hexMD5('774309fbc239d997' + content + '2HK0awjmg1d8G7VyVMYu53s7RskTWdqP1')
+    //将加密后的密文转换为大写
+    sign = sign.toUpperCase();
+    console.log(sign)
     if (!content) {
       this.setData({
         hasError: true,
@@ -40,11 +52,20 @@ Page({
       wx.showLoading({
         title: '正在翻译',
       })
+      wx.request({
+        url: 'https://openapi.youdao.com/api?q=' + content + '&from=auto&to='+target_lanuage+'&appKey=774309fbc239d997&salt=2&sign=' + sign,
+        headers: {
+          'Content-Type': 'application/json',
+          'Charset':'UTF-8'
+        },
+        success: function (res) {
+          console.log(JSON.stringify(res.data))
+          that.setResult(res.data)
+          //获取数据成功后关闭加载框
+          wx.hideLoading()
+        },
+      })
     }
-    //开启加载框2秒后隐藏，模拟网络请求
-    setTimeout(function () {
-      wx.hideLoading()
-    }, 2000)
   },
   textChange: function (e) {
     content = e.detail.value;
@@ -54,5 +75,10 @@ Page({
         hasError: false
       })
     }
+  },
+  setResult: function (data) {
+    this.setData({
+      result: data
+    })
   }
 })

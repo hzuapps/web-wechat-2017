@@ -13,7 +13,6 @@
   </view>
 
   <text>请选择翻译文本的目标语言</text>
-
   <radio-group class="radio-group" bindchange="radioChange">
     <label class="radio" wx:for="{{items}}">
       <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
@@ -25,7 +24,8 @@
   </view>
 
   <view class="weui-cell__bd">
-    <textarea class="weui-textarea" placeholder="存放翻译后的文本" style="height: 3.3em" />
+    <textarea class="weui-textarea" placeholder="翻译结果" style="height: 5.0em" 
+    value="{{result.basic.explains}}{{result.translation}}"/>
   </view>
-
+  
 </form>
