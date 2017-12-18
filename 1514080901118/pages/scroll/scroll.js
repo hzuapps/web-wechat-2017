@@ -6,49 +6,22 @@ Page({
   data: {
     inputShowed: false,
     inputVal: "",
-    list: [
-      {
-        title: "话题1",
-        note: "从2007年开始对做站产生了浓厚的兴趣？",
-        time: "2017-11-03 11:15:30"
-      },
-      {
-        title: "话题2",
-        note: "阿里云双十一活动，第一波开始了，最低2折起",
-        time: "2017-11-03 12:15:30"
-      },
-      {
-        title: "话题3",
-        note: "移动端的量真的比PC端的多吗？PC做不下去，我要怎么办？",
-        time: "2017-11-03 12:35:30"
-      },
-      {
-        title: "话题4",
-        note: "【易购付】实体门店聚合二维码收款",
-        time: "2017-11-03 13:15:30"
-      },
-      {
-        title: "话题5",
-        note: "半桶水老手的重新做站之路",
-        time: "2017-11-03 13:45:30"
-      },
-      {
-        title: "话题6",
-        note: "响应式网站模版、企业站模版、营销型网站模版第一站",
-        time: "2017-11-04 11:25:30"
-      }, {
-        title: "话题7",
-        note: "塞翁失马，焉知非福！错了吗？",
-        time: "2017-11-04 12:35:30"
-      },
-    ]
+    list:[]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  show: function () {
+    var that=this;
+    wx.request({
+      url:'https://infoaas.com/data/1514080901118/1514080901118.json',
+      header:{
+        'content-type':'application/json'
+      },
+      success:function(res){
+        console.log(res.data)
+        that.setData({
+          title:res.data
+        });
+      }
+    })
   },
 
   /**
