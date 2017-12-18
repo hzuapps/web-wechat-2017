@@ -9,8 +9,6 @@ Page({
     inputVal: "",
     /************ */
     ranks: [
-      { type: 1, text: "命运石之门" },
-      { type: 2, text: "绝望学院" },
     ],
     //scroll-view变量start
     windowHeight: 0,
@@ -64,8 +62,21 @@ Page({
       }),
     })
   },
-
-
+  onLoad: function (options) {
+    var that = this
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901133/ranks.json',
+      method: 'GET',
+      header: {
+        'content-type': 'application/json;charset=utf-8'
+      },
+      success: function (res) {
+        that.setData({
+          ranks: res.data.ranks
+        });
+      }
+    })
+  },
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
