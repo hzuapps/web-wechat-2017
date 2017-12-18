@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/user/user",
     "pages/find/find",
-    "pages/form/form"
+    "pages/form/form",
+    "pages/table/table"
   ],
   "window":{
     "backgroundTextStyle":"light",

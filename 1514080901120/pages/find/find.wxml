@@ -2,9 +2,10 @@
 <scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltoupper="onUpper" bindscrolltolower="onLower" bindscroll="onScroll">
     <view class="page__bd">
        <view>
-          <scroll-view scroll-y bindscrolltolower="onScroll" style='height:100vh'>
-            <view class='book-tag' wx:for="{{books}}" wx:for-item="bookId">
-              {{bookId.bName}} - {{bookId.writer}}
+        <view class='title'>下面是请求回来的数据</view>
+          <scroll-view scroll-y bindscrolltolower="onLoad" style='height:100vh'>
+            <view class='book-tag' wx:for="{{result}}" >
+              <view bindtap='gotableinfo' data-index="{{index}}" >{{item.CNtitle}}</view>           
             </view>
           </scroll-view>
        </view>

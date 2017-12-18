@@ -7,6 +7,9 @@ Page({
   data: {
     text: 'hello',
     area: 'world',
+    title:'abc',
+    desc:'sdf',
+    picture:'dsf',
     count: 'world'.length
   },
 
@@ -29,7 +32,7 @@ Page({
     })
     // 从服务器取回来 JSON
     wx.request({
-      url: 'https://infoaas.com/data/hzc.json',
+      url: 'https://infoaas.com/data/1514080901128/ComicNew.json',
       //仅为示例，并非真实的接口地址
       data: {},
       header: {
@@ -37,11 +40,13 @@ Page({
       },
       success: function (res) {
         console.log(res.data)
-        /*
+        
         that.setData({
           hasError: true,
-          errorText: res.data.name + ',' + res.data.teacher + ' ' + res.data.year
-        })*/
+          title: res.data.list[0].CNtitle, 
+          desc :res.data.list[0].CNdesc       
+        })
+        
       }
     })
   },
