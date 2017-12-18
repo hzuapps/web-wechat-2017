@@ -13,17 +13,18 @@
                 </view>
             </view>
         </view>
+<view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
 
         <view class="weui-cells__title">体重(KG)</view>
         <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell">
+            <view class="weui-cell weui-cell_input">
                 <view class="weui-cell__bd">
-                    <textarea class="weui-textarea" name="area" placeholder="请输入体重" style="height: 3.3em" value='{{area}}' bindinput='onChange'/>
-                    
+                    <input class="weui-input" name="area" 
+                    value='{{area}}' placeholder="请输入体重" bindinput='onChange'/>
                 </view>
             </view>
         </view>
-
         <view class="weui-btn-area">
             <button class="weui-btn" type="primary" form-type='submit'>确定</button>
         </view>
