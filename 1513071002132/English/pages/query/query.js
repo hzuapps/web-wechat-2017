@@ -6,6 +6,8 @@ Page({
    */
   data: {
     mean:{},
+    ukAudio:"",
+    usAudio:"",
     inputVal:"",
     result:''
   },
@@ -30,6 +32,7 @@ Page({
       inputVal: e.detail.value
     });
   },
+  //单词搜索
   search:function(e){
     var  that = this;
     wx.request({
@@ -42,6 +45,8 @@ Page({
         if(res.data.data!=""){
         that.setData({
           mean: res.data.data,
+          ukAudio: res.data.data.uk_audio,
+          usAudio: res.data.data.us_audio,
           result:"1"
         });
         }else{
@@ -52,6 +57,26 @@ Page({
       }
     })
 
+  },
+  //播放单词读音
+  audio:function(e){
+    var that = this;
+    var audioSrc = "";
+    if(e.currentTarget.dataset.voice == "uk"){
+      audioSrc = this.data.ukAudio;
+    }else{
+      audioSrc = this.data.usAudio;
+    }
+    const innerAudioContext = wx.createInnerAudioContext()
+    innerAudioContext.autoplay = true
+    innerAudioContext.src = audioSrc
+    innerAudioContext.onPlay(() => {
+      console.log('开始播放')
+    })
+    innerAudioContext.onError((res) => {
+      console.log(res.errMsg)
+      console.log(res.errCode)
+    })
   },
 
   /**
@@ -89,24 +114,5 @@ Page({
   
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
   
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
-  }
 })

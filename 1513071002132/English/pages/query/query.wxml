@@ -31,9 +31,9 @@
                     <view class="weui-media-box__title weui-media-box__title_in-text">{{mean.content}}</view>
                     <view class="weui-media-box__desc">{{mean.definition}}</view>
                     <view class="weui-media-box__info">
-                        <view class="weui-media-box__info__meta pronunciation">英式 [{{mean.pronunciations.uk}}]</view>
+                        <view class="weui-media-box__info__meta pronunciation"><image src="/img/VMP.jpg" style="width:35rpx;height:35rpx" bindtap="audio" data-voice="uk"></image> 英式 [{{mean.pronunciations.uk}}]</view>
                         
-                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra pronunciation">美式 [{{mean.pronunciations.us}}]</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra pronunciation"><image src="/img/VMP.jpg" style="width:35rpx;height:35rpx" bindtap="audio" data-voice="us"></image> 美式 [{{mean.pronunciations.us}}]</view>
                     </view>
                 </view>
             </view>
