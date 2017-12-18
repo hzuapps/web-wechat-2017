@@ -33,6 +33,27 @@ App({
       }
     })
   },
+
+//取得快递信息的函数，传参：快递单号，一个方法
+  getExpressInfo:function(nu,com,fun) {
+    wx.request({
+      url: 'http://apis.baidu.com/kuaidicom/express_api/express_api?muti=0&order=desc&nu=' + nu + '&com=' + com,
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'apikey': 'bfbb340a9618592ba1f0df778aa12d38'
+      },
+      success: function (res) {
+        fun(res.data)
+      }
+    })
+  },
+
+
+
+
   globalData: {
     userInfo: null
   }
