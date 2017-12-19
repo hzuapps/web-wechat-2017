@@ -4,7 +4,7 @@
 运动打卡
 
 ## 二维码：
-![image](https://github.com/zhanquan/images/blob/master/images/%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg)
+![image](https://github.com/zhanquan/images/blob/master/images/%E4%BD%93%E9%AA%8C%E7%89%88.jpg)
 
 ## 创意说明：
 小程序有三个页面：首页，创建，用户。可记录自己的运动记录，规范，科学运动。
