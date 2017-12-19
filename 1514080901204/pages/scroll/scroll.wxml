@@ -1,0 +1,17 @@
+<!--pages/scroll/scroll.wxml-->
+<text>{{page}}.wxml</text>
+<!--<scroll-view  scroll-y bindscrolltolower="more" style='height:100%'>-->
+<view class="weui-panel weui-panel_access" style="width: 100%; display: inline-block" wx:for="{{items}}">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_appmsg">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <icon type="waiting" size="50"/>
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{item.title}} </view>
+                        <view class="weui-media-box__desc">{{item.title2}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+<!--</scroll-view>-->

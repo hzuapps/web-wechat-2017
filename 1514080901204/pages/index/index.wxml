@@ -35,9 +35,33 @@
             <view class="weui-flex__item"><view class="placeholder">
             <image src='/images/剪刀.png' style='width: 80px; height: 80px;' ></image>       
             </view></view>
-
-
             <view class="weui-flex__item"><view class="placeholder"><image src='/images/石头.png' style='width: 80px; height: 80px;' ></image></view></view>
             <view class="weui-flex__item"><view class="placeholder"><image src='/images/布.png' style='width: 80px; height: 80px;' ></image></view></view>
         </view>
 
+
+<!-- <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+<!--  display: inline-block
+ <!--  <view style="background: red; width: 200px; height: 100px; display: inline-block" ></view>
+  <view style="background: green; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: blue; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: yellow; width: 200px; height: 100px; display: inline-block"></view>
+
+  <!--  <view class="weui-panel weui-panel_access" style="width: 100%; display: inline-block">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_appmsg">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <icon type="waiting" size="50"/>
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">Next pass </view>
+                        <view class="weui-media-box__desc">下一关</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+               
+
+</scroll-view>-->
+
+<button class="weui-btn" type="primary" bindtap="jmpscroll">跳跳转</button>
