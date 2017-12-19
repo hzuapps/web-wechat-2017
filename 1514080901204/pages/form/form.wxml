@@ -1,0 +1,37 @@
+<!--pages/form/form.wxml-->
+<text>{{page}}.wxml</text>
+<form bindsubmit="formSubmit" bindreset="formReset">  
+ <view>选择类别:</view>  
+  <view class="section section_gap">  
+    <radio-group name="radio-group">  
+      <label><radio value="radio1"/>剪刀</label>  
+      <label><radio value="radio2"/>石头</label>  
+      <label><radio value="radio3"/>布</label>  
+      <label><radio value="radio4"/>剪刀</label>  
+      <label><radio value="radio5"/>石头</label>  
+    </radio-group>  
+  </view>  
+  
+ <text class="txt">我的姓名：</text>  
+  <view class="section">  
+    <input name="input" />  
+  </view>  
+   
+  <text>我的头衔：</text>  
+  <view class="section">  
+    <input name="input"/>  
+  </view>  
+  
+<text class="txt">介绍一下我自己：</text>   
+<view class="section1">  
+  <textarea placeholder="" focus="{{focus}}" />  
+</view>  
+  
+
+  
+  
+  
+  <view class="btn-area">  
+    <button formType="submit" style="background:#ff9900">提交</button>  
+  </view>  
+</form>  
