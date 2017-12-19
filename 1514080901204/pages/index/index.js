@@ -10,6 +10,13 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
+
+jmpscroll : function() {
+    wx.navigateTo({
+      url: '../scroll/scroll'
+    })
+  },
+
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
