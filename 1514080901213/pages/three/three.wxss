@@ -1,0 +1,24 @@
+.jx_card{
+width: 100%;
+height: 295rpx;
+background-color:#e6e6e6;
+position: relative
+}
+.jxlogo{
+top: 47.5rpx;
+margin-left: 50rpx;
+width: 200rpx;
+height: 200rpx;
+float: left;
+position: absolute;
+}
+
+.lala{
+  top: 47.5rpx;
+  //position:absolute;
+}
+.image_frame{
+  width:750rpx;
+  height: 1173rpx;
+  position: relative
+}
