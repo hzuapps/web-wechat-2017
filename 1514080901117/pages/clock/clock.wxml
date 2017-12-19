@@ -1,3 +1,13 @@
-<view>
-{{minute}}:{{second}}
+<view class="main">
+  <view class="circle0" animation="{{animation}}"></view>
+  <view class="timer_circle">{{minute}}:{{second}}</view>
+  
+  <view class="color-lump">
+    <view class="btnContainer">
+      <navigator url="../index/index" open-type='navigateBack'>
+      <button class="weui-btn"  type="primary" size="mini">放弃</button>
+      </navigator>
+    </view>
+  </view>
+
 </view>

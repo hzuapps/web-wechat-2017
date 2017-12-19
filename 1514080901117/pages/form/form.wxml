@@ -23,7 +23,9 @@
       </view>
 
       <view class="weui-btn-area">
-            <button class="weui-btn" type="primary" form-type='submit'>添加新任务</button>
+        <navigator url='../clock/clock'>
+            <button class="weui-btn" type="primary" form-type='submit'>开始新任务</button>
+        </navigator>
       </view>
     </form>
 </view>
