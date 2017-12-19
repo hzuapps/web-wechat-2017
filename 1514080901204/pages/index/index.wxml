@@ -65,3 +65,4 @@
 </scroll-view>-->
 
 <button class="weui-btn" type="primary" bindtap="jmpscroll">跳跳转</button>
+<button class="weui-btn" type="primary" bindtap="jmpform">实验四的跳转</button>

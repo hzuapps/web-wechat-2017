@@ -16,6 +16,11 @@ jmpscroll : function() {
       url: '../scroll/scroll'
     })
   },
+jmpform: function () {
+  wx.navigateTo({
+    url: '../form/form'
+  })
+},
 
   bindViewTap: function() {
     wx.navigateTo({
