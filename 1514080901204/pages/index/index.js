@@ -21,6 +21,11 @@ jmpform: function () {
     url: '../form/form'
   })
 },
+jmpnet: function () {
+  wx.navigateTo({
+    url: '../net/net'
+  })
+},
 
   bindViewTap: function() {
     wx.navigateTo({

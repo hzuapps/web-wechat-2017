@@ -1,0 +1,9 @@
+<!--pages/net/net.wxml-->
+<button bindtap="RequestData" value="Button" class='box'>Button</button>
+
+
+<view>
+    <textarea class='area' value="{{textdata}}"/>
+</view>
+
+
