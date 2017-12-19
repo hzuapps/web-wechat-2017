@@ -1,0 +1,4 @@
+<view class="myname">{{name}}</view>
+<image style ="round;" mode="{{scaleToFill}}" src="{{src}}"></image>
+<text>\n\n</text>
+<button type="primary" bindtap="mybutton" >我踩！踩！</button>

@@ -4,9 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    content1: 'Come On!',
-    content2: 'Release Angry!',
-    src: 'photo.jpg',
+    content: 'Release Angry!',
+    src:'../images/photo.jpg',
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -52,6 +51,11 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  mybutton: function () {
+    wx.redirectTo({
+      url: '../form/form'
     })
   }
 })

@@ -11,7 +11,7 @@
   margin: 20rpx;
   border-radius: 50%;
 }
-
+ 
 .userinfo-nickname {
   color: #aaa;
 }
@@ -19,8 +19,11 @@
 .usermotto {
   margin-top: 200px;
 }
-.content{
-  margin: 20rpx;
+.content1{
+  margin-left: 200rpx;
+  margin-right: 240rpx;
   padding:20rpx;
   border: 1px solid #eee;
+  background-color: green;
 }
+
