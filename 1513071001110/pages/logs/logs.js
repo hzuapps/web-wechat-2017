@@ -8,30 +8,32 @@ Page({
    */
   data: {
     ssj:[
-      { ssj: "标题一" },
-      { ssj: "标题二" },
-      { ssj: "标题三" },
-      { ssj: "标题四" },
-      { ssj: "标题五" },
-      { ssj: "标题六" },
-      { ssj: "标题一" },
-      { ssj: "标题二" },
-      { ssj: "标题三" },
-      { ssj: "标题四" },
-      { ssj: "标题五" },
-      { ssj: "标题六" },
-    ],
-
+//      { ssj: "标题一" },
+//      { ssj: "标题二" },
+//      { ssj: "标题三" },
+//      { ssj: "标题四" },
+//      { ssj: "标题五" },
+//      { ssj: "标题六" },
+//      { ssj: "标题一" },
+//      { ssj: "标题二" },
+//      { ssj: "标题三" },
+//      { ssj: "标题四" },
+//      { ssj: "标题五" },
+//      { ssj: "标题六" },
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
 
-  /*
+
   onLoad: function (options) {
-    var that = this
+    var that = this;
     // 设置窗口大小
+
+
+
     wx.getSystemInfo({
       success: (res) => {
         that.setData({
@@ -39,12 +41,24 @@ Page({
           windowWidth: res.windowWidth
         })
         //console.dir(that.data.windowHeight)
+        wx.request({
+          url: 'https://infoaas.com/data/1513071001110/ssj.json',
+          header: {
+            'content-type': 'application/json' // 默认值
+          },
+          success: function (res) {
+            console.log(res.data)
+            that.setData({
+              ssj: res.data.ssj
+            })
+          }
+        })
       }
     })
   },
   
 
-  },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -98,7 +112,7 @@ Page({
   onUpper: function () { },
   onLower: function () {
 
-    var ssj = this.data.ssj
+/*    var ssj = this.data.ssj
     ssj.push({ ssj: "标题一" },
           { ssj: "标题二" },
           { ssj: "标题三" }
@@ -107,7 +121,7 @@ Page({
     that.setData({
       isLower: true,
       ssj:ssj
-    });
+    });*/
     // load more data
     console.log("onLower")
   },
