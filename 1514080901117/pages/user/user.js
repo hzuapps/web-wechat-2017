@@ -17,22 +17,7 @@ Page({
     }
   },
   onLoad: function() {
-    var that = this;
-    wx.request({
-      url: 'https://easy-mock.com/mock/5a22726799343b5fc80747a8/1514080901117/1514080901117',
-      method: 'GET',
-      header: {//请求头
-        'content-type': 'application/json'
-      },
-      success: function (res) {
-        that.setData({
-          history: res.data.history
-        })
-        console.log(res.data);
-        },
-      fail: function (err) { },//请求失败
-      complete: function () { }//请求完成后执行的函数
-    })
+    
   }
 
 }

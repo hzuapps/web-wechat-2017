@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view>
+<view class="top">
   <view class="mid">
     <view> 
     选择一个任务
@@ -39,7 +39,7 @@
     </view>
   </view>
   
-  <view class="btnContainer">
+  <view class="btnContainer" style="margin-top:18%">
     <navigator url="../form/form">
       <button class="weui-btn"  type="primary" size="mini">自定义任务</button>
     </navigator>

@@ -52,17 +52,18 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    CountDown(this, 10);
-    animations.scale(0).step();
-    this.setData({
-      animation: animations.export()
-    })
+    
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {     
+    CountDown(this, 25 * 60);
+    animations.scale(0).step();
+    this.setData({
+      animation: animations.export()
+    })
   },
 
   /**

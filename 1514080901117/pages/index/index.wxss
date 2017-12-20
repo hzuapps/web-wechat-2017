@@ -12,3 +12,7 @@
 .font-size{
   font-size: 25rpx;
 }
+
+.top{
+  margin-top: 25%;
+}
