@@ -45,7 +45,7 @@ Page({
         //console.log(res.data.list)
         that.setData({
           hasError: true,
-          ranks: res.data.list
+          days: res.data.list
         })
       }
     })
