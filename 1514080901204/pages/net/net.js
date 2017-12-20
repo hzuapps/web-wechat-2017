@@ -1,10 +1,14 @@
-// pages/form/form.js
+// pages/net/net.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    textdata: "put value",
+    height: 20,
+    focus: false,
+    ceshi: ''
   
   },
 
@@ -63,27 +67,27 @@ Page({
   onShareAppMessage: function () {
   
   },
- data: {
-    height: 20,
-    focus: false
-  },
-  bindButtonTap: function () {
-    this.setData({
-      focus: true
+
+   RequestData: function () {
+    var that = this;
+    wx.request({
+      url: 'http://www.sina.com.cn/',
+      data: {},
+      method: 'GET', 
+       header: {}, 
+      success: function (res) {
+        that.setData({ textdata: res.data });
+        console.log(res.data);
+      },
+      fail: function () {
+        // fail
+      },
+      complete: function () {
+        // complete
+      }
     })
-  },
-  bindTextAreaBlur: function (e) {
-    console.log(e.detail.value)
-  },
-  bindFormSubmit: function (e) {
-    console.log(e.detail.value.textarea)
-  },
-  formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
-  },
-  formReset: function () {
-    console.log('form发生了reset事件')
-  } 
+  }
+
 
 
 
