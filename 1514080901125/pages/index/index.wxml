@@ -4,6 +4,5 @@
 <view wx:for="{{szb}}" >
 <view class='weui-cells'>{{item.one }}</view>
 <view class='weui-cells'>{{item.two}}</view>
-<view class='weui-cells'>{{item.three}}</view>
 </view>
 </scroll-view>
