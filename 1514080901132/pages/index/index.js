@@ -40,14 +40,80 @@ Page({
           name: '酸梅汤',
           price: '16'
         }
-      ]
+      ],
+      foods: [],
+      windowHeight: 0,//获取屏幕高度  
+      refreshHeight: 0,//获取高度  
+      refreshing: false,//是否在刷新中  
+      refreshAnimation: {}, //加载更多旋转动画数据  
+      clientY: 0,//触摸时Y轴坐标  
   },
   onLoad: function (options) {
     // 生命周期函数--监听页面加载
     showView: (options.showView == "true" ? true : false)
-  }
-  , onChangeShowState: function () {
+     var _this = this;
+     _this.more();
+    //获取屏幕高度  
+    wx.getSystemInfo({
+      success: function (res) {
+        _this.setData({
+          windowHeight: res.windowHeight
+        })
+        console.log("屏幕高度: " + res.windowHeight)
+      }
+    })
+    /*获取words  
+    wx.request({
+      url: 'http://api.avatardata.cn/ChengYu/Search?key=77f072d28eb141c8b6dda145ca364b92&keyWord=好',
+      complete: function (res) {
+        if (res.data.reason == 'Succes') {
+          _this.setData({
+            words: res.data.result
+          })
+        }
+      }
+    })  */
+  },
+  more: function () {
+    var start = 0;
+    start += 1;
+    console.log("加载了...")
+    var _this = this;
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901132',
+      success: function (res) {
+       console.log(res.data)
+           _this.foods = res.data;
+          console.log(_this.foods[1].name)
+          _this.setData({
+           // foods: words
+          })
+         // console.log(foods)
+       
+      }
+    })
+  },
+  start: function (e) {
+    var startPoint = e.touches[0]
+    var clientY = startPoint.clientY;
+    this.setData({
+      clientY: clientY,
+      refreshHeight: 0
+    })
+  },
+  end: function (e) {
+    var endPoint = e.changedTouches[0]
+    var y = (endPoint.clientY - this.data.clientY) * 0.6;
+    if (y > 50) {
+      y = 50;
+    }
+    this.setData({
+      refreshHeight: y
+    })
+  },  
+   onChangeShowState: function () {
     var that = this;
+    that.more();
     that.setData({
       showView: (!that.data.showView)
     })
@@ -93,5 +159,5 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
 })
