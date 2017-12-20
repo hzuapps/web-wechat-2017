@@ -4,48 +4,30 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-    text: '乱世王者',
-    area: '更多',
-    count: '更多'.length
-  },
+  data: {},
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function () {
     var that = this;
-    wx.getStorage({
-      key: 'input',
-      success: function (res) {
-        console.log(res.data.area.length)
-
-        that.setData({
-          text: res.data.text,
-          area: res.data.area,
-          count: res.data.area.length
-        })
-      }
-    })
     // 从服务器取回来 JSON
     wx.request({
-      url: 'https://infoaas.com/data/hzc.json',
+      url: 'https://infoaas.com/data/1514080901128/ComicNew.json',
       //仅为示例，并非真实的接口地址
       data: {},
       header: {
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
-        console.log(res.data)
-        /*
+        //console.log(res.data.list)
         that.setData({
           hasError: true,
-          errorText: res.data.name + ',' + res.data.teacher + ' ' + res.data.year
-        })*/
+          data: res.data.list
+        })
       }
     })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
