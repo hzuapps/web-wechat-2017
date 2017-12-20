@@ -5,6 +5,8 @@
     "pages/one/one",
     "pages/two/two",
     "pages/three/three",
+    "pages/four/four",
+    "pages/five/five",
     "pages/scroll/scroll",
     "pages/form/form"
   ],

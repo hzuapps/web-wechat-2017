@@ -71,9 +71,19 @@ Page({
       url: '../three/three',
     })
   },
+  jump_four: function () {
+    wx.navigateTo({
+      url: '../four/four',
+    })
+  },
   jump_form: function () {
     wx.navigateTo({
       url: '../form/form',
+    })
+  },
+  jump_five: function () {
+    wx.navigateTo({
+      url: '../five/five',
     })
   },
   /**
