@@ -20,7 +20,7 @@
 <button bindtap="changeAutoplay"> autoplay </button>
 <slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
 <slider bindchange="durationChange" show-value min="1000" max="10000"/> duration-->
- <view id="white" class="scroll-view-item bc_white" style="background:white;width: 60%; height: 100px"></view>
+ <view id="white" class="scroll-view-item bc_white" style="background:white;width: 60%; height: 50px"></view>
 <view class="section">
   <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
     <button type="default" style="background:grey">日期选择器</button>
@@ -29,7 +29,13 @@
       当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
     </view>
   </picker>
+</view>
 
+<block wx:for-items="{{name}}">
+    <view style="width:100%; height: 50rpx"></view>
+    <!--index默认为下标，item为每项-->
+    <text>{{item.NAME}}</text>
+</block>
 <!--<view class="page">
     <view class="page__bd">
         <view class="weui-tab">
@@ -61,4 +67,4 @@
     <button size="mini" bindtap="tap">click me to scroll into view </button>
     <button size="mini" bindtap="tapMove">click me to scroll</button>
   </view>-->
-</view>
+

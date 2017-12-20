@@ -11,6 +11,11 @@ Page({
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
     ],
+    data2:{
+      NAME:' ',
+      index:0,
+      logs: []
+    },
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
@@ -213,6 +218,7 @@ Page({
   },
   onLoad: function () {
     var that = this;
+    var data2;
     wx.getSystemInfo({
       success: function (res) {
         that.setData({
@@ -220,7 +226,17 @@ Page({
           sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
         });
       }
-    });
+    }),
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901103/1514080901103.json',
+      method:'GET',
+      data2: {},
+      success: function (res) {
+        that.setData({
+          name: res.data2
+        })
+      }
+    })
   },
   tabClick: function (e) {
     this.setData({
@@ -336,6 +352,7 @@ Page({
       duration: e.detail.value
     })
   },
+
   tapMove: function (e) {
     this.setData({
       scrollTop: this.data.scrollTop + 10
