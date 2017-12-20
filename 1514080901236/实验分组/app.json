@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/list/list"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -21,11 +22,11 @@
       
     }
     ,{
-      "pagePath":"pages/index/index"
-      ,"text":"images"
+      "pagePath":"pages/list/list"
+      ,"text":"分组列表"
     }
     ,{
-      "pagePath":"pages/index/index"
+      "pagePath":"pages/from/from"
       ,"text":"video"
     }
     ]
