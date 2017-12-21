@@ -1,25 +1,27 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/form/form"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "租车工具",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
-      { "iconPath": "picture/wo.png",  
-        "selectedIconPath":"picture/wo1.png",
-"pagePath": "pages/index/index",
-"text": "我的信息"
+      {
+        "iconPath": "picture/wo.png",
+        "selectedIconPath": "picture/wo1.png",
+        "pagePath": "pages/index/index",
+        "text": "我的信息"
       },
       {
         "iconPath": "picture/soushuo.png",
         "selectedIconPath": "picture/lvche.png",
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/form/form",
         "text": "车城"
       }
     ]
