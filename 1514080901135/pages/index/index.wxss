@@ -70,8 +70,15 @@ margin-top:3px;
 height:40px;
 width:250px;
 margin-top:20px;
+
 }
 #confirmbutton{
+height:35px;
+width:80px;
+line-height:35px;
+float:right;
+}
+#signinbutton{
 height:35px;
 width:80px;
 line-height:35px;

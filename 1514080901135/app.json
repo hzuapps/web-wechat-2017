@@ -1,14 +1,14 @@
 {
   "pages":[
-     "pages/page4/page4",
+    "pages/items/items",
     "pages/index/index",
-    "pages/logs/logs"
+  "pages/sign/sign"
+ 
   ],
-  
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"      
+    "navigationBarTextStyle":"black"
   }
 }
