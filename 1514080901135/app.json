@@ -1,9 +1,10 @@
 {
   "pages":[
+
+      "pages/index/index",
+        "pages/info/info",
     "pages/items/items",
-    "pages/index/index",
-  "pages/sign/sign"
- 
+    "pages/sign/sign"
   ],
   "window":{
     "backgroundTextStyle":"light",

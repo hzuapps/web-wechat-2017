@@ -28,7 +28,7 @@ signbutton:function(){
     showCancel: false
   })
   wx.redirectTo({
-    url: "../items/items"
+    url: "../index/index"
   })
   }
 },

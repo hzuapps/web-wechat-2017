@@ -20,11 +20,10 @@ Page({
    ifshow:false,
    textareadisable2:true
   },
-  linechange:function(e){
-    var that =this;
-    this.setData({
-      lines:e.detail.lineCount-1
-    })
+  redirectdemo:function(){
+          wx.redirectTo({
+            url: '../info/info',
+          })
   },
   editdemo: function () {
     var pre=wx.getStorageSync('demo');

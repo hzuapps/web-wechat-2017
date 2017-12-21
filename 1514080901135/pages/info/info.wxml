@@ -1,0 +1,31 @@
+<view class="titles"> 项目名称：</view>
+<input id="input" disabled='{{input1}}' value="{{input_1}}" bindinput="input_1"></input>
+<button class="buttons" disabled="{{button1_1}}" bindtap="button_1">{{button1}}</button>
+
+<view class="titles">今日计划</view>
+<textarea class="textareas" disabled="{{text1}}" value="{{text_1}}" maxlength='-1x'   bindinput='text_1'></textarea>
+<button class="buttons" disabled="{{button2_2}}" bindtap="button_2">{{button2}}</button>
+
+<view class="titles">整体规划</view>
+<textarea class="textareas" disabled="{{text2}}" value="{{text_2}}" maxlength='-1x'   bindinput='text_2'></textarea>
+<button class="buttons" disabled="{{button3_3}}" bindtap="button_3">{{button3}}</button>
+
+<view   class="titles">项目期限</view>
+<view id="start">Start</view>
+<picker class="picker" mode = 'date' disabled="{{pickers}}" start="2017-01-00" end="2018-12-31" fields="day" bindchange="picker_1">
+<text class="text">{{Startdate}}</text>
+</picker>
+
+<view>End</view>
+<picker class="picker" mode = 'date' disabled="{{pickers}}"  start="2017-01-00" end="2018-12-31" fields="day" bindchange="picker_2">
+<text class="text">{{Enddate}}</text>
+</picker>
+
+<view  class="picker" class="titles">当前日期</view>
+<view  id="nowday" class="picker">{{date}}</view>
+<button class="buttons2" disabled="{{button4_4}}"bindtap="button_4">{{button4}}</button>
+<button class="buttons2" bindtap="deletebutton" >删除</button>
+<view id="dateview" wx:if="{{ifshow}}">项目过期</view>
+<button id="redirectbutton" bindtap="redirectbutton" >返回</button>
+
+

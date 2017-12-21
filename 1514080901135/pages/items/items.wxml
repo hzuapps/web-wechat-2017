@@ -19,13 +19,13 @@
 </view>
 <!-----------------------------------------------------------------items -->
 <view class="items">
-<scroll-view scroll-y="true" style="height: 400px">
+
    <!--  item1 -->
    <view  id="item1" class="itemS"   >
-
+   
    <image src="../images/NO1.png" style="height:50px;width:80px;display: inline-block" />
- <view>>>>Now Demo</view>
-  <textarea  id="editdemo" disabled="{{textareadisable}}" value="{{textvalue}}" maxlength='-1x' bindlinechange="linechange" auto-focus bindinput='textinput3'> </textarea> 
+ <view>>>>Temporary Demo</view>
+  <textarea  id="editdemo" disabled="{{textareadisable}}" value="{{textvalue}}" maxlength='-1x'  bindinput='textinput3'> </textarea> 
  <view>>>>|</view>
 
   <button class="showcode" bindtap="editdemo">{{buttontext}}</button>
@@ -37,19 +37,20 @@
   <view>>>>|</view>
 
  </view>
+  <button class="redirectdemo" bindtap="redirectdemo">项目粗略规划</button>
    </view>
 
-</scroll-view>
+
 
 </view>
 <!--  --------------------------------------------------------------------  -->
 <view></view>
 
 <modal hidden="{{hiddenmodalput}}"  confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
-    <input type='text'placeholder="请输入昵称" value="{{inputvalue}}" auto-focus bindinput='textinput'/>  
+    <input type='text'placeholder="请输入昵称" value="{{inputvalue}}"  bindinput='textinput'/>  
 </modal>  
 <modal hidden="{{hiddenmodalput2}}"  confirm-text="提交" cancel-text="取消" bindcancel="cancel2" bindconfirm="confirm2">  
-    <input type='text'placeholder="请输入昵称" value="{{inputvalue2}}" auto-focus bindinput='textinput2'/>  
+    <input type='text'placeholder="请输入昵称" value="{{inputvalue2}}"  bindinput='textinput2'/>  
 </modal>  
 
 
