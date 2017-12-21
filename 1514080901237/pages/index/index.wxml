@@ -1,16 +1,39 @@
-<!--logs.wxml-->
+<!--index.wxml-->
 <view class="container">
-  <view class="section">
-    <form bindsubmit="formSubmit">
-      <input class="title" placeholder="清单名称" name="title" value="{{thelist.title}}"/>
-      <!--<textarea class="title" name="content" placeholder="清单描述" value="{{thelist.content}}"></textarea >-->
-      <picker bindchange="bindPickerChange" name="type" value="{{index}}" range="{{type}}">
-        <view class="picker">
-          选择标记颜色：{{type_name}}
+
+  <view class="list">
+    <block wx:for="{{list}}" wx:for-item="vo" wx:key="id">
+      <scroll-view class="view-body" scroll-x="true" scroll-left="{{left}}">
+        <view class="item">
+          <view class="content" bindtap="detail" data-id="{{vo.id}}">
+            <view class="type {{vo.type}}"></view>
+            <text class="{{vo.finish}}">{{vo.title}}</text>
+          </view>
+          <view class="menu rd" bindtap="del" data-id="{{vo.id}}">
+            删除
+          </view>
+          <view class="menu lb" bindtap="top" data-id="{{vo.id}}">
+            置顶
+          </view>
+          <view class="menu og {{vo.finish}}" bindtap="finish" data-id="{{vo.id}}">
+            完成
+          </view>
+          <view class="menu og" bindtap="finish" data-id="{{vo.id}}">
+            待完
+          </view>
         </view>
-      </picker>
-      <button type="primary" form-type="submit" style="margin:18px 10px;"> 保存清单 </button>
-      <button type="warn" style="margin:18px 10px;" bindtap="del"> 删除清单 </button>
-    </form>
+      </scroll-view>
+    </block>
   </view>
+
+  <view class="bottom">
+    <view class="xs {{xs}}" data-index="{{xs_index}}" bindtap="xsPage"></view>
+    <view class="xs xs2 {{xs2}}" data-index="{{xs2_index}}" bindtap="xsPage2">{{xs2}}</view>
+    <view class="add-p">
+      <view class="add" bindtap="toAddPage">+</view>
+    </view>
+    <view class="xs" bindtap="toHelp">帮助</view>
+    <view class="xs" bindtap="toSettings">设置</view>
+  </view>
+
 </view>
