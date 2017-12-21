@@ -4,3 +4,14 @@
     <text class="log-item">{{index + 1}}. {{log}}</text>
   </block>
 </view>
+<view>
+     <view>{{title}}</view>
+ </view>
+ <scroll-view scroll-y='true'>
+   <navigator wx:for="{{movies}}">
+     <image src='{{item.images.small}}'></image>
+       <view>{{item.title}}({{item.year}})</view>
+       <view>{{item.original_title}}</view>
+       <view wx:for='{{item.directors}}'>{{item.name}}</view>
+       <text>{{item.rating.average}}</text>
+   </navigator>
