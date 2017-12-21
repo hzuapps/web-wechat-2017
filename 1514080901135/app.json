@@ -4,7 +4,9 @@
       "pages/index/index",
         "pages/info/info",
     "pages/items/items",
-    "pages/sign/sign"
+    "pages/sign/sign"    
+
+
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,3 +15,4 @@
     "navigationBarTextStyle":"black"
   }
 }
+ 
