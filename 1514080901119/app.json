@@ -1,7 +1,9 @@
 {
   "pages":[
+    "pages/form/form",
     "pages/index/index",
     "pages/logs/logs",
+    "pages/scrollView/scrollView",
     "pages/words/words"
   ],
   "window":{
@@ -17,10 +19,16 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/form/form",
         "iconPath": "image/icon_component.png",
         "selectedIconPath": "image/icon_component_HL.png",
-        "text": "个人"
+        "text": "简介"
+      },
+      {
+        "pagePath": "pages/scrollView/scrollView",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png",
+        "text": "主页"
       },
       {
         "pagePath": "pages/logs/logs",
@@ -31,3 +39,4 @@
     ]
   }
 }
+
