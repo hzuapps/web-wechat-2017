@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    session: []  
+    sessions: []  
   },
 
   /**
@@ -58,6 +58,25 @@ Page({
           msg: "在吗？"
         }]
     })  
+  },
+  onLoad: function () {
+    var that = this;
+    // 从服务器取回来 JSON
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901128/ComicNew.json',
+      //仅为示例，并非真实的接口地址
+      data: {},
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        //console.log(res.data.list)
+        that.setData({
+          hasError: true,
+          sessions: res.data.list
+        })
+      }
+    })
   },
 
   /**
