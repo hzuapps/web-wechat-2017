@@ -1,7 +1,7 @@
 小程序名称：ITBooks
 
 小程序二维码：
-![enter description here][1]
+！[image]（图片链接）
 
 小程序创意说明：简单实现计算机学科电子书籍资源的共享
 
