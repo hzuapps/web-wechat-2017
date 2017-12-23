@@ -1,0 +1,36 @@
+
+<view id="page container" >
+  <view class="flex item">
+    <view class="item-left">
+         <image src="{{book.image_big}}"></image></view>
+    <view class="item-middle">
+        <view><text class="title">{{book.bookname}}</text></view>
+        <view><text class="sub-title">{{book.author}}</text></view>
+    </view>
+    <view class="item-right">
+    </view>
+  </view>
+  <view class="weui-cells__title">简介</view>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+          <view class="weui-cell__bd">
+              <textarea name="Introduction" class="weui-textarea" value="{{book.introduction}}" maxlength="-1" disable-scroll="true" />
+              
+          </view>
+      </view>
+  </view>
+  <view class="urlinfo">
+    <view class="weui-flex">
+            <view><button class="weui-btn mini-btn" type="primary" size="mini" bindtap='copeurl'>cope</button></view> 
+            <view><text class="copetext" >{{book.pandownurl}}</text></view>
+    </view>
+    <view class="weui-flex">
+            <view><button class="weui-btn mini-btn" type="primary" size="mini" bindtap='copepasswd'>cope</button></view> 
+            <view><text class="copetext" >{{book.panpasswd}}</text></view>
+    </view>
+  </view>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">此资源仅供学习交流，非商业用途</view>
+  </view>
+</view>
+
