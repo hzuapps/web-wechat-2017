@@ -14,15 +14,15 @@ upload页面：提供网友上传共享资源的界面，目前因服务器原�
 小程序主要页面截图
 index页面
 ![image](https://github.com/ZjChenyk/web-wechat-2017/blob/master/1514080901104/ItBook/images/index.PNG)
-
+---
 upload页面
 ![image](https://github.com/ZjChenyk/web-wechat-2017/blob/master/1514080901104/ItBook/images/upload.PNG)
-
+---
 morebook页面
 ![image](https://github.com/ZjChenyk/web-wechat-2017/blob/master/1514080901104/ItBook/images/morebook.PNG)
-
+---
 download页面
 ![image](https://github.com/ZjChenyk/web-wechat-2017/blob/master/1514080901104/ItBook/images/download.PNG)
-
+---
 
  
