@@ -14,7 +14,7 @@
     <view class="page__bd">
 
         <view class="weui-panel weui-panel_access">
-            <scroll-view class="page" scroll-y="true" style="height:380px;" bindscrolltoupper="onUpper" bindscrolltolower="onLower" bindscroll="onScroll">
+<scroll-view class="page" scroll-y="true" style="height:360px;" bindscrolltoupper="onUpper" bindscrolltolower="onLower" bindscroll="onScroll">
 
                 <view class="weui-panel__hd">书香四溢</view>
                 <view wx:for="{{ssj}}">
@@ -34,12 +34,13 @@
                 </view>
 
 
-
         </scroll-view>
+
+
+    </view>
         <view class="weui-btn-area">
             <button class="weui-btn" type="primary" form-type='submit'>确定</button>
         </view>
-    </view>
-
 </view>
+
 </view>
