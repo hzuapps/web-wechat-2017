@@ -1,0 +1,29 @@
+<!--pages/morebook/morebook.wxml-->
+<!--某类图书的总界面start-->
+<view class="page">
+    <view class="board">
+        <image src="{{board}}" style="width:100%"  />
+    </view>
+    <view class="page__bd">
+       <!-- <scroll-view   scroll-y style="height: {{windowHeight}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">-->
+ 
+          <view class="weui-panel weui-panel_access">
+            <block wx:for="{{booklist}}" wx:key="{{item.bookid}}" >
+                <view class="weui-panel__bd">
+                    <navigator url="/pages/download/download?bookid={{item.bookid}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                            <image class="weui-media-box__thumb" src="{{item.image_small}}" />
+                        </view>
+                        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                            <view class="weui-media-box__title">{{item.bookname}}</view>
+                            <view class="weui-media-box__desc">{{item.author}}</view>
+                        </view>
+                    </navigator>
+                </view>
+            </block>
+          </view>
+     <!--  </scroll-view>-->
+    </view>
+</view>
+
+
