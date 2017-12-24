@@ -2,6 +2,7 @@
   "pages": [
     "pages/find/find",
     "pages/create/create",
+    "pages/login/login",
     "pages/mine/mine"
   ],
   "window": {
@@ -17,8 +18,8 @@
       {
         "pagePath": "pages/find/find",
         "text": "发现",
-        "iconPath":"pages/find.jpg",
-        "selectedIconPath":"pages/find.jpg"
+        "iconPath": "pages/find.jpg",
+        "selectedIconPath": "pages/find.jpg"
       },
       {
         "pagePath": "pages/create/create",

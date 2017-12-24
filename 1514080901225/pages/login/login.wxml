@@ -1,0 +1,31 @@
+<view class="login">
+<form>
+
+<view class='artist'>画家登录</view>
+
+
+<view class='username'>
+<view style='padding:10px'>用户名</view> 
+<input placeholder='用户名' style='padding:12px' bindinput='usernameInput'></input>
+</view>
+
+<view class='code'>
+<view style='padding:10px'>密码</view> 
+<input placeholder='密码' password='true' style='padding:12px' bindinput='passwordInput'></input> 
+</view>
+
+<view>
+<button class='enter' bindtap='Login' hover-class='enter-hover'> 登录 </button>
+</view>
+
+<view class='or'>或者</view>
+
+<view>
+<button class='weixin' bindtap='turntowx' hover-class='weixin-hover'> 微信登录 </button>
+</view>
+
+</form> 
+
+<view style='padding-top:80px;padding-left:90px;margin:0px;'>@秦俊杰Stephen</view>
+
+</view>
