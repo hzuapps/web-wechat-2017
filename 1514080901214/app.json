@@ -2,6 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -15,16 +16,23 @@
     "borderStyle": "white",
     "list": [
       {
+        "selectedIconPath": "images/用户反馈.png",
+        "iconPath": "images/用户反馈.png",
+        "pagePath": "pages/form/form",
+        "text": "用户反馈"
+      },
+
+      {
         "selectedIconPath": "images/视频.png",
         "iconPath": "images/视频.png",
         "pagePath": "pages/index/index",
-        "text": "视频"
+        "text": "动态搞笑图"
       },
       {
         "selectedIconPath": "images/图片.png",
         "iconPath": "images/图片.png",
         "pagePath": "pages/logs/logs",
-        "text": "图片"
+        "text": "搞笑图片"
       },
       {
         "selectedIconPath": "images/搞笑段子.png",
