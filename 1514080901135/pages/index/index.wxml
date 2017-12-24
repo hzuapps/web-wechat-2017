@@ -10,16 +10,16 @@
 
 <view class="row2">
 <view id="accounttext">account</view>
-<input  id="account"/>
+<input  id="account" bindinput='accountinput'/>
 </view>
 
 <view class="row3">
 <view  id="passwordtext">password</view>
-<input  id="passwd"/>
+<input type="password" id="passwd" bindinput='passwdinput'/>
 </view>
+<view class="row4" style="display: inline-block">
 
-<view class="row4">
-<button id="confirmbutton"> Go</button>
+<button id="confirmbutton" bindtap="confirmbutton"> 登陆</button>
+<button id="confirmbutton" bindtap="signbutton"> 注册</button>
 </view>
-
 </view>

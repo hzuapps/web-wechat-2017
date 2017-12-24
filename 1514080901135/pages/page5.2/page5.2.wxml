@@ -1,4 +1,0 @@
-<view>用户：{{name}}</view>
-<view>密码：{{pass}}</view>
-<view>兴趣：{{cg52}}</view>
-<view>级别：{{rg52}}</view>
