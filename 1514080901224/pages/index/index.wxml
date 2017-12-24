@@ -1,16 +1,21 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
+<view>
    
+  <loading hidden="{{hidden}}" >
+    加载中...
+  </loading>
+ 
+  <view class= "card" wx:for = "{{items}}">
+   
+    <view  data-url="{{item.url}}" bindtap = "onItemClick">
+       <image class= "image" mode="aspectFill" src="{{item.url}}"/>
+       <view class="title">{{item.title}}</view>
+    </view>
+ 
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{ }}</text>
-  </view>
-</view>
-<view class="btn-area">
-  <view class="body-view">
-    <text>{{text}}</text>
-    <button bindtap="add">添加照片</button>
-    <button bindtap="remove">我的相册</button>
-  </view>
+ 
+  <button hidden="{{loadmorehidden}}" type="primary" class="loadmore" size="default" loading="{{loading}}" plain="{{plain}}" bindtap="loadMore"> 
+  点击加载更多 
+  </button>
+ 
 </view>
