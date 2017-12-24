@@ -1,0 +1,5 @@
+<view style="display: flex;" class='user'>
+<image src='/pages/mine.png'></image>
+<view class='username'>{{username}}</view>
+<button class='logout' bindtap='logout'>退出</button>
+</view>
