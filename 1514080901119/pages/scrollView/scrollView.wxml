@@ -13,7 +13,7 @@
                         <image class="weui-media-box__thumb" src="../example/images/a.png" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                        <view class="weui-media-box__title">({{index+1}}) {{item.name}}</view>
+                        <view class="weui-media-box__title">({{index+1}}) {{item.CNtitle}}</view>
                         <view class="weui-media-box__desc">{{item.msg}}</view>
                     </view>
                 </navigator>
