@@ -1,7 +1,6 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/user/user",
     "pages/clock/clock",
     "pages/form/form"
   ],
@@ -10,23 +9,5 @@
     "navigationBarBackgroundColor": "#3366CC",
     "navigationBarTitleText": "番茄计时器",
     "navigationBarTextStyle":"black"
-  },
-  "tabBar":{
-    "color":"#dddddd",
-    "selectedColor": "#3cc51f",
-    "borderStyle":"white",
-    "position":"bottom",
-    "list":[{
-      "pagePath":"pages/index/index",
-      "iconPath":"/images/首页.png",
-      "selectedIconPath":"/images/首页_填充.png",
-      "text":"首页"
-    },
-    {
-      "pagePath":"pages/user/user",
-      "iconPath":"/images/用户.png",
-      "selectedIconPath": "/images/用户_填充.png",    
-      "text":"我的"
-    }] 
   }
 }
