@@ -8,9 +8,9 @@
         </block>
     </swiper>
 </view>
-
-<text  class="page__desc">最新通知： </text> 
-
+<view wx:for="{{szb}}" >
+<text  class="page__desc">{{item.one}} </text> 
+</view>
 <view class="menu-item">
   <navigator class="menu-item-main" >
    
@@ -24,6 +24,5 @@
      </view>            
   </navigator>
 </view>
-
 
 
