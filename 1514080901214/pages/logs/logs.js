@@ -1,54 +1,42 @@
-const app = getApp()
-
+//index.js
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    shuzhu: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-  },
-  //事件处理函数
-  bindViewTap: function () {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    title: "加载中...",
+    gaoxiao_img: [],
   },
   onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
+    var that = this;
+    wx.showToast({
+      title: '加载中...',
+      icon: 'loading',
+      duration: 1000,
+    })
+
+    wx.request({
+      url: "https://route.showapi.com/341-2?showapi_appid=52772&showapi_sign=b194edf7f7954d7384666ae477c42fe6&page=1&maxResult=50&",
+      header: {
+        "Content-Type": "json"
+      },
+      success: function (res) {
+        // wx.hideToast();
+        var data = res.data;
+        console.log(data);
+        that.setData({
+          gaoxiao_img: data.showapi_res_body.contentlist,
         })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+      },
+    })
+
   },
-  getUserInfo: function (e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+  //图片点击事件
+  imgYu: function (event) {
+    var src = event.currentTarget.dataset.src;
+    var imgList = event.currentTarget.dataset.list;//获取data-list
+    //图片预览
+    wx.previewImage({
+      current: src, // 当前显示图片的http链接
+      urls: src // 需要预览的图片http链接列表
     })
   }
-})
 
+})

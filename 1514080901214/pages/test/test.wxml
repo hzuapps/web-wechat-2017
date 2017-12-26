@@ -1,3 +1,0 @@
-<scroll-view scroll-y='true' wx:for="{{shuzhu}}">
-<view class="sroll"></view>
-</scroll-view>
