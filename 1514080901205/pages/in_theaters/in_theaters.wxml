@@ -1,3 +1,4 @@
+<!--pages/in_theaters/in_theaters.wxml-->
 <!--pages/top250/top250.wxml-->
 <!--index.wxml-->
 <view class='page_header'>
@@ -18,5 +19,7 @@
         </view>
       </view>
     </navigator>
+
   </scroll-view>
 </view>
+

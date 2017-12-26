@@ -15,7 +15,8 @@ Page({
     })
 
     wx.request({
-      url: "https://api.douban.com/v2/movie/top250",
+    //url: "https://api.douban.com/v2/movie/top250",
+     url:"https://api.douban.com/v2/movie/top250?count=100",
       header: {
         "Content-Type": "json"
       },
