@@ -1,0 +1,29 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="section_title">姓名：</view><input name="username" placeholder="请输入你的姓名" />
+  </view>
+  <view class="section section_gap">
+    <view class="section_title">租用的车牌号</view>
+    <checkbox-group name="product">
+    <label><checkbox value="0"/>车牌号1</label>
+    <label><checkbox value="1"/>车牌号2</label>
+    </checkbox-group>
+  </view>
+  <view class="section">
+   <view class="section_title">你所借用的地方：</view><input name="username" placeholder="请填写位置" /> </view>
+
+ <view class="section">
+<view class="section_title">反馈内容：</view><input name="username" placeholder="请填写你的反馈内容" />
+  </view>
+ 
+  <view class="section section_gap">
+<text class="section_title">请给我们打分</text>
+<view class="body-view">
+<slider max="100" min="0" show-value/>分    </view> 
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交反馈</button>
+    <button formType="reset">Reset</button>
+  </view>
+  
+  </form>
