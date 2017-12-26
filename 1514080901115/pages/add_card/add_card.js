@@ -13,7 +13,8 @@ Page({
     text5: '',
     text6: '',
     area1: '...',
-    count1: '...'.length  
+    count1: '...'.length  ,
+    card:[]
   },
 
   /**
@@ -33,8 +34,23 @@ Page({
         })
       }
     }) 
+   
+      
+      console.log("加载了...")
+      var _this = this;
+      wx.request({
+        url: 'https://infoaas.com/data/1514080901132',
+        success: function (res) {
+          console.log(res.data)
+          _this.card = res.data;
+          console.log(_this.card[1].name)
+        
+        
+        }
+      })
+    },
     // 从服务器取回来 JSON
-    wx.request({
+ /*   wx.request({
       url: 'https://infoaas.com/data/hzc.json', 
       //仅为示例，并非真实的接口地址
       data: { },
@@ -43,14 +59,14 @@ Page({
       },
       success: function (res) {
         console.log(res.data)
-        /*
+        
         that.setData({
           hasError: true,
           errorText: res.data.name + ',' + res.data.teacher + ' ' + res.data.year
-        })*/
+        })
       }
-    }) 
-  },
+    }) */
+  
 
   /**
    * 生命周期函数--监听页面初次渲染完成
