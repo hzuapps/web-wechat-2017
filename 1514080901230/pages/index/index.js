@@ -1,84 +1,13 @@
 //index.js
 //获取应用实例
 const app = getApp()
+
 Page({
   data: {
-
     motto: 'Hello World',
-
-      userInfo: { },
-
+    userInfo: {},
     hasUserInfo: false,
-
-      canIUse: wx.canIUse('button.open-type.getUserInfo'),
-
-        grids: [
-
-          {
-            key: '1',
-            url: '',
-            imgsrc: '../../picture/1.jpg',
-            word: '1'
-          },
-          {
-            key: '2',
-            url: '',
-            imgsrc: '../../picture/2.jpg',
-            word: '2'
-          },
-          {
-            key: '3',
-            url: '',
-            imgsrc: '../../picture/3.jpg',
-            word: '3'
-          },
-          {
-            key: '4',
-            url: '',
-            imgsrc: '../../picture/4.jpg',
-            word: '4'
-          },
-          {
-            key: '5',
-            url: '',
-            imgsrc: '../../picture/5.jpg',
-            word: '5'
-          },
-       
-        ],
-        scroll: [
-            {
-              key: '1',
-              url: '',
-              imgsrc: '../../picture/ma.jpg',
-              word: '1c'
-            },
-            {
-              key: '2',
-              url: '',
-              imgsrc: '../../picture/2.jpg',
-              word: '2c'
-            },
-            {
-              key: '3',
-              url: '',
-              imgsrc: '../../picture/3.jpg',
-              word: '3c'
-            },
-            {
-              key: '4',
-              url: '',
-              imgsrc: '../../picture/4.jpg',
-              word: '4c'
-            },
-            {
-              key: '5',
-              url: '',
-              imgsrc: '../../picture/5.jpg',
-              word: '5c'
-            }          
-    ]
-
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
