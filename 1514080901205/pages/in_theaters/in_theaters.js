@@ -1,8 +1,9 @@
+// pages/top250/top250.js
 Page({
 
   data: {
     title: "加载中...",
-    new1: [],
+    movies: [],
     num: []
   },
   onLoad: function () {
@@ -14,7 +15,8 @@ Page({
     })
 
     wx.request({
-      url: "http://route.showapi.com/254-1?showapi_appid=51104&showapi_sign=9a22dc0f9168441dbd148ed5fd8d60c7&typeId=18&space=day&key=&date=&page=1&",
+      //url: "https://api.douban.com/v2/movie/top250",
+      url: "https://api.douban.com/v2/movie/in_theaters?count=100",
       header: {
         "Content-Type": "json"
       },
@@ -23,8 +25,9 @@ Page({
         var data = res.data;
         console.log(data);
         that.setData({
-          new1: data.showapi_res_body.pagebean.contentlist,
-          title:"微博电影风云榜"
+          title: data.title,
+          movies: data.subjects,
+          num: data.total
         })
       },
     })

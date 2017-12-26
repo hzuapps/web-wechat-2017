@@ -20,8 +20,8 @@ Page({
         "Content-Type": "json"
       },
       success: function(res) {
-        //var data = res.data;
-        //console.log(data);
+        var data = res.data;
+        console.log(data);
         that.setData({
           movie:res.data,
         });

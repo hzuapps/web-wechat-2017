@@ -14,7 +14,7 @@ Page({
     })
 
     wx.request({
-      url: "http://route.showapi.com/578-2?showapi_appid=49955&showapi_sign=9911fe96a0e747b79ae822f20fedaede&",
+      url: "https://route.showapi.com/578-2?showapi_appid=49955&showapi_sign=9911fe96a0e747b79ae822f20fedaede&",
       header: {
         "Content-Type": "json"
       },

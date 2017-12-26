@@ -1,17 +1,11 @@
-
+<!--index.wxml-->
+<view class="page-header">
+  <text class="page-header-text">{{title}}</text>
+</view>
 <view class="container">
-    <form bindsubmit="formSubmit">
-        <view class="row">
-            <text>姓 名：</text>
-            <input type="text" name="userName" placeholder="请输入用户名" />
-        </view>
-        <view class="row">
-            <text>密 码：</text>
-            <input type="password" name="userPassword" placeholder="请输入密码" />
-        </view>
-        <view class="row">
-            <button type="primary" form-type="submit">登陆</button>
-        </view>
-
-    </form>
+  <view class="user" bindtap="getUserInfo">
+    <image class="user-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"/>
+    <text class="user-nickname">{{userInfo.nickName}}</text>
+    <text class="user-nickname">{{userInfo.city}}, {{userInfo.province}}</text>
+  </view>
 </view>
