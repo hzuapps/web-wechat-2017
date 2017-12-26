@@ -2,7 +2,7 @@
  ## 小程序名称 ：搜罗影讯
  
  ## 小程序二维码（发布版）
- 
+ ![image](https://github.com/sunlightcold/web-wechat-2017/raw/master/1514080901205/images/搜索.png)
  
  ## 小程序创意说明
  
