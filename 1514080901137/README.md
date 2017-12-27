@@ -3,8 +3,12 @@
 ## 名称：
 妙招宝典（原来的名字生活小妙招与公众号重名了，不能使用，所以改为妙招宝典）
 
-## 二维码：
 
+## 二维码：
+涉及个人小程序未允许内容：文娱-资讯，建议申请企业主体小程序。所以提交审核未通过
+![image](https://github.com/zhengsongmiao/resourses/blob/master/pictures/erweima.jpg)
+
+![image](https://github.com/zhengsongmiao/resourses/blob/master/pictures/shenhe.PNG)
 
 ## 创意说明：
 小程序主要有三个页面，分别是“首页”（妙招汇总和相关文章查看），“视频”（有关生活中一些实用的小妙招），“我的”（反馈信息）
@@ -24,7 +28,9 @@
  ![image](https://github.com/zhengsongmiao/resourses/blob/master/pictures/miaozhao2.PNG)
 ### 文章列表
 ![image](https://github.com/zhengsongmiao/resourses/blob/master/pictures/wenzhang.PNG)
+
 ### 视频界面
 ![image](https://github.com/zhengsongmiao/resourses/blob/master/pictures/shipin.PNG)
+
 ### 反馈界面
 ![image](https://github.com/zhengsongmiao/resourses/blob/master/pictures/fankui.PNG)
