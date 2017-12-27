@@ -1,8 +1,0 @@
-<view>
-  <scroll-view scroll-y bindscrolltolower="more" style="height: 100vh">
-    <view class="show" wx:for="{{weizhi}}" wx:key="key" wx:for-item="yuehuiweizhi">
-      {{yuehuiweizhi.one}} 
-      {{yuehuiweizhi.two}}
-    </view>
-  </scroll-view>
-</view>
