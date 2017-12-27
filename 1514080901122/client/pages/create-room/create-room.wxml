@@ -1,0 +1,45 @@
+<!--pages/create-room/create-room.wxml-->
+<!-- 创建签到房间页 -->
+
+<view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">起始学号</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" name="startNum" placeholder="起始学号"/>
+        </view>
+    </view>
+    
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">终止学号</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" name="endNum" placeholder="终止学号"/>
+        </view>
+    </view>
+
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_select">
+          <view class="weui-cell__hd weui-cell__hd_in-select-after">
+              <view class="weui-label">限定时间</view>
+          </view>
+          <view class="weui-cell__bd">
+              <picker bindchange="bindLimitTimeChange" name="limitTimeIndex" value="{{limitTimeIndex}}" range="{{limitTimePick}}">
+                  <view class="weui-select weui-select_in-select-after">{{limitTimePick[limitTimeIndex]}}</view>
+              </picker>
+          </view>
+      </view>
+    </view>
+    
+    <view class="warning"><text>{{warning}}</text></view>
+
+    <view class="btn-area">
+      <button class="weui-btn" type="primary" formType="submit">创建</button>
+      <button class="weui-btn" type="default" formType="reset">重置</button>
+    </view>
+  </form>
+</view>
