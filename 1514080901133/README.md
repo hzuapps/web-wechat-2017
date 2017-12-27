@@ -20,7 +20,8 @@
 ### 剧情简介：
 ![image](https://github.com/TBAatrox/web-wechat-2017/tree/master/1514080901133/pages/ldy/7.jpg)
 
-### 音乐：![image](https://github.com/TBAatrox/web-wechat-2017/tree/master/1514080901133/pages/ldy/8.jpg)
+### 音乐：
+![image](https://github.com/TBAatrox/web-wechat-2017/tree/master/1514080901133/pages/ldy/8.jpg)
 
 
 
