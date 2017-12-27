@@ -50,5 +50,14 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+
+  show:function(e){
+
+  },
+
+  show2: function (e) {
+
+  } ,
+
 })

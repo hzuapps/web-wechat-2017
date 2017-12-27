@@ -33,7 +33,11 @@ App({
       }
     })
   },
+  //相当于全局变量
   globalData: {
-    userInfo: null
+    userInfo: null,
+    notes: [{ 'title': '账单1', 'detail': '这是账单的详情，仅用于测试' }, 
+    { 'title': '账单2', 'detail': '仅用于测试' }, 
+    { 'title': '账单3', 'detail': '测试' }]
   }
 })

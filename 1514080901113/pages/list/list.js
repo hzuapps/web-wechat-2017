@@ -1,9 +1,37 @@
+const app = getApp()
 Page({
   data: {
-    result: {},
+    result: [],
+    remark:'',
+    amount:'',
+    cg:'',
+    count:0,
   },
-  onLoad: function (options) {
-    this.getDate('http://baobab.wandoujia.com/api/v2/feed?num=2');
+
+ // onLoad: function (options) {
+//    this.getDate('http://baobab.wandoujia.com/api/v2/feed?num=2');
+ // },
+ //add???
+  onLoad: function () {
+    var self=this;
+    console.log("调用了onload函数");
+    this.setData({notes: app.globalData.notes})
+    if(this.data.notes) {
+      console.log(this.data.notes)
+      var yonghu = wx.getStorageSync('yonghu');
+      
+      self.setData({
+        remark:yonghu.remarks,
+        amount: yonghu.amount,
+        cg:yonghu.radio,
+        
+      });
+    
+      
+      console.log("测试数据");
+      console.log(yonghu);
+  
+    }
   },
   /**
    * 网络请求的函数：接收一个URL参数
@@ -32,17 +60,23 @@ Page({
       }
     })
   },
-  
-  show: function () {
-    var that = this;
-    wx.request({
-      url: 'https://infoaas.com/data/1514080901101/eat.json', //仅为示例，并非真实的接口地址
-      success: function (res) {
-        console.log(res.data)
-        that.setData({
-          eatData: res.data
-        });
-      }
-    })
-  }
+  //向服务器发出请求
+  onShow: function () {
+    var self=this;
+    console.log("调用了show函数");
+
+    var arr = wx.getStorageSync('dataarr');
+    console.log(arr);
+    self.setData({
+      result:arr
+    });
+
+
+    var yonghu = wx.getStorageSync('yonghu');
+    self.setData({
+      remark: yonghu.remarks,
+      amount: yonghu.amount,
+      cg: yonghu.radio
+    });
+  },
 })
