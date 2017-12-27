@@ -1,0 +1,30 @@
+<!--pages/check-in-result/check-in-result.wxml-->
+<!-- 签到结果页面 -->
+
+<view>
+  <view class="big-title">本次签到结果</view>
+  <view class="room-info">
+    <view><text class="room-info-title">房间ID： R</text><text>{{roomID}}</text></view>
+    <view><text class="room-info-title">签到学号范围： </text><text>{{startNum}} ~ {{endNum}}</text></view>
+    <view><text class="room-info-title">限定时间： </text><text>{{limitTime}}</text></view>
+    <view><text class="room-info-title">老师当前位置： </text><text>{{teacherLocation}}</text></view>
+  </view>
+
+  <view class="result">
+    <view><text class="result-title">计划签到人数： </text>{{allSum}}</view>
+    <view><text class="result-title">实到人数： </text>{{nowSum}}</view>
+    <view><text class="result-title">缺勤人数： </text>{{absentSum}}</view>
+    <view><text class="result-title">具体缺勤人员： </text></view>
+    <text wx:for="{{absentList}}">{{item}}、</text>
+  </view>
+
+  <view class="btn-area">
+    <!-- <button class="weui-btn" type="primary" bindtap="showRes">签到结果</button> -->
+    <navigator open-type="switchTab" url="/pages/index/index">
+      <button class="weui-btn" type="primary">返回主页</button>
+    </navigator>
+  </view>
+
+</view>
+
+

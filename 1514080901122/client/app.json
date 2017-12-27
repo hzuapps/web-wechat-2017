@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/create-room/create-room",
+    "pages/now-room/now-room",
+    "pages/check-in/check-in",
+    "pages/now-room-teacher/now-room-teacher",
+    "pages/now-room-student/now-room-student",
+    "pages/check-in-result/check-in-result"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f84d17",
+    "navigationBarTitleText": "点名吧！老师",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/create-room/create-room",
+        "text": "创建签到"
+      },
+      {
+        "pagePath": "pages/check-in/check-in",
+        "text": "我要签到"
+      }
+    ]
+  }
+}

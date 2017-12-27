@@ -1,0 +1,21 @@
+<!--pages/now-room-teacher/now-room-teacher.wxml-->
+<!-- 老师看到的当前房间页面 -->
+<view>
+  <view class="room-info">
+    <view><text class="room-info-title">房间ID： R</text><text>{{roomID}}</text></view>
+    <view><text class="room-info-title">签到学号范围： </text><text>{{startNum}} ~ {{endNum}}</text></view>
+    <view><text class="room-info-title">限定时间： </text><text>{{limitTime}}</text></view>
+    <view><text class="room-info-title">老师当前位置： </text><text>{{teacherLocation}}</text></view>
+  </view>
+
+  <text style="display: block;text-align: center;font-size: 30px;color: #f60;margin: 30px auto;">{{clock}} {{micro_second}}</text>
+    
+  <view class="warning"><text>(P.S: 在签到时间内，请不要离开这个页面，除非你想删除这个房间)</text></view>
+
+  <view class="btn-area">
+    <!-- <button class="weui-btn" type="primary" bindtap="showRes">签到结果</button> -->
+    <button class="weui-btn" type="warn" bindtap="deleteRoom">删除房间</button>
+  </view>
+
+</view>
+
