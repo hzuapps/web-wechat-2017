@@ -1,0 +1,14 @@
+<!--动态获取数据-->
+<text>{{storageContent}}</text>
+<!--存-->
+<button type="primary" bindtap="listenerStorageSave">storage存储信息会在text上显示</button>
+<!--取-->
+<button type="primary" bindtap="listenerStorageGet">获取storage存储的信息</button>
+<!--清-->
+<button type="warn" bindtap="listenerStorageClear">清楚异步存储数据</button>
+
+
+<text>{{storageSyncContent}}</text>
+<button type="primary" bindtap="listenerStorageSyncSave">storageSync存储信息会在text上显示</button>
+<button type="primary" bindtap="listenerStorageSyncGet">获取storageSync存储信息</button>
+<button type="warn" bindtap="listenerStorageSyncClear">清除同步存储数据</button>

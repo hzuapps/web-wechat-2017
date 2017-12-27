@@ -1,0 +1,68 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.anniu{
+   padding-top: 50px;
+}
+
+.hide{
+ display: none;
+}
+.show{ 
+ display: block;
+}
+
+.profile{
+  width: 150rpx;
+  height: 150rpx;
+  border: 0 solid #ff0000;
+  border-radius: 100rpx;
+  background-color: #f10b2e;
+}
+
+.touxiang{
+  position: fixed;
+  margin-top:1px;
+  margin-left: 5px;
+}
+
+.touxiang2{
+  margin-left: 65px;
+
+  border:none;
+}
+.ha{
+  margin-top:50px;
+}
+
+.line{
+  width: 100%;
+  height: 5rpx;
+  background: #008B8B;
+  margin-top:10px
+}
+
+.class_text{
+  font-weight:4000;
+  font-family: "黑体";
+  font-size:45rpx;
+  color:#2F4F4F;
+  padding-left: 23%;
+  padding-top: 13px;
+  padding-bottom: 3px;
+}

@@ -1,2 +1,35 @@
-<!--http://www.jb51.net/article/102160.htm-->
-<!--http://www.php.cn/xiaochengxu-359996.html-->
+<!--index.wxml
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+-->
+<image class="touxiang" src="{{tempFilePaths }}" mode="aspecFill" style="width: 115rpx;height: 115rpx;border-radius: 100rpx;"/> 
+<view class="touxiang2">
+  <button style="margin:30rpx;width=500px;height=500px;" plain="true" bindtap="chooseimage">设置头像</button> 
+</view>
+<view class="line"></view>
+<view class="class_text">
+  <picker bindchange="bindxingbieChange" value="{{xingbieIndex}}" range="{{xingbie}}">
+    <text>性别设置头像：{{xingbie[xingbieIndex]}}</text>
+  </picker>
+</view>
+<view class="line"></view>
+
+<!--
+<view class="ha">
+  <button  class="hide{{showView?'show':''}}" bindtap="onChangeShowState">{{showView?'隐藏':'显示'}}</button>
+  //？:即表示了一种选择关系
+  <button class="hide{{showView?'':'show'}}" bindtap="onChangeShowState">{{showView?'隐藏':'显示'}}</button>
+ </view>
+ <view class="hide{{showView?'show':''}}">
+ <text class="text">我是被显示被隐藏控件</text>
+ </view>
+
+ <image src="/image/ye.jpg" class="profile"></image>
+ -->
