@@ -1,6 +1,0 @@
-/* pages/comp/scroll.wxss */
-.title{
-  font-size: 50px;
-  text-align: center;
-  color:blueviolet;
-}
