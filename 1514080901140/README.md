@@ -8,7 +8,7 @@
  
 ##主要界面截图
 ###首页
-![image](https://github.com/wagez/images/blob/master/images/6/shouye.JPG)
-![image](https://github.com/wagez/images/blob/master/images/6/zhankai.JPG)
+![image](https://github.com/wagez/images/blob/master/6/shouye.JPG)
+![image](https://github.com/wagez/images/blob/master/6/zhankai.JPG)
 ###反馈界面
-![image](https://github.com/wagez/images/blob/master/images/6/fankui.JPG)
+![image](https://github.com/wagez/images/blob/master/6/fankui.JPG)
