@@ -1,0 +1,14 @@
+.image{
+  margin-left: 16%;
+  margin-top: 100rpx;
+  margin-bottom: 100rpx;
+  height: 700rpx;
+  width:500rpx;
+  border: solid 1rpx black
+}
+
+
+.upload{
+  width: 600rpx;
+  background-color: gainsboro
+}

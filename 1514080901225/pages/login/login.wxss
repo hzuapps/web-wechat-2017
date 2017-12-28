@@ -58,3 +58,11 @@
   background-color: lime;
   color:antiquewhite;
 }
+
+
+.warn{
+  margin-top: 20px;
+  margin-left: 13%;
+  padding-left:15px;
+  width: 70%;
+}

@@ -21,8 +21,11 @@
 <view class='or'>或者</view>
 
 <view>
-<button class='weixin' bindtap='turntowx' hover-class='weixin-hover'> 微信登录 </button>
+<button class='weixin' bindtap='turntowx' hover-class='weixin-hover' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信登录 </button>
 </view>
+
+
+<view class='warn' wx:if="{{warn}}">{{warn}}</view>
 
 </form> 
 

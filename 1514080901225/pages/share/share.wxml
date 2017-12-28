@@ -1,0 +1,5 @@
+<!--create.wxml-->
+<view>
+  <image class='image' bindtap='select' src='{{url}}'></image>
+  <button class='upload' bindtap='upload'>上传</button>
+</view>
