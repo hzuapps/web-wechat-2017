@@ -1,0 +1,29 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+text{
+  display: block;
+  text-align: center;
+  height: 45px;
+  line-height: 40px;
+  background: #eee;
+  width: 100%;
+}
+.money{
+  border-bottom: 1px solid lightgray;
+}
+.fork{
+  border-top: 1px solid lightgray;
+}
+.user{
+  height: 50px;
+  margin-bottom: 20px;
+}
+.set{
+  margin-top: 20px;
+}

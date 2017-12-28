@@ -1,0 +1,19 @@
+<scroll-view  scroll-y="true" style="height: 400px">
+<view class="title">
+    当时间精确到分秒，当死亡越来越近，不知道你会不会对过去的碌碌无为而感到后悔
+</view>
+
+<image class="image_frame" src="{{imageUrl}}" mode="aspectFill"> 
+</image>
+
+<view class="section">
+  <picker mode="date" value="{{date}}" start="1940-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      <button>点击选择出生日期</button>: {{date}}
+    </view>
+  </picker>
+</view>
+<text>按照中国人均寿命计算</text>
+<button type='primary' bindtap="toast">点击查看你还有多少时间</button>
+<text>{{date}}</text>
+</scroll-view>

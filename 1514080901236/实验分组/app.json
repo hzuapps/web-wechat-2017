@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "实验分组",
+    "navigationBarTextStyle":"black"
+  }
+  ,"tabBar":{
+    "color": "#a9b7b7"
+    ,"selectedColor":"eb4f38"
+    ,"borderStyle": "white"
+    ,"backgroundColor": "#ffffff"
+    ,"list":[
+    {
+      "pagePath":"pages/index/index"
+      ,"text":"index"
+      
+    }
+    ,{
+      "pagePath":"pages/list/list"
+      ,"text":"分组列表"
+    }
+    ,{
+      "pagePath":"pages/from/from"
+      ,"text":"video"
+    }
+    ]
+  }
+}

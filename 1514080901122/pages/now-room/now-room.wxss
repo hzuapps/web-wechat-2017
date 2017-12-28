@@ -1,0 +1,10 @@
+/* pages/now-room/now-room.wxss */
+.body {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.head-title {
+  font-size: 20px;
+  padding-bottom: 10px;
+}

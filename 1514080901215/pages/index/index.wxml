@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="info">
+    <text class="title">这里是惠大互帮平台，你可以在平台发布求助，热心同学将会在本页面领取任务</text>
+  </view>
+  <view class="introduce">
+    <text>底部有导航栏，可以进入主页，发布界面，个人界面</text>
+  </view>
+  <view class="button-sp-area">
+    <button class="weui-btn" type="primary" plain="true" bindtap='into_example'>我知道了</button>
+  </view>
+</view>

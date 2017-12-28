@@ -1,0 +1,13 @@
+.info{
+  text-align: center;
+  padding: 25px 50px;
+}
+.introduce{
+  text-align: center;
+  padding: 25px 50px;
+}
+.button-sp-area{
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 60%;
+}

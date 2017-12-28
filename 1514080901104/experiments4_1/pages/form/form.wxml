@@ -1,0 +1,120 @@
+<!--pages/form/form.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <view class="page__desc">分享书籍</view>
+    </view>
+    <view class="page__bd">
+    <loading hidden="{{hidden}}">提交数据中...</loading>
+      <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">ISBN</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="ISBN" class="weui-input" placeholder="请输入ISBN码" />
+                </view>
+                <view class="weui-cell__ft">
+                    <view class="weui-vcode-btn">获取信息</view>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">书名</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="Bookname" class="weui-input" placeholder="请输入书名"/>
+                </view>
+            </view>
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">作者</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="Author" class="weui-input" placeholder="请输入作者名"/>
+                </view>
+            </view>
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">译者</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="Interpreter" class="weui-input" placeholder="请输入译者名"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">出版社</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="Publishing_House" class="weui-input" placeholder="请输入出版社"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">出版日期</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker name="Publishing_Date" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                        <view class="weui-input">{{date}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">图书分类</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker name="BookTypeID" mode="selector" value="{{typeindex}}" range="{{TypeName}}" bindchange="bindTypeChange">
+                        <view class="weui-input">{{TypeName[typeindex]}}</view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+   
+        <view class="weui-cells__title">简介</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea name="Introduction" class="weui-textarea" placeholder="请输入简介" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">下载地址</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input name="DownloadUrl" class="weui-input" placeholder="请输入下载地址"/>
+            </view>
+        </view>    
+         <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">提取密码</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input name="DownloadPassword" class="weui-input" placeholder="提取密码"/>
+            </view>
+        </view>
+
+        <checkbox-group bindchange="bindAgreeChange">
+            <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox name="isAgree" class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                    <view class="weui-agree__checkbox-icon">
+                        <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                    </view>
+                    阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+                </view>
+            </label>
+        </checkbox-group>
+
+        <view class="weui-flex">
+            <view class="weui-flex__item"> <button formType="submit" type="primary">上传</button></view>
+            <view class="weui-flex__item"><button formType="reset" type="primary">重置</button></view>
+        </view>
+      </form>
+    </view>
+</view>

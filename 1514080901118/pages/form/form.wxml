@@ -1,0 +1,46 @@
+<!--pages/index/Component/FormM/FormM.wxml-->
+<view class="viewTitle">
+  <text class="view-Name">话题评论页面</text>
+  <view class="lineView"></view>
+</view>
+
+<form class="page__bd" bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+   <input name="input" style="background-color: #FFFFFF" placeholder="请在这里输入评论" />
+  </view>
+  <view>话题标签：<checkbox-group name="checkboxgroup" bindchange="pick">
+    <label><checkbox value="美食" />美食</label>
+    <label><checkbox value="体育"  />体育</label>
+    <label><checkbox value="玩乐"  />玩乐</label>
+    <label><checkbox value="出行"  />出行</label>
+    <label><checkbox value="财经"  />财经</label>
+  </checkbox-group></view>
+  <view class="section">
+   <view class="section__title">请选择话题</view>
+   <picker name="areaPicker" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+     当前选择：{{array[index]}}
+    </view>
+   </picker>
+  </view>
+  <view class="section">
+   <view class="section__title">请选择发布时间</view>
+   <picker name="timePicker" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+     当前选择: {{time}}
+    </view>
+   </picker>
+  </view>
+  <view class="section">
+   <view class="section__title">请选择发布日期</view>
+   <picker name="datePicker" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+     当前选择: {{date}}
+    </view>
+   </picker>
+  </view>
+  <view class="btn-area">
+   <button form-type="submit">Submit提交</button>
+   <button form-type="reset">Reset重置</button>
+  </view>
+ </form>

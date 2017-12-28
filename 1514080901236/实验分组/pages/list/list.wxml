@@ -1,0 +1,12 @@
+<view class="page">
+
+            <block wx:for="{{grids}}" wx:key="*this">
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                <view class="weui-cell">
+                <view class="weui-cell__bd">{{item.key}}</view>
+                <view class="weui-cell__ft">{{item.word}}</view>
+                </view>
+                </navigator>
+            </block>
+
+</view>

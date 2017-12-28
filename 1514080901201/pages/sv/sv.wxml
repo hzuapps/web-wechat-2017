@@ -1,0 +1,20 @@
+<!--pages/comp/scroll.wxml-->
+<scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltoupper="onUpper" bindscrolltolower="onLower" bindscroll="onScroll">
+<view class="page__bd">
+
+ <view class="weui-panel weui-panel_access" wx:for="{{list}}"  wx:key="*this">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_appmsg">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <icon type="info" size="56" color="{{item.colour2}}"/>
+                    </view>
+                 
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{item.colour1}}</view>
+                    </view>
+                </view>
+            </view>
+  </view>
+</view>
+</scroll-view>
+

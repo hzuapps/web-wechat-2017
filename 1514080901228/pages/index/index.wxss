@@ -1,0 +1,63 @@
+/**index.wxss**/
+.slide-image{  
+    width: 100%;
+}
+/*SearchBar */
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+/** 修改button默认的点击态样式类**/
+.button-hover {
+  background-color: red;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}
+/*grids*/
+.grids {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1rpx solid #eee;
+  border-left: 1rpx solid #eee;
+  background-color: #fff;
+}
+.grids .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.3333333333%;
+  height: 250rpx;
+  border-right: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  box-sizing: border-box;
+}
+.grids .item image {
+  width: 70rpx;
+  height: 70rpx;
+}
+.grids .item text {
+  margin-top: 20rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 0;
+  padding: 30rpx;
+  background-color: #fff;
+}
+.links image {
+  width: 330rpx;
+  height: 185rpx;
+}

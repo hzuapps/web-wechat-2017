@@ -1,0 +1,2 @@
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="getdata"> 获取数据 </button>

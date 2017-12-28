@@ -1,0 +1,18 @@
+<text>\n</text>
+<view class="content">
+<form >
+<view class="title">姓名</view>
+<input   placeholder="姓名" bindinput="nameinput" />
+<text>\n</text>
+<view>性别：
+<radio-group name="radiogroup" bindchange="radioinput">
+  <label><radio value="man"  />男</label>
+  <label><radio value="woman" />女</label>
+  </radio-group></view>
+  <text>\n</text>
+  <view class="title">what annoys you?</view>
+<input   placeholder="理由" bindinput="reasoninput" />
+<text>\n\n</text>
+  <button type="primary" bindtap="mybutton" >start!</button>
+</form>
+</view>

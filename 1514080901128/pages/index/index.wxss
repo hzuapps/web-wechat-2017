@@ -1,0 +1,17 @@
+/**index.wxss**/
+/*navbar*/
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 5px;
+    text-align: center;
+}
+/*swiper*/
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}

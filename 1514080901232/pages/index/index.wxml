@@ -1,0 +1,29 @@
+<view>
+    <swiper autoplay="{{autoplay}}" style="height:150px;" 
+ indicator-dots="{{indicatordots}}" duration="{{duration}}" interval="{{interval}}" circular="{{circular}}">
+        <block wx:for="{{urls}}" wx:key="*this">
+            <swiper-item>
+<image src="{{item}}" class="swiper-item"/>  
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+
+<text  class="page__desc">最新通知： </text> 
+
+<view class="menu-item">
+  <navigator class="menu-item-main" >
+   
+     <view class="ordtel">
+     <view class="container">
+     
+        <text class="flex-item bc_white" >{{lists}}</text>
+        
+       
+     </view>  
+     </view>            
+  </navigator>
+</view>
+
+
+

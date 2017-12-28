@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="page">
+    <view class="page_hd">To-Do</view>
+    <scroll-view class="todo_list" scroll-y style="height: calc(100vh - 184rpx)" bindscrolltolower="onscrollToLower">
+        <block wx:for="{{todoList}}" wx:key="todoList">
+            <view class="todo_item">
+                <image class="circle_image" src="../../circle.png" data-index="{{index}}" bindtap="onCircleTap"></image>
+                <text class="todoText {{item.status===true?'todoText_finish':''}}">{{item.text}}</text>
+            </view>
+        </block>
+
+        <view class="weui-loadmore" wx:if="{{isLower}}">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+        <view class="weui-loadmore weui-loadmore_line" wx:if="{{isEnd}}">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+        </view>
+    </scroll-view>
+
+
+    <!-- 右下角按钮  -->
+    <text class="add_todo_button" type="primary" size="mini" bindtap="onAddButtonTap">+</text>
+
+    <!--底部输入框  -->
+    <view class="weui-flex footer_input_content" hidden="{{footerInputHidden}}">
+        <label style="padding-top: 15rpx"><image class="circle_image" src="../../circle.png" ></image></label>
+        <input class="weui-input" placeholder="请输入待办事项" value="{{inputValue}}" bindconfirm="onFooterInputConfirm" focus="true"></input>
+    </view>
+</view>

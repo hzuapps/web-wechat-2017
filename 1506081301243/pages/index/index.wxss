@@ -1,0 +1,44 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.submit{
+  width:ture;
+  color:red;
+
+}
+.title{
+    height: 30px;
+    text-align: center;
+}
+.scroll_view_vertical{
+    height: 50%;
+    margin-bottom: 20px;
+    background-color: ghostwhite;
+}
+.scroll_view_horizotal{
+    height: 50px;
+    background-color: whitesmoke;
+}
+.item{
+    height: 50px;
+    border:aqua;
+}

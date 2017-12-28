@@ -1,0 +1,27 @@
+#adduser{  
+    background: #f5f5f5;  
+}  
+.section__title{  
+    float: left;  
+    width:30%;  
+}  
+.form-group{  
+    float: right;  
+    width: 70%;  
+}  
+.section{  
+    clear: both;  
+    width:90%;  
+    margin: 2rem auto;  
+}  
+.input-text{  
+    border: 1px solid #ddd;  
+}  
+.button{  
+    border: 1px solid #1aad19;  
+    border-radius: 2px;  
+}  
+.picker{  
+    padding: 13px;  
+    background-color: #FFFFFF;  
+}  

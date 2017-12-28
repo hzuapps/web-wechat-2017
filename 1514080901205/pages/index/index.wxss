@@ -1,0 +1,84 @@
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #EBEBEB;
+    height: 5.3em;
+    line-height:5.3em;
+    color: #cfcfcf;
+}
+.placeholder_new{
+       border-radius: 10px;
+    text-align: center;
+    background-color: #020121;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #cfcfcf;
+}
+.placeholder_piaofang{
+     border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: BLUE;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #cfcfcf;
+}
+.placeholder_xinlang{
+opacity：0.2;
+    text-align: center;
+    background-color: #ff445f;
+    height: 5.3em;
+    line-height:5.3em;
+    color: black;
+}
+
+.placeholder_danri{
+
+    text-align: center;
+    background-color: #33beeb;
+    height: 5.3em;
+    line-height:5.3em;
+    color: #cfcfcf;
+}
+.placeholder_danzhou{
+
+    text-align: center;
+    background-color: #FF3D3D;
+    height: 5.3em;
+    line-height:5.3em;
+    color: #cfcfcf;
+}
+.placeholder_danyue{
+
+    text-align: center;
+    background-color: #0669cc;
+    height: 5.3em;
+    line-height:5.3em;
+    color: #7A95FF;
+}
+.placeholder_zhoumo{
+
+    text-align: center;
+    background-color: #FF7AAF;
+    height: 5.3em;
+    line-height:5.3em;
+    color: #cfcfcf;
+}
+.placeholder_yingping{
+
+    text-align: center;
+    background-color: green;
+    height: 5.3em;
+    line-height:5.3em;
+    color: #cfcfcf;
+}
+.placeholder_douban{
+   margin-top: 10px;
+  border-radius: 10px;
+    text-align: center;
+    background-color: purple;
+    height: 5.3em;
+    line-height:5.3em;
+    color: #cfcfcf;
+}

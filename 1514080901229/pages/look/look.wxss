@@ -1,0 +1,21 @@
+.box1 {
+  text-align: center;
+   margin: 5px;
+}
+.box2{
+   text-align: right;
+   color: #cfcfcf;
+}
+.box3{
+  margin: 5px;
+  line-height: 2.3em;
+}
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #EBEBEB;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #cfcfcf;
+}

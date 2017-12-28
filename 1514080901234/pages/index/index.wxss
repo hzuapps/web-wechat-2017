@@ -1,0 +1,6 @@
+.error_text{
+  color: red
+}
+.weui-btn{
+  margin-top: 10px 
+}

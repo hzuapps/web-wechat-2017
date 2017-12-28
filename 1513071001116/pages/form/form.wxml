@@ -1,0 +1,18 @@
+<view>请选择你喜爱的课程{{text}}</view>  
+<checkbox-group bindchange="checkboxgroupBindchange">  
+  <checkbox value="checkbox1">C语言</checkbox>  
+  <checkbox value="checkbox2">JAVA</checkbox>  
+  <checkbox value="checkbox3">CSS</checkbox>
+   <checkbox value="checkbox3">HTML</checkbox> 
+   <checkbox value="checkbox3">Python</checkbox>
+   <checkbox value="checkbox3">PHP</checkbox> 
+   <checkbox value="checkbox3">JAVAWeb</checkbox> 
+   <checkbox value="checkbox3">爬虫</checkbox> 
+     
+</checkbox-group>  
+
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+        </view>
+      

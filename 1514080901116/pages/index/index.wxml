@@ -1,0 +1,54 @@
+<!--pages/demo/scrollView.wxml-->
+<scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltolower="onEnd" bindscroll="onScroll">
+<view class="content" scroll-y="false">
+  <view class="search-bar">
+    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+    <input placeholder="请输入关键词" bindchange="inputChange"/>
+    <button type="primary">查询</button>
+  </view>
+</view>
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd"></view>
+            <view class="weui-panel__bd">
+             <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{icon20}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">幽默故事会</view>
+                        <view class="weui-media-box__desc"></view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">搞笑视频</view>
+                        <view class="weui-media-box__desc"></view>
+                    </view>
+                </navigator>
+                </view>
+            <view class="weui-panel__ft">
+                <view class="weui-cell weui-cell_access weui-cell_link">
+                    <view class="weui-cell__bd">查看更多</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+                <navigator url="" wx:for="{{sessions}}" wx:key="name" class="weui-media-box weui-media-box_appmsg" hover-class="">                  
+                <view class="weui-media-box weui-media-box_text">
+                        <view class="weui-media-box__title">段子{{index+1}} {{item.name}}</view>
+                        <view class="weui-media-box__desc">{{item.msg}}</view>
+                    </view>       
+                </navigator>
+            </view>
+        </view>
+        <view class="weui-loadmore" wx:if="{{isLower}}">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+        <view class="weui-loadmore weui-loadmore_line" wx:if="{{isEnd}}">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+        </view>
+    </view>
+</scroll-view>

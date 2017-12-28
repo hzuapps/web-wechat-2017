@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/words/words",
+    "pages/query/query"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#EED5A4",
+    "navigationBarTitleText": "English For You",
+    "navigationBarTextStyle":"black"
+  }
+}

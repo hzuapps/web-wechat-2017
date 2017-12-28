@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/clock/clock",
+    "pages/form/form"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3366CC",
+    "navigationBarTitleText": "番茄计时器",
+    "navigationBarTextStyle":"black"
+  }
+}

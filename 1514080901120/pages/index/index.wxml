@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class='bookcase-head'>
+    <text>添加的书籍目录</text>
+</view>
+<view class="container">
+  <view class="bookcase-box">
+    <view class="bookcase-item" bindtap="skip" data-bookid="{{index}}" wx:for="{{bookcase}}" wx:key="index">
+      <image class="cover" src="{{item.cover}}"></image>
+      <view class="book-content">
+        <text class="title">{{item.title}}<text class="book-new" wx:if="{{item.isUpdate}}">更新</text></text>
+        <text class="content"><text class="text-hint">{{item.updated}}</text>  {{item.lastChapter}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#999",
+    "navigationBarTitleText": "记账+",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#300",
+    "selectedColor": "#911",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/1.png",
+        "iconPath": "images/1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/2.png",
+        "iconPath": "images/2.png",
+        "pagePath": "pages/logs/logs",
+        "text": "新增"
+      },
+      {
+        "selectedIconPath": "images/3.png",
+        "iconPath": "images/3.png",
+        "pagePath": "pages/list/list",
+        "text": "清单"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+<!--pages/form/form.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <view class="page__title" style="text-align:center">个人设置</view>
+    </view>
+    <view class="page__bd">
+      <form bindsubmit='onSubmit'>
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+
+        <view class="weui-cells__title">昵称</view>
+        <view class="weui-cells weui-cells_first-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="text" 
+                    value='{{text}}' placeholder="请设置昵称" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+      
+       <view class="weui-cells__title">联系方式</view>
+        <view class="weui-cells weui-cells_second-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="call" value='{{call}}' placeholder="请输入邮箱或手机号"  bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">个性签名</view>
+        <view class="weui-cells weui-cells_third-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="area" placeholder="请留下属于你的个性签名" style="height: 3.3em" value='{{ note}}' bindinput='onChange'/>
+                    <view class="weui-textarea-counter">{{count}}/200</view>
+                </view>
+            </view>
+        </view>
+     
+       <view class="weui-cells__title">开启夜间模式<switch class="section__title"  name="switch"/></view>
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>提交</button>
+        </view>
+      </form>
+    </view>
+</view>

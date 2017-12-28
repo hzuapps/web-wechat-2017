@@ -1,0 +1,105 @@
+<!--pages/upload/upload.wxml-->
+<!--pages/form/form.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <view class="page__desc">分享书籍</view>
+    </view>
+    <view class="page__bd">
+  <!--  <loading hidden="{{hidden}}">提交数据中...</loading>-->
+      <form bindsubmit="formSubmit" bindreset="formReset" >
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">ISBN</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="ISBN" class="weui-input" placeholder="*请输入ISBN" />
+                </view>
+                <view class="weui-cell__ft">
+                    <button class="weui-vcode-btn" bindtap="getbookinfo">获取信息</button>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">书名</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="Bookname" class="weui-input" placeholder="*请输入书名"/>
+                </view>
+            </view>
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">作者</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="Author" class="weui-input" placeholder="*请输入作者名"/>
+                </view>
+            </view>
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">译者</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="Interpreter" class="weui-input" placeholder="*请输入译者名"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">出版社</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="Publishing_House" class="weui-input" placeholder="*请输入出版社"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">图书分类</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker name="BookTypeID" mode="selector" value="{{typeindex}}" range="{{TypeName}}" bindchange="bindTypeChange">
+                        <view class="weui-input">{{TypeName[typeindex]}}</view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+   
+        <view class="weui-cells__title">与我联系</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea name="Introduction" class="weui-textarea" placeholder="*请输入信息" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+        
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">下载地址</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input name="DownloadUrl" class="weui-input" placeholder="请输入下载地址"/>
+            </view>
+        </view>    
+         <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">提取密码</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input name="DownloadPassword" class="weui-input" placeholder="提取密码"/>
+            </view>
+        </view>
+
+        <view class="weui-footer">
+          <view class="weui-footer__text">提示：上传书籍经审核通过后会在页面显示相关信息</view>
+        </view>
+
+        <view class="weui-flex">
+            <view class="weui-flex__item"> <button formType="submit" type="primary">上传</button></view>
+            <view class="weui-flex__item"><button formType="reset" type="primary">重置</button></view>
+        </view>
+      </form>
+    </view>
+</view>
+

@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <navigator class="create-room" url="../create-room/create-room">
+    <button class="weui-btn" type="default">
+      创建签到房间
+    </button>
+  </navigator>
+  
+  <navigator class="check-in" url="../check-in/check-in">
+    <button class="weui-btn" type="primary" bbindtap="openLoading">
+      我要签到
+    </button>
+  </navigator>
+
+  <view class="weui-footer footer">
+  <view class="weui-footer__links">
+      <navigator url="" class="weui-footer__link">Allenmind</navigator>
+  </view>
+  <view class="weui-footer__text">Copyright © Allenmind</view>
+  </view>
+
+</view>

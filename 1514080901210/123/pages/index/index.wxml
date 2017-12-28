@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view  style="margin-top: 50%; text-align:center;">
+  <navigator url="Component/FormM/FormM">
+    <button type="primary"> Form表单 </button>
+  </navigator>
+</view>

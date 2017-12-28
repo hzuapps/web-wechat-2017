@@ -1,0 +1,51 @@
+<!--pages/form/form.wxml-->
+<!--pages/form/form.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <view class="page__title">汇率转换</view>
+       
+    </view>
+    <view class="page__bd">
+      <form bindsubmit='onSubmit'>
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+
+        <view class="weui-cells__title">人民币</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" type='digit' name="CNY" 
+                    value='{{CNY_VALUE}}' placeholder="" bindinput='onCNYChange'/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">美元</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" type='digit' name="USD" 
+                    value='{{USD_VALUE}}' placeholder="" bindinput='onUSDChange'/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">英镑</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="text" 
+                    value='{{GBP_VALUE}}' placeholder="" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+        
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary"  bindtap='transclick'>转换</button>
+
+        </view>
+      </form>
+    </view>
+</view>

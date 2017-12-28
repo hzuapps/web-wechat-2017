@@ -1,0 +1,30 @@
+/* pages/user/user.wxss */
+
+.container{
+    padding: 1rem;
+    font-size: 18px;
+    line-height: 30px;
+    border-shadow: 1px 1px #556B2F;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.row text{
+    flex-grow: 1;
+    text-align: right;
+}
+.row input{
+    font-size: 14px;
+    color: #ccc;
+    flex-grow: 3;
+    border: 1px solid #556B2F;
+    display: inline-block;
+    border-radius: 6px;
+    box-shadow: 0 0 3px #2828ff;
+    padding: 6px;
+}
+.row button{
+    padding: 0 40px;
+}

@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "快递查询",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/icon1.png",
+      "selectedIconPath": "images/icon1s.png"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "历史",
+      "iconPath": "images/icon2.png",
+      "selectedIconPath": "images/icon2s.png"
+    }]
+  }
+}

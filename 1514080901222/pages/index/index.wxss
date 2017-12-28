@@ -1,0 +1,25 @@
+/**index.wxss**/
+.container{
+height: 100%;
+background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511942251130&di=1f20b9331e335a8c4c98a05ad79eaa9c&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fq_mini%2Cc_zoom%2Cw_640%2Fupload%2F20170713%2Fd935984a4b604d7c83ff43f2056b3743_th.jpg);
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

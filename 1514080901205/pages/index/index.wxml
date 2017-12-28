@@ -1,0 +1,23 @@
+<view class="page">
+
+    <view class="page__bd page__bd_spacing">
+
+            <view class="weui-flex__item"><view class="placeholder_new">最新报</view></view>
+
+
+            <view class="weui-flex__item"><view bindtap='xinlang' class="placeholder_xinlang">新浪电影风云榜</view></view>
+            <view class="weui-flex__item"><view class="placeholder_yingping">影评</view></view>
+            <view class="weui-flex__item"><view bindtap="piaofang" class="placeholder_piaofang">票房排行榜</view></view>
+
+
+            <view class="weui-flex__item"><view bindtap="ri" class="placeholder_danri">单日票房</view></view>
+            <view class="weui-flex__item"><view bindtap="zhou" class="placeholder_danzhou">单周票房</view></view>
+            <view class="weui-flex__item"><view bindtap="zhoumo" class="placeholder_zhoumo">周末票房</view></view>
+            <view class="weui-flex__item"><view bindtap="yue" class="placeholder_danyue">单月票房</view></view>
+
+
+            
+            <view class="weui-flex__item"><view bindtap="top250" class="placeholder_douban">豆瓣top250</view></view>
+
+    </view>
+</view>

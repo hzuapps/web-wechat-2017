@@ -1,0 +1,67 @@
+.buttons{
+width:100px;
+background-color: #FFC125;
+ float:right;
+}
+.buttons2{
+width:100px;
+background-color: #FFC125;
+display: inline-block;
+margin-left:50px;
+}
+.titles{
+  clear:both;
+}
+.textareas{
+    clear:both;
+    background-color: #FAF0E6;
+    width:96%;
+}
+#input{
+ background-color:#00ccff;
+    border-radius: 120px;
+    border:1px solid #003333;
+    width:300px;
+    float:left;
+    height:40px;
+    color: red;
+}
+
+#dateview
+{
+  color:#FF0000;
+  font-family:华文行楷;
+  font-size:50px;
+  width:200px;
+margin-left:100px;
+}
+.picker{
+  margin-top:20px;
+  margin-bottom: 20px;
+  margin-left:200px;
+}
+#start{
+margin-top:20px;
+}
+.text{
+background-color:#00ccff;
+    border-radius: 120px;
+    border:1px solid #003333;
+    width:140px;
+    height:40px;
+    color: red;
+}
+#nowday{
+  background-color:#00ccff;
+    border-radius: 120px;
+    border:1px solid #003333;
+    width:140px;
+    height:40px;
+    color: red;
+    line-height: 40px;
+}
+#redirectbutton{
+margin-top:20px;
+font-size:20px;
+width:100%;
+}

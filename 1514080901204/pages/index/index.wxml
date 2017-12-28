@@ -1,0 +1,69 @@
+<!--index.wxml-->  <!--
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+<view class="login">
+  <text class="user-motto">{{motto}}</text>
+</view>
+-->
+<view class="box">
+
+<image src='/images/剪刀.png' style='width: 90px; height: 90px;' ></image>
+<image  style='width: 120px; height: 60px;' ></image>
+<image src='/images/timg.jpg' style='width: 90px; height: 90px;' ></image>
+</view>
+
+<view class='chooseforuserview'>准备挑战了吗？少年！~</view>
+<!--<view class='box'>
+<image src='/images/剪刀.png' style='width: 80px; height: 80px;' ></image></view>
+<view class='box'><image src='/images/石头.png' style='width: 80px; height: 80px;' ></image></view>
+<view class='box'><image src='/images/布.png' style='width: 80px; height: 80px;' ></image>
+</view>
+</view>-->
+
+
+<view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder">
+            <image src='/images/剪刀.png' style='width: 80px; height: 80px;' ></image>       
+            </view></view>
+            <view class="weui-flex__item"><view class="placeholder"><image src='/images/石头.png' style='width: 80px; height: 80px;' ></image></view></view>
+            <view class="weui-flex__item"><view class="placeholder"><image src='/images/布.png' style='width: 80px; height: 80px;' ></image></view></view>
+        </view>
+
+
+<!-- <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+<!--  display: inline-block
+ <!--  <view style="background: red; width: 200px; height: 100px; display: inline-block" ></view>
+  <view style="background: green; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: blue; width: 200px; height: 100px; display: inline-block"></view>
+  <view style="background: yellow; width: 200px; height: 100px; display: inline-block"></view>
+
+  <!--  <view class="weui-panel weui-panel_access" style="width: 100%; display: inline-block">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_appmsg">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <icon type="waiting" size="50"/>
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">Next pass </view>
+                        <view class="weui-media-box__desc">下一关</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+               
+
+</scroll-view>-->
+
+<button class="weui-btn" type="primary" bindtap="jmpscroll">实验三的跳转</button>
+<button class="weui-btn" type="primary" bindtap="jmpform">实验四的跳转</button>
+<button class="weui-btn" type="primary" bindtap="jmpnet">实验五的跳转</button>

@@ -1,0 +1,29 @@
+<!--pages/gongshi/333.wxml-->
+<view class="page__hd">
+        <view class="page__title">公式库</view>
+    </view>
+<scroll-view class="page" scroll-y="true" style="" bindscrolltolower="onEnd" bindscroll="onScroll">
+    <view class="page__bd">
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__bd">
+             <navigator url="./333/333" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../example/images/WR/333.png" ></image>
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">三速公式</view>
+                        <view class="weui-media-box__desc"></view>
+                    </view>
+              </navigator>
+
+
+            </view>
+        </view>
+        <view class="weui-loadmore weui-loadmore_line">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">公式库完善中，暂时只有三速公式</view>
+        </view>
+
+
+
+      </view>
+</scroll-view>

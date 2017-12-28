@@ -1,0 +1,138 @@
+/* pages/download/download.wxss */
+/*微信购票测试案例*/
+
+.flex{
+  display: flex;
+  flex-direction:row;
+  height: 300rpx;
+
+}
+
+.item{
+  padding: 10px;
+  background-color: #fff;
+  color:#000;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.item image{
+  padding: 10px;
+  display: block;
+  width:65px;
+  height:100px
+}
+
+
+.item-middle{
+  flex:1;
+  margin-left:10px;
+  padding-top:5px;
+  overflow: hidden;
+}
+
+.item-middle .title{
+  font-size:16px;
+  color:#222;
+}
+
+.item-middle .sub-title{
+  font-size:12px;
+  color:#666;
+  margin:2px 0px;
+}
+
+.item-middle .actor{
+  font-size:12px;
+  color:#666;
+  margin:2px 0px;
+}
+
+.item-right{
+ 
+}
+
+.item-right .score{
+  font-size:12px;
+  color:red;
+}
+
+.item-right .action{
+  margin-top:30px;
+  border:1px solid #29cc6d;
+  color:#29cc6d;
+  padding:2px 4px;
+  font-size:12px;
+  border-radius: 5px;
+}
+
+.introduction_title{
+  padding-right: 10rpx;
+  font-size:16px;
+  color:#222;
+}
+
+.introduction_contain{
+  font-size:16px;
+  color:#666;  
+}
+
+/*下载书籍的按钮*/
+/*
+.book-download{
+    margin-top:20px;
+    display: block;
+    text-align: center;
+    background: #2fb109;
+    color:#fff;
+    font-size:1.6em;
+    border-radius: 3px;
+    padding:8px 0;
+}
+
+
+.download-icon{
+    vertical-align: middle;
+    margin-right: 10px;
+    background:#fff;
+    border-radius: 50%;
+    border:none;
+}
+*/
+
+
+
+.weui-textarea{
+  overflow: scroll;
+  height: 10rpm;
+}
+
+.weui-btn mini-btn{
+  margin: 5px;
+  padding: 0 10px;
+}
+
+.copetext{
+  margin: 5px;
+  padding: 0 10px;
+  text-align: top;
+}
+
+.urlinfo{
+  margin-top: 20px;
+}
+
+.copetext{
+  font-size: small;
+}
+
+
+
+
+
+
+
+
+ 
+
+

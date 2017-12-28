@@ -1,0 +1,45 @@
+  <view class="container">  
+<view class="page" >
+  <view class="page__hd">
+
+    
+<form bindsubmit='onSubmit'>
+  <view class="weui-toptips weui-toptips_warn" wx:if="{{hasError}}">{{errorText}}</view>
+  <view class="weui-cells__title">选择快递公司</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd" style="width: 105px">
+                <picker  id='kdpicker' bindchange="bindkdValueChange" value="{{kdValueIndex}}" range="{{kdValues}}">
+                  <view class="weui-select">{{kdValues[kdValueIndex]}}</view>
+                </picker>
+            </view>
+                <view class="weui-cell__bd weui-cell__bd_in-select-before">
+                  <input id='numinput' class="weui-input" name="text" value='{{text}}' placeholder="请输入快递单号" bindinput='onTextChange'  bindinput='nuinput'/>
+                </view>
+        </view>
+    </view>
+
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" form-type='submit'>查询</button>
+  </view>
+</form>
+ </view>
+</view>
+
+
+<view class ="Info_container">
+     <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" style='height:{{scrollHeight}}px' hidden="{{scv_hidden}}">
+         <view id='infoview' wx:for="{{Info}}">
+              <text>{{item.time}}\n</text> 
+              <text>{{item.context}} </text>
+         </view>
+         <view hidden="{{err_hidden}}">
+         <text style='font-size:25px;color:#ff0f0f'>查询出错了！！！\n</text>
+         <text>{{errMessage}}\n</text>
+         <text>{{errReason}}</text>
+         </view>
+     </scroll-view>
+      
+</view>
+
+  </view>  

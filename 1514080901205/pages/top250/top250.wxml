@@ -1,0 +1,20 @@
+<!--pages/top250/top250.wxml-->
+<!--index.wxml-->
+<view class='page_header'>
+  <view class='page_header_text'>{{title}}</view>
+  <scroll-view class='page_body' scroll-y='true'>
+    <navigator url='../movies/movies?id={{item.id}}' wx:for="{{movies}}">
+      <view class='items'>
+        <image class='img' src='{{item.images.small}}'></image>
+          <view class='meta'>
+            <view class='movie_name'>{{item.title}}({{item.year}})</view>
+            <view class='original_title'>{{item.original_title}}</view>
+            <view class='directors' wx:for='{{item.directors}}'>{{item.name}}</view>
+          </view>
+          <view class='rating'>
+            <text>{{item.rating.average}}</text>
+        </view>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>

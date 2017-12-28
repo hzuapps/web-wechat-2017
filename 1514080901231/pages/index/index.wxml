@@ -1,0 +1,33 @@
+<view class="page">
+    <view class="page__bd">
+      <form bindsubmit='onSubmit'>
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+
+        <view class="weui-cells__title">身高(M)</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="text" 
+                    value='{{text}}' placeholder="请输入身高" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+<view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+
+        <view class="weui-cells__title">体重(KG)</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="area" 
+                    value='{{area}}' placeholder="请输入体重" bindinput='onChange'/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+        </view>
+      </form>
+    </view>
+</view>

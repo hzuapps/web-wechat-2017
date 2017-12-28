@@ -1,0 +1,5 @@
+/* pages/woman/woman.wxss */
+.myname{
+
+  text-align: center;
+}

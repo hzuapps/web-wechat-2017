@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/big_event/big_event",
+    "pages/recall/recall",
+    "pages/logs/logs",
+    "pages/index/index",
+    "pages/Message_board/Message_board"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "野拓回忆录",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list":
+    [
+      {
+       "selectedIconPath": "images/tb_big_event1.png",
+       "iconPath": "images/tb_big_event.png",
+       "pagePath": "pages/big_event/big_event",
+       "text": "大事件"
+      },
+      {
+       "selectedIconPath": "images/tb_recall1.png",
+       "iconPath": "images/tb_recall.png",
+       "pagePath": "pages/recall/recall",
+       "text": "回忆"
+      },
+      {
+       "selectedIconPath": "images/tb_board1.png",
+       "iconPath": "images/tb_board.png",
+       "pagePath": "pages/Message_board/Message_board",
+       "text": "留言板"
+      },
+      {
+        "selectedIconPath": "images/tb_user1.png",
+        "iconPath": "images/tb_user.png",
+        "pagePath": "pages/index/index",
+        "text": "我"
+      }
+    ]
+  }
+}
+
+
