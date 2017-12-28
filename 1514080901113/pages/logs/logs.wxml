@@ -1,15 +1,15 @@
 <form bindsubmit="listenFormSubmit" bindreser="listenFormReser" >
-  <!--新增的账目类型-->
+  <!--添加数据-->
   <view class="inputView">
     <input  class="input"  bindinput='remarksinput' name="remarks" remarks="number" 
-      placeholder="请输入账目的备注" placeholder-style="color: gray"> </input>
+      placeholder="请输入账目的备注" placeholder-style="color: gray"></input>
   </view>
   <view class="inputView">
     <input class="input" bindinput='amountinput' name="amount" amount="true" placeholder="请输入具体账目"           placeholder-style="color: gray"/>
    </view>
   <!--保存为-->
   <View style="display:flex;justify-content: center;margin-top:10px;">
-    <radio-group  name="radio-group" bindchange="cg">
+    <radio-group  name="radio" bindchange="radio">
       <label>
         <radio value="支出" checked="true"/>支出
       </label>
@@ -21,10 +21,11 @@
       </label>
     </radio-group>
   </View>
-    <button formType="submit" type="primary" bindtap='mytap' style="margin-top:10px;">提交</button>
-  <button formType="reset" type="warn" style="margin-top:10px;">重置</button>  
- <view> 表内容如下：</view>
+<!--设置选项按钮-->
+  <button formType="submit" bindtap='mytap' plain style="color:#66ff;border-color:#66ff;margin-top:10px;">提交</button> 
+  <button formType="reset" plain style="color: #ff8719;border-color: #ff8719;margin-top:10px;"  class="marginview">重置</button>  
+<view>已成功提交：</view>
  <view>账目的备注：{{remarksvalue2}}</view>
   <view>具体账目:{{ amountvalue2}}</view>
-   <view>类型:{{cgvalue2}}</view>
+   <view>类型:{{typevalue2}}</view>
 </form>

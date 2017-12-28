@@ -20,3 +20,8 @@
   margin-right: 5px;
   margin-top: 15px;
 }
+page {  
+  display: block;  
+  min-height: 100%;  
+background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513616801236&di=5a37b669a2fc56a9d1eab05054f79d6f&imgtype=0&src=http%3A%2F%2Fimg5.duitang.com%2Fuploads%2Fitem%2F201509%2F26%2F20150926182304_YQkXv.thumb.700_0.jpeg'); 
+}

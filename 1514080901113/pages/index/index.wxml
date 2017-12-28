@@ -9,9 +9,8 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-
-  <button class="weui-btn" type="primary"  bindtap="show">MY ACCOUNT</button>
-  <view wx:for="{{eatData}}" >{{item.name}}</view> 
+ <navigator url="/pages/logs/logs" open-type="switchTab" hover-class="other-navigator-hover"><button class="weui-btn" type="primary" bindtap="show">Start Create</button></navigator>
+  
   </view>
 </view>
 
