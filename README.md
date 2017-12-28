@@ -20,6 +20,10 @@ https://mp.weixin.qq.com
 
 http://zeng.shaoning.net/web/
 
+## 通过审核并发布的小程序列表
+
+https://github.com/hzuapps/web-wechat-2017/list.md
+
 ## 联系老师
 
 ![Scholarly](https://raw.githubusercontent.com/zengsn/research/master/Scholarly.jpg "Scholarly on WeChat")
