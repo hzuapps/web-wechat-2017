@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/find/find",
-    "pages/create/create",
+    "pages/share/share",
+    "pages/login/login",
     "pages/mine/mine"
   ],
   "window": {
@@ -17,14 +18,14 @@
       {
         "pagePath": "pages/find/find",
         "text": "发现",
-        "iconPath":"pages/find.jpg",
-        "selectedIconPath":"pages/find.jpg"
+        "iconPath": "pages/find.jpg",
+        "selectedIconPath": "pages/find.jpg"
       },
       {
-        "pagePath": "pages/create/create",
-        "text": "创作",
-        "iconPath": "pages/create.png",
-        "selectedIconPath": "pages/create.png"
+        "pagePath": "pages/share/share",
+        "text": "分享",
+        "iconPath": "pages/share.png",
+        "selectedIconPath": "pages/share.png"
       },
       {
         "pagePath": "pages/mine/mine",
