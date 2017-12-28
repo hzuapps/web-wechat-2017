@@ -1,19 +1,14 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/one/one",
-    "pages/two/two",
-    "pages/three/three",
-    "pages/four/four",
-    "pages/five/five",
-    "pages/scroll/scroll",
-    "pages/form/form"
+    "pages/detail/detail",
+    "pages/new_index/new_index",
+    "pages/tieshi/tieshi"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#3CB371",
     "navigationBarTitleText": "约会小助攻",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   }
 }
