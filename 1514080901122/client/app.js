@@ -4,6 +4,7 @@ import io from './weapp_socketio/index';
 
 App({
   onLaunch: function () {
+    var that = this;
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -11,8 +12,10 @@ App({
 
     // 登录
     wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+      success: function() {
+        const socket = io("wss://allenmind.cn");  // 这里记得用ws://才能连上
+        that.globalData.socket = socket;
+        console.log("now login with ID: ", socket);
       }
     })
     // 获取用户信息
@@ -35,10 +38,6 @@ App({
         }
       }
     });
-
-    const socket = io("wss://localhost:3000");  // 这里记得用ws://才能连上
-    this.globalData.socket = socket;
-    console.log("now login with ID: ", socket);
   },
   globalData: {
     userInfo: null

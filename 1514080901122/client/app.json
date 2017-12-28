@@ -3,7 +3,6 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/create-room/create-room",
-    "pages/now-room/now-room",
     "pages/check-in/check-in",
     "pages/now-room-teacher/now-room-teacher",
     "pages/now-room-student/now-room-student",
