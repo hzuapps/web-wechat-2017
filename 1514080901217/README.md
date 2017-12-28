@@ -1,7 +1,7 @@
 # 照片回忆录
  
  ## 二维码：
- ![image](http://http://m.qpic.cn/psb?/V10XSgjf0rbmVk/X5wEgRBGesiWCorO4StcB5TYGH.z6jM5XpcI9.Vg8hs!/b/dGUBAAAAAAAA&bo=yQC3AAAAAAADB1w!&rf=viewer_4)
+ ![image](http://m.qpic.cn/psb?/V10XSgjf0rbmVk/X5wEgRBGesiWCorO4StcB5TYGH.z6jM5XpcI9.Vg8hs!/b/dGUBAAAAAAAA&bo=yQC3AAAAAAADB1w!&rf=viewer_4)
  
  ## 说明：
  照片回忆录，主要是让每个人想珍藏的照片放入其中，有时间可以拿出来看看，未必不是一件美好的事，而且也能记录周围过去的一些你觉得可以回忆的点点滴滴。
