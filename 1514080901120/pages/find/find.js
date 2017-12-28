@@ -22,9 +22,7 @@ Page({
         bName: "西游记",
         writer: "吴承恩"
       }
-    ],
-    
-    result:[]
+    ]
   },
 
   /**
@@ -42,24 +40,6 @@ Page({
         //console.dir(that.data.windowHeight)
       }
     })
-
-    // 从服务器取回来 JSON
-    wx.request({
-      url: 'https://infoaas.com/data/1514080901128/ComicNew.json',
-      //仅为示例，并非真实的接口地址
-      data: {},
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success: function (res) {
-        //console.log(res.data.list)
-        that.setData({
-          hasError: true,
-          result:res.data.list
-        })
-      }
-    })
-    
   },
 
   /**
@@ -122,28 +102,16 @@ Page({
   },
   onScroll: function () {
     console.log("onScroll");
-    /*
     temp = this.data.books.length;
     var ob = {
-      "CNtitle": "一本新书",
-      "CNdesc": "新人",
-      "CNpicture":"picture"
+      bName: "一本新书",
+      writer: "新人"
     }
     if (temp < 100) {
-      this.data.result.push(ob);
+      this.data.books.push(ob);
       this.setData({
-        result: this.data.result,
+        books: this.data.books,
       })
     }
-    */
-  },
-  gotableinfo:function(e){
-    var that = this;
-   // var post = that.data.result
-    var j =e.currentTarget.dataset.index
-    wx.navigateTo({
-      url: '../table/table?index=' + j
-    })
   }
-
 })
