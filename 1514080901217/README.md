@@ -1,7 +1,7 @@
 # 照片回忆录
  
  ## 二维码：
- ![image](http://m.qpic.cn/psb?/V10XSgjf0rbmVk/K44RQNVqZ5WPozan4E06aoE06tw*n.T5G3*ujLAMuhY!/b/dPkAAAAAAAAA&bo=6wDbAAAAAAADFwI!&rf=viewer_4)
+ ![image](http://http://m.qpic.cn/psb?/V10XSgjf0rbmVk/X5wEgRBGesiWCorO4StcB5TYGH.z6jM5XpcI9.Vg8hs!/b/dGUBAAAAAAAA&bo=yQC3AAAAAAADB1w!&rf=viewer_4)
  
  ## 说明：
  照片回忆录，主要是让每个人想珍藏的照片放入其中，有时间可以拿出来看看，未必不是一件美好的事，而且也能记录周围过去的一些你觉得可以回忆的点点滴滴。
@@ -15,6 +15,7 @@
  第三页是回收站页面，可以通过这里删除一些让人不开心的记录。
  
  进入小程序就会获取用户的信息，如头像、昵称、地理位置，便于后台发送当地的数据给用户。
+ 
  
  ## 主要截图
  ### 首页
