@@ -1,12 +1,44 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/form/form",
+    "pages/Creatdata/Creatdata"
+    
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff7",
+    "navigationBarTitleText": "照片回忆录",
+    "navigationBarTextStyle": "WHITE"
+  },
+  "tabBar": {
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "照片",
+        "selectedIconPath": "pages/images/宠物.png"
+      },
+      {
+        "pagePath": "pages/form/form",
+        "text": "喜欢",
+        "selectedIconPath": "pages/images/宠物.png"
+      },
+      {
+        "pagePath": "pages/Creatdata/Creatdata",
+      
+        "text": "回收站",
+        "selectedIconPath": "pages/images/宠物.png"
+        
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }

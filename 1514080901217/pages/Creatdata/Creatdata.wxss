@@ -1,4 +1,4 @@
-/**index.wxss**/
+/* pages/Creatdata/Creatdata.wxss */
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -13,16 +13,19 @@
 }
 
 .userinfo-nickname {
-  color: #aa7;
+  color: #aaa;
 }
 
 .usermotto {
   margin-top: 200px;
+   height: 128rpx;
+   color:red;
+   
 }
 
 /*背景*/
  page{
-     background-image:url("http://img.zcool.cn/community/01638059302785a8012193a36096b8.jpg@2o.jpg ");
+     background-image:url("https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=426595056,3152484396&fm=27&gp=0.jpg");
      background-repeat:no-repeat;
  
      background-size: 650px 700px;
