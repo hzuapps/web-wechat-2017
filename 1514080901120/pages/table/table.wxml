@@ -1,4 +1,0 @@
-
-<view bindtap='onLoad' >
-  <text class='table-show'>{{result}}</text>           
-</view>

@@ -2,10 +2,12 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/user/user",
     "pages/find/find",
-    "pages/form/form",
-    "pages/table/table"
+    "pages/userInfo/userInfo",
+    "pages/book/chapter",
+    "pages/book/detail",
+    "pages/book/directory",
+    "pages/search/search"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -20,28 +22,22 @@
   "position": "bottom",
   "list": [
     {
-      "pagePath": "pages/user/user",
+      "pagePath": "pages/index/index",
       "text": "书架",
       "iconPath": "/images/首页.png",
       "selectedIconPath": "/images/首页_fill.png"
     },
     {
-      "pagePath": "pages/index/index",
-      "text": "我的",
-      "iconPath": "/images/个人.png",
-      "selectedIconPath": "/images/个人_fill.png"
-    },
-    {
-      "pagePath": "pages/find/find",
+      "pagePath": "pages/search/search",
       "text": "发现",
       "iconPath": "/images/发现.png",
       "selectedIconPath": "/images/发现_fill.png"
     },
     {
-      "pagePath": "pages/form/form",
-      "text": "表单",
-      "iconPath": "/images/表单.png",
-      "selectedIconPath": "/images/表单_fill.png"
+      "pagePath": "pages/userInfo/userInfo",
+      "text": "我的",
+      "iconPath": "/images/个人.png",
+      "selectedIconPath": "/images/个人_fill.png"
     }
   ]
 }
