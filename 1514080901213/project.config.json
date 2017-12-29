@@ -8,9 +8,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.7.2",
+	"libVersion": "1.6.4",
 	"appid": "touristappid",
-	"projectname": "hahah",
+	"projectname": "1514080901213",
 	"condition": {
 		"search": {
 			"current": -1,
