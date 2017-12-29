@@ -1,8 +1,0 @@
-<!--pages/now-room/now-room.wxml-->
-<!-- 当前签到房间 -->
-<view class="body">
-  <view class="head-title">当前房间ID：001</view>
-  <view class="room-detail">起始学号：{{nowStartNum}}</view>
-  <view class="room-detail">终止学号：{{nowEndNum}}</view>
-  <view class="room-detail">签到限时：{{nowLimitTime}}</view>
-</view>  
