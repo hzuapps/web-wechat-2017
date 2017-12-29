@@ -1,27 +1,21 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
-    
+    "pages/logs/logs",
+    "pages/text/text"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "爆笑一下",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#a9b7b7",
     "selectedColor": "#11cd6e",
     "borderStyle": "white",
     "list": [
-      {
-        "selectedIconPath": "images/用户反馈.png",
-        "iconPath": "images/用户反馈.png",
-        "pagePath": "pages/form/form",
-        "text": "用户反馈"
-      },
-
+    
       {
         "selectedIconPath": "images/视频.png",
         "iconPath": "images/视频.png",
@@ -37,13 +31,9 @@
       {
         "selectedIconPath": "images/搞笑段子.png",
         "iconPath": "images/搞笑段子.png",
-        "pagePath": "pages/test/test",
+        "pagePath": "pages/text/text",
         "text": "段子"
       }
     ]
   }
-
 }
-
-
-

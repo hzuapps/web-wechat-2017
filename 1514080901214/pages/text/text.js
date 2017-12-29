@@ -13,7 +13,7 @@ Page({
     })
 
     wx.request({
-      url: "https://route.showapi.com/341-3?showapi_appid=52772&showapi_sign=b194edf7f7954d7384666ae477c42fe6&page=1&maxResult=50&",
+      url: "https://route.showapi.com/341-1?showapi_appid=52772&showapi_sign=b194edf7f7954d7384666ae477c42fe6&page=1&maxResult=50&",
       header: {
         "Content-Type": "json"
       },
