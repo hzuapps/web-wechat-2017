@@ -1,2 +1,82 @@
-<!--pages/people/people.wxml-->
-<text>pages/people/people.wxml</text>
+<!--hzu580/people/people.wxml-->
+<view class="content_top"> 
+  <view class="top_contact_information">
+    <image src="{{has_read?'../images/information.png':'../images/information_1.png'}}" class="info" bindtap='goto_information'></image>
+  </view>
+
+  <view class="top_person">
+    <view class="head_img_view">
+      <image wx:if="{{person_info.is_approve}}" src="../images/andv.png" class="andv_img" bindtap='goto_person'></image>
+       <image src='../images/touxiangh.png' bindtap='goto_person' wx:if="{{!has_login}}" class="head_img"></image> 
+      <image src="../images/{{person_info.uid}}.jpg" class="head_img" bindtap='goto_person' wx:if="{{has_login}}"></image>
+    </view>
+
+    <view class="name_view">
+      <label class="name">{{person_info.name}}</label>
+    </view>
+    <view class="{{has_login?'rank_view':'no_view'}}">
+      <view wx:if="{{has_login}}" class="rank">{{person_info.experience}}</view>
+      <view wx:if="{{!has_login}}" class="click_login" bindtap='goto_person'>点击登录</view> 
+    </view>
+  </view>
+
+  <view class="top_editor">
+    <image src="../images/write.png" class="write_img" bindtap='goto_change_msg'></image>
+  </view>
+
+  <view class="{{person_info.has_sign?'check_on':'check'}}" hover-class="{{person_info.has_sign?'':'weui-cell_active'}}" bindtap='check_in' wx:if="{{has_login}}">
+  {{person_info.has_sign?'已签到':'签到'}}</view>
+</view>
+
+<view wx:if="{{!has_login}}" class="x_space"></view>
+
+<view wx:if="{{has_login}}" class="border_x_1"></view> 
+
+<view class="content_mid" wx:if="{{has_login}}"> 
+  <view class="mid_score_list" hover-class="weui-cell_active" bindtap='goto_scoreList'>
+    <label class="btn_score_list"><text class="number" id="score" >{{person_info.score}}\n</text><text class="word">积分</text></label>
+  </view>
+
+  <view class="border_y"></view>
+
+  <view class="mid_unfinished_list" hover-class="weui-cell_active" bindtap='goto_unfinish'>
+    <label class="btn_unfinished_list"><text class="number" id="unfinished" >{{unfinished_mission}}\n</text><text class="word">未完成</text></label>
+  </view>
+  
+  <view class="border_y"></view>			
+
+
+  <view class="mid_help_list" hover-class="weui-cell_active" bindtap='goto_helpList'>
+    <label class="btn_help_list"><text class="number" id="help">{{mission_count.helper}}\n</text><text class="word">帮助</text></label>
+  </view> 
+
+  <view class="border_y"></view>
+
+  <view class="mid_be_help_list" hover-class="weui-cell_active" bindtap='goto_beHelpList'>
+    <label class="btn_be_help_list"><text class="number" id="be_help">{{mission_count.owner}}\n</text><text class="word">被帮助</text></label>
+  </view>
+</view>
+
+<view wx:if="{{has_login}}" class="border_x"></view> 
+
+<view class="service" hover-class="weui-cell_active">
+  <!-- <view class="service_left">
+    <view class="weui-cell__hd">
+      <image src="../images/phone.png" style="margin-right: 13px;vertical-align: middle;width:15px; height: 15px;"></image>
+    </view>
+    <view class="weui-cell__bd word" style="">服务中心</view>
+  </view>
+  <view class="service_right">
+      <view class="weui-cell__ft weui-cell__ft_in-access word">联系客服</view>
+  </view> -->
+
+  <view class="weui-cell weui-cell_access" bindtap='openToastService'>
+    <view class="weui-cell__hd">
+      <image src='https://hzu580.cn/images/phone.png' style="margin-right: 13px;vertical-align: middle;width:15px; height: 15px;"></image>
+    </view>
+    <view class="weui-cell__bd word" style="">服务中心</view>
+
+    <view class="weui-cell__ft weui-cell__ft_in-access word">联系客服</view>
+  </view>
+</view>
+
