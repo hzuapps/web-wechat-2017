@@ -27,6 +27,7 @@
       <view class='rank'>{{item.rank}}</view>
   </view>
   </scroll-view>
+
 </view>
 
 

@@ -10,7 +10,8 @@
     "pages/week/week",
     "pages/weekend/weekend",
     "pages/month/month",
-    "pages/new/new"
+    "pages/coming-soon/coming",
+    "pages/in_theaters/in_theaters"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -40,7 +41,7 @@
         "selectedIconPath": "images/用户.png",
         "iconPath": "images/用户.png",
         "pagePath": "pages/user/user",
-        "text": "用户"
+        "text": "关于"
       }
     ]
   }

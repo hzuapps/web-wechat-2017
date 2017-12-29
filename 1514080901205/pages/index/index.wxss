@@ -1,84 +1,83 @@
-.placeholder{
-    margin: 5px;
-    padding: 0 10px;
-    text-align: center;
-    background-color: #EBEBEB;
-    height: 5.3em;
-    line-height:5.3em;
-    color: #cfcfcf;
-}
-.placeholder_new{
-       border-radius: 10px;
-    text-align: center;
-    background-color: #020121;
-    height: 2.3em;
-    line-height: 2.3em;
-    color: #cfcfcf;
-}
-.placeholder_piaofang{
-     border-radius: 10px;
-    margin-top: 10px;
-    text-align: center;
-    background-color: BLUE;
-    height: 2.3em;
-    line-height: 2.3em;
-    color: #cfcfcf;
-}
-.placeholder_xinlang{
-opacity：0.2;
-    text-align: center;
-    background-color: #ff445f;
-    height: 5.3em;
-    line-height:5.3em;
-    color: black;
+.theaters{
+  text-align: center;
+  width: auto;
 }
 
-.placeholder_danri{
+.reying{
+  text-align: center;
+  font-size: 19px;
+  font-weight:bold;
+  font-family: 微软雅黑;
+}
 
-    text-align: center;
-    background-color: #33beeb;
-    height: 5.3em;
-    line-height:5.3em;
-    color: #cfcfcf;
+.more{
+  text-align: right;
+  margin-right: 10rpx;
+  color:#1f4ba5;
+  font-size: 15px;
 }
-.placeholder_danzhou{
 
-    text-align: center;
-    background-color: #FF3D3D;
-    height: 5.3em;
-    line-height:5.3em;
-    color: #cfcfcf;
+.page_body{
+  display: flex;
+  flex:1;
+  flex-direction: column;
 }
-.placeholder_danyue{
 
-    text-align: center;
-    background-color: #0669cc;
-    height: 5.3em;
-    line-height:5.3em;
-    color: #7A95FF;
-}
-.placeholder_zhoumo{
+.body{
+  border-bottom: 2rpx solid #ccc;
+  display: flex;
+  font: '微软雅黑';
 
-    text-align: center;
-    background-color: #FF7AAF;
-    height: 5.3em;
-    line-height:5.3em;
-    color: #cfcfcf;
 }
-.placeholder_yingping{
 
-    text-align: center;
-    background-color: green;
-    height: 5.3em;
-    line-height:5.3em;
-    color: #cfcfcf;
+.items-theaters{
+  height:360rpx;
+  text-align: left;
 }
-.placeholder_douban{
-   margin-top: 10px;
-  border-radius: 10px;
-    text-align: center;
-    background-color: purple;
-    height: 5.3em;
-    line-height:5.3em;
-    color: #cfcfcf;
+
+.img-theaters{
+  height:300rpx;
+  width: 200rpx;
+
 }
+.movie_name_theaters{
+  font-size: 25rpx;
+  font-weight:300;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.directors{
+  text-align: center;
+}
+
+.directors-theaters{
+  font-size: 20rpx;
+  color: #999;
+}
+
+.rating-theaters{
+  font-size: 10px;
+  color:red;
+  padding-top: 37px;
+  text-align: center;
+}
+.rating-text{
+  font-size: 2rpx;
+  color: #999;
+}
+
+.navigator-hover {  
+    color:black;  
+}  
+/** 自定义其他点击态样式类 **/  
+.other-navigator-hover {  
+    color:#cfcfcf;  
+}  
+
+
+
+
+
+
+
