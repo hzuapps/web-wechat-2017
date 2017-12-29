@@ -1,15 +1,14 @@
+<!--pages/text/text.wxml-->
 <view class='page_header'>
-  <view class='page_header_text'>搞笑图片</view>
+  <view class='page_header_text'>搞笑</view>
   <scroll-view class='page_body' scroll-y='true'>
-    <navigator  wx:for="{{gaoxiao_img}}" >
+    <navigator  wx:for="{{dongtai_gif}}">
       <view class='items'>
           <view class='meta'>
             <view class='title'>{{item.title}}</view>
-            
-            <image bindtap='imgYu' class='img' src='{{item.img}}' ></image>
+            <view class='text'><text decode="{{true}}">;{{item.text}}</text></view>
             <view class='time'>{{item.ct}}</view>
             <view class='kong'></view>
-            
           </view>
       </view>
     </navigator>
