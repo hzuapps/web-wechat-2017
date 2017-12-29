@@ -1,5 +1,4 @@
-<!--pages/top250/top250.wxml-->
-<!--index.wxml-->
+<!--pages/coming-soon/coming.wxml-->
 <view class='page_header'>
   <view class='page_header_text'>{{title}}</view>
   <scroll-view class='page_body' scroll-y='true'>
@@ -13,10 +12,8 @@
             <text class="directors">导演: </text>
             <text class='directors' wx:for='{{item.directors}}'>{{item.name}} </text>
           </view>
-          <view class='rating'>
-            <text>{{item.rating.average}}</text>
-        </view>
       </view>
     </navigator>
+
   </scroll-view>
 </view>
