@@ -1,0 +1,37 @@
+<!--pages/month/month.wxml-->
+<!--pages/weekend/weekend.wxml-->
+<!--pages/week/week.wxml-->
+<view class='page_header'>
+  <view class='page_header_text'><text>月票房数据</text></view>
+    <view class="table">
+        <view class='body'>
+            <view class='movie'>影片名</view>
+            <view class='boxoffice'>月票房</view>
+            <view class='sumboxoffice1'>上映日期</view>
+            <view class='amount_up'>月度占比</view>
+            <view class='avgprice'>均票价</view>
+            <view class='avppeople'>场均人数</view>            
+            <view ><view class='rank'>排名</view>
+        </view>
+    </view>
+</view>
+  <scroll-view  scroll-y='true' wx:for="{{ri}}">
+  <view class='body'>
+      <view class='moviename'>{{item.MovieName}}</view>
+      <view class='boxoffice'>{{item.boxoffice}}</view>
+      <view class='sumboxoffice'>{{item.releaseTime}}</view>
+ <!--    <view class='boxoffice_up'>{{item.BoxOffice_Up}}</view>  --> 
+      <view class='amount_up'>{{item.box_pro}}</view>
+      <view class='avgprice'>{{item.avgboxoffice}}</view>
+      <view class='avppeople'>{{item.avgshowcount}}</view>
+      <view class='rank'>{{item.rank}}</view>
+  </view>
+  </scroll-view>
+
+</view>
+
+
+
+
+
+

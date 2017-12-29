@@ -1,0 +1,42 @@
+/* pages/month/month.wxss */
+.movie{
+  width: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.moviename{
+  font-size: 15px;
+  width: 80px;
+}
+.rank{
+  width: 10px;
+}
+.boxoffice{
+  width: 10px;
+}
+.sumboxoffice{
+  width: 80px;
+  padding-left: 15px;
+}
+.boxoffice_up{
+  width: 10px;
+}
+.movieday{
+  width: 10px;
+}
+.avgprice{
+  width: 10px;
+}
+.avppeople{
+  width: 10px;
+}
+.amount_up{
+  width: 10px;
+  padding-right: 15px;
+}
+.sumboxoffice1{
+  width: 10px;
+  padding-left: 47.5px;
+  padding-right: 47.5px;
+}
+

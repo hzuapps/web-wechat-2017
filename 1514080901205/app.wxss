@@ -1,0 +1,139 @@
+/**app.wxss**/
+@import "weui.wxss";
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;}
+
+.page_header {
+  text-align: center;
+  border-bottom: 2rpx solid #ccc;
+  margin-bottom: 10rpx;
+}
+
+.page_header_text {
+  padding: 20rpx 40rpx;
+  color: #999;
+  font-size: 40rpx;
+}
+
+.page_body{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+}
+
+.items{
+  display: flex;
+  padding:20rpx;
+  border-bottom: 2rpx solid #eee ;
+
+}
+
+.items{
+/**  width:200rpx;
+  height:135rpx;
+  margin-right:1px;
+**/
+}
+
+.img{
+  height:238rpx;
+  width: 175rpx;
+  margin-right:1px;
+}
+
+.meta{
+  flex-basis: 60%;
+  height: 238rpx;
+  width: 100px;
+  margin-left: 10px;
+  direction: center;
+}
+
+.movie_name{
+  font-size: 18px;
+  font-weight:700;
+}
+
+.movie_year{
+  font-size: 12px;
+  font-weight:400;
+}
+
+.original_title{
+  font-size: 13px;
+  color:#c0c0c0;
+}
+
+.directors{
+  font-size: 14px;
+  color: #999;
+}
+
+.rating{
+  flex-basis: 10%;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 15px;
+  color:red;
+}
+
+
+.body{
+  border-bottom: 2rpx solid #ccc;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  font: '微软雅黑';
+  font-size: 12px;
+  text-align: center;
+  padding: 20px;
+  padding-left: 10px;
+  align-items:Center;
+}
+
+.movie{
+  width: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.moviename{
+  font-size: 15px;
+  width: 80px;
+}
+.rank{
+  width: 10px;
+}
+.boxoffice{
+  width: 10px;
+}
+.sumboxoffice{
+  width: 10px;
+}
+.boxoffice_up{
+  width: 10px;
+}
+.movieday{
+  width: 10px;
+  padding-left: 8px;
+}
+.avgprice{
+  width: 10px;
+}
+.avppeople{
+  width: 10px;
+}
+.amount_up{
+  width: 10px;
+}
+
+ .head-img{
+     width:100%;
+     height: 320rpx;
+     -webkit-filter:blur(20px);
+ }
