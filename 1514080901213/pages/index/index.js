@@ -1,99 +1,63 @@
-//index.js
-//获取应用实例
-const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    weizhi: [{
+      one: "广东惠州惠城区",
+      two: "港汇"
+    },
+    {
+      one: "广东惠州惠阳区",
+      two: "惠阳高级中学"
+    },
+    {
+      one: "广东惠州惠东县",
+      two: "大润发"
+    },
+    {
+      one: "广东惠州惠东县",
+      two: "万顺家"
+    },
+    {
+      one: "广东惠州惠东县",
+      two: "惠东县人民医院"
+    },
+    {
+      one: "广东惠州惠东县",
+      two: "惠东县妇幼保健院"
+    },
+    {
+      one: "广东惠州惠东县",
+      two: "惠东高级中学"
+    },
+    {
+      one: "广东惠州惠东县",
+      two: "惠东中学"
+    }]
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
+  more: function (e) {
+    console.log(e);
+    var xin = {
+      one: "未知省份",
+      two: "未知地点"
+    };
+    //
+    if (this.data.weizhi.length <= 7) {
+      this.data.weizhi.push(xin)
       this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
+        weizhi: this.data.weizhi
       })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
     } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
+      console.log("待定")
     }
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  },
-  jump_scroll: function () {
+  jump_new_index: function () {
     wx.navigateTo({
-      url: '../scroll/scroll',
+      url: '../new_index/new_index',
     })
   },
-  jump_one: function () {
+  jump_tieshi: function () {
     wx.navigateTo({
-      url: '../one/one',
+      url: '../tieshi/tieshi',
     })
-  },
-  jump_two: function () {
-    wx.navigateTo({
-      url: '../two/two',
-    })
-  },
-  jump_three: function () {
-    wx.navigateTo({
-      url: '../three/three',
-    })
-  },
-  jump_four: function () {
-    wx.navigateTo({
-      url: '../four/four',
-    })
-  },
-  jump_form: function () {
-    wx.navigateTo({
-      url: '../form/form',
-    })
-  },
-  jump_five: function () {
-    wx.navigateTo({
-      url: '../five/five',
-    })
-  },
-  /**
- * 用户点击右上角分享
- */
-  onShareAppMessage: function () {
-
   }
-
-
-  
 })
-
