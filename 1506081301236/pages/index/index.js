@@ -11,40 +11,8 @@ Page({
     src:'images2.png',
     grids: [0, 1, 2, 3, 4, 5],
     mode: 'scaleToFill',
-    sessions: [{      //另加
-      name: "歌曲1",
-      icon: "a.png",
-      msg: "您好。"
-    }, {
-      name: "歌曲2",
-      icon: "b.png",
-      msg: "在吗？"
-    }, {
-      name: "歌曲3",
-      icon: "a.png",
-      msg: "您好。"
-    }, {
-      name: "歌曲4",
-      icon: "b.png",
-      msg: "在吗？"
-    }, {
-      name: "歌曲5",
-      icon: "a.png",
-      msg: "您好。"
-    }, {
-      name: "歌曲6",
-      icon: "b.png",
-      msg: "在吗？"
-    }, {
-      name: "歌曲7",
-      icon: "a.png",
-      msg: "您好。"
-    }, {
-      name: "歌曲8",
-      icon: "b.png",
-      msg: "在吗？"
-    }]
-  
+    Id:20
+    
   },
   //事件处理函数
   bindViewTap: function(event) {
@@ -55,11 +23,34 @@ Page({
      // url: '../scrollview/scrollview'
     //})
   },
-  onLoad: function () {
+  onLoad: function (options) {
+
+    var that = this
+    wx.request({
+      url: 'https://infoaas.com/data/1506081301236/mydata.json',//仅为事例，并非真实接口
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        console.log(res.data.ID)
+        that.setData({
+          Id: res.data.ID,
+        })
+      }
+    })
+    if (!app.globalData.userInfo)
+    {
+      wx.navigateTo({      
+        url: '../form/form',
+        success: function(res) {},
+        fail: function(res) {},
+        complete: function(res) {},
+      })
+    }
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
-        hasUserInfo: true
+        hasUserInfo: true,
       })
     } else if (this.data.canIUse){
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回

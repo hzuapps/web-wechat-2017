@@ -35,5 +35,10 @@ App({
   },
   globalData: {
     userInfo: null
+
   }
 })
+//"pages/form/form",
+//"pages/index/index",
+  //"pages/scrollview/scrollview",
+  //"pages/logs/logs"

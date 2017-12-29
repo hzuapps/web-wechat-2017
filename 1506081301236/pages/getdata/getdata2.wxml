@@ -1,0 +1,2 @@
+<view class="list_title">{{title}}</view>
+<view class="list_title">{{text}}</view>
