@@ -51,26 +51,26 @@
 个人中心代码相对简单。主要是请求数据并本地缓存。
 ## 小程序主要界面截图:
 ### 首页
-![](https://github.com/lanehunter/pic/blob/master/1514080901215/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091143.jpg)
+![](https://github.com/lanehunter/pic/blob/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091143.jpg)
 ### 登录界面
-![](https://github.com/lanehunter/pic/blob/master/1514080901215/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091146.jpg)
+![](https://github.com/lanehunter/pic/blob/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091146.jpg)
 ### 任务详情界面
-![](https://github.com/lanehunter/pic/blob/master/1514080901215/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091128.jpg)
+![](https://github.com/lanehunter/pic/blob/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091128.jpg)
 ### 个人界面
-![](https://github.com/lanehunter/pic/blob/master/1514080901215/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091132.jpg)
+![](https://github.com/lanehunter/pic/blob/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091132.jpg)
 ### 任务发布界面
-![](https://github.com/lanehunter/pic/blob/master/1514080901215/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091139.jpg)
+![](https://github.com/lanehunter/pic/blob/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091139.jpg)
 ### 被帮助历史
-![](https://github.com/lanehunter/pic/blob/master/1514080901215/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091056.jpg)
+![](https://github.com/lanehunter/pic/blob/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091056.jpg)
 ### 未完成界面
-![](https://github.com/lanehunter/pic/blob/master/1514080901215/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091105.jpg)
+![](https://github.com/lanehunter/pic/blob/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091105.jpg)
 ### 帮助历史
-![](https://github.com/lanehunter/pic/blob/master/1514080901215/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091109.jpg)
+![](https://github.com/lanehunter/pic/blob/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091109.jpg)
 ### 个人详情界面
-![](https://github.com/lanehunter/pic/blob/master/1514080901215/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091116.jpg)
+![](https://github.com/lanehunter/pic/blob/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091116.jpg)
 ### 积分排名界面
-![](https://github.com/lanehunter/pic/blob/master/1514080901215/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091122.jpg)
+![](https://github.com/lanehunter/pic/blob/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091122.jpg)
 ### 通知界面
-![](https://github.com/lanehunter/pic/blob/master/1514080901215/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091124.jpg)
+![](https://github.com/lanehunter/pic/blob/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20171228091124.jpg)
 ## 心得体会
 在进行本课程学习小程序制作前已经有着手制作小程序了。加上原本已经开发过web应用，本课程和设计要求相对简单，参考了之前完成的后台和前端代码，但由于微信小程序不支持jquery，所以基本上重写了js。在ui设计方面，顺便增添一些时尚元素，更加吸引现代年轻人。由于本学期学业较为繁重，本小程序已发布第一版仅完成了原本应用的百分之八十功能，暂时缺少了部分辅助功能，例如点评、任务筛选、客服、个人信息修改、注册。但已经在程序中有了相关提示，可以在原本应用中正常使用这些功能。
