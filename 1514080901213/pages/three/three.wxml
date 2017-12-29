@@ -1,0 +1,21 @@
+<!--
+<view>
+  <input name="mobai" placeholder="" bindblur="mobaigongju" />
+  {{shuju}}
+</view>
+-->
+
+<image class="image_frame" src="{{imageUrl}}"> </image>
+<view class="lala">
+sdfjajdflajflajdlddafad
+<image src="../../image/ye.jpg"/>
+</view>
+<!--
+<view class="jx_card">
+<image style="width: 750rpx; height: 1180rpx;margin-left=10rpx;margin-top:0rpx;" mode="{{item.mode}}" src="../../image/xiazai.jpg"></image>
+<view class="lala">
+sdfjajdflajflajdl
+</view>
+<image class="jxlogo" src="../../image/ye.jpg"/>
+</view>
+-->
