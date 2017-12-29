@@ -1,19 +1,27 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/welcome/welcome"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "阅读器",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#a9b7b7",
     "selectedColor": "#11cd6e",
     "borderStyle": "white",
     "list": [
+      {
+        "selectedIconPath": "img/info1.png",
+        "iconPath": "img/info1.png",
+        "pagePath": "pages/user/user",
+        "text": "用户"
+      },
       {
         "selectedIconPath": "img/shujia.png",
         "iconPath": "img/shujia.png",
@@ -26,7 +34,6 @@
         "pagePath": "pages/book",
         "text": "书城"
       }
-     
     ]
   }
 }
