@@ -44,6 +44,19 @@ Page({
         }
       }
     })
+    // 获取网络数据，测试数据
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901109/file.json',
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data);
+        that.setData({
+          lists: res.data.List
+        });
+      }
+    })
 
     //获取用户信息
     app.getUserInfo(function (userInfo) {
