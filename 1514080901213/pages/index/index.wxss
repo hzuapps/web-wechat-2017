@@ -1,34 +1,12 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.touxiang2{
+  border:none;
+}
+.ha{
+  margin-top:50px;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
-
-.chuangjian {
-  /**
-  margin: 5 auto;
-  **/
-  padding-top: 0px;
-  width: 100%;
-  margin-right: 100px;
-}
-
-.anniu{
-   padding-top: 50px;
+.image1{
+  margin-top: 60px;
+  padding-bottom: 25px;
 }
