@@ -1,16 +1,13 @@
 {
   "pages":[
-    "pages/form/form",
+    "pages/data/data",
     "pages/index/index",
     "pages/logs/logs"
-
-    
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "音乐立体相册",
+    "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
   }
 }
-  
