@@ -14,7 +14,7 @@ https://mp.weixin.qq.com/wxopen/basicprofile?action=get_qrcode&type=1&openid=ojg
 (my_share:个人分享的图片）pages/my_share/*
 
 
-##小程序主要页面截图
+## 小程序主要页面截图
 find：http://a3.qpic.cn/psb?/V12Aj5pI3qtspO/scAF3kUZ79voxE233ka9YG.LcxnehSBG1pddT2MFIWE!/m/dF4BAAAAAAAAnull&bo=RAE5AgAAAAARB04!&rf=photolist&t=5
 
 share：http://a3.qpic.cn/psb?/V12Aj5pI3qtspO/izde2flPus5HjMkxXNtDBP046hvFM.nHwFMk8zlkWME!/m/dPIAAAAAAAAAnull&bo=RQE6AgAAAAARB0w!&rf=photolist&t=5
