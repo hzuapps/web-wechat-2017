@@ -1,8 +1,10 @@
 {
   "pages":[
-   "pages/form/form",
-   "pages/index/index",
-   "pages/scrollview/scrollview",
+    "pages/index/index",
+    "pages/getdata/getdata1",
+    "pages/getdata/getdata2",
+    "pages/form/form",
+    "pages/scrollview/scrollview",
     "pages/logs/logs"
   ],
   "window":{

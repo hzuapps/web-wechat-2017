@@ -1,0 +1,8 @@
+<view class="notes">
+   <view wx:for="moodlist" wx:for-item="item" wx:key="index">
+      <navigator url="../getdata/getdata2?index={{index}}"
+       class="navlist" hover-class="weui-cell_active">
+          <view class="list_title">点击将跳转到另一个页面</view>
+      </navigator>
+   </view>
+</view>
