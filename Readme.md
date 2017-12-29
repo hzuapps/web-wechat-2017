@@ -1,7 +1,7 @@
 ## 小程序名称：助画使者
 
 ## 小程序二维码（体验版）：
-https://mp.weixin.qq.com/wxopen/qrcode?action=show&type=2&fakeid=3508536206&token=2128289096
+https://mp.weixin.qq.com/wxopen/basicprofile?action=get_qrcode&type=1&openid=ojgMg0ZzvYndQIczyDWpoOmMcYEM&use_path=1&path=pages%2Ffind%2Ffind&token=2128289096&lang=zh_CN
 
 ## 小程序创意说明：
 本小程序可用于绘画爱好者们之间的交流，既可以把自己的作品分享出来，让大咖给你绘画上的一些意见，又可以欣赏大咖们的作品。
