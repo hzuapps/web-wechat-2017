@@ -1,40 +1,7 @@
-<!--index.wxml-->
-<view class="container">
-  <!--
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  -->
-
-
-
-
-  
-  <view class="image">
-    <image class="image1" src="/image/ye.jpg" style="width: 350px; height: 200px"></image>
-  </view>
-  
-  <view class="anniu">
-    <button class="chuangjian" type="primary" bindtap="jump_one" style="margin-top: 15px">分享你的约会</button>
-    <button class="chuangjian" type="primary" bindtap="jump_two" style="margin-top: 15px">寻找约会方案</button>
-    <!--
-    <button class="chuangjian" type="primary" bindtap="jump_three" style="margin-top: 15px">测试内容(背景图设置)</button>
-    <button class="chuangjian" type="primary" bindtap="jump_four" style="margin-top: 15px">测试内容(数组添加)</button>
-    <button class="chuangjian" type="primary" bindtap="jump_scroll" style="margin-top: 15px">实验内容</button>
-    <button class="chuangjian" type="primary" bindtap="jump_form" style="margin-top: 15px">form</button>
-    -->
-    <button class="chuangjian" type="primary" bindtap="jump_five" style="margin-top: 15px">第五次实验内容</button>
-  </view>
-
-
-  
-
-  
+<view class="image">
+  <image class="image1" src="/images/biaoti.png" style="width: 350px; height: 200px"></image>
+</view>
+<view class="touxiang2">
+  <button class="chuangjian" type="primary" bindtap="jump_new_index" style="margin:30rpx;width=500px;height=500px;" plain="true">开始制定约会计划吧</button>
+    <button class="chuangjian" type="primary" bindtap="jump_tieshi" style="margin:30rpx;width=500px;height=500px;" plain="true">助攻小贴士</button>
 </view>
