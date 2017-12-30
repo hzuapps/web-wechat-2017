@@ -2,7 +2,8 @@
 
 小程序二维码（体验版）：
 
-https://mp.weixin.qq.com/wxopen/basicprofile?action=get_qrcode&type=1&openid=ojgMg0ZzvYndQIczyDWpoOmMcYEM&use_path=1&path=pages%2Ffind%2Ffind&token=2128289096&lang=zh_CN
+http://a4.qpic.cn/psb?/V12Aj5pI3qtspO/oLPMadWBnOQsN2cq6eeFbjIcR5mhxepoBcHG.99SG6Y!/m/dPMAAAAAAAAAnull&bo=2AHYAQAAAAARBzA!&rf=photolist&t=5
+
 
 小程序创意说明：
 
