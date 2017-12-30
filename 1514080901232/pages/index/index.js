@@ -15,15 +15,29 @@ Page({
     duration: 1000,
     interval: 2000,
     circular: true,
-
-    lists: ''
+   
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    var that = this;
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901125/index.json',
+      data: {
+
+      },
+      success: function (res) {
+        console.log(res.data)
+        that.setData({
+          szb: res.data.szb,
+
+        })
+
+      }
+    })
   },
 
   /**
