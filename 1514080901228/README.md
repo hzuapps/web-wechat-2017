@@ -25,7 +25,7 @@
 保存，添加成功后  
 ![](https://github.com/sk-2017/web-wechat-2017/blob/master/1514080901228/images/%E6%B7%BB%E5%8A%A0%E6%88%90%E5%8A%9F.png)  
 
-点击进入笔记内容后，可以查看、编辑或删除笔记  
+点击进入笔记内容后，可以查看、编辑或删除笔记  
 ![](https://github.com/sk-2017/web-wechat-2017/blob/master/1514080901228/images/%E7%BC%96%E8%BE%91%E6%9F%A5%E7%9C%8B%E7%AC%94%E8%AE%B0.png)  
 
 反馈页面  
