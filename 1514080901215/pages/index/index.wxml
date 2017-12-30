@@ -1,12 +1,57 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="info">
-    <text class="title">这里是惠大互帮平台，你可以在平台发布求助，热心同学将会在本页面领取任务</text>
-  </view>
-  <view class="introduce">
-    <text>底部有导航栏，可以进入主页，发布界面，个人界面</text>
-  </view>
-  <view class="button-sp-area">
-    <button class="weui-btn" type="primary" plain="true" bindtap='into_example'>我知道了</button>
-  </view>
-</view>
+<!-- <template name="mission_card">
+
+</template> -->
+<scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltolower="onEnd" bindscroll="onScroll">
+<block wx:for="{{mission_list}}" wx:key="id">
+  <!-- <template is="mission_card" data="{{...item}}"/> -->
+  <!-- <navigator url='../detail/detail'> -->
+    <view class="card" bindtap='storage_mission' data-orderId='{{index}}'>
+      <view class="up-information" >
+        <view class="up-information__left">
+          <view class="topLeft_direction">          
+            <image src="https://hzu580.cn/Hzu580Server/head/{{item.owner.uid}}.jpg" class="head" id="head" binderror="errorImage" data-orderId='{{index}}'  lazy-load='true'/>
+            <!-- <image src="../images/touxiangh.png" class="head" id="head" wx:if="{{image_error}}"/>  -->
+            <image wx:if="{{item.owner.is_approve}}" src="../images/andv.png" class="andv" />
+          </view>
+          <view class="up-information__middle">
+            <view class="topRight_direction">
+              <text class="name">{{item.owner.name}}</text>
+              <image src="{{item.owner.sex?'../images/women.png':'../images/men.png'}}" class="sex" />
+            </view>
+              <view class="time">{{item.create_time}}</view>
+          </view>
+        </view>
+        <view class="up-information__right" >
+          <image class = "mode" src="{{item.is_fast_mode?'../images/lighting.png':'../images/no_lighting.png'}}" />
+          <image class = "limit_mode" src="{{item.is_safe_mode?'../images/shield.png':'../images/no_shield.png'}}" />
+          <text class="integral-number">{{item.reward}}</text>
+          <image src="../images/integral.png" class="integral" />
+
+          <text class="{{item.sex_limit==2?'sex-no_limit__label':'sex-no_limit__label_noshow'}}" id="sex_label"> 不限</text>
+
+          <text class="{{item.sex_limit==2?'sex-limit__label_noshow':'sex-limit__label'}}" id="sex_label">限</text>
+          <image src="{{item.sex?'../images/women.png':'../images/men.png'}}" class="{{item.sex_limit==2?'sex-limit_noshow':'sex-limit'}}" alt="sex" id="sex_l"/>
+
+        </view>
+      </view>
+
+      <view class="assignment-brief-information" >
+        <view class="assignment-brief">
+          <view class="assignment-brief__hd"><text>任务</text></view>
+           <view class="assignment-brief__bd"><text>{{item.type}}</text></view> 
+        </view>
+        <view class="local">
+          <view class="local__hd"><text>地点</text></view>
+          <view class="local__bd"><text>{{item.building}}{{item.room}}</text></view>
+        </view>          
+      </view>
+
+      <view class="brief" >
+        <view class="brief__hd"><text>简介</text></view>
+        <view class="brief__bd"><text></text>{{item.summary}}</view>
+        <text class="check-detail check-detail-turn">查看详情</text>
+      </view>
+    </view> 
+  <!-- </navigator> -->
+</block>
+</scroll-view>
