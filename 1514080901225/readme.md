@@ -9,9 +9,13 @@ http://a4.qpic.cn/psb?/V12Aj5pI3qtspO/oLPMadWBnOQsN2cq6eeFbjIcR5mhxepoBcHG.99SG6
 
 本小程序可用于绘画爱好者们之间的交流，既可以把自己的作品分享出来，让大咖给你绘画上的一些意见，又可以欣赏大咖们的作品。
 
-小程序页面设计（各页面代码要点）：
+## 小程序页面设计（各页面代码要点）：
 
-首页（find：用于浏览网上图片）pages/find/* (share：用于上传图片)pages/share/* (mine:个人主页）pages/mine/* (login:登录页面）pages/login/* (my_share:个人分享的图片）pages/my_share/*
+首页（find：用于浏览网上图片）pages/find/* 
+(share：用于上传图片)pages/share/* 
+(mine:个人主页）pages/mine/* 
+(login:登录页面）pages/login/* 
+(my_share:个人分享的图片）pages/my_share/*
 
 ## 小程序主要页面截图
 
