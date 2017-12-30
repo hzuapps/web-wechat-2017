@@ -1,0 +1,121 @@
+<!--hzu580/output/output.wxml-->
+<view class="weui-cells__title">填写发布信息</view>
+<form bindsubmit="formSubmit">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">楼号(可选)</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" maxlength='6' placeholder="请输入地址" name="building"/>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd" >
+            <view class="weui-label" >房号(可选)</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" maxlength='6' placeholder="请输入房号" name="room"/>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_input"></view>
+  </view>
+
+  <view class="sort_title">任务类型</view>
+  <view class="mission_sort">
+    <radio-group bindchange="radioChange" name="type">
+      <view class="radio_view">
+        <label wx:for="{{radioItems}}" wx:key="value" >
+          <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+          <view class="{{item.checked?'is_checked':'btn_normal'}}"   hover-class="btn_hold_on">
+            <view class="" wx:if="{{item.showed}}">
+              <input class="sort_input" maxlength='4' placeholder="点击添加" name="InputMissionType"/>
+            </view>
+            {{item.name}}
+          </view>
+        </label>  
+      </view>
+    </radio-group>
+  </view>
+
+  <view class="sort_title">任务简介</view>
+  <view class="mission_summary">
+    <input class="s_text" maxlength='12' placeholder="填写时间、地点等" name="summary"/>
+  </view>
+
+  <view class="sort_title">任务详情</view>
+  <view class="mission_detail">
+    <textarea class="d_text" maxlength='60' required="required" name="description"></textarea>
+  </view>
+
+  <view class="sort_title">性别要求</view>
+  <view class="mission_sort">
+    <radio-group bindchange="sexSelect" name="sex_limit">
+      <view class="radio_view">
+        <label wx:for="{{sexItems}}" wx:key="value" >
+          <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+          <view class="{{item.checked?'is_checked':'btn_normal'}}"   hover-class="btn_hold_on">
+            {{item.name}}
+          </view>
+        </label>  
+      </view>
+    </radio-group>
+  </view>
+
+  <view class="sort_title">联系方式</view>
+  <view class="mission_sort">
+    <radio-group bindchange="telSelect" name="is_show_tel">
+      <view class="radio_view">
+        <label wx:for="{{telItems}}" wx:key="value" >
+          <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+          <view class="{{item.checked?'is_checked':'btn_normal'}}"   hover-class="btn_hold_on">
+            {{item.name}} 
+          </view>
+        </label>  
+      </view>
+    </radio-group>
+     <view class='iconBox' bindtap='warn_tel'><icon type="info_circle" size="23" color='#00bbf0'></icon></view> 
+  </view>
+
+  <view class="sort_title">任务模式</view>
+  <view class="mission_sort">
+    <radio-group bindchange="modeSelect" name="is_fast_mode">
+      <view class="radio_view">
+        <label wx:for="{{modeItems}}" wx:key="value">
+          <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+          <view class="{{item.checked?'is_checked':'btn_normal'}}"   hover-class="btn_hold_on">
+            {{item.name}}
+          </view>
+        </label>  
+      </view>
+    </radio-group>
+    <view class='iconBox' bindtap='warn_mission'><icon type="info_circle" size="23" color='#00bbf0'></icon></view>
+  </view>
+
+  <view class="sort_title">权限模式</view>
+  <view class="mission_sort">
+    <radio-group bindchange="limitSelect" name="is_safe_mode">
+      <view class="radio_view">
+        <label wx:for="{{limitItems}}" wx:key="value" >
+          <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+          <view class="{{item.checked?'is_checked':'btn_normal'}}"   hover-class="btn_hold_on">
+            {{item.name}}
+          </view>
+        </label>  
+      </view>
+    </radio-group>
+    <view class='iconBox' bindtap='warn_limit'><icon type="info_circle" size="23" color='#00bbf0'></icon></view>
+  </view>
+
+  <view class="core_offer">
+    悬赏积分
+    <view class="core_offer_input">
+      <input name="reward" type='number' maxlength='2' bindinput="bindReplaceInputScore"></input>
+    </view>
+    分
+  </view>
+
+  <view class="view_output">
+    <button formType="submit" class="btn_normal_ouput" hover-class="btn_output_hold_on">发布</button>
+  </view>
+</form>
