@@ -1,0 +1,21 @@
+<view class="btn-area" class="a">
+  <navigator url="/pages/page/what" hover-class="navigator-hover">震惊！99.99%的人都不知道的死法！</navigator>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/page/what" hover-class="navigator-hover">震惊！美国总统看到后都惊呆了！</navigator>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/page/what" hover-class="navigator-hover">震惊！男人看了会沉默，女人看了会流泪！不转不是中国人！</navigator>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/page/what" hover-class="navigator-hover">震惊！一女子竟然光天化日之下做出这种事情！</navigator>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/page/what" hover-class="navigator-hover">震惊！父亲居然当着女儿的面做这种动作！</navigator>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/page/what" hover-class="navigator-hover">震惊！女子在医院对护士这样说话！</navigator>
+</view>
+<view class="btn-area">
+  <navigator url="/pages/page/what" hover-class="navigator-hover">震惊！此老人竟然凭借此方法不老！</navigator>
+</view>
