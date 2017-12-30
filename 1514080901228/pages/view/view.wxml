@@ -1,0 +1,4 @@
+
+<view class="container">
+         <text>看看我的笔记：{{notes}}</text>       
+</view>
