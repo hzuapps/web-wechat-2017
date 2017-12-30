@@ -7,15 +7,22 @@ const app = getApp()
 Page({
   data: {
     imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      {
+        link:'/pages/news/news',
+        url:'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+        text:'巴黎铁塔是什么？'
+      },
+      {  
+         link: '/pages/news/news2',
+         url: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+         text: '如何学好计算机'
+      }, 
+     {
+         link: '/pages/news/news3',
+         url: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg',
+         text: '兄弟篮球1+1'
+     }   
     ],
-    data2:{
-      NAME:' ',
-      index:0,
-      logs: []
-    },
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
@@ -204,7 +211,6 @@ Page({
 
     multiIndex: [0,0],
     customItem: '全部',
-    tabs: ["选项一", "选项二", "选项三"],
     activeIndex: 1,
     sliderOffset: 0,
     sliderLeft: 0
@@ -217,26 +223,6 @@ Page({
     })
   },
   onLoad: function () {
-    var that = this;
-    var data2;
-    wx.getSystemInfo({
-      success: function (res) {
-        that.setData({
-          sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
-          sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
-        });
-      }
-    }),
-    wx.request({
-      url: 'https://infoaas.com/data/1514080901103/1514080901103.json',
-      method:'GET',
-      data2: {},
-      success: function (res) {
-        that.setData({
-          name: res.data2
-        })
-      }
-    })
   },
   tabClick: function (e) {
     this.setData({
@@ -353,6 +339,12 @@ Page({
     })
   },
 
+  jump:function(){
+    wx.navigateTo({
+      url: '/pages/page/look',
+    })
+  },
+  
   tapMove: function (e) {
     this.setData({
       scrollTop: this.data.scrollTop + 10

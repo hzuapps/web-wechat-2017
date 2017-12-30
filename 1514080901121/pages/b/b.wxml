@@ -12,7 +12,7 @@
            <view class="weui-cell weui-cell_input">
                 <view class="weui-cell__bd">
                     <input class="weui-input" name="text" 
-                    value='{{text}}' placeholder="标题" bindinput='onTextChange'/>
+                    value='{{text}}' placeholder="你的联系方式（邮箱）" bindinput='onTextChange'/>
                 </view>
             </view>
         </view>
@@ -21,7 +21,7 @@
             <view class="weui-cell">
                 <view class="weui-cell__bd">
                     <textarea class="weui-textarea" name="area" placeholder="正文" style="height: 3.3em" value='{{area}}' bindinput='onChange'/>
-                    <view class="weui-textarea-counter">{{count}}/200</view>
+                    <view class="weui-textarea-counter">{{count}}/140</view>
                 </view>
             </view>
         </view>

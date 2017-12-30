@@ -1,70 +1,26 @@
-<!--index.wxml
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-</view>-->
-<view>每日推荐</view>
-<swiper indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<view style="text-align:center">每日推荐</view>
+<swiper class="swiper" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" width="365" height="150"/>
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
+      <text >{{item.text}}</text> 
+      <image src="{{item.url}}" class="slide-image" />
+      </navigator>
     </swiper-item>
   </block>
 </swiper>
-<!--<button bindtap="changeIndicatorDots"> indicator-dots </button>
-<button bindtap="changeAutoplay"> autoplay </button>
-<slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
-<slider bindchange="durationChange" show-value min="1000" max="10000"/> duration-->
- <view id="white" class="scroll-view-item bc_white" style="background:white;width: 60%; height: 50px"></view>
+
+ <view id="white" class="scroll-view-item bc_white" style="background:white; height: 50px;opacity:0.0"></view>
 <view class="section">
   <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
-    <button type="default" style="background:grey">日期选择器</button>
-      <view>.</view>
-        <view class="picker">
-      当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
+    <view type="default" style="left:10px">日期选择器</view>
+        <view class="picker" style="text-align:center">
+       {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
     </view>
   </picker>
 </view>
 
-<block wx:for-items="{{name}}">
-    <view style="width:100%; height: 50rpx"></view>
-    <!--index默认为下标，item为每项-->
-    <text>{{item.NAME}}</text>
-</block>
-<!--<view class="page">
-    <view class="page__bd">
-        <view class="weui-tab">
-            <view class="weui-navbar">
-                <block wx:for="{{tabs}}" wx:key="*this">
-                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
-                        <view class="weui-navbar__title">{{item}}</view>
-                    </view>
-                </block>
-                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
-            </view>
-            <view class="weui-tab__panel">
-                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">选项一的内容</view>
-                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
-                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
-            </view>
-        </view>
-    </view>-->
-
-<!-- <view class="section__title">vertical scroll</view>
-  <scroll-view scroll-y="true" style="height: 300px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-   <view id="green" class="scroll-view-item bc_green" style="background:green;width: 60%; height: 100px"></view>
-    <view id="red"  class="scroll-view-item bc_red" style="background:red;width: 60%; height: 100px"></view>
-    <view id="yellow" class="scroll-view-item bc_yellow" style="background:yellow;width: 60%; height: 100px"></view>
-    <view id="blue" class="scroll-view-item bc_blue" style="background:blue;width: 60%; height: 100px"></view>
-  </scroll-view>
-
-  <view class="btn-aera">
-    <button size="mini" bindtap="tap">click me to scroll into view </button>
-    <button size="mini" bindtap="tapMove">click me to scroll</button>
-  </view>-->
-
+<view class="btn-area">
+  <button style="background:lightblue;opacity:1" bindtap="jump">今日有咩睇？
+  </button>
+</view>
