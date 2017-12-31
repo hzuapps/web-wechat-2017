@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/image/image",
+     "HIS/his/his",
+    "MY/my/my",
+    "image/image"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "pink",
+  "navigationBarTitleText": "作业通知",
+  "navigationBarTextStyle": "black"
+  },
+"tabBar": {
+  "color": "#000000",
+  "selectedColor": "#1992F5",
+  "borderStyle": "black",
+  "backgroundColor": "pink",
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "iconPath": "image/首页1.png",
+      "selectedIconPath": "image/首页.png",
+      "text": "首页"
+    },
+    
+    {
+      "pagePath": "HIS/his/his",
+      "iconPath": "image/添加1.png",
+      "selectedIconPath": "image/添加.png",
+      "text": "写通知"
+    },
+   
+    {
+      "pagePath": "MY/my/my",
+      "iconPath": "image/个人1.png",
+      "selectedIconPath": "image/个人.png",
+      "text": "历史"
+    }
+  ]
+}
+
+}

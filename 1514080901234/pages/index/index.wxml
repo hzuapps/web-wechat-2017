@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<form bindsubmit='formSubmit' bindreset='formReset'>
+    <view class="error_text" wx:if="{{hasError}}">{{errorText}}</view>
+  <view class="container">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入要翻译的文本" value='{{text}}'
+          name="text" bindinput='textChange' />
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <text>请选择翻译文本的目标语言</text>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}">
+      <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+    </label>
+  </radio-group>
+
+  <view class="page__bd page__bd_spacing">
+    <button class="weui-btn" type="primary" form-type='submit'>翻译</button>
+  </view>
+
+  <view class="weui-cell__bd">
+    <textarea class="weui-textarea" placeholder="翻译结果" style="height: 5.0em" 
+    value="{{result.basic.explains}}{{result.translation}}"/>
+  </view>
+  
+</form>

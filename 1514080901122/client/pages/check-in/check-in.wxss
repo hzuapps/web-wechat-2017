@@ -1,0 +1,11 @@
+/* pages/check-in/check-in.wxss */
+.btn-area {
+  margin: 50px 30px; 
+}
+
+.warning {
+  width: 50vh;
+  margin: 0 auto;
+  color: red;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/text/text"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "运动计步器",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/首页.png",
+        "selectedIconPath": "pages/images/首页_填充.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/目标计划.png",
+        "selectedIconPath": "pages/images/目标填充.png",
+        "text": "目标计划"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/用户.png",
+        "selectedIconPath": "pages/images/用户填充.png",
+        "text": "我"
+      }
+    ]
+  }
+}

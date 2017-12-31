@@ -1,0 +1,18 @@
+<text>你的出生日期{{DATE}}</text>
+<view class="time">
+你还可一看世界杯的次数：
+
+</view >
+
+<view class="time">
+你还可以度过的双休次数：
+
+</view >
+
+<view class="time">
+你还可以过春节的次数：
+</view>
+
+<view class="time">
+你还剩下的生命是：
+</view>

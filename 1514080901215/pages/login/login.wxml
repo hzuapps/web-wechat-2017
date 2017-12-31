@@ -1,0 +1,35 @@
+	<!-- <view class="headline">
+		<text>账 号 登 录</text>
+	</view> -->
+	<view class="scroll_content weui-cells weui-cells_after-title" style="background-image:url(https://hzu580.cn/images/background_image.jpg);">
+    <view class="x_space"></view>
+    <form bindsubmit="logIn">
+      <view class="cardBox">
+        <view class="card">
+          <view class='uiBox'>
+            <image src='https://hzu580.cn/images/user2.png' class="userUI"></image> 
+          </view>
+          <view class='content'>
+            <input type="number" placeholder="请输入帐号" placeholder-class="placeholder" class="input tel" name="identity" autofocus required="required"/>
+          </view>
+        </view>
+        <view class="x_line"></view>
+        <view class="card">
+          <view class='uiBox'>
+            <image src='https://hzu580.cn/images/psw2.png' class="userUI"></image> 
+          </view>
+          <view class='content'>
+            <input type="password" placeholder="请输入密码" placeholder-class="placeholder" class="input tel" name="password" required="required"/>
+          </view>
+        </view>
+      </view>
+        <view class="x_line"></view>
+      <view class="btn">
+        <view class="div_login">
+        <button formType="submit" class="login">登录</button> 
+        </view>
+        <view class="div_register"><text class="register" bindtap="register">注册账号</text></view>
+      </view>
+    </form>
+	<text class="copyright">Copyright© 2017 惠大帮 All rights reserved.</text>
+  </view>

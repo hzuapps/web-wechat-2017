@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/getdata/getdata1",
+    "pages/getdata/getdata2",
+    "pages/form/form",
+    "pages/scrollview/scrollview",
+    "pages/logs/logs"
+  ],
+  "window":{
+    
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "敲木鱼",
+    "navigationBarTextStyle":"black"
+  }
+}

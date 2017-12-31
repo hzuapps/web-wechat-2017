@@ -1,0 +1,17 @@
+/**app.wxss**/
+.nav{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.page{
+    background: image('/demo/image/框(1).png') no-repeat;
+    background-size: 100% 100%;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;  
+} 

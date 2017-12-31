@@ -1,0 +1,136 @@
+
+  <view class='theaters'>
+    <view class='reying'>正在热映</view><navigator><view class='more' bindtap='theaters'>更多</view></navigator>
+    <scroll-view class='page_body' scroll-y='true'>
+    <view class='body'>
+      <navigator url='../movies/movies?id={{item.id}}' wx:for="{{movies}}">
+        <view class='items-theaters'>
+          <image class='img-theaters' src='{{item.images.small}}'></image>
+          <view class='movie_name_theaters'>{{item.title}}</view>
+          <view class='directors'>        
+            <text class="directors-theaters">导演: </text>
+            <text class='directors-theaters'>{{item.directors[0].name}} </text>
+          </view> 
+        </view>
+        <view class='rating-theaters'>
+            <text class='rating-text'>评分： </text>
+            <text>{{item.rating.average}}</text>
+        </view>
+      </navigator>
+    </view>
+    </scroll-view>
+  </view>
+    <view class='coming-soon'>
+    <scroll-view class='page_body' scroll-y='true'>
+    <view class='body'>
+      <navigator url='../movies/movies?id={{item.id}}' wx:for="{{movies1}}">
+        <view class='items-theaters'>
+          <image class='img-theaters' src='{{item.images.small}}'></image>
+          <view class='movie_name_theaters'>{{item.title}}</view>
+          <view class='directors'>        
+            <text class="directors-theaters">导演: </text>
+            <text class='directors-theaters'>{{item.directors[0].name}} </text>
+          </view> 
+        </view>
+        <view class='rating-theaters'>
+            <text class='rating-text'>评分： </text>
+            <text>{{item.rating.average}}</text>
+        </view>
+      </navigator>
+    </view>
+    </scroll-view>
+  </view>
+
+
+
+  <view class='coming-soon'>
+    <view class='reying'>即将上映</view><navigator><view class='more' bindtap='coming'>更多</view></navigator>
+    <scroll-view class='page_body' scroll-y='true'>
+    <view class='body'>
+      <navigator url='../movies/movies?id={{item.id}}' wx:for="{{coming_movies1}}">
+        <view class='items-theaters'>
+          <image class='img-theaters' src='{{item.images.small}}'></image>
+          <view class='movie_name_theaters'>{{item.title}}</view>
+          <view class='directors'>        
+            <text class="directors-theaters">导演: </text>
+            <text class='directors-theaters'>{{item.directors[0].name}} </text>
+          </view> 
+        </view>
+        <view class='rating-theaters'>
+            <text class='rating-text'>评分： </text>
+            <text>{{item.rating.average}}</text>
+        </view>
+      </navigator>
+    </view>
+    </scroll-view>
+  </view>
+  
+    <view class='coming-soon'>
+    <scroll-view class='page_body' scroll-y='true'>
+    <view class='body'>
+      <navigator url='../movies/movies?id={{item.id}}' wx:for="{{coming_movies2}}">
+        <view class='items-theaters'>
+          <image class='img-theaters' src='{{item.images.small}}'></image>
+          <view class='movie_name_theaters'>{{item.title}}</view>
+          <view class='directors'>        
+            <text class="directors-theaters">导演: </text>
+            <text class='directors-theaters'>{{item.directors[0].name}} </text>
+          </view> 
+        </view>
+        <view class='rating-theaters'>
+            <text class='rating-text'>评分： </text>
+            <text>{{item.rating.average}}</text>
+        </view>
+      </navigator>
+    </view>
+    </scroll-view>
+  </view>
+
+
+  <view class='coming-soon'>
+    <view class='reying'>Top250</view><navigator><view class='more' bindtap='top250'>更多</view></navigator>
+    <scroll-view class='page_body' scroll-y='true'>
+    <view class='body'>
+      <navigator url='../movies/movies?id={{item.id}}' wx:for="{{top250_movies1}}">
+        <view class='items-theaters'>
+          <image class='img-theaters' src='{{item.images.small}}'></image>
+          <view class='movie_name_theaters'>{{item.title}}</view>
+          <view class='directors'>        
+            <text class="directors-theaters">导演: </text>
+            <text class='directors-theaters'>{{item.directors[0].name}} </text>
+          </view> 
+        </view>
+        <view class='rating-theaters'>
+            <text class='rating-text'>评分： </text>
+            <text>{{item.rating.average}}</text>
+        </view>
+      </navigator>
+    </view>
+    </scroll-view>
+  </view>
+    <view class='coming-soon'>
+    <scroll-view class='page_body' scroll-y='true'>
+    <view class='body'>
+      <navigator url='../movies/movies?id={{item.id}}' wx:for="{{top250_movies2}}">
+        <view class='items-theaters'>
+          <image class='img-theaters' src='{{item.images.small}}'></image>
+          <view class='movie_name_theaters'>{{item.title}}</view>
+          <view class='directors'>        
+            <text class="directors-theaters">导演: </text>
+            <text class='directors-theaters' >{{item.directors[0].name}} </text>
+          </view> 
+        </view>
+        <view class='rating-theaters'>
+            <text class='rating-text'>评分： </text>
+            <text>{{item.rating.average}}</text>
+        </view>
+      </navigator>
+    </view>
+    </scroll-view>
+  </view>
+
+
+
+
+
+

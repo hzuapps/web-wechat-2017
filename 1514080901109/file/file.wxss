@@ -1,0 +1,6 @@
+/* pages/file/file.wxss */
+.weui-media-box_content_imgage
+{
+  height:40px;
+  width:40px;
+}

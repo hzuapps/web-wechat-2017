@@ -1,0 +1,83 @@
+.theaters{
+  text-align: center;
+  width: auto;
+}
+
+.reying{
+  text-align: center;
+  font-size: 19px;
+  font-weight:bold;
+  font-family: 微软雅黑;
+}
+
+.more{
+  text-align: right;
+  margin-right: 10rpx;
+  color:#1f4ba5;
+  font-size: 15px;
+}
+
+.page_body{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+}
+
+.body{
+  border-bottom: 2rpx solid #ccc;
+  display: flex;
+  font: '微软雅黑';
+
+}
+
+.items-theaters{
+  height:360rpx;
+  text-align: left;
+}
+
+.img-theaters{
+  height:300rpx;
+  width: 200rpx;
+
+}
+.movie_name_theaters{
+  font-size: 25rpx;
+  font-weight:300;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.directors{
+  text-align: center;
+}
+
+.directors-theaters{
+  font-size: 20rpx;
+  color: #999;
+}
+
+.rating-theaters{
+  font-size: 10px;
+  color:red;
+  padding-top: 37px;
+  text-align: center;
+}
+.rating-text{
+  font-size: 2rpx;
+  color: #999;
+}
+
+.navigator-hover {  
+    color:black;  
+}  
+/** 自定义其他点击态样式类 **/  
+.other-navigator-hover {  
+    color:#cfcfcf;  
+}  
+
+
+
+
+
+
+

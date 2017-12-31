@@ -1,0 +1,32 @@
+<scroll-view class = 'test' style="height: 340px;">
+  <form  bindsubmit="formSubmit" bindreset="formReset"> 
+   <block wx:for="{{message}}">
+    <view wx:if="{{item.flag == 1}}" class='par'>
+        <text class='left'>{{item.word}}</text>
+    </view>
+    
+    <view wx:else class='par1'>
+        <text class='right'>{{item.word}}</text>
+    </view>
+   </block>
+  </form>
+
+</scroll-view>
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__bd">
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="area" style="height: 3.3em" value='{{text}}' bindinput='onChange' />
+                    <view class="weui-textarea-counter">{{count}}/200</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit' bindtap='onSubmit'>发送</button>
+        </view>
+    </view>
+</view>

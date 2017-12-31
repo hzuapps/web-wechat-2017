@@ -1,0 +1,21 @@
+/* es/ggs/ggs.wxss */
+.section{  
+    border:1px solid #ddd;  
+    width:96%;  
+    margin:auto;  
+    height:200rpx;  
+    margin-top:20rpx;  
+}  
+.section1{  
+    border:1px solid #ddd;  
+    width:96%;  
+    margin:auto;  
+    margin-top:20rpx;  
+}  
+.section2{  
+    border:1px solid #ddd;  
+    width:96%;  
+    margin:auto;  
+    height:80rpx;  
+    margin-top:20rpx;  
+}  

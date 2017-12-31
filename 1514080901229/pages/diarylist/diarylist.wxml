@@ -1,0 +1,25 @@
+<!--pages/diarylist/diarylist.wxml-->
+<view class="page">
+ 
+
+<!-- 循环显示 -->   
+
+  <view class="weui-panel">
+    <view class="weui-panel__hd">陪安东尼度过漫长岁月</view>
+      <scroll-view scroll-y  style="height: 1000rpx">
+        <view wx:for="{{diary}}" wx:for-item="diarys">            
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{diarys.d_title}}</view>
+                    <view class="weui-media-box__desc">{{diarys.d_desc}}</view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">安东尼</view>
+                        <view class="weui-media-box__info__meta">{{diarys.d_time}}</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">日记</view>
+                    </view>
+                </view>
+            </view>         
+        </view>
+      </scroll-view>
+  </view>
+</view> 

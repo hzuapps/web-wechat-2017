@@ -1,0 +1,35 @@
+/* pages/form/form.wxss */
+.text{
+  font-size:25px;
+  color:cornflowerblue;
+  padding: 5px;
+  font-weight:bold;
+}
+
+.viewclass{
+  font-size: 25px;
+  background-color:beige;
+}
+
+.textareaclass{
+  width:100%;
+  border: 2px solid pink;
+  font-size: 22px;
+  padding: 5px;  
+}
+
+.labelclass{
+  margin: 280px;
+}
+
+.inputclass{
+  border: 2px solid pink;
+  padding: 5px;
+  font-size: 22px;
+}
+
+.buttonclass{
+  margin: 5px;
+  font-size: 22px;
+  font-weight:bold;
+}

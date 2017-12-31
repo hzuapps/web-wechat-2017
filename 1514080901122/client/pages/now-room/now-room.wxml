@@ -1,0 +1,16 @@
+<!--pages/now-room/now-room.wxml-->
+<!-- 当前房间页面 -->
+<view>
+  <view class="room-info">
+    <view><text class="room-info-title">房间ID： R</text><text>{{roomID}}</text></view>
+    <view><text class="room-info-title">签到学号范围： </text><text>{{startNum}} ~ {{endNum}}</text></view>
+    <view><text class="room-info-title">限定时间: </text><text>{{limitTime}}</text></view>
+  </view>
+
+  <view class="btn-area">
+    <button class="weui-btn" type="primary" bindtap="showRes">签到结果</button>
+    <button class="weui-btn" type="warn" bindtap="quitRoom">退出房间</button>
+  </view>
+
+  <view class="warning"><text>(P.S:如果你是学生,退出房间等于取消本次签到)</text></view>
+</view>

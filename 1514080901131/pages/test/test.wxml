@@ -1,0 +1,5 @@
+<scroll-view class="images" scroll-y="true" style="height: 500px">
+ <view wx:for="{{list}}">
+ <image class="images"src="{{item.message}}"/>
+ </view>
+</scroll-view> 

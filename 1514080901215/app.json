@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/index/index",
+    "example/index",
+
+
+    "example/button/button",
+    "example/list/list",
+    "example/input/input",
+    "example/slider/slider",
+    "example/uploader/uploader",
+    "example/article/article",
+    "example/badge/badge",
+    "example/flex/flex",
+    "example/footer/footer",
+    "example/gallery/gallery",
+    "example/grid/grid",
+    "example/icons/icons",
+    "example/loadmore/loadmore",
+    "example/panel/panel",
+    "example/preview/preview",
+    "example/progress/progress",
+    "example/actionsheet/actionsheet",
+    "example/dialog/dialog",
+    "example/msg/msg",
+    "example/msg/msg_success",
+    "example/msg/msg_fail",
+    "example/picker/picker",
+    "example/toast/toast",
+    "example/navbar/navbar",
+    "example/tabbar/tabbar",
+    "example/searchbar/searchbar",
+
+    
+    "pages/putout/putout",
+    "pages/people/people"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "惠大互帮",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar":{
+    "color":"#ddd",
+    "selectedColor":"#63cbbf",
+    "borderStyle":"black",
+    "position":"bottom",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text": "主页",
+      "iconPath": "",
+      "selectedIconPath": ""
+    },{
+      "pagePath": "pages/putout/putout",
+      "text": "发布",
+      "iconPath":"",
+      "selectedIconPath":""
+    },{
+      "pagePath": "pages/people/people",
+      "text": "个人",
+      "iconPath": "",
+      "selectedIconPath": ""
+    }]
+    
+  }
+}

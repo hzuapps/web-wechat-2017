@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/kaishi/kaishi",
+    "pages/chakan/chakan"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "课堂笔记",
+    "navigationBarTextStyle":"black"
+  }
+}

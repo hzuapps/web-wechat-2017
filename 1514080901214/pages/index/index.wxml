@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class='page_header'>
+  <view class='page_header_text'>动态搞笑图</view>
+  <scroll-view class='page_body' scroll-y='true'>
+    <navigator  wx:for="{{dongtai_gif}}">
+      <view class='items'>
+          <view class='meta'>
+            <view class='title'>{{item.title}}</view>
+            <image class='img' src='{{item.img}}'></image>
+            <view class='time'>{{item.ct}}</view>
+            <view class='kong'></view>
+          </view>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>

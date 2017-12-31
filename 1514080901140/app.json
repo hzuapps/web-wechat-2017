@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/example/panel/panel",
+    "pages/example/searchbar/searchbar"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "高校电话本",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#009444",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"pages/picture/home1.png",
+        "selectedIconPath": "pages/picture/home2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/insert/insert",
+        "iconPath": "pages/picture/添加.png",
+        "selectedIconPath": "pages/picture/添加2.png",
+        "text": "添加"
+      }
+    ]
+  }
+}

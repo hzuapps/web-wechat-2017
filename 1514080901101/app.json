@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/merchant/merchant",
+    "pages/share/share"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "orange",
+    "navigationBarTitleText": "邻客通",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "orange",
+    "backgroundColor": "white",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/shouye.png",
+        "selectedIconPath": "image/shouyefill.png",
+        "text": "附近"
+      },
+      {
+        "pagePath": "pages/share/share",
+        "iconPath": "image/zuobiao.png",
+        "selectedIconPath": "image/zuobiaofill.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "image/yonghu.png",
+        "selectedIconPath": "image/yonghufill.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "array": [
+    {
+      "title": "通知1",
+      "iconTime":"../../image/buildtime.png",
+      "readerNum":10,
+      "questionNum": "1", 
+      "buildtime": "2017-12-3"
+    },
+    {
+      "title": "通知2",
+      "iconTime": "../../image/buildtime.png",
+      "readerNum": 0,
+      "questionNum": "1",
+      "buildtime": "2017-12-3"
+    },
+    {
+      "title": "通知3",
+      "iconTime": "../../image/buildtime.png",
+      "readerNum": 0,
+      "questionNum": "1",
+      "buildtime": "2017-12-3"
+    },
+    {
+      "title": "通知4",
+      "iconTime": "../../image/buildtime.png",
+      "readerNum": 0,
+      "questionNum": "0",
+      "buildtime": "2017-12-3"
+    },
+    {
+      "title": "通知5",
+      "iconTime": "../../image/buildtime.png",
+      "readerNum": 0,
+      "questionNum": "1",
+      "buildtime": "2017-12-3"
+    },{
+      "title": "通知6",
+      "iconTime": "../../image/buildtime.png",
+      "readerNum": 0,
+      "questionNum": "1",
+      "buildtime": "2017-12-3"
+    }   
+  ]
+}

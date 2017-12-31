@@ -1,0 +1,15 @@
+<!--pages/request/requset.wxml-->
+<view class='page_header'>
+  <view class='page_header_text'>段子</view>
+  <scroll-view class='page_body' scroll-y='true'>
+    <navigator  wx:for="{{duanzi}}">
+      <view class='items'>
+          <view class='meta'>
+            <view class='title'>{{item.title}}</view>
+            <view><text>{{item.text}}</text></view>
+            <view class='time'>{{item.ct}}</view>
+          </view>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>

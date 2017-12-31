@@ -1,0 +1,25 @@
+<!--pages/in_theaters/in_theaters.wxml-->
+<!--pages/top250/top250.wxml-->
+<!--index.wxml-->
+<view class='page_header'>
+  <view class='page_header_text'>{{title}}</view>
+  <scroll-view class='page_body' scroll-y='true'>
+    <navigator url='../movies/movies?id={{item.id}}' wx:for="{{movies}}">
+      <view class='items'>
+        <image class='img' src='{{item.images.small}}'></image>
+          <view class='meta'>
+            <view class='movie_name'>{{item.title}}</view>
+            <view class='movie_year'>{{item.year}}</view>
+            <view class='original_title'>{{item.original_title}}</view>
+            <text class="directors">导演: </text>
+            <text class='directors' wx:for='{{item.directors}}'>{{item.name}} </text>
+          </view>
+          <view class='rating'>
+            <text>{{item.rating.average}}</text>
+        </view>
+      </view>
+    </navigator>
+
+  </scroll-view>
+</view>
+

@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/sy/sy",
+    "pages/sh/sh"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "笑话精选",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar": {
+      "color": "#000000",
+      "selectedColor": "#009444",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页"
+        },
+        {
+          "pagePath": "pages/sy/sy",
+          "text": "1"
+        },
+        {
+          "pagePath": "pages/sh/sh",
+          "text": "2"
+        }
+      ]
+  }
+}

@@ -1,0 +1,16 @@
+<!--pages/form/form.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset" >
+<text class="text">这是一个form页面</text>
+<view class="viewclass">
+  <input type="text" name="input" placeholder="请输入文本框" value="{{input}}" bindinput='num1slength' class="inputclass"/>
+  <label class="labelclass">
+  {{num1s}}/140
+  </label>
+  <textarea name="textarea" placeholder="请输入文本域" value="{{textarea}}" bindinput="num2slength" class="textareaclass"></textarea> 
+   <label class="labelclass">
+  {{num2s}}/140
+   </label>
+   <button formType="submit" bindtap='submittap' type="primary" class="buttonclass">提交</button>
+   <button formType="reset" bindtap="resettap" type="primary" class="buttonclass">重置</button>
+</view>
+</form>

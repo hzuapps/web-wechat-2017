@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/find/find",
+    "pages/userInfo/userInfo",
+    "pages/book/chapter",
+    "pages/book/detail",
+    "pages/book/directory",
+    "pages/search/search"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "爱简书",
+    "navigationBarTextStyle":"black"
+  },
+ "tabBar": {
+  "selectedColor": "#000000",
+  "backgroundColor": "#FFFFFF",
+  "borderStyle": "black",
+  "position": "bottom",
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "书架",
+      "iconPath": "/images/首页.png",
+      "selectedIconPath": "/images/首页_fill.png"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "text": "发现",
+      "iconPath": "/images/发现.png",
+      "selectedIconPath": "/images/发现_fill.png"
+    },
+    {
+      "pagePath": "pages/userInfo/userInfo",
+      "text": "我的",
+      "iconPath": "/images/个人.png",
+      "selectedIconPath": "/images/个人_fill.png"
+    }
+  ]
+}
+}

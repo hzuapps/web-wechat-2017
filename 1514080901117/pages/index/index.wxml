@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="top">
+  <view class="mid">
+    <view> 
+    选择一个任务
+    </view>
+    <view class="font-size">
+    在接下来的25分钟，专心做这件事
+    </view> 
+  </view>
+  <view class="page">
+    <view class="page__bd">
+        <view class="weui-grids" style="margin-top: 30rpx">
+            <navigator url="../clock/clock" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/工作.png" />
+                    <view class="weui-grid__label">工作</view>
+            </navigator>
+            <navigator url="../clock/clock" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/学习.png" />
+                    <view class="weui-grid__label">学习</view>
+            </navigator>
+            <navigator url="../clock/clock" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/思考.png" />
+                    <view class="weui-grid__label">思考</view>
+            </navigator>
+            <navigator url="../clock/clock" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/写作.png" />
+                    <view class="weui-grid__label">写作</view>
+            </navigator>
+            <navigator url="../clock/clock" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/运动.png" />
+                    <view class="weui-grid__label">运动</view>
+            </navigator>
+            <navigator url="../clock/clock" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../images/阅读.png" />
+                    <view class="weui-grid__label">阅读</view>
+            </navigator>
+        </view>
+    </view>
+  </view>
+  
+  <view class="btnContainer" style="margin-top:18%">
+    <navigator url="../form/form">
+      <button class="weui-btn"  type="primary" size="mini">自定义任务</button>
+    </navigator>
+  </view>
+  
+
+  
+</view>

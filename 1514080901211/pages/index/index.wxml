@@ -1,0 +1,5 @@
+<view wx:for="{{result}}" wx:for-item="item">
+   
+   <view>{{index}}:{{item}}</view>
+    
+ </view>

@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/ldy/ldy",
+    "pages/logs/logs",
+    "pages/form/form"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "文字类游戏推荐",
+    "navigationBarTextStyle":"WHITE"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#009444",
+    "position":"top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+        
+      },
+      {
+        "pagePath": "pages/ldy/ldy",
+        "text": "力荐"
+        
+      },
+          {
+            "pagePath": "pages/form/form",
+            "text": "个人资料设置"
+          }
+    ]
+    
+  }}
+  

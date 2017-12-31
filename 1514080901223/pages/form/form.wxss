@@ -1,0 +1,10 @@
+/* pages/form/form.wxss */
+.page__hd {
+  font-size: 18px ;
+  color:whitesmoke;
+  text-align: center;
+   
+}
+.page__bd{
+ font-size: 15px; 
+}

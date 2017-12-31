@@ -1,0 +1,263 @@
+.card{
+background:#FFFFFF;
+height:8.3em;
+width:100%;
+flex-direction:column;
+border-bottom: 1px solid  #eee;
+top:2px;
+z-index:1;
+}
+.card:active{
+  background:#e6e6e6;
+}
+
+.up-information{
+  display:flex;
+  width:100%;
+  top:8px;
+
+  position: relative;
+
+}
+.up-information__left{
+  
+  display:flex;
+  width:48%;
+  position: relative;
+}
+.topLeft_direction{
+  display: flex;
+  position:relative;
+  left:3px;
+  z-index:2;
+}
+.up-information__middle{
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  left:5px;
+}
+.topRight_direction{
+  display: flex;
+}
+.up-information__right{
+  display:flex;
+  width:48%;
+  /*border:1px solid blue;*/
+  right:0;
+}
+
+.head{
+  display:block;
+  width:50px;
+  height:50px;
+  float:left;
+
+  border-radius: 50px;
+}
+.andv{
+  position: absolute;
+  width:15px;
+  height:15px;
+  bottom:0;
+  left:34px;
+}
+.name{
+ /* width:6em;*/
+  margin-left:2px;
+  color:#606060;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+} 
+.sex{
+  width:20px;
+  height:20px;
+  position:relative;
+  top:3px;
+  left: 4px;
+}
+.time{
+  font-size: 10px;
+  color:#B6B4B4;
+}
+.mode{
+  height:20px;
+  width:20px;
+  position:absolute;
+  top:3px;
+  right:88px;
+}
+.limit_mode{
+  height:20px;
+  width:20px;
+  position:absolute;
+  top:3px;
+  right:113px;
+}
+.integral-number{
+  position: absolute;
+  color:#FFAF00;
+  right:68px;
+  font-size: 15px;
+}
+
+.integral{
+  position:absolute;
+  width:18px;
+  height:18px;
+  right:48px;
+  top:3px;
+  margin-left:-3px;
+}
+.sex-limit__label{
+  position: absolute;
+  font-size:15px;
+  right:22px;
+  color:#606060;
+}
+.sex-limit__label_noshow{
+  display: none;
+}
+.sex-no_limit__label{
+  position: absolute;
+  font-size:15px;
+  right:5px;
+  color:#606060;
+}
+.sex-no_limit__label_noshow{
+  display: none
+}
+.sex-limit{
+  position: absolute;
+  width:19px;
+  height:19px;
+  right:2px;
+  top:3px;
+}
+.sex-limit_noshow{
+  display: none
+}
+.assignment-brief-information{
+  bottom:0;
+  height:25px;
+  width:100%;
+  position: relative;
+  top:0.5em;
+  display:flex;
+  justify-content: space-between;
+}
+.assignment-brief{
+  display:flex;
+  height:25px;
+  position:relative;
+  top:2px;
+}
+.assignment-brief__hd{
+  position: relative;
+  border: 1px solid #63cbbf;
+  border-radius: 4px;
+  background-color: #63cbbf;
+  width:45px;
+  height:18px;
+  line-height:18px;
+  text-align: center;
+  margin-left:10px;
+  margin-top:4px;
+}
+.assignment-brief__hd>text{
+  font-size:14px;
+  color:#FFFFFF;
+}
+.assignment-brief__bd{
+  font-size: 16px;
+  margin-left: 10px;
+  width:68px;
+}
+.assignment-brief__bd>text{
+  color:#3A3A3A;
+}
+.local{
+  display:flex;
+  position:relative;
+  right:4px;
+  height:25px;
+}
+.local__hd{
+  position: relative;
+  border: 1px solid #63cbbf;
+  border-radius: 4px;
+  background-color: #63cbbf;
+  width:45px;
+  height:18px;
+  line-height:18px;
+  text-align: center;
+  margin-left:10px;
+  margin-top:4px;
+}
+.local__hd>text{
+  font-size:14px;
+  color:#FFFFFF;
+}
+.local__bd{
+  margin-left: 10px;
+  font-size: 16px;
+  width:100px;
+}
+.local__bd>text{
+  color:#3A3A3A;
+}
+
+.brief{
+  display:flex;
+  position:relative;
+  top:1.5em;
+}
+.brief__hd{
+  position: relative;
+  border: 1px solid #63cbbf;
+  border-radius: 4px;
+  background-color: #63cbbf;
+  width:45px;
+  height:18px;
+  line-height:18px;
+  text-align: center;
+  margin-left:10px;
+  top:7px;
+}
+.brief__hd>text{
+  font-size:14px;
+  color:#FFFFFF;
+}
+.brief__bd{
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.brief__bd>text{
+
+  color:#3A3A3A;
+}
+.check-detail{
+  position:absolute;
+  width:61px;
+  top:8px;
+  height: 22px;
+  right:0;
+  bottom:0.7em;
+  font-size:12px;
+  color:#19C4B1;
+}
+.check-detail-turn:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #E7E6E6;
+}
+.assignment-output-turn:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #E7E6E6;
+}
+.assignment-output-border{
+  background-color: #FFF7BF;
+  border-bottom:1px solid #D9D9D9;
+  border-right:1px solid #D9D9D9;
+}

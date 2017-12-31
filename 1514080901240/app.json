@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/background-audio/background-audio",
+    "pages/logs/logs",
+    "pages/calendar/calendar",
+    "pages/new/new",
+    "pages/new/success/success"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#656e7f",
+    "navigationBarTitleText": "朝夕日历",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#1992F5",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "selectedIconPath": "images/tabbar/calendar_active.png",
+        "iconPath": "images/tabbar/calendar.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/tabbar/mine_active.png",
+        "iconPath": "images/tabbar/mine.png",
+        "pagePath": "pages/new/new",
+        "text": "我的"
+      },
+      {
+        "selectedIconPath": "images/tabbar/calendar_active.png",
+        "iconPath": "images/tabbar/calendar.png",
+        "pagePath": "pages/calendar/calendar",
+        "text": "日历"
+      }
+    ]
+  }
+}

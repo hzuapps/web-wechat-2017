@@ -1,0 +1,7 @@
+/* pages/find/find.wxss */
+.book-tag{
+  height: 50px;
+  background-color: #eee;
+  border-bottom:1px solid #bbb;
+  padding:20px;
+}

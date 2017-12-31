@@ -1,0 +1,2 @@
+<!--pages/index/ldy.wxml-->
+<text>{{page}}.wxml</text>

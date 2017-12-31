@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/a/a",
+    "pages/b/b",
+    "pages/page/look",
+    "pages/page/what",
+    "pages/news/news",
+    "pages/news/news2",
+    "pages/news/news3",
+    "pages/page/wait"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "BLUE",
+    "selectedColor": "GREEN",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/a/a",
+        "text": "what's new"
+      },
+      {
+        "pagePath":"pages/b/b",
+        "text":"建议或投稿"
+      }
+    ]
+  }
+}

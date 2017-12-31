@@ -1,0 +1,7 @@
+<view wx:for-items="{{result}}">
+  <view>班级{{item.class}}  </view>
+
+    <view>学号{{item.ID}}</view>
+
+      <view>姓名{{item.name}}</view>
+</view>

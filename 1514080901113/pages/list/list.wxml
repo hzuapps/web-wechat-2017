@@ -1,0 +1,37 @@
+<!--pages/test/test.wxml-->
+<!--scroll-view scroll-y style="height:0.5px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+</scroll-view-->
+<!--block class="{{result.issueList}}">
+    <button class="weui-btn" type="primary"  bindtap="show">更新数据并显示</button-->
+   <!--view wx:for="{{eatData}}" >{{item.name}}</view-->
+<!--  <block class="{{item.itemList}}">
+     <image style="width:100%;height:200px;" src="{{item.data.cover.feed}}"></image>
+  </block>-->
+  <!--
+<view wx:for="{{result}}" >
+    <text>{{remark}}</text>
+    <text>{{item.detail}}</text>
+</view>
+-->
+ 
+<!--这里显示的是一个一行的表-->
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">账目名称</view>
+    <view class="th">账目数目</view>
+    <view class="th">类型</view>
+  </view>
+  <!--这里显示的是另一个列表-->
+  <block wx:for="{{result}}">
+    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+      <view class="td">{{item.remarks}}</view>
+      <view class="td">{{item.amount}}</view>
+      <view class="td">{{item.radio}}</view>
+    </view>
+    <view class="tr" wx:else>
+      <view class="td">{{item.remarks}}</view>
+      <view class="td">{{item.amount}}</view>
+      <view class="td">{{item.radio}}</view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,32 @@
+<!--pages/check-in/check-in.wxml-->
+<!-- 学生签到页 -->
+
+<view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">签到学号</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" name="checkInNum" placeholder="签到学号"/>
+        </view>
+    </view>
+    
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">房间号码</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" name="checkInRoomID" placeholder="房间号码"/>
+        </view>
+    </view>
+
+    <view class="warning"><text>{{warning}}</text></view>
+
+    <view class="btn-area">
+      <button class="weui-btn" type="primary" formType="submit">签到</button>
+      <button class="weui-btn" type="default" formType="reset">重置</button>
+    </view>
+  </form>
+</view>

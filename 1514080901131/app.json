@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/http/http",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "blackf",
+    "navigationBarTitleText": "运动打卡",
+    "navigationBarTextStyle":"white"
+  }
+}

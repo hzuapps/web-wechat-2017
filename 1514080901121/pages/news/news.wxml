@@ -1,0 +1,4 @@
+<!--pages/news/news.wxml-->
+<image src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=6a30f0064334970a537e187df4a3baad/d788d43f8794a4c2bffddf020cf41bd5ad6e3938.jpg"
+style=""></image>
+<text >埃菲尔铁塔（法语：La Tour Eiffel）是一座于1889年建成位于法国巴黎战神广场上的镂空结构铁塔，高300米，天线高24米，总高324米。埃菲尔铁塔得名于设计它的桥梁工程师居斯塔夫·埃菲尔。铁塔设计新颖独特，是世界建筑史上的技术杰作，因而成为法国和巴黎的一个重要景点和突出标志。</text>

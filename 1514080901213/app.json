@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/new_index/new_index",
+    "pages/tieshi/tieshi"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3CB371",
+    "navigationBarTitleText": "约会小助攻",
+    "navigationBarTextStyle":"white"
+  }
+}

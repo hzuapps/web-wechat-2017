@@ -1,0 +1,28 @@
+.left{
+ background-color: lightblue;
+ margin-top: 5px;
+}
+
+.right{
+  background-color: lightgreen;
+   margin-left: 5px; 
+}
+
+.par{
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.par1{
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  justify-content: flex-end;
+}
+
+.test{
+  background-color: lightgrey;
+}
