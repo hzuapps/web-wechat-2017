@@ -1,0 +1,6 @@
+/* pages/live/live.wxss */
+.live{
+  text-align: center;
+  line-height: 800rpx;
+  color:#ccc;
+}

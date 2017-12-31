@@ -1,27 +1,35 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/scroll/scroll",
-    "pages/logs/logs"
+    "pages/course/course",
+    "pages/communication/communication",
+    "pages/order/order",
+    "pages/live/live",
+    "pages/appreciate/appreciate",
+    "pages/create/create",
+    "pages/collect/collect"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "社区话题讨论",
+    "navigationBarTitleText": "Finger",
     "navigationBarTextStyle":"white"
   },
-  "tabBar": {
-    "color": "#000000",
-    "selectedColor": "#009444",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/scroll/scroll",
-        "text": "话题"
-      }
-    ]
+  "tabBar":{
+    "color":"black",
+    "selectedColor":"green",
+    "borderStyle":"white",
+    "backgroundColor":"#ccc",
+    "list":[
+    {
+      "pagePath":"pages/course/course",
+      "iconPath":"/pages/images/course.png",
+      "text":"课程"
+    },
+    {
+      "pagePath":"pages/communication/communication",
+      "iconPath":"/pages/images/communication.png",
+      "text": "交流"
+    }]
   }
 }
+

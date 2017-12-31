@@ -1,0 +1,3 @@
+<!--pages/collect/collect.wxml-->
+<view class="live">呀，这里什么都没有</view>
+<button bindtap="purchase">挑选课程</button>

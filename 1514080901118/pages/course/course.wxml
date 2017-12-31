@@ -1,0 +1,33 @@
+<view class="page">
+    <view class="page__bd">
+                <view class="weui-search-bar__box">
+                    <icon  class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索课程，曲谱，用户等" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />   
+                    </view>          
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>  
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<block>音乐教学
+<view class="right"style="font-size: 13px;color: #888888;">| 让兴趣从这里出发</view>
+</block>
+    
+        <view class="weui-grids">
+            <block wx:for="{{gridData}}" wx:key="*this">
+                <navigator url="{{item.route}}" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="{{item.heading}}" />
+                    <view class=".weui-grid__label">{{item.name}}</view>
+                </navigator>
+            </block>
+            
+        </view>
+</view>
