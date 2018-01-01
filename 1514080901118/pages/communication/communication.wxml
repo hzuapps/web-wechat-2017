@@ -1,0 +1,90 @@
+<view id="adduser">  
+    <form bindsubmit="formSubmit" bindreset="formReset">  
+         
+        
+        <view class="section section_gap">  
+            <view class="section__title">爱好:</view>  
+            <view class='form-group'>  
+                <checkbox-group name="hobby">  
+                    <label><checkbox value="羽毛球"/>吉他</label>  
+                    <label><checkbox value="游泳"/>尤克里里</label>  
+                    <label><checkbox value="其他"/>其他</label> 
+                </checkbox-group>  
+            </view>  
+        </view>  
+          
+        <view class="section section_gap">  
+            <view class="section__title">是否匿名:</view>  
+            <view class='form-group'>  
+                 <switch name="isshow"/>  
+            </view>  
+        </view>  
+       
+     
+  
+     <!-- 黑框提示并消失 -->  
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">  
+        {{notice_str}}  
+    </toast>  
+    <!-- 确认框 及 提示框 -->  
+    <view class="page__bd">  
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">  
+            确认提交么？  
+        </modal>  
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">  
+            <view> 提示 </view>  
+            <view> 清空成功 </view>  
+        </modal>  
+    </view>  
+   
+    <view class="page__bd">
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+        <view class="weui-cells__title">主题</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入主题" />
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">评论区</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入评论" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+
+<view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">地区</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
+                        <view class="weui-select weui-select_in-select-after">{{countries[countryIndex]}}</view>
+                    </picker>
+                </view>
+            </view>
+     
+
+        <checkbox-group bindchange="bindAgreeChange">
+            <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                    <view class="weui-agree__checkbox-icon">
+                        <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                    </view>
+                    阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+                </view>
+            </label>
+        </checkbox-group>
+    </view>
+     <view class="section btn-area">  
+            <button formType="submit">提交</button>  
+            <button formType="reset">清空</button>  
+        </view>  
+     </form>
+</view>      

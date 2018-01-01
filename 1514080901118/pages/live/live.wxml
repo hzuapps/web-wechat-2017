@@ -1,0 +1,7 @@
+<!--pages/live/live.wxml-->
+<view class="live">呀，这里什么都没有</view>
+
+<button bindtap="purchase">前去购买</button>
+
+
+

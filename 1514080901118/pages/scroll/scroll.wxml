@@ -20,15 +20,18 @@
   <view class="weui-panel">
     <view class="weui-panel__hd">话题</view>
       <scroll-view scroll-y  style="height: 100vh">
-        <view wx:for="{{list}}" wx:for-item="lists">            
+        <view wx:for="{{title}}" wx:for-item="item" wx:key="id">                       
             <view class="weui-panel__bd">
                 <view class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">{{lists.title}}</view>
-                    <view class="weui-media-box__desc">{{lists.note}}</view>
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{item.title}}</view>
+                    <view class="weui-media-box__desc">{{item.note}}</view>
                     <view class="weui-media-box__info">
-                        <view class="weui-media-box__info__meta">{{lists.time}}</view>
+                        <view class="weui-media-box__info__meta">{{item.time}}</view>
+                        
                     </view>
+                    
                 </view>
+                
             </view>         
         </view>
         <view class="page__bd">

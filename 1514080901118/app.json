@@ -1,5 +1,36 @@
 {
   "pages":[
+    "pages/course/course",
+    "pages/communication/communication",
+    "pages/order/order",
+    "pages/live/live",
+    "pages/appreciate/appreciate",
+    "pages/create/create",
+    "pages/collect/collect"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Finger",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color":"black",
+    "selectedColor":"green",
+    "borderStyle":"white",
+    "backgroundColor":"#ccc",
+    "list":[
+    {
+      "pagePath":"pages/course/course",
+      "iconPath":"/pages/images/course.png",
+      "text":"课程"
+    },
+    {
+      "pagePath":"pages/communication/communication",
+      "iconPath":"/pages/images/communication.png",
+      "text": "交流"
+    }]
+=======
     "pages/index/index",
     "pages/logs/logs",
     "pages/form/form"
@@ -25,3 +56,4 @@
     ]
   }
 }
+
