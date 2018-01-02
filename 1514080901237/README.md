@@ -1,7 +1,5 @@
 ### 介绍
 这是一个简单的一个计划清单小程序，可以在微信上搜索《简易备忘录》便可以找到。  
-![预览小程序二维码](doc/img/picture.jpg)  
-扫码预览本小程序哦 ↑
 
 ### 技术支持
 1. 参考微信小程序文档 https://mp.weixin.qq.com/debug/wxadoc/dev/api/  
