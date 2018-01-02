@@ -14,5 +14,5 @@
 - [ ] 开发后端程序实现云储存功能
 
 ### 效果
-小程序效果图(doc/img/picture1.png)
-预览小程序二维码(doc/img/picture2.png)
+- [小程序效果图](doc/img/picture1.png)
+- [预览小程序二维码](doc/img/picture2.png)
