@@ -1,6 +1,8 @@
 <!--index.wxml-->
 <view class="container">
-
+<view>
+<button type="default" style="background:#353535">重要备忘录</button>
+</view>
   <view class="list">
     <block wx:for="{{list}}" wx:for-item="vo" wx:key="id">
       <scroll-view class="view-body" scroll-x="true" scroll-left="{{left}}">
@@ -37,3 +39,4 @@
   </view>
 
 </view>
+

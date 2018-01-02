@@ -72,7 +72,7 @@ Page({
   onShow:function(){
     console.log('onShow')
     var firstData = {index:0,list:[
-      {id:1,title:'欢迎您 使用简约云清单 ^_^',type:'gn'},
+      {id:1,title:'欢迎您 使用简易备忘录 ^_^',type:'gn'},
       {id:2,title:'向左划我,可以将我移除/置顶/完成',type:'bu'},
       {id:3,title:'点击我可以进入清单详情',type:'og'},
       {id:4,title:'我是已完成的记录',type:'rd',finish:'fn'},
