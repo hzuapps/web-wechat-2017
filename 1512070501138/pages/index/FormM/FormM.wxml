@@ -1,0 +1,64 @@
+<!--pages/index/Component/FormM/FormM.wxml-->
+<view class="viewTitle">
+    <text class="view-Name">form表单</text>
+    <view class="lineView"></view>
+</view>
+<!--这里用form，name=“nameName1”可以作为form的属性进行 
+（e.detail.value.nameName1）调用,
+form自带有提交和重置按钮，会自动获取表单中所有控件值的改变-->
+<form class="page__bd" bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section section_gap">
+      <view class="section__title">switch开关</view>
+      <switch name="switch"/>
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">slider滑块</view>
+      <slider value="50" name="slider" show-value ></slider>
+    </view>
+    <view class="section">
+      <view class="section__title">input输入框</view>
+      <input name="input" style="background-color: #FFFFFF" placeholder="请在这里输入" />
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">radio单选</view>
+      <radio-group name="radio-group">
+        <label><radio value="radio1"/>radio1</label>
+        <label><radio value="radio2"/>radio2</label>
+      </radio-group>
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">checkbox多选</view>
+      <checkbox-group name="checkbox">
+        <label><checkbox value="checkbox1"/>checkbox1</label>
+        <label><checkbox value="checkbox2"/>checkbox2</label>
+      </checkbox-group>
+    </view>
+    <view class="section">
+      <view class="section__title">地区选择器</view>
+      <picker name="areaPicker" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          当前选择：{{array[index]}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">时间选择器</view>
+      <picker name="timePicker" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+        <view class="picker">
+          当前选择: {{time}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">日期选择器</view>
+      <picker name="datePicker" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          当前选择: {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="btn-area">
+      <button form-type="submit">Submit提交</button>
+      <button form-type="reset">Reset重置</button>
+    </view>
+  </form>

@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="wrapper">
+  <view class="page-body">
+    <view class="page-body-wrapper">
+
+      <form bindsubmit="openLocation">
+        <view class="page-body-form">
+
+            <text class="page-body-form-key">经度</text>
+            <input class="page-body-form-value" type="text" value="{{location.longitude}}" name="longitude"></input>
+
+            <text class="page-body-form-key">纬度</text>
+            <input class="page-body-form-value" type="text"  value="{{location.latitude}}" name="latitude"></input>
+
+
+            <text class="page-body-form-key">位置名称</text>
+            <input class="page-body-form-value" type="text"  value="总部基地二区" name="name"></input>
+
+
+            <text class="page-body-form-key">详细位置</text>
+            <input class="page-body-form-value" type="text"  value="浙江大学滨海产业技术研究院" name="address"></input>
+
+        </view>
+
+        <view class="page-body-buttons">
+          <button class="page-body-button" type="primary" bindtap="getLocation">获取位置</button>
+          <button class="page-body-button" type="primary" formType="submit">查看位置</button>
+        </view>
+
+      </form>
+    </view>
+  </view>
+</view>

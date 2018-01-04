@@ -1,6 +1,9 @@
 {
   "pages": [
+    
     "pages/index/index",
+    "pages/map/map",
+    "pages/index/FormM/FormM",
     "pages/logs/logs",
     "example/index",
     "pages/demo/demo",
@@ -56,7 +59,7 @@
       {
         "selectedIconPath": "images/搜索.png",
         "iconPath": "images/搜索.png",
-        "pagePath": "example/tabbar/tabbar",
+        "pagePath":"pages/map/map",
         "text": "搜索"
       }
     ]
