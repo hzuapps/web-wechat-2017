@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index", 
+    "pages/setting/setting",
+    "pages/shijian/shijian",
+    "pages/detail/detail",
+    "pages/more/more"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#E14848",
+    "navigationBarTitleText": "小天气",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/weather.png",
+        "selectedIconPath": "images/weather.png",
+        "text": "天气"
+      },
+      {
+        "pagePath": "pages/shijian/shijian",
+        "iconPath": "images/fav-round.png",
+        "selectedIconPath": "images/fav-round.png",
+        "text": "提醒"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "选择",
+        "iconPath": "images/setting.png",
+        "selectedIconPath": "images/setting.png"
+      }]
+      }
+}
