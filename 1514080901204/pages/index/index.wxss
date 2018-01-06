@@ -55,3 +55,82 @@
     line-height: 2.3em;
     color: #cfcfcf;
 }
+
+
+/*底*/
+.downView{
+    width: 100%;
+    height: 1250rpx;
+    background: cornflowerblue;
+    margin: 0rpx;
+    text-align: center;
+}
+
+/*获胜次数*/
+.winNum{
+    padding-top: 40rpx;
+    display: block;
+    font-size: 30rpx;  
+    color: #363527;
+    font-weight:500;
+}
+
+/*展示出拳结果*/
+.showView{
+    display: flex;  
+    width: 100%;
+    margin-top:30rpx;
+    height: 200rpx;
+}
+
+.gesturesImgL{
+    height: 180rpx;
+    width: 180rpx;
+    margin-left:80rpx;
+}
+
+.gesturesImgR{
+    height: 180rpx;
+    width: 180rpx;
+    margin-right:80rpx;
+}
+
+.winOrLost{
+    color: moccasin; 
+    flex:1;
+    font-size: 30rpx;
+    margin-top:75rpx; 
+}
+
+/*用户出拳*/
+.chooseForUserView{
+    margin:40rpx; 
+    height: 800rpx;
+    background: white;
+    text-align: center;
+}
+
+.choose-V{
+    display: flex;
+    margin-top: 40rpx;
+}
+
+.choose-view{  
+    flex: 1;
+    content:none !important;
+    height: 140rpx;
+    width: 140rpx; 
+    border:1px solid white;
+}  
+
+.choose-image{
+    height: 160rpx;
+    width: 160rpx;
+    border-radius:80rpx;
+}
+
+/*再来*/
+.againBtn{
+    margin:80rpx; 
+    background: #FAE738;
+}
