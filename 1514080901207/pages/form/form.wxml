@@ -1,40 +1,36 @@
-<form bindsubmit="formSubmit" bindreset="formReset">  
- <view>选择类别:</view>  
-  <view class="section section_gap">  
-    <radio-group name="radio-group">  
-      <label><radio value="radio1"/>爱情</label>  
-      <label><radio value="radio2"/>事业</label>  
-      <label><radio value="radio3"/>友情</label>  
-      <label><radio value="radio4"/>责任</label>  
-      <label><radio value="radio5"/>前途</label>  
-    </radio-group>  
-  </view>  
-  
- <text class="txt">我的姓名：</text>  
-  <view class="section">  
-    <input name="input" />  
-  </view>  
-   
-  <text>我的头衔：</text>  
-  <view class="section">  
-    <input name="input"/>  
-  </view>  
-  
-<text class="txt">介绍一下我自己：</text>   
-<view class="section1">  
-  <textarea placeholder="" focus="{{focus}}" />  
-</view>  
-  
-  
-  
-  <text class="txt">需要支付：</text>  
-  <view class="section" type="number">  
-    <input name="input" placeholder="0.01" />  
-  </view>  
-  
-  
-  
-  <view class="btn-area">  
-    <button formType="submit" style="background:#ff9900">提交</button>  
-  </view>  
-</form>  
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <view class="page__title">发布</view>
+        <view class="page__desc">表单输入</view>
+    </view>
+    <view class="page__bd">
+      <form bindsubmit='onSubmit'>
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+
+        <view class="weui-cells__title">主题</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="text" 
+                    value='{{text}}' placeholder="请输入文本" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">描述</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="area" placeholder="请输入文本" style="height: 3.3em" value='{{area}}' bindinput='onChange'/>
+                    <view class="weui-textarea-counter">{{count}}/200</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+        </view>
+      </form>
+    </view>
+</view>
