@@ -2,7 +2,7 @@
 ## 小程序名称 ：剪刀石头布
  
   ## 小程序二维码（发布版）
-  ![image](https://github.com/sunlightcold/images/raw/master/img/小程序二维码.jpg)
+  ![image](https://github.com/adcGG/images/raw/master/img/二维码.jpg)
   
   ## 小程序创意说明
   
