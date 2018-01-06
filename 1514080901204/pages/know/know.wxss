@@ -1,0 +1,12 @@
+/* pages/know/know.wxss */
+.atitle
+{
+  color: lightpink;
+  font-weight:  800;
+  font-size: 30px;
+}
+.article
+{
+  color: black;
+  margin: 5%;
+}
