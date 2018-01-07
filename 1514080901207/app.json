@@ -1,39 +1,35 @@
 {
-  "pages":[
-    "pages/article/article",
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "example/index",
+    "example/navbar/navbar",
+    "example/demo/scrollView",
+    "example/form/form",
+    "example/involved/involved"
   ],
-  
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+  "window": {
+    "navigationBarTextStyle": "black",
     "navigationBarTitleText": "惠州学院校友圈",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
   },
-"tabBar": {
-  "selectedColor": "#dddddd",
-  "color": "#3cc51f",
-  "backgroundColor": "#ffffff",
-  "list": [
-    {
-      "text": "登录",
-      "pagePath": "pages/index/index",
-      "iconPath": "/pages/images/icon_footer.png",
-      "selectedIconPath": "/pages/images/icon_footer.png"
-    },
-    {
-      "text": "主页",
-      "pagePath": "pages/article/article",
-      "iconPath": "/pages/images/icon_footer.png",
-      "selectedIconPath": "/pages/images/icon_footer.png"
-    },
-    {
-      "text": "日志",
-      "pagePath": "pages/logs/logs",
-      "iconPath": "/pages/images/icon_footer.png",
-      "selectedIconPath": "/pages/images/icon_footer.png"
-    }
-  ]
-}
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "selectedColor":"#1296db",
+    "list": [{
+      "pagePath": "example/index",
+      "text": "新建",
+      "iconPath": "images/1.png",
+      "selectedIconPath": "images/1-d.png"
+    },{
+      "pagePath": "example/involved/involved",
+      "text": "我的",
+      "iconPath": "images/2.png",
+      "selectedIconPath": "images/2-d.png"
+    }]
+  }
 }
