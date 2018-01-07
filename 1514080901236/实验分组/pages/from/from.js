@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    result: {},
     text: 'hello',
     area: 'world',
     count: 'world'.length
@@ -14,38 +15,32 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getDate('http://baobab.wandoujia.com/api/v2/feed?num=2');
+  },
+  getDate: function (URL) {
     var that = this;
-    wx.getStorage({
-      key: 'input',
-      success: function (res) {
-        console.log(res.data.area.length)
-
-        that.setData({
-          text: res.data.text,
-          area: res.data.area,
-          count: res.data.area.length
-        })
-      }
-    })
-    // 从服务器取回来 JSON
+    // 申请一个网络请求
     wx.request({
-      url: 'https://infoaas.com/data/hzc.json',
-      //仅为示例，并非真实的接口地址
-      data: {},
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
+      url: URL,
+      method: 'GET',
+      //添加data
+      // data: {
+      //   x: '',
+      //   y: ''
+      //   },
+      //添加头信息
+      // header: {
+      //   'Content-Type': 'application/json'
+      // },
+      // 请求成功的回调
       success: function (res) {
-        console.log(res.data)
-        /*
         that.setData({
-          hasError: true,
-          errorText: res.data.name + ',' + res.data.teacher + ' ' + res.data.year
-        })*/
+          result: res.data
+        })
+        console.log(res.data)
       }
     })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -149,4 +144,18 @@ Page({
       count: value.length
     })
   }
+,
+  //request.js 
+  /*makeRequest: function() {
+    var self = this
+    wx.request({
+      url: 'https://www.v2ex.com/api/topics/show.json?id=520',
+      data: {
+        noncestr: Date.now()
+      },
+      success: function (result) {
+        console.log('request success', result)
+      }
+    })
+  }*/
 })

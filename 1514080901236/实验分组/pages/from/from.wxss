@@ -19,3 +19,7 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.btn-area{
+  margin-top: 20px;
+}
