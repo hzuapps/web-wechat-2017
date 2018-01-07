@@ -49,6 +49,11 @@ Page({
       url: '../form/form',
     })
   },
+  jump_five: function () {
+    wx.navigateTo({
+      url: '../five/five',
+    })
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo

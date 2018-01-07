@@ -8,7 +8,9 @@
     </block>
   </view>
 </view>
-<button>空的</button>
+
+
+<button class="chuangjian" type="primary" bindtap="jump_five" style="margin-top: 15px">第五次实验内容</button>
 <button class="chuangjian" type="primary" bindtap="jump_form" style="margin-top: 15px">form</button>
 <view class="page">
     <view class="page__hd">
