@@ -1,0 +1,36 @@
+<!--pages/search/search.wxml-->
+<view class='page_header'>
+  <input class='page_header_text' placeholder='输入关键词' auto-focus           
+  bindchange='search'></input>
+</view>
+<scroll-view class='page_body' scroll-y='true'>
+    <navigator url='../movies/movies?id={{item.id}}' wx:for="{{movies}}">
+      <view class='items'>
+         <image class='img' src='{{item.images.small}}'></image>
+          <view class='meta'>
+            <view class='movie_name'>{{item.title}}</view>
+            <view class='movie_year'>{{item.year}}</view>
+            <view class='original_title'>{{item.original_title}}</view>
+            <text class="directors">导演: </text>
+            <text class='directors' wx:for='{{item.directors}}'>{{item.name}} </text>
+          </view>
+          <view class='rating'>
+            <text>{{item.rating.average}}</text>
+        </view>
+      </view>
+    </navigator>
+</scroll-view>
+
+
+<view class="page">
+    <view class="page__bd page__bd_spacing">
+          <view class="weui-flex__item">
+            <view class="weiui-flex__item"><view bindtap="piaofang" class="placeholder_piaofang">票房排行榜</view></view>
+            <navigator><view class="weui-flex__item"><view bindtap="ri" class="placeholder_danri">单日票房</view></view></navigator>
+            <navigator><view class="weui-flex__item"><view bindtap="zhou" class="placeholder_danzhou">单周票房</view></view></navigator>
+            <navigator><view class="weui-flex__item"><view bindtap="zhoumo" class="placeholder_zhoumo">周末票房</view></view></navigator>
+            <navigator><view class="weui-flex__item"><view bindtap="yue" class="placeholder_danyue">单月票房</view></view></navigator>       
+            </view>
+    </view>
+</view>
+  

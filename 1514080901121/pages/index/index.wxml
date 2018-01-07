@@ -1,0 +1,26 @@
+<view style="text-align:center">每日推荐</view>
+<swiper class="swiper" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
+      <text >{{item.text}}</text> 
+      <image src="{{item.url}}" class="slide-image" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+ <view id="white" class="scroll-view-item bc_white" style="background:white; height: 50px;opacity:0.0"></view>
+<view class="section">
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view type="default" style="left:10px">日期选择器</view>
+        <view class="picker" style="text-align:center">
+       {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
+    </view>
+  </picker>
+</view>
+
+<view class="btn-area">
+  <button style="background:lightblue;opacity:1" bindtap="jump">今日有咩睇？
+  </button>
+</view>

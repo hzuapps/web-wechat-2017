@@ -1,0 +1,6 @@
+/* pages/morebook/morebook.wxss */
+
+/*书籍种类封面图片*/
+.board {
+ height: 100%;
+}

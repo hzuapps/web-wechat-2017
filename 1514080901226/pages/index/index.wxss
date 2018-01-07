@@ -1,0 +1,78 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+ 
+  border-radius: 50%;
+}
+.classrun {
+  width: 650rpx;
+  height: 100rpx;
+}
+.classhot {
+  width: 650rpx;
+  height: 100rpx;
+  padding-top:3px;
+  margin: 0;
+}
+.userinfo-nickname {
+  color: #aaa;
+  color: black;
+}
+/*背景*/
+ page{
+     background-image:url("http://pic.qiantucdn.com/58pic/19/44/92/56d66e5fe2ad7_1024.jpg");
+     background-repeat:no-repeat;
+ 
+     background-size: 650px 800px;
+     opacity: 1;
+    }
+.weui-footer{
+     margin-bottom: 50px;
+ }
+ .weui-footer_fixed-bottom{
+     margin-bottom: 0;
+ }
+
+.usermotto
+{
+  margin-top: 100px;
+}
+
+.scroll-view_H{  
+  white-space: nowrap; 
+
+}  
+.item
+{
+  border:1px solid black;
+}
+.scroll-view-item{  
+  height: 200px;  
+}  
+.scroll-view-item_H{  
+  display: inline-block;  
+  width: 100%;  
+  height: 20px;  
+}  
+#green{  
+    background:green;  
+}  
+#red{  
+    background:red;  
+}  
+#yellow{  
+    background:yellow;  
+}  
+#blue{  
+    background:blue;  
+}  

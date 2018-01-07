@@ -1,0 +1,6 @@
+<view class="viewClass">这是一个可滚动界面设计</view>
+<scroll-view class="scrollview" scroll-y="true" scroll-top='100' scroll-with-animation="true" >
+  <view wx:for="{{images}}">
+    <image src="../image/picture{{item}}.jpg"></image>
+  </view>
+</scroll-view>

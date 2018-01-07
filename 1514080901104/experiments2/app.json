@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ItBook",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#818181",
+    "backgroundColor": "white",
+    "selectedColor": "green",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "搜索",
+        "iconPath": "/images/search.png",
+        "selectedIconPath": "/images/search_s.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "精选",
+        "iconPath": "/images/book.png",
+        "selectedIconPath": "/images/book_s.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我",
+        "iconPath": "/images/me.png",
+        "selectedIconPath": "/images/me_s.png"
+      }
+    ]
+  }
+}

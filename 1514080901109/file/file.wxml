@@ -1,0 +1,3 @@
+  <navigator url='' wx:for="{{List}}" wx:key="id" class="weui-media-box_content" hover-class="weui-cell_active">
+           <view class='weui-media-box_content_text'><image class='weui-media-box_content_imgage' src="/images/write.png" />{{item.text}}</view>
+        </navigator>

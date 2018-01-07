@@ -1,0 +1,17 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/blank/blank",
+    "pages/other/other",
+    "pages/photo/photo",
+    "pages/shangchuan/shangchuan"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "GraffitI",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": t

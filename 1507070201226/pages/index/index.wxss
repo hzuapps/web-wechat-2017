@@ -1,0 +1,19 @@
+/**index.wxss**/
+.section{
+  color:red,
+}
+.title{
+  padding: 100px 50px,
+}
+.image{
+  clear: both;
+  display:block;
+  margin:atuo;
+  margin-top:100rpx;
+}
+.picker{
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+}

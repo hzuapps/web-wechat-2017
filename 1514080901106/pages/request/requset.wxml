@@ -1,0 +1,5 @@
+<!--pages/request/requset.wxml-->
+<button class="btn" bindtap="getMore">+</button>
+<block wx:for="{{show}}">
+  <view>{{item}}</view>
+</block>

@@ -1,0 +1,56 @@
+/* pages/test/test.wxss */
+.title{  
+    height: 30px;  
+    text-align: center;  
+}  
+.scroll_view_vertical{  
+    height: 50%;  
+    margin-bottom: 20px;  
+    background-color: ghostwhite;  
+}  
+.scroll_view_horizotal{  
+    height: 50px;  
+    background-color: whitesmoke;  
+}  
+.item{  
+    height: 50px;  
+}  
+page {  
+  display: block;  
+  min-height: 100%;  
+background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514421775&di=b301c1e5cee5ad157672114727a06360&imgtype=jpg&er=1&src=http%3A%2F%2Fimg4q.duitang.com%2Fuploads%2Fitem%2F201505%2F30%2F20150530031139_ukUJa.jpeg'); 
+}
+
+
+
+
+.table {
+  border: 0px solid darkgray;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+}
+.td {
+    width:40%;
+    justify-content: center;
+    text-align: center;
+}
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.th {
+  width: 40%;
+  justify-content: center;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}

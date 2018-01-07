@@ -1,0 +1,5 @@
+<!--pages/comp/view.wxml-->
+<view class="title">api测试</view>
+<button button type="primary" bindtap="listenerBtnOpenVideo">打开视频</button>
+<!--默认视频组件是隐藏的-->
+<video src="{{videoSource}}" hidden="{{videoHidden}}" style="width: 100%; height: 100%"/>

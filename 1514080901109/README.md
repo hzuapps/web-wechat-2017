@@ -1,0 +1,16 @@
+##小程序名称
+Fnote便签
+##小程序二维码
+ ![image](https://github.com/Hfenru/web-wechat-2017/tree/master/1514080901109/NOTE/gh_72b5e442f2b0_258.jpg)
+备忘录属于个人未开发项目，暂时不能通过审核，修改后再次进行审核中。
+##小程序创意说明
+Fnote便签可以方便记录脑点子，便签，随笔，写心情等，为你的每一天增添色彩
+##小程序页面设计
+页面1：通过点击右下角按钮进入index页面添加便签等，附有时间，主要利用scroll-view以及wxss样式进行排版,通过设置id的方法标识跳转，在要跳转的item处设置个id同时给当前的id赋值上对应的key值。
+页面2：输入内容，可进行编辑，主要组件是textarea以及button，点击按钮会触发相应绑定的事件，点击确定会判断内容是否为空，点击取消则直接返回，长按进行删除。获取设置的id值，通过设置全局对象的方式来传递数值。
+##小程序主要界面截图
+页面1
+![image](https://github.com/Hfenru/web-wechat-2017/tree/master/1514080901109/NOTE/index.jpg)
+页面2
+![image](https://github.com/Hfenru/web-wechat-2017/tree/master/1514080901109/NOTE/add.jpg)
+![image](https://github.com/Hfenru/web-wechat-2017/tree/master/1514080901109/NOTE/del.jpg)

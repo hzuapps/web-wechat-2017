@@ -1,0 +1,11 @@
+<view wx:for-items="{{result}}">
+  <!--index默认为下标，item为每项-->
+  <view>第{{index}}条数据</view>
+ 
+     <view>姓名{{item.NAME}}</view>
+      
+       <view>学号{{item.ID}}</view>
+       
+            <view>班级{{item.CLASS}}  </view>
+             <view>-----------------</view>
+</view>

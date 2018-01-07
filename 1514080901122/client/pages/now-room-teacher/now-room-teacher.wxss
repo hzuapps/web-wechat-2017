@@ -1,0 +1,21 @@
+/* pages/now-room-teacher/now-room-teacher.wxss */
+
+.btn-area {
+  margin: 50px 30px; 
+}
+
+.room-info-title {
+  width: 30px;
+}
+
+.room-info {
+  margin: 30px 50px;
+}
+
+.warning {
+  font-size: 12px;
+  width: 50vh;
+  margin: 0 auto;
+  color: red;
+  text-align: center;
+}

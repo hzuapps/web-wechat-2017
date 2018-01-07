@@ -1,0 +1,5 @@
+/* pages/man/man.wxss */
+.myname{
+
+  text-align: center;
+}

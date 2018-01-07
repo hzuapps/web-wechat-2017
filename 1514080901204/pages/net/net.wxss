@@ -1,0 +1,11 @@
+/* pages/net/net.wxss */
+.box{
+  flex-direction:  column;
+ margin: 50rpx;
+
+}
+
+.area{
+  font-style: oblique;
+  font-size: 16px;
+}

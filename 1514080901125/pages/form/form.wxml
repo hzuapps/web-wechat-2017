@@ -1,0 +1,21 @@
+<form bindsubmit="formsubmit"  bindreset="formreset" >
+<view class='icon'>放假是否去聚一聚</view>
+
+
+<view>选择</view>
+<checkbox-group name='checkbox'>
+
+<checkbox  wx:for="{{xuanxiang}}" value="{{item.value}}">
+{{item.value}}
+</checkbox>
+</checkbox-group>
+
+<view>地点</view>
+<input name="input" value="请输入你想去的地方"></input>
+
+
+
+<button form-type='submit'>提交</button>
+<button form-type='reset'>重置</button>
+
+</form>

@@ -1,0 +1,84 @@
+1) 用户（老师）创建房间：
+	客户端：向服务器emit，create-room事件，携带数据：学号范围，限定时间，（老师当前位置）
+
+	服务器端：监听create-room事件了
+		（room == roomID == roomCount）
+		1. 把创建房间的这个用户的socket放进一个新的room（socket.join(room)），根据目前房间数目作为room的名字（roomID），roomID == roomCount
+		2. 把room和创建房间的这个用户的socket关联起来：currentRoom[socket.id] = room
+		3. 把这个代号放进一个数组rooms[roomCount]中存放
+		4. 新建一个新的对象newRoom存放客户端携带过来的数据，这个对象包含：roomID，学号范围，限定时间，（老师当前位置），学生列表（是一个数组，里面的元素是布尔值，默认为false，下标根据学号范围来设定）
+		5. 把这个新对象放进roomsInfo[roomID]数组中存放
+		6. 把这个新对象放进对象feedback
+		7. 向客户端emit，create-room-feedback事件，携带数据是feedback，返回这次“新建”房间的信息（那个新的对象newRoom）给客户端
+
+	客户端：
+		1. 监听createRoomFeedBack事件，接收到返回的房间信息，并渲染在now-room-teacher页面
+		2. 此时开始根据限定时间来“计时”，当计时结束时再向服务器emit，time-out事件
+
+2）用户（学生）签到：
+	客户端：向服务器emit，check-in事件，携带数据：签到房间的ID，签到学号，（学生当前位置）
+
+	服务器端：
+		监听check-in事件，先判断传过来的数据：
+			1. 签到房间ID是否在rooms[]中有（是否存在房间）
+			2. 签到的学号是否超出该房间的签到学号范围（根据roomID，在roomsInfo[]数组中找到那个房间的详细信息，里面就可以找到该房间的学号范围）
+			（3. 该学生的当前位置和老师的当前位置是否在50米以内）
+			4. 该名学生现在不在其他房间内，currentRoom[socket.id] = undefined
+		符合以上条件的话，就可以把这个socket加入到该房间里面，即socket.join(room)
+			每当有新socket加入room时：
+			1. 就向那个room里面的其他socket广播
+			2. 根据签到学号，把 roomInfo[roomID].学生列表[签到学号] 设置为true
+			3. 把该socket和相应room关联起来，currentRoom[socket.id] = room
+			4. 把roomInfo[roomID]放进一个对象feedBack里面
+			
+
+		如果不符合以上条件的话，不能加入这个房间，在对象feedBack里面放入不能加入房间的原因
+
+		向客户端emit，check-in-feedback事件，携带数据是feedback，返回这次“签到”的反馈
+
+	客户端：
+		1. 监听checkInFeedBack事件，接收到签到“反馈”后，把信息渲染在now-room-student页面
+
+3）计时结束
+	当客户端的计时结束时，
+	客户端：向服务器emit，time-out事件，携带数据是：roomID
+
+	服务器：
+		1. 监听timeOut事件，根据接收过来的roomID，找到相应的roomInfo[roomID]
+		2. 向客户端emit，checkInResult事件，携带数据是相应的roomInfo[roomID]
+		3. 把rooms[roomID]这个元素清除掉
+		4. 把roomInfo[roomID]这个元素清除掉
+		5. 把currentRoom[socket.id] = room 清除掉
+		6. 把这个room里面的socket全部清除掉（即清除掉这个room。https://stackoverflow.com/questions/23342395/how-to-delete-a-room-in-socket-io）
+
+	客户端：监听check-in-result事件，渲染check-in-result页面：，并显示出来；并显示出需要人数、实到人数、缺勤人数、以及具体那几个人缺勤（对返回回来的roomInfo[roomID].学生列表进行遍历，找到为false的元素）
+
+4）老师中途删除房间
+	客户端：当老师按了【取消签到房间】按钮，并确认后，会向服务器emit，delete-room事件，携带数据是roomID
+	
+	服务器：监听delete-room事件，触发后：
+		1. 把rooms[roomID]这个元素清除掉
+		2. 把roomInfo[roomID]这个元素清除掉
+		3. 把currentRoom[socket.id] = room 清除掉
+		4. 把这个room里面的socket全部清除掉
+		5. 向客户端emit，delete-room-feedback事件，携带数据是“删除成功”
+	
+	客户端：监听delete-room-feedBack事件，渲染出画面，然后返回主页。
+
+5）学生中途退出房间
+	客户端：当学生按了【退出房间】按钮，并确认后，会向服务器emit，quit-room事件，携带数据是roomID、学生签到学号
+	
+	服务器：监听quit-room事件，触发后：
+		1. socket.leave(rooms[roomID])
+		2. roomInfo[roomID].学生列表【学生签到学号】设置为false
+		3. 向客户端emit，quit-room-feedback事件，携带数据是“退出成功”
+		
+	客户端：监听quit-room-feedback事件，渲染出画面，然后返回主页
+
+
+（now-room-teacher页面和now-room-student页面的区别：
+now-room-teacher页面：是老师创建签到房间后看到的房间页面，这个页面有【房间信息】、【取消签到房间按钮】，按了取消签到房间按钮，会弹出一个对话框问你是否确认删除，如果选确认的话，就会向服务器emit，delete-room事件，携带数据是roomID，服务器监听到这个事件后，会把这个rooms[roomID]、roomInfo[roomID]、currentRoom[socket.id] 都清除掉，且把这个room里面的socket全部清除掉
+now-room-student页面：是学生签到后看到的房间页面，这个页面有【房间信息】、【学生签到学号】、【退出房间按钮】，按了退出房间按钮后，会弹出一个对话框问你是否确认退出，如果确认的话，就会向服务器emit，quit-room事件，携带数据是roomID、学生签到学号，服务器监听到这个事件后，会socket.leave(rooms[roomID])，然后在roomInfo[roomID].学生列表[学生签到学号]设置为false
+）
+
+http://cnodejs.org/topic/5546cd9ec5441de9545a3c0e

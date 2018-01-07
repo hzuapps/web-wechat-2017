@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/user/user",
+    "pages/top250/top250",
+    "pages/movies/movies",
+    "pages/day/ri",
+    "pages/week/week",
+    "pages/weekend/weekend",
+    "pages/month/month",
+    "pages/coming-soon/coming",
+    "pages/in_theaters/in_theaters"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "搜罗影讯",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/首页.png",
+        "iconPath": "images/首页.png",
+        "pagePath": "pages/index/index",
+        "backgroundcolor": "red",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/搜索.png",
+        "iconPath": "images/搜索.png",
+        "pagePath": "pages/search/search",
+        "text": "搜索"
+      },
+      {
+        "selectedIconPath": "images/用户.png",
+        "iconPath": "images/用户.png",
+        "pagePath": "pages/user/user",
+        "text": "关于"
+      }
+    ]
+  }
+}

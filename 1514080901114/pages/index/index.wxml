@@ -1,0 +1,17 @@
+<view class="section">
+<view class="btn-area">
+  <view class="body-view">
+    <text>{{tips}}</text>
+      <navigator url="../addnewform/addnewform" style="margin-top:150px;margin-left:135px;margin-bottom:40px;padding:0 20px;background:#006400;color:white;width:18px;height:30px">+
+     </navigator>
+  </view>
+</view>
+
+<view class="weui-footer">
+<view class="weui-footer__links">
+    <navigator url="" class="weui-footer__link">RML</navigator>
+</view>
+<view class="weui-footer__text">Copyright © RML</view>
+</view>
+
+</view>

@@ -1,0 +1,57 @@
+<scroll-view class="page" scroll-y="true" style="height:{{windowHeight}}px;" bindscrolltoupper="onUpper" bindscrolltolower="onLower" bindscroll="onScroll">
+    <view class="page__bd">
+    
+         <navigator url="/pages/page/wait" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="http://p1.pstatp.com/origin/288600000c207c209e3b" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">newest</view>
+                        <view class="weui-media-box__desc">最新国内新闻</view>
+                    </view>
+                </navigator>
+        <navigator url="/pages/page/wait" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="http://p1.pstatp.com/origin/288600000c207c209e3b" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">奇趣异文</view>
+                        <view class="weui-media-box__desc">国内外神奇事件</view>
+                    </view>
+                </navigator>
+                  <navigator url="/pages/page/wait" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="http://p1.pstatp.com/origin/288600000c207c209e3b" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">自然奇观</view>
+                        <view class="weui-media-box__desc">领略大自然的风光</view>
+                    </view>
+                </navigator>
+                  <navigator url="/pages/page/wait" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="http://p1.pstatp.com/origin/288600000c207c209e3b" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">科技探索</view>
+                        <view class="weui-media-box__desc">最新最强科技前沿</view>
+                    </view>
+                </navigator>
+                  <navigator url="/pages/page/wait" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="http://p1.pstatp.com/origin/288600000c207c209e3b" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">历史真相</view>
+                        <view class="weui-media-box__desc">读史明智</view>
+                    </view>
+                </navigator>
+        <view class="weui-loadmore" wx:if="{{isLower}}">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+        <view class="weui-loadmore weui-loadmore_line" wx:if="{{isEnd}}">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+        </view>
+    </view>
+</scroll-view>

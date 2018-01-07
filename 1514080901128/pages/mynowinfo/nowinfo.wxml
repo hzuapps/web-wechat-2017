@@ -1,0 +1,14 @@
+<view class="weui-panel">
+  <view class="weui-panel__hd">某个四斋</view>
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_text">
+        <view class="weui-media-box__title weui-media-box__title_in-text">忘记弄标题了</view>
+        <view class="weui-media-box__desc">{{suggest}}</view>
+          <view class="weui-media-box__info">
+            <view class="weui-media-box__info__meta">四斋</view>
+            <view class="weui-media-box__info__meta">{{date}}</view>
+            <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{sex}}</view>
+          </view>
+        </view>
+  </view>
+</view>

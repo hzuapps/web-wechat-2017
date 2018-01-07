@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "篮球资讯",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/homepage_fill.png",
+        "iconPath": "images/homepage.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/createtask_fill.png",
+        "iconPath": "images/createtask.png",
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },
+      {
+        "selectedIconPath": "images/addition_fill.png",
+        "iconPath": "images/addition.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+
+
+
+}

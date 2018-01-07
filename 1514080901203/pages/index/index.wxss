@@ -1,0 +1,8 @@
+
+#kdpicker {font-size: 12px;}
+#numinput {font-size: 15px;}
+.page{align-self: center;
+width: 100%;}
+.Info_container{
+  margin-top: 15px;
+}

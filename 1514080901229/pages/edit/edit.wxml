@@ -1,0 +1,34 @@
+<!--pages/edit/edit.wxml-->
+<view class="page" xmlns:wx="">
+  <view class="page__bd">
+    <form bindsubmit='onSubmit'>
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{hasError}}">{{errorText}}</view>
+        <view class="weui-cells__title">日记标题</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="text" 
+                    value='{{text}}' placeholder="请输入日记标题" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+        <picker name="riqi" class="weui-btn" mode="date" value="{{dateValue}}" start="2000-09-01" end="2021-09-01" bindchange="bindDateChange">
+          <button type="default">日期：{{date}}</button>
+        </picker>
+        <view class="weui-cells__title">日记内容</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="area" placeholder="请输入日记内容" style="height: 7.3em" value='{{area}}' bindinput='onChange' maxlength='-1x'/>
+                    <view class="weui-textarea-counter">{{count}}</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+            <button formType='reset'>清除</button>
+        </view>
+    </form>
+  </view>
+</view>

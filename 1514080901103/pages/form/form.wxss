@@ -1,0 +1,12 @@
+/* Pages/form/form.wxss */
+.content{
+  margin: 40 rpx;
+}
+radio-group{
+padding: 20rpx;
+}
+page {  
+  height: 100px;
+  background-color:beige;
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510594968224&di=2334aaf5da2daff55c197106e7f89bc5&imgtype=0&src=http%3A%2F%2Fscimg.jb51.net%2Fallimg%2F150713%2F14-150g314403as.jpg);
+}

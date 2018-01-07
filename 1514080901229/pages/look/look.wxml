@@ -1,0 +1,13 @@
+<view class="weui-article__h1">
+  <view class='box1'>{{input.text}}</view>
+</view>
+<view class="weui-article__section">
+  <view class="weui-article__section">
+    <view class="weui-article__h3">
+      <view class='box2'>{{input.riqi}}</view>
+    </view>
+    <view class="weui-article__p">
+      <view class='box3'>{{input.area}}</view>
+    </view>                               
+  </view>
+</view>

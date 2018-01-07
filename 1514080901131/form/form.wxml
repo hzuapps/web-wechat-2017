@@ -1,0 +1,35 @@
+<!--pages/form/form.wxml-->
+<view class="page__title">创建</view>
+<view class="page__bd">
+  <form bindsubmit='onSubmit'>
+    <view class="weui-toptips weui-toptips_warn" wx:if="{{hasError}}">{{errorText}}</view>
+    <view class="weui-cells__title">类型</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="text" value='{{text}}' placeholder="请输入" bindinput='onTextChange' />
+        </view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">开始时间</view>
+    <view class="section" style="background:#787878;margin:20rpx;padding:20rpx">
+      <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+        <view class="picker">
+          时间 : {{time}}
+        </view>
+      </picker>
+    </view>
+    <view class="section" style="background:#787878;margin:20rpx;padding:20rpx">
+      <picker mode="date" value="{{date}}" start="2017-01-01" end="2099-12-31" bindchange="bindDateChange">
+        <view class="picker">
+          日期: {{date}}
+        </view>
+      </picker>
+    </view>
+
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,62 @@
+<!--index.wxml-->
+
+<!-- <view class="jx_card">    <image style="width: 740rpx; height: 740rpx;margin-left=10rpx;margin-top:10rpx;" mode="{{item.mode}}" src="images2.png">        <image class="jxlogo" src="images2.png"/>    </image>   </view> -->
+
+ <view>
+<image style="height: 100px;background-color: #eeeeee;" mode="{{scaleToFill}}" src="{{src}}"></image>
+</view>
+<view class="container">
+  <view class="userinfo">
+  <button  wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> </button>
+ <block wx:else>
+    <!--  <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image> 
+   <text class="userinfo-nickname">{{userInfo.nickName}}</text>  --> 
+    </block>
+  </view>
+<label >当前ID为{{Id}}</label>
+<view class="page">
+<view class="list_title">{{input}}</view>
+    <view class="page__hd" >
+    <p>请选择模式</p>
+    </view>
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:key="*this">
+                <navigator url="../scrollview/scrollview" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon"  src="images1.jpg" mode="{{mode}}" /> 
+                       <!--<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>-->
+                       
+                    <view class="weui-grid__label">Grid</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>
+
+<div class="weui-tab">
+    <div class="weui-tab__panel">
+
+    </div>
+    <div class="weui-tabbar">
+        <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon"/>
+            <p class="weui-tabbar__label"> 微信 </p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item">
+            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon"/>
+            <p class="weui-tabbar__label"> 通讯录 </p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item">
+            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon"/>
+            <p class="weui-tabbar__label"> 发现 </p>
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item">
+            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon"/>
+            <p class="weui-tabbar__label"> 我 </p>
+        </a>
+    </div>
+</div>
+
+
+
+</view>     

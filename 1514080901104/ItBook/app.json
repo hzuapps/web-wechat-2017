@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/download/download",
+    "pages/morebook/morebook",
+    "pages/upload/upload"
+  
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ItBook",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#818181",
+    "backgroundColor": "white",
+    "selectedColor": "green",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "搜索",
+        "iconPath": "/images/search.png",
+        "selectedIconPath": "/images/search_s.png"
+      },
+      {
+        "pagePath": "pages/upload/upload",
+        "text": "分享",
+        "iconPath": "/images/share.png",
+        "selectedIconPath": "/images/share_s.png"
+      }
+        
+    ]
+  }
+}

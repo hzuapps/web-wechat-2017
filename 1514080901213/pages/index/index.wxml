@@ -1,0 +1,7 @@
+<view class="image">
+  <image class="image1" src="/images/biaoti.png" style="width: 350px; height: 200px"></image>
+</view>
+<view class="touxiang2">
+  <button class="chuangjian" type="primary" bindtap="jump_new_index" style="margin:30rpx;width=500px;height=500px;" plain="true">开始制定约会计划吧</button>
+    <button class="chuangjian" type="primary" bindtap="jump_tieshi" style="margin:30rpx;width=500px;height=500px;" plain="true">助攻小贴士</button>
+</view>

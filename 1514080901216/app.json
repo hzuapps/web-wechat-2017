@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "example/index",
+    "example/navbar/navbar",
+    "example/demo/scrollView",
+    "example/form/form",
+    "example/involved/involved"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "投票助手",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "selectedColor":"#1296db",
+    "list": [{
+      "pagePath": "example/index",
+      "text": "新建",
+      "iconPath": "images/1.png",
+      "selectedIconPath": "images/1-d.png"
+    },{
+      "pagePath": "example/involved/involved",
+      "text": "我的",
+      "iconPath": "images/2.png",
+      "selectedIconPath": "images/2-d.png"
+    }]
+  }
+}

@@ -1,0 +1,26 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #820;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+page {  
+  display: block;  
+  min-height: 100%;  
+background-image: url('https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3001304279,682551125&fm=27&gp=0.jpg'); 
+}

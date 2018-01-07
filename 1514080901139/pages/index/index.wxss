@@ -1,0 +1,57 @@
+/**index.wxss**/
+.page_hd{
+  padding: 80rpx;
+  padding-bottom: 40rpx;
+  font-size: 40rpx;
+  background-color: lightblue;
+  color: #ffffff;
+}
+
+/* .todo_list{
+  margin-bottom: 80rpx;
+   box-sizing: border-box; 
+} */
+
+.todo_item{
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.circle_image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+
+.todoText_finish{
+  text-decoration: line-through;
+  color: #969696;
+}
+
+.add_todo_button{
+  display: inline-block;
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 110rpx;
+  right: 20rpx;
+  width: 70rpx;
+  height: 70rpx;
+  padding-top: 5rpx;
+  text-align: center;
+  border-radius: 50%;
+  background-color: lightblue;
+  color: #ffffff;
+}
+
+.footer_input_content{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 30rpx;
+  align-items: center;
+  border-top: 1px solid #dcdcdc;
+  background-color: #ffffff;
+}

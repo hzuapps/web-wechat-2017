@@ -1,0 +1,24 @@
+
+<view class="container" style="padding:0rpx">
+  <!--垂直滚动，这里必须设置高度-->
+    <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
+        class="list" bindscrolltolower=" onReachBottom" bindscrolltoupper="topLoad"  bindscroll="scroll">        
+        <view class="notes" >
+            <navigator url="" class="navlist" hover-class="weui-cell_active" wx:for="{{array}}" wx:for-item="item">
+                <view class="list_title">{{item.title}}</view>
+                
+                <view class='readerNum'>{{item.readerNum}}人已阅读</view>
+                <view class='questionNum'>问答（{{item.questionNum}}）</view>
+                <image src="{{item.iconTime}}" class='buildtimeimage'></image>
+                <view class='buildtime'>{{item.buildtime}}</view>
+                
+            </navigator>            
+        </view>
+      <view class="body-view">
+        <loading hidden="{{hidden}}" bindchange=" onReachBottom">
+            加载中...
+        </loading>
+    </view>
+    </scroll-view>
+    
+</view>

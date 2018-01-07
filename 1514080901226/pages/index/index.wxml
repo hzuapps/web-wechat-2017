@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+   
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class='classrun' style="border:1px solid black">步数:</view>
+  <view class='classhot' style="border:1px solid black">热量:</view>
+  <view class="usermotto" style="border:1px solid black">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+     <button class="weui-btn" url="" type="primary" bindtap='url_goto'overflow:hidden >开始计步</button>  
+</view>
+<view class="section section_gap">
+  <view class="section__title">横向滚动</view>
+  <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+    <view style="display:flex">
+    <view class="item" wx:for-items="{{[zero,'广告1','广告2','广告3','广告4']}}" style="padding:50px"> {{item}} </view>
+    </view>
+  </scroll-view>
+</view>

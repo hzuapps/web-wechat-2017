@@ -1,0 +1,5 @@
+.button-style{    
+    background-color: #eee;    
+    border-radius: 8rpx;    
+    margin: 20rpx;    
+}    

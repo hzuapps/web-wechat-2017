@@ -1,0 +1,39 @@
+/**index.wxss**/
+.add {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.scroll_view_vertical{
+    height: 30%;
+    margin-bottom: 10px;
+    background-color: ghostwhite;
+}
+.item{
+    height: 40px;
+}
+.box{
+   display: flex;
+   flex-direction: row;
+   justify-content:center;
+   align-items:center;
+}
+.leftone{
+   background-color: #ccffff;
+   display: flex;
+   width: 375rpx;
+   justify-content: center;
+   align-content: left;
+}
+.rightone{
+   background-color: #00ff00;
+   display: flex;
+   width: 375rpx;
+   justify-content: center;
+   align-content: left;
+}
+.center{
+   text-align: center;
+}

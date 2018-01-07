@@ -1,0 +1,30 @@
+/**index.wxss**/
+.wrapper{
+  height: 100%;
+  background:#fff;
+}
+.page-body-form-value{
+  font-size: 14px;
+  color:darkturquoise;
+  font-weight: bold;
+  padding-left: 15px;
+  border: 1px solid rgb(72, 165, 131);
+  border-radius: 4px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.page-body-form-key{
+  font-size:14px;
+  padding: 10px;
+  margin-top:15px;
+  font-family: "Microsoft Yahei";
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+}
+
+.page-body-button{
+  margin-top:20px;
+  line-height: 2;
+}

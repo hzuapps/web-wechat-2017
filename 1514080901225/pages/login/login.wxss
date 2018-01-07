@@ -1,0 +1,68 @@
+.login{
+  height: 504px;
+  width: 100%;
+}
+
+.artist{
+  margin-left: 32%;
+  padding: 20px 0 0 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.username{
+  display: flex;
+  background-color: white;
+  height: 50px;
+  margin: 10px 0 1px 0;
+}
+
+.code{
+  display: flex;
+  background-color: white;
+  height: 50px;
+  margin: 0 0 10px 0;
+}
+
+.enter{
+  width:280px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color:darkcyan;
+  color:antiquewhite;
+}
+
+.weixin{
+  width:280px;
+  margin-top: 10px;
+  background-color: limegreen;
+  color:antiquewhite;
+}
+
+.or{
+  padding-left:145px;
+  font-size:15px;
+}
+
+.enter-hover{
+  width:280px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: darkturquoise;
+  color:antiquewhite;
+}
+
+.weixin-hover{
+  width:280px;
+  margin-top: 10px;
+  background-color: lime;
+  color:antiquewhite;
+}
+
+
+.warn{
+  margin-top: 20px;
+  margin-left: 13%;
+  padding-left:15px;
+  width: 70%;
+}
