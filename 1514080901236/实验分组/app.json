@@ -1,8 +1,9 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/feedback/feedback",
+    "pages/button/button"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -11,23 +12,29 @@
     "navigationBarTextStyle":"black"
   }
   ,"tabBar":{
-    "color": "#a9b7b7"
-    ,"selectedColor":"eb4f38"
+    "color": "#9a9a9a"
+    ,"selectedColor":"333333"
     ,"borderStyle": "white"
     ,"backgroundColor": "#ffffff"
     ,"list":[
     {
       "pagePath":"pages/index/index"
-      ,"text":"index"
+      ,"text":"我的分组"
+      ,"iconPath":"images/自己的.png"
+      ,"selectedIconPath":"images/自己的2.png"
       
     }
     ,{
       "pagePath":"pages/list/list"
       ,"text":"分组列表"
+      ,"iconPath": "images/列表.png"
+      ,"selectedIconPath": "images/列表2.png"      
     }
     ,{
-      "pagePath":"pages/from/from"
+      "pagePath":"pages/feedback/feedback"
       ,"text":"个人"
+      ,"iconPath": "images/自己.png"
+      ,"selectedIconPath": "images/自己2.png"
     }
     ]
   }

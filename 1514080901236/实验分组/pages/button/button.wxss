@@ -1,0 +1,47 @@
+.button-sp-area{
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 90%;
+}
+.mini-btn{
+    margin-right: 5px;
+}
+.num{
+  font-size: 15px;
+  float: right;
+}
+.details{
+  clear: both;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  border-bottom:solid 1px #777 ;
+}
+.id_image{
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.namelist{
+  float: left;
+}
+.group{
+  width: 90%;
+  margin: 20px 0 0 5%;
+  border: solid 1px #777;
+  float: left;
+  border-radius: 2px;
+}
+.pepole_list{
+  float: left;
+  width: 90%;
+  margin: 7px 5% 7px 5%;
+  padding: 2px 0 2px 0;
+  border-bottom: solid 1px #777;
+}
+block{
+  width: 100%;
+  float: left;
+}

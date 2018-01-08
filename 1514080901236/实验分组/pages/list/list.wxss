@@ -19,3 +19,44 @@
 .usermotto {
   margin-top: 200px;
 }
+.page{
+  background-color: #f3f3f3;
+  height: 100vh;
+}
+navigator{
+  width: 100%; 
+  margin: 0 0 0 -6%;
+}
+.weui-cell{
+  background-color: #ffffff;
+  border-color: gray;
+  width: 90%;
+  margin-top: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5px;
+  padding: 10px;
+  box-shadow: 1px 1px 10px #999;
+  border-radius: 3px;
+  float: left;
+  }
+.weui-cell_n{
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+  
+  }
+.weui-cell_b{
+  float: left;
+  clear: both;
+  font-size: 12px;
+}
+.weui-cell_w{
+  float: left;
+  font-size: 12px;
+}
+.weui-cell_a{
+  float: left;
+  clear: both;
+  font-size: 12px;
+}

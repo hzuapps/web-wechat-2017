@@ -1,0 +1,12 @@
+
+<view class="container">
+    <view class='row text_box'>
+        <textarea class='text' name="content" value="{{content}}" placeholder="请输入您的反馈" />
+    </view>
+    <view class='row btn_box'>
+        <button bindtap="submit_1" class='submit'>提交反馈</button>
+    </view>
+    <view class='row version'>
+        <view class='txt'>版本1.0</view>
+    </view>
+</view>
