@@ -1,5 +1,26 @@
+<<<<<<< HEAD
 .weui-cells__title{margin-top:.77em;margin-bottom:.3em;padding-left:15px;padding-right:15px;color:#999;font-size:14px}.weui-cells_after-title{margin-top:0}
 .weui-cell{padding:10px 15px;position:relative;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center}
 .weui-cell__bd{-webkit-box-flex:1;-webkit-flex:1;flex:1;border: solid 1px #999;padding: 4px;border-radius: 3px;}
 .weui-textarea{display:block;width:100%;font-size: 18px;}
 .weui-textarea-counter{color:#b2b2b2;text-align:right}
+=======
+/* pages/big_event/big_event.wxss */
+.title{  
+    height: 30px;  
+    text-align: center;
+    background-color: greenyellow;
+}  
+.scroll_view_vertical{  
+    height: 100%;  
+    margin-bottom: 20px;  
+    background-color: ghostwhite;  
+}  
+.scroll_view_horizotal{  
+    height: 50px;  
+    background-color: whitesmoke;  
+}  
+.item{  
+    height: 50px;  
+}  
+>>>>>>> 8cd2701fcb797739279763287ee01b52b367212d

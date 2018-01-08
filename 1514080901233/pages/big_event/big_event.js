@@ -1,4 +1,5 @@
 Page({
+<<<<<<< HEAD
  /**
    * 生命周期函数--监听页面加载
    */
@@ -139,3 +140,24 @@ Page({
     })
   }
 })
+=======
+  data: {
+    // text:"这是一个页面"  
+  },
+  onLoad: function (options) {
+    // 页面初始化 options为页面跳转所带来的参数  
+  },
+  onReady: function () {
+    // 页面渲染完成  
+  },
+  onShow: function () {
+    // 页面显示  
+  },
+  onHide: function () {
+    // 页面隐藏  
+  },
+  onUnload: function () {
+    // 页面关闭  
+  }
+})  
+>>>>>>> 8cd2701fcb797739279763287ee01b52b367212d

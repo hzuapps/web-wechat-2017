@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <view class="weui-cells__title">文本域</view>
   <view class="weui-cells weui-cells_after-title">
     <view class="weui-cell">
@@ -7,3 +8,20 @@
       </view>
     </view>
   </view>
+=======
+<view class="title">近期事件</view>  
+<scroll-view class="scroll_view_vertical" scroll-y="">  
+    <view class="item">周末晚上聚会！。。。。。。</view>  
+    <view class="item">XX将在XX举行迎新晚会，欢迎大家前来观看！</view>  
+    <view class="item">line3</view>  
+    <view class="item">line4</view>  
+    <view class="item">line5</view>  
+    <view class="item">line6</view>  
+    <view class="item">line7</view>  
+    <view class="item">line8</view>  
+    <view class="item">line9</view>  
+    <view class="item">line10</view>  
+    <view class="item">line11</view>  
+    <view class="item">line12</view>  
+</scroll-view>
+>>>>>>> 8cd2701fcb797739279763287ee01b52b367212d
