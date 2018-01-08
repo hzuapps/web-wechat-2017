@@ -15,8 +15,9 @@
 
 
 ## 点击景点进行跳转
-###view界面实现数据的抓取与显示
-###景点的历史简介
+### view界面实现数据的抓取与显示
+
+### 景点的历史简介
   
 ![](https://github.com/ZHIHAOC/tupian/blob/master/JDLS.jpg) 
  
