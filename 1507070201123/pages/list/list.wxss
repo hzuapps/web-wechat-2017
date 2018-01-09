@@ -1,0 +1,48 @@
+/* pages/list/list.wxss */
+.page {
+  position: relative;
+}
+.lists {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.list-i {
+  padding: 18rpx 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 200rpx;
+  background: #e0f6ff;
+  border-bottom: 3px solid #fff;
+}
+.content {
+  padding: 0 28rpx;
+  height: 118rpx;
+  line-height: 118rpx;
+  border-bottom: 1px solid skyblue;
+}
+.time {
+  padding: 0 28rpx;
+  line-height: 88rpx;
+  color: #88f;
+}
+.add {
+  position: absolute;
+  right: 58rpx;
+  bottom: 58rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100rpx;
+  height: 100rpx;
+  background: #b3fbdb;
+  border: 1px solid #888;
+  border-radius: 50%;
+}
+.add image {
+  width: 48rpx;
+  height: 48rpx;
+}
