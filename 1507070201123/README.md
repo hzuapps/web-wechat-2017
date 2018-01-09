@@ -17,5 +17,5 @@
  
  ## 小程序主要界面截图
  ![image](https://github.com/a505407658/images/raw/master/img/界面.png)
- ![image](https://github.com/505407658/images/raw/master/img/记录.png)
+ ![image](https://github.com/a505407658/images/raw/master/img/记录.png)
 
