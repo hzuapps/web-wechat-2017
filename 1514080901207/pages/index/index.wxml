@@ -1,67 +1,62 @@
 <!--index.wxml-->
-<!-- 
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>-->
+<view class="calendar-root">
 
-<!--
-<view class="page">
-    <view class="page__hd">
-        <view class="page__title">Grid</view>
+    <view class="calendar-title">
+        <text class="year">2017-2018学年度</text>
+        <text class="semester">第一学期</text>
+        <button class="changestyle" bindtap="changeStyle">{{styleshow}}</button>
     </view>
-    <view class="page__bd">
-        <view class="weui-grids">
-            <block wx:for="{{grids}}" wx:key="key">
-                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon"  src="{{item.imgsrc}}" />
-                    <view class="weui-grid__label"  >{{item.word}}</view>
-                </navigator>
-            </block>
+
+    <view class="{{onehidden}}">
+    <view class="calendar-navbar">
+        <view class="calendar-navbar-button" bindtap="goToday">今日</view>
+        <view class="calendar-navbar-button" bindtap="goLastMonth">{{"<"}}</view>
+        <view class="calendar-navbar-date">{{date}}</view>
+        <view class="calendar-navbar-button" bindtap="goNextMonth">{{">"}}</view>
+        <picker class="calendar-navbar-button" mode="date" start="1900-01-01" end="2100-01-01" bindchange="bindDateChange">跳转</picker>
+    </view>
+
+    <view class="calendar-head">
+        <view wx:for="日一二三四五六" wx:key="*this">{{item}}</view>
+    </view>
+
+    <view class="calendar-body">
+      <view class="calendar-body-rows" wx:for="123456" wx:for-index="row" wx:key="*this">
+          <view class="calendar-body-cols" wx:for="1234567" wx:for-index="col" wx:key="*this">
+            <view class="calendar-body-item" wx:if="{{arrIsShow[row *7 +col]}}" data-day-index="{{row*7+col}}">
+              <view class="{{infoIsShow[row*7+col]}} calendar-body-day">
+                  <view class="{{isToday[row*7+col]}}">{{arrDays[row*7+col]}}</view>
+              </view>
+              <view class="calendar-body-dayex">
+                {{arrInfoEx[row*7+col]}}
+              </view>
+            </view>
+          </view>
         </view>
     </view>
-</view>
--->
+    </view>
 
-<!--
-<view class="mid-title">动态加载页面()</view>
-<block wx:for="{{scroll}}" wx:key="key">
-   <navigator url="">
-    <view class="weui-panel weui-panel_access">
-                <view class="weui-panel__bd">
-                    <view class="weui-media-box weui-media-box_appmsg">
-                        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                            <icon type="waiting" size="56"/>
+    <view class="{{twohidden}}">
+
+        <view class="months" wx:for="{{months}}" wx:for-item="m" data-index="{{index}}">
+            <text class="monthName">{{m}}</text>
+            <view class="week">
+            <view class="weekName"  wx:for="{{weekName}}" wx:for-item="w">{{w}}</view>
+            </view>
+                <view class="month-body">
+                   <view class="month-body-y" wx:for="123456" wx:for-index="y">
+                       <view class="month-body-x {{arrMonth[index].febIsShow[y*7+x]}}" wx:for="1234567" wx:for-index="x">
+                            <view class="month-body-item " wx:if="{{arrMonth[index].arrIsShow2[y*7+x]}}">
+                                <view class="{{arrMonth[index].infoIsShow2[y*7+x]}}  month-body-day">
+                                <view class="{{arrMonth[index].isEnd[y*7+x]}}">{{arrMonth[index].arrDays2[y*7+x]}}</view>
+                                </view>
+                                <view class="month-body-dayex {{arrMonth[index].isEnd[y*7+x]}}">{{arrMonth[index].arrInfoEx2[y*7+x]}}</view>
+                            </view>
                         </view>
-                        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
-                            <view class="weui-media-box__title">{{item.word}}</view>
-                            <view class="weui-media-box__desc">可滚动界面。</view>
-                        </view>
+                        <view class="weekNum {{arrMonth[index].numIsShow[y*7+6]}} {{arrMonth[index].febWIsShow[y*7+6]}}">第{{arrMonth[index].weekNum[y*7+6]}}周</view>
                     </view>
                 </view>
             </view>
-  </navigator>
-</block>
--->
-
-<view class="outer">
-    <view class="top">
-    <scroll-view class="scroll" scroll-top="{{scrollTop}}" scroll-into-view="{{theView}}" style="height:580px;" scroll-y="true" bindscroll="scrll"   bindscrolltolower="loadMore">
-      <view class="block" wx:for="{{listLi}}" wx:for-item="item">
-        <text id="{{item}}">{{item}}</text>
-      </view>
-    </scroll-view>
-  </view>
-    <view class="setting">
-       <button vlaue="" bindtap="gotoView">the 10th goto view</button>
-       <button vlaue="" bindtap="goTop">scroll top</button>
-    </view>
+        </view>
+            
 </view>

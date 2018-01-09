@@ -1,4 +1,5 @@
 {
+<<<<<<< bbfbee5419a391107f36d9d1419a8564dc8ee238
   "pages": [
     "example/index",
     "example/navbar/navbar",
@@ -33,3 +34,16 @@
     }]
   }
 }
+=======
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "惠州学院校历",
+    "navigationBarTextStyle":"black"
+  }
+}
+>>>>>>> #6 #57 第6次实验代码
