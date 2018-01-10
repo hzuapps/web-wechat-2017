@@ -1,15 +1,12 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs",
-      "pages/form/form",
-      "pages/five/five"
-
+  "pages": [
+    "pages/list/list",
+    "pages/add/add"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "账本小助手",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "skyblue",
+    "navigationBarTitleText": "简易记事本",
+    "navigationBarTextStyle": "#fff"
   }
 }
