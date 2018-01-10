@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+<view class="weui-cells__title">文本域</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" placeholder="请输入文本" style="height: 3.3em" />
+           <view class="weui-textarea-counter">0/200</view>
+      </view>
+    </view>
+  </view>
+=======
 <view class="title">近期事件</view>  
 <scroll-view class="scroll_view_vertical" scroll-y="">  
     <view class="item">周末晚上聚会！。。。。。。</view>  
@@ -13,3 +24,4 @@
     <view class="item">line11</view>  
     <view class="item">line12</view>  
 </scroll-view>
+>>>>>>> 8cd2701fcb797739279763287ee01b52b367212d

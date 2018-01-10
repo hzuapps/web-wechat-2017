@@ -1,0 +1,13 @@
+<!--是否显示圆点，自动播放， 间隔时间， 监听滚动和点击事件-->
+<swiper indicator-dots="true" autoplay="true" duration="1000" bindchange="listenSwiper" >
+<!--swiper-item只能包含一个节点再多会自动删除-->
+    <swiper-item>
+        <images src="../../images/123.jpg" style="display:block; height: 200px"/>
+    </swiper-item>
+    <swiper-item>
+         <images src="../../images/123.jpg" style="display:block; height: 200px"/>
+    </swiper-item>
+    <swiper-item>
+          <images src="../../images/123.jpg" style="display:block; height: 200px"/>
+    </swiper-item>
+</swiper>
