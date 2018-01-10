@@ -1,21 +1,199 @@
 /**index.wxss**/
-.userinfo {
+.calendar-root{
+  width:100%;
+  height:100%;
+  font-family: "simhei";
+}
+.calendar-title{
+  padding:30rpx 30rpx;
+  /*text-align: center;*/
+  line-height:1.5;
+}
+.year{
+  color:#7D26CD;
+  display: block;
+  font-size: 48rpx;
+}
+.semester{
+  color:#FFB90F;
+}
+.changestyle{
+  width:35%;
+  float:right;
+  height:60rpx;
+  line-height: 60rpx;
+  font-size:26rpx;
+  color:#FFB90F;
+  background-color: #fff;
+  border: 2rpx solid #FFB90F;
+}
+.onehidden{
+  display: none;
+}
+.calendar-navbar{
+  margin-top:30rpx;
+  font-family: simhei;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  align-items:center;
+  background-color:#FFD39B;
+  height:83rpx;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.calendar-navbar-button{
+  flex:1;
+  width:100rpx;
+  text-align: center;
+  font-size:30rpx;
+}
+.calendar-navbar-date{
+  flex-grow:1;
+  width:150rpx;
+  text-align: center;
+}
+.calendar-head{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height:100rpx;
+  color:#7D26CD;
+}
+.calendar-head view{
+  flex:1;
+  text-align: center;
+}
+.calendar-body-rows{
+  display: flex;
+  align-items:center;
+  height:128rpx;
+}
+.calendar-body-cols{
+  display: flex;
+  flex:1;
+  align-items:center;
+  height:100%;
+}
+.calendar-body-item{
+  display: block;
+  text-align: center;
+  align-items:center;
+  width:100%;
+  height:100%;
+}
+.calendar-body-day{
+  margin:0 20rpx;
+  text-align: center;
+  width:66%;
+  height:54%;
+}
+.calendar-body-day view{
+  width:100%;
+  padding:14rpx 0;
+}
+.infoIsShow{
+  border: 2rpx solid #FF8C00;
   border-radius: 50%;
+  color:#FF8C00;
+}
+.isToday{
+  background-color: #FF8C00;
+  border-radius: 50%;
+  color:#fff;
+}
+.calendar-body-dayex{
+  margin:4rpx;
+  font-size:22rpx;
+  text-align: center;
+  color:#FF8C00;
+}
+.twohidden{
+  display:none;
+  margin-top:30rpx;
+}
+.months{
+  margin:0 25rpx;
+  position: relative;
+}
+.monthName{
+  margin:30rpx 15rpx;
+  color:#7D26CD;
+  border-left:8rpx solid #7D26CD;
+}
+.week{
+  display: flex;
+  margin-top:10rpx;
+  margin-left:100rpx;
+}
+.weekName{
+  justify-content:space-around;
+  align-items:center;
+  height:77rpx;
+  color:#7D26CD;
+  font-size:26rpx;
+  flex:1;
+  text-align: center;
+}
+.month-body{
+  margin-left:100rpx;
+}
+.month-body-y{
+  display: flex;
+  /*height:96rpx;*/
+}
+.month-body-x{
+  flex:1;
+  text-align: center;
+  height:96rpx;
+}
+.month-body-item{
+  display: block;
+  text-align: center;
+  align-items:center;
+  width:100%;
+  height:100%;
+}
+.month-body-day{
+  margin:0 auto;
+  text-align: center;
+  vertical-align: center;
+  width:66%;
+}
+.month-body-day view{
+  width:100%;
+  text-align: center;
+}
+.infoIsShow2{
+  color:red;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.month-body-dayex{
+  margin:4rpx;
+  padding:0 4rpx;
+  font-size:20rpx;
+  text-align: center;
+  color:red;
+}
+.isEnd{
+  color:#FFB90F;
 }
 
-.usermotto {
-  margin-top: 200px;
+.weekNum{
+  position: absolute;
+  left:20rpx;
+  margin-top:6rpx;
+  font-size:28rpx;
+  color:#7D26CD;
 }
+.numNotShow{
+  display: none;
+}
+.febNotShow{
+  display: none;
+}
+.febWNotShow{
+  display: none;
+}
+
+
+
+
+
