@@ -7,7 +7,23 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    
+      grids: [
+         {
+          key: '2',
+          name: "微型计算机技术及应用实验",
+          class: '学习',
+          word: '惠院-15计科2班'
+        }
+        , {
+          key: '4',
+          name: "算法分析",
+          class: '学习',
+          word: '惠院-15计科2班'
+        }
+      ],
+    
   },
   //事件处理函数
   bindViewTap: function() {

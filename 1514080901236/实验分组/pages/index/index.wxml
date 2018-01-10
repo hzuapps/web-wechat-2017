@@ -1,13 +1,21 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
+<view class="page">
+
+<view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+              <block wx:for="{{grids}}" wx:key="*this">
+                <navigator url="../button/button?GroupKey={{item.key}}">
+                <view class="weui-cell" id="weui-{{item.key}}">
+                <view class="weui-cell_n">{{item.name}}</view>
+                <view class="weui-cell_b">标签：</view>
+                <view class="weui-cell_w">{{item.class}}</view>
+                <view class="weui-cell_a">群体：</view>
+                <view class="weui-cell_w">{{item.word}}</view>
+                </view>
+                </navigator>
+            </block>
     </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+
+    </view>
+    </view>

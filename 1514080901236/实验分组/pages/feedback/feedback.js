@@ -8,39 +8,18 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    grids: [
-      {
-        key:'1',
-        name:'linux网络操作系统系统实验',
-        class:'学习',
-        word:'惠院-15计科2班'
-      }
-      , {
-        key:'2',
-        name:"微型计算机技术及应用实验",
-        class: '学习',
-        word:'惠院-15计科2班'
-      }
-      , {
-        key:'3',
-        name:"计算方法",
-        class: '学习',
-        word:'惠院-15计科2班'
-      }
-      , {
-        key:'4',
-        name:"算法分析",
-        class: '学习',
-        word:'惠院-15计科2班'
-      }
-      ],
+
   },
-  
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  submit_1: function (e) {
+    wx.showToast({
+      title: "提交成功"
+    });
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -48,7 +27,7 @@ Page({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
@@ -70,7 +49,7 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
+  getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
@@ -78,4 +57,6 @@ Page({
       hasUserInfo: true
     })
   }
+
+
 })
