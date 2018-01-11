@@ -1,0 +1,5 @@
+.page__hd{
+  text-align: center;
+  margin: 5%;
+  color: #ccc;
+}

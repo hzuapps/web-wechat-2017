@@ -1,0 +1,10 @@
+<view class="">
+<view class="page__hd"><view class="timet">{{time}}</view></view>
+    <textarea class="textin bac" name="qc" placeholder=""  maxlength='999999' value='{{content}}' bindinput='change'/>
+<view class="floarea">
+            <button class="fbut ffz" type=""  bindtap="cancel">取消</button>
+            <button class="fbut ffz" type=""  form-type='c'>图片</button>
+            <button class="fbut ffz" type=""   bindtap='sure'>完成</button>
+        </view>
+
+</view>

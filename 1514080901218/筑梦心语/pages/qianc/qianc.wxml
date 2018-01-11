@@ -1,0 +1,38 @@
+
+<scroll-view scroll-y='true' class=''>
+<block wx:for="{{lists}}" wx:key="*this.id">
+  
+                <view class="mak">
+                  <view class="picl">
+                    <view class="raiuy dy">
+                      <view class="raiuy xy">
+                      </view>
+                    </view>
+                    <view class="rline">
+                    </view>
+                  </view>
+                  <view bindtap="edit" data-id="{{item.id}}">
+                    <view class="radi">
+                        <view class="ral">
+                          <image class='asd' src='../../images/asd.png'></image>
+                        </view>
+                        <view class="rar">
+                            <view class="weui-media-box__title">{{item.content}}</view>
+                            <view class="weui-media-box__desc">{{item.time}}</view>
+                        </view>
+                    </view>
+                    </view>
+                </view>
+  
+</block>
+</scroll-view>
+
+<view class='add' bindtap='add'>
+    <image class='img' src='../../img/edit.png'></image>
+  </view>
+
+<!--<button bindtap="insert">增加课程</button>
+
+<button bindtap="delBind">删除课程</button>
+
+<button class="weui-btn" type="primary" bindtap='' form-type='submit'>确定</button>-->

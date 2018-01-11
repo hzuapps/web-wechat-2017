@@ -12,7 +12,7 @@
 
 <view class="page">
     <view class="page__hd">
-        <view class="page__title">Grid</view>
+        <view class="page__title"></view>
     </view>
     <view class="page__bd">
         <view class="weui-grids">
