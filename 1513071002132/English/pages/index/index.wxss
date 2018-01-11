@@ -6,6 +6,7 @@
 }
 .container{
   background-color: #EED5A4;
+  
 }
 
 .userinfo-avatar {
@@ -28,7 +29,8 @@
 }
 
 .imgcontainer{
-  margin-top: 20px;
+  margin-top: 50rpx;
+  margin-bottom: 150rpx;
 }
 
 .img{
