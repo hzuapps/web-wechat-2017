@@ -37,3 +37,24 @@ App({
     userInfo: null
   }
 })
+
+
+      /*{
+        "selectedIconPath": "images/more_h.png",
+        "iconPath": "images/more.png",
+        "pagePath": "pages/qc/qc",
+        "text": "前尘"
+      },
+      {
+        "selectedIconPath": "images/user.png",
+        "iconPath": "images/user.png",
+        "pagePath": "pages/hm/hm",
+        "text": "幻梦"
+      },
+      {
+        "selectedIconPath": "images/user.png",
+        "iconPath": "images/user.png",
+        "pagePath": "pages/list/list",
+        "text": "今朝"
+      },
+      */

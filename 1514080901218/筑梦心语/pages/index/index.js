@@ -32,40 +32,28 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     grids: [
       {
-        key: '1',
-        url: '',
-        imgsrc: '../../example/images/icon_tabbar.png',
-        word: '1'
+        key: '11',
+        url: '../qianc/qianc',
+        imgsrc: '../../images/1.png',
+        word: '前尘'
       },
       {
-        key: '2',
-        url: '',
-        imgsrc: '../../example/images/icon_tabbar.png',
-        word: '2'
+        key: '22',
+        url: '../hm/hm',
+        imgsrc: '../../images/2.png',
+        word: '幻梦'
       },
       {
-        key: '3',
-        url: '',
-        imgsrc: '../../example/images/icon_tabbar.png',
-        word: '3'
+        key: '33',
+        url: '../jz/jz',
+        imgsrc: '../../images/3.png',
+        word: '今朝'
       },
       {
-        key: '4',
-        url: '',
-        imgsrc: '../../example/images/icon_tabbar.png',
-        word: '4'
-      },
-      {
-        key: '5',
-        url: '',
-        imgsrc: '../../example/images/icon_tabbar.png',
-        word: '5'
-      },
-      {
-        key: '6',
-        url: '../../pages/day/ri',
-        imgsrc: '',
-        word: '6'
+        key: '44',
+        url: '../shyf/shyf',
+        imgsrc: '../../images/4.png',
+        word: '诗和远方'
       }
 ],
 

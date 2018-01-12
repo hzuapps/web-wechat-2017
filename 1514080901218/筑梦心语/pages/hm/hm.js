@@ -3,7 +3,7 @@ Page({
 
   data: {
     ri: [],
-    showapi_res_code:[]
+    showapi_res_code: []
   },
   onLoad: function () {
     var that = this;
@@ -17,7 +17,7 @@ Page({
         var data = res.data;
         console.log(data);
         that.setData({
-          ri:data.showapi_res_body.datalist
+          ri: data.showapi_res_body.datalist
         })
       },
     })

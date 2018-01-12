@@ -1,0 +1,19 @@
+
+
+<view class='t1'>
+<view class='tword'>图灵机器人</view>
+<view class='word1'>Hi~我是图灵小机器人——</view>
+<view class='word1 riw'>——你有什么想与我说说的么？</view>
+
+<view class='k1'>
+  <input class='i1' name="text" value='' placeholder="" bindblur='search'>
+  </input>
+</view>
+</view>
+
+
+<view class='t2'>
+
+<view class='t2word'>{{answer}}</view>
+
+</view>

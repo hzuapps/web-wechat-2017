@@ -2,7 +2,12 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/from/from"
+    "pages/qianc/qianc",
+    "pages/qcnew/qcnew",
+    "pages/shyf/shyf",
+    "pages/jz/jz",
+    "pages/tl/tl",
+    "pages/hm/hm"
   ],
   "window":{
    "backgroundTextStyle":"light",
@@ -20,26 +25,16 @@
         "selectedIconPath": "images/home_h.png",
         "iconPath": "images/home.png",
         "pagePath": "pages/index/index",
-        "text": "1"
+        "text": "筑梦"
       },
-      {
-        "selectedIconPath": "images/more_h.png",
-        "iconPath": "images/more.png",
-        "pagePath": "pages/scroll/scroll",
-        "text": "2"
-      },
+
       {
         "selectedIconPath": "images/user.png",
         "iconPath": "images/user.png",
-        "pagePath": "pages/from/from",
-        "text": "3"
-      },
-      {
-        "selectedIconPath": "images/user.png",
-        "iconPath": "images/user.png",
-        "pagePath": "comp/form",
-        "text": "4"
+        "pagePath": "pages/shyf/shyf",
+        "text": "诗和远方"
       }
+      
     ]
   }
   
