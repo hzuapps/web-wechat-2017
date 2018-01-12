@@ -1,6 +1,9 @@
 <!--index.wxml-->
-<view class="viewclass">
-  <navigator url="../form/form" hover-class="navigator-hover" >
-     跳转到新页面
-  </navigator>
+<view class="class">
+<text class="text">动漫推荐</text>
+<view  wx:for="{{list}}">
+<navigator class="viewclass" url="../contents/contents?id={{index}}" hover-class="navigator-hover">
+ {{item.title}}
+</navigator>
+</view>
 </view>

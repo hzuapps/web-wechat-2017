@@ -1,0 +1,8 @@
+<!--pages/contents/contents.wxml-->
+<view class="textclass" >
+  <text class="text">{{cast}}</text>
+  <image src="{{icons}}" class="imagesclass"/>
+  <text class="text">{{date}}</text>
+</view> 
+
+
