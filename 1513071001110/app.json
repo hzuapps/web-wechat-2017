@@ -1,7 +1,6 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
     "pages/form/form"
   ],
   "window":{
@@ -21,15 +20,10 @@
       "selectedIconPath":"image/shouye.png",
       "text":"首页"
     },{
-       "pagePath": "pages/logs/logs",
-       "iconPath": "image/rizhi1.png",
-       "selectedIconPath": "image/rizhi.png",
-       "text": "日志"
-    },{
       "pagePath": "pages/form/form",
       "iconPath": "image/rizhi1.png",
       "selectedIconPath": "image/rizhi.png",
-      "text": "表单"
+      "text": "日志"
     }]
   }
 }
