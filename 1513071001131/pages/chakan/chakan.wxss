@@ -1,1 +1,5 @@
 /* pages/chakan/chakan.wxss */
+.container{
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515859574731&di=04019efbf063164558e325f84ca2bc14&imgtype=0&src=http%3A%2F%2Fimg04.tooopen.com%2Fimages%2F20131206%2Fsy_50566842468.jpg');
+  background-size:100%
+}

@@ -4,6 +4,10 @@
   flex-direction: column;
   align-items: center;
 }
+.container{
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515860140698&di=5148ebaffc23716c98cf1ffc93f59fcf&imgtype=0&src=http%3A%2F%2Fimg.taopic.com%2Fuploads%2Fallimg%2F140424%2F235085-140424201U981.jpg');
+  background-size:100%
+}
 
 .userinfo-avatar {
   width: 128rpx;
@@ -13,7 +17,7 @@
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: #bbb;
 }
 
 .usermotto {
