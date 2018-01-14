@@ -1,0 +1,12 @@
+<!--pages/form/form.wxml-->
+<text class='text'>这是一个新建的form页面</text>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="viewclass">
+   <input type="text" name="input" placeholder="请输入文本框的内容" value="{{input}}" bindinput='length' class="inputclass"/>
+   <label class="labelclass">
+   {{num1s}}/140
+   </label>
+ <button formType="submit" bindtap='submittap' type="primary" class="buttonclass">提交</button>
+    <button formType="reset" bindtap="resettap" type="primary" class="buttonclass">重置</button>
+ </view>
+</form>

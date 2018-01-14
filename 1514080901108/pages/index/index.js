@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    images:["1","2","3","4","5","6","7","8","9","10"]
+    list:[]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -12,40 +12,23 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
+  onLoad: function (options) {
+    console.log(options);
+    var contents = options.id;
+    var that = this
+    wx.request({
+      url: 'https://infoaas.com/data/1514080901128/listcomic.json',
+      method: 'GET',
+      header: {
+        'content-type': 'application/json;charset=utf-8'
+      },
+      success: function (res) {
+        that.setData({
+          list: res.data.list1710,
+        });
+        that.data.list = res.data.list1710
       }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
     })
   }
+   
 })

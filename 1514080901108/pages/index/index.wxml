@@ -1,6 +1,9 @@
-<view class="viewClass">这是一个可滚动界面设计</view>
-<scroll-view class="scrollview" scroll-y="true" scroll-top='100' scroll-with-animation="true" >
-  <view wx:for="{{images}}">
-    <image src="../image/picture{{item}}.jpg"></image>
-  </view>
-</scroll-view>
+<!--index.wxml-->
+<view class="class">
+<text class="text">动漫推荐</text>
+<view  wx:for="{{list}}">
+<navigator class="viewclass" url="../contents/contents?id={{index}}" hover-class="navigator-hover">
+ {{item.title}}
+</navigator>
+</view>
+</view>

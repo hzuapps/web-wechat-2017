@@ -1,12 +1,13 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/contents/contents"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "象棋图谱",
-    "navigationBarTextStyle":"white"
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "象棋棋谱",
+    "navigationBarTextStyle":"black"
   }
 }

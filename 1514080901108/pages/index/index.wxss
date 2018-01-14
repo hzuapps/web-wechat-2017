@@ -1,11 +1,21 @@
-/**index.wxss**/
-.viewClass{
-  color:blue;
-  font-size: 18px;
-  margin: 10px;
+.class{
+  border:1px solid #ccc;
+  padding: 3px;
+  margin: 3px;
 }
 
-.scrollview{
-  border: 1px solid red;
-  background-color: #ccc;
+.viewclass{
+  border:1px solid red;
+  margin: 3px;
+  font-size:28px;
+}
+
+.navigator-hover{
+  color:blue;
+}
+
+.text{
+  color:blue;
+  font-size: 30px;
+  margin: 5px;
 }

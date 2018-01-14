@@ -1,0 +1,31 @@
+/* pages/form/form.wxss */
+.text{
+  color:blue;
+  font-size:25px;
+  font-style:bold;
+  padding: 3px;
+}
+
+.viewclass{
+ font-size: 22px;
+  background-color:beige;
+}
+
+.inputclass{
+  border: 2px solid #ccc;
+  padding: 5px;
+  font-size: 22px;
+  margin: 5px;
+  height: 50px;
+}
+
+.labelclass{
+  color:orange;
+  margin: 5px;
+}
+
+.buttonclass{
+  margin: 5px;
+  font-size: 22px;
+  font-weight:bold;
+}
