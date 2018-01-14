@@ -1,14 +1,46 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/query/query",
     "pages/logs/logs",
-    "pages/words/words",
-    "pages/query/query"
+    "pages/words/words"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#EED5A4",
-    "navigationBarTitleText": "English For You",
+    "navigationBarTitleText": "英格律",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#11cd6e",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "img/首页.png",
+        "text": "首页",
+        "iconPath": "img/首页.png"
+      },
+      {
+        "pagePath": "pages/words/words",
+        "text": "单词",
+        "iconPath": "img/灯泡.png",
+        "selectedIconPath": "img/灯泡.png"
+      },
+      {
+        "pagePath": "pages/query/query",
+        "text": "查询",
+        "iconPath": "img/搜索.png",
+        "selectedIconPath": "img/搜索.png"
+      },
+      {
+        "pagePath": "pages/form/form",
+        "text": "我的",
+        "iconPath": "img/用户.png",
+        "selectedIconPath": "img/用户.png"
+      }
+    ]
   }
+  
+  
 }
