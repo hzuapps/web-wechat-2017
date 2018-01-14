@@ -23,4 +23,11 @@
 }
 .mini-btn{
     margin-right: 5px;
+    margin-right: 5px;
+}
+.bgp{
+    width: 100%;
+    height: 600px;
+  background-image: url('http://img04.tooopen.com/images/20130718/tooopen_11533795.jpg');
+  background-size: 100%;
 }

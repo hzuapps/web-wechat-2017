@@ -1,15 +1,19 @@
 // pages/form/form.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    
     area1: ' ',
     area2: ' ',
+    area3: ' ',
+    area4: ' ',
+    area5: ' ',
    // count: ''.length
-
+    tag:false
   },
 
   /**
@@ -26,6 +30,9 @@ Page({
 
           area1: res.data.area1,
           area2:res.data.area2,
+          area3:res.data.area3,
+          area4:res.data.area4,
+          area5: res.data.area5,
           //count: res.data.area.length
         })
       }
