@@ -1,6 +1,8 @@
 .kemuge {
-   height: 50px;
-   background-color: #eee;
-   border-bottom: 1px solid #bbb;
+   height:30px;
+   border-bottom: 1px;
    padding: 20px;
  } 
+ page{
+  background-color:lightskyblue;
+}
