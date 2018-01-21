@@ -1,54 +1,166 @@
-//index.js
-//获取应用实例
+import { getDailyWeather, getNowWeather, getCityName } from '../../utils/service'
+import { WEATHERKEY } from '../../utils/key'
+import event from '../../utils/event'
+
 const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    Day: '',
+    Night: '',
+    unit: 'c',
+    lang: 'zh-Hans',
+    city: 'local',
+    now: {},
+    future: {},
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+
+  onLoad() {
+    event.on("CityChanged", this, this.setCityData)
+    event.on("TempChanged", this, this.setTempUnit)
+    event.on("LangChanged", this, this.setLang)
+    this.setCityData(this.data.city)
+    this.setLang(this.data.lang)
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
+
+  onShow() {
+    if (this.data.city !== 'local') {
+      this.loadData()
     }
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+
+  setCityData(city) {
+    if (city === 'local') {
+      getCityName((res) => {
+        const city = res.data.regeocode.addressComponent.city.replace('市', '')
+        this.setData({ city })
+        this.loadData()
+      })
+    } else {
+      this.setData({ city: city })
+    }
+  },
+
+  setTempUnit(unit) {
+    this.setData({ unit: unit })
+  },
+
+  setLang(lang) {
+    const _ = wx.T._
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+      lang: lang,
+      Day: _('Day'),
+      Night: _('Night'),
+    })
+  },
+
+  loadData() {
+    //缓存
+    const env = app.globalData.env
+    wx.getStorage({
+      key: this.data.city + "Now",
+      success: (res) => {
+
+        const limit = env === "prod" ? 90 * 60000 : 0;
+        const updateLimit = env === "prod" ? 30 * 6000 : 0;
+        const diff = new Date().getTime() - new Date(res.data.time).getTime()
+        const updateDiff = new Date().getTime() - new Date(res.data.updateTime).getTime()
+        if (diff > limit && updateDiff > updateLimit) {
+          this.fetchNowData()
+        } else {
+          this.setData({ now: res.data })
+        }
+      },
+      fail: (res) => {
+        this.fetchNowData()
+      },
+    })
+
+    wx.getStorage({
+      key: this.data.city + "Future",
+      success: (res) => {
+        const limit = env === "prod" ? 360 * 60000 : 0;
+        const updateLimit = env === "prod" ? 60 * 60000 : 0;
+        const diff = new Date().getTime() - new Date(res.data.time).getTime()
+        const updateDiff = new Date().getTime() - new Date(res.data.updateTime).getTime()
+        if (diff > limit && updateDiff > updateLimit) {
+          this.fetchFutureData()
+        } else {
+          this.setData({ future: res.data.future })
+        }
+      },
+      fail: (res) => {
+        this.fetchFutureData()
+      },
+    })
+
+  },
+
+  fetchNowData() {
+    getNowWeather({
+      data: {
+        key: WEATHERKEY,
+        location: this.data.city,
+        language: this.data.lang,
+        unit: this.data.unit,
+      },
+      success: (res) => {
+        const result = res.data.results[0]
+        const cityName = result.location.name;
+        console.log(result)
+        const now = {
+          cityName,
+          temperature: result.now.temperature,
+          text: result.now.text,
+          time: result.last_update,
+          updateTime: (new Date).toString()
+        }
+        this.setData({ now })
+        wx.setStorage({
+          key: this.data.city + 'Now',
+          data: now,
+        })
+      }
+    })
+  },
+
+  fetchFutureData() {
+    getDailyWeather({
+      data: {
+        key: WEATHERKEY,
+        location: this.data.city,
+        language: this.data.lang,
+        unit: this.data.unit,
+        start: 0,
+        days: 3
+      },
+      success: (res) => {
+        const _ = wx.T._
+        const future = []
+        const results = res.data.results[0]
+        const cityName = results.location.name;
+        const daily = results.daily
+        const weekday = [_('Today'), _('Tomorrow'), _('DayAfterTmw')]
+        for (var i in daily) {
+          future.push({
+            day: weekday[i],
+            code_day: daily[i].code_day,
+            code_night: daily[i].code_night,
+            high: daily[i].high,
+            low: daily[i].low
+          })
+        }
+        this.setData({ future })
+        const futureData = {
+          future,
+          time: results.last_update,
+          updateTime: (new Date).toString(),
+        }
+        wx.setStorage({
+          key: this.data.city + 'Future',
+          data: futureData,
+        })
+      }
     })
   }
 })
